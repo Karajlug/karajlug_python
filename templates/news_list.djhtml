@@ -1,0 +1,26 @@
+{% extends 'base.djhtml' %}
+{% load i18n %}
+
+{% block content %}
+{% for nw in news.object_list %}
+<ul>
+<li><a href="{{ nw.get_absolute_url }}">{{ nw.title }}</a></li>
+</ul>
+{% endfor %}
+
+<div class="pagination">
+    <span class="step-links">
+        {% if news.has_previous %}
+            <a href="?page={{ news.previous_page_number }}">{% trans 'previous' %}</a>
+        {% endif %}
+
+        <span class="current">
+            {% trans 'Page' %} {{ news.number }} of {{ news.paginator.num_pages }}.
+        </span>
+
+        {% if contacts.has_next %}
+            <a href="?page={{ news.next_page_number }}">{% trans 'next' %}</a>
+        {% endif %}
+    </span>
+</div>
+{% endblock %}

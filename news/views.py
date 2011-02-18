@@ -20,6 +20,8 @@
 from django.shortcuts import render_to_response as rr
 from django.template import RequestContext
 from django.http import Http404
+from django.core.paginator import Paginator, InvalidPage, EmptyPage
+from django.conf import settings
 
 from models import News
 
@@ -41,5 +43,23 @@ def news_entry(request, id_=None):
               {"news": news_ent},
               context_instance=RequestContext(request))
 
+
 def index(request):
-    pass
+    """
+    show all the news with pagination.
+    """
+    news = News.objects.all().order_by("-date")
+    p = Paginator(news, settings.NEWS_LIMIT)
+
+    try:
+        page = int(request.GET.get('page', '1'))
+    except ValueError:
+        page = 1
+
+    try:
+        news_page = p.page(page)
+    except (EmptyPage, InvalidPage):
+        news_page = p.page(p.num_pages)
+
+    return rr('news_list.djhtml', {"news": news_page},
+              context_instance=RequestContext(request))
