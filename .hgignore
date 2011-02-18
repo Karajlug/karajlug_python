@@ -3,6 +3,8 @@
 .pida-metadata/python/*
 .pida-metadata/*
 .project
+\#.*\#
+\.\#.*
 db.devdb
 .DS_Store
 syntax: glob
