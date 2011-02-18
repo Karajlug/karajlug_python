@@ -40,3 +40,6 @@ def news_entry(request, id_=None):
     return rr("news_entry.djhtml",
               {"news": news_ent},
               context_instance=RequestContext(request))
+
+def index(request):
+    pass

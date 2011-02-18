@@ -31,7 +31,7 @@ class LatestNews(Feed):
     def items(self):
         return News.objects.order_by('-date')[:settings.NEWS_LIMIT]
 
-    def item_content(self, item):
+    def item_description(self, item):
         return item.content
 
     def item_date(self, item):
