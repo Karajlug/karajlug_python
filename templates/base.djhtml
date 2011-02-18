@@ -20,7 +20,7 @@
       {% block navigation %}
       {% endblock %}
     </div>
-    {% end block %}
+    {% endblock %}
     <div class="wrap">
       {% block models %}
       <div class="models">
@@ -49,6 +49,6 @@
       </div>
       {% endblock %}
     </div>
-    {% endblock %}
+
   </body>
 </html>
