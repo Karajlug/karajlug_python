@@ -1,0 +1,6 @@
+{% extends 'base.djhtml' %}
+{% load i18n %}
+
+{% block content %}
+<h2>{% trans 'Karajlug' %}</h2>
+{% endblock %}
