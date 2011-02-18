@@ -1,25 +1,3 @@
-<<<<<<< local
-Debugger entered--Lisp error: (void-function smart-operator-mode-on)
-  (smart-operator-mode-on)
-  (lambda nil (set-variable (quote py-indent-offset) 4) (set-variable (quote indent-tabs-mode) nil) (define-key py-mode-map (kbd "RET") (quote newline-and-indent)) (smart-operator-mode-on))()
-  run-hooks(python-mode-hook)
-  python-mode()
-  funcall(python-mode)
-  (progn (funcall mode) mode)
-  (if mode (progn (funcall mode) mode))
-  (when mode (funcall mode) mode)
-  (if (and keep-mode-if-same (eq ... ...)) nil (when mode (funcall mode) mode))
-  (unless (and keep-mode-if-same (eq ... ...)) (when mode (funcall mode) mode))
-  mumamo-ad-set-auto-mode-0(python-mode nil)
-  set-auto-mode-0(python-mode nil)
-  set-auto-mode()
-  normal-mode(t)
-  after-find-file(nil t)
-  find-file-noselect-1(#<buffer settings.py> "~/Project's/FSF/karajlug_org/settings.py" nil nil "~/Project's/FSF/karajlug_org/settings.py" (11821111 2051))
-  find-file-noselect("~/Project's/FSF/karajlug_org/settings.py" nil nil t)
-  find-file("~/Project's/FSF/karajlug_org/settings.py" t)
-  call-interactively(find-file nil nil)
-=======
 import os
 
 
