@@ -17,6 +17,8 @@
 #    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 # -----------------------------------------------------------------------------
 
+import os
+
 from django.conf.urls.defaults import *
 from django.contrib import admin
 
@@ -28,4 +30,12 @@ urlpatterns = patterns('',
     (r'^news/', include('news.urls')),
     (r'^$', 'views.index'),
     (r'^admin/', include(admin.site.urls)),
+)
+
+# Local media serving.
+if settings.DEBUG:
+    urlpatterns += patterns('',
+            (r'^statics/(?P<path>.*)$', 'django.views.static.serve',
+             {'document_root': os.path.join(os.path.dirname(__file__),\
+                                    'statics').replace('\\', '/')}),
 )
