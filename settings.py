@@ -92,6 +92,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.admin',
     "news",
+    "faq",
+    
 )
 
 NEWS_LIMIT = 10
