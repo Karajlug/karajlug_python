@@ -1,0 +1,9 @@
+{% extends 'base.djhtml' %}
+
+{% load i18n %}
+{% block content %}
+{% for i in faq %}
+<h3>{{ i }}</h3>
+<p>{{ i.answer }}</p>
+{% endfor %}
+{% endblock %}
