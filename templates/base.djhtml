@@ -1,19 +1,54 @@
-<html>
-<head>
-<title>
-{% if title %}
-{{ title }}
-{% else %}
-Karajlug.org
-{% endif %}
-</title>
-{% block extrahead %}
-{% endblock %}
-</head>
-<body>
-{% block body %}
-{% block content %}
-{% endblock %}
-{% endblock %}
-</body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+  <head>
+    <title>
+      {% if title %}
+      {{ title }}
+      {% else %}
+      Karajlug.org
+      {% endif %}
+    </title>
+    <link rel="stylesheet" href="statics/default.css" media="screen" /> 
+    {% block extrahead %}
+    {% endblock %}
+  </head>
+  
+  <body>
+    {% block navigation-div %}
+    <div class="navigation">
+      {% block navigation %}
+      {% endblock %}
+    </div>
+    {% end block %}
+    <div class="wrap">
+      {% block models %}
+      <div class="models">
+	{% block models-1-div %}
+	<div id="models-1">
+	  {% block models-1 %}
+	  {% endblock %}
+	</div>
+	{% endblock %}
+	{% block models-2-div %}
+	<div id="models-2">
+	  {% block models-2 %}
+	  {% endblock %}
+	</div>
+	{% endblock %}
+      </div>
+      {% endblock %}
+      {% block wrap-div %}
+      <div class="wrap">
+	{% block  content-div %}
+	<div class="content">
+	  {% block content %}
+	  {% endblock %}
+	</div>
+	{% endblock %}
+      </div>
+      {% endblock %}
+    </div>
+    {% endblock %}
+  </body>
 </html>
