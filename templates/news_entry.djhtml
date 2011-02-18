@@ -1,0 +1,11 @@
+{% extends 'base.djhtml' %}
+{% load i18n %}
+
+{% block content %}
+<div>
+<h3>{{ news.title }}</h3>
+<p>{{ news.content }}</p>
+<p>{% trans 'Date' %}: {{ news.date }}</p>
+<p>{% trans 'User' %}: {{ news.user }}</p>
+</div>
+{% endblock %}
