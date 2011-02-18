@@ -19,11 +19,17 @@
 
 from django.shortcuts import render_to_response as rr
 from django.template import RequestContext
+from django.conf import settings
+
+from news.models import News
 
 
 def index(request):
     """
     index view of karajlug.org
     """
+    news = News.objects.all().order_by("-date")[:settings.NEWS_LIMIT]
     return rr("index.djhtml",
+              {"news": news,
+               },
               context_instance=RequestContext(request))
