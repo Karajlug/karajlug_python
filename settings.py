@@ -96,4 +96,4 @@ INSTALLED_APPS = (
 )
 
 NEWS_LIMIT = 10
->>>>>>> other
+
