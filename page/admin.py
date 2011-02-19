@@ -17,11 +17,22 @@
 #    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 # -----------------------------------------------------------------------------
 
-from django.db import models
+from django.contrib import admin
+
+from models import Page
 
 
-class Project(models.Model):
+class PageAdmin(admin.ModelAdmin):
     """
-    Project main model
+    Admin interface class for paeg model
     """
-    pass
+    list_display = ("title", "slug", "user", "date")
+    search_fields = ("title", "content")
+    list_filter = ("user",)
+    prepopulated_fields = {"slug": ("title",)}
+
+    def save_model(self, request, obj, form, change):
+        obj.user = request.user
+        obj.save()
+
+admin.site.register(Page, PageAdmin)
