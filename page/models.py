@@ -18,10 +18,31 @@
 # -----------------------------------------------------------------------------
 
 from django.db import models
+from django.contrib.auth.models import User
+from django.utils.translation import ugettext as _
 
 
-class Project(models.Model):
+class Page(models.Model):
     """
-    Project main model
+    Page main model class
     """
-    pass
+    user = models.ForeignKey(User, editable=False,
+                             verbose_name=_("User"))
+    title = models.CharField(max_length=30,
+                             verbose_name=_("Title"))
+    slug = models.SlugField(max_length=30, unique=True,
+                            verbose_name=_("Slug"))
+    # IMPORTANT: content field will render as html
+    content = models.TextField(verbose_name=_("News content"))
+    date = models.DateTimeField(auto_now_add=True, auto_now=False,
+                                     verbose_name=_('Date and Time'))
+
+    def __unicode__(self):
+        return self.title
+
+    def get_absolute_url(self):
+        return "/page/%s" % self.slug
+
+    class Meta:
+        verbose_name_plural = _("Pages")
+        verbose_name = _('Page')

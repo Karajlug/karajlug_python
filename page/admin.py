@@ -17,26 +17,22 @@
 #    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 # -----------------------------------------------------------------------------
 
-import os
-
-from django.conf.urls.defaults import *
 from django.contrib import admin
-from django.conf import settings
 
-admin.autodiscover()
+from models import Page
 
-urlpatterns = patterns('',
-    (r'^faq/$', "faq.views.index"),
-    (r'^news/', include('news.urls')),
-    (r'^page/', include('page.urls')),
-    (r'^$', 'views.index'),
-    (r'^admin/', include(admin.site.urls)),
-)
 
-# Local media serving.
-if settings.DEBUG:
-    urlpatterns += patterns('',
-            (r'^statics/(?P<path>.*)$', 'django.views.static.serve',
-             {'document_root': os.path.join(os.path.dirname(__file__),\
-                                    'statics').replace('\\', '/')}),
-)
+class PageAdmin(admin.ModelAdmin):
+    """
+    Admin interface class for paeg model
+    """
+    list_display = ("title", "slug", "user", "date")
+    search_fields = ("title", "content")
+    list_filter = ("user",)
+    prepopulated_fields = {"slug": ("title",)}
+
+    def save_model(self, request, obj, form, change):
+        obj.user = request.user
+        obj.save()
+
+admin.site.register(Page, PageAdmin)

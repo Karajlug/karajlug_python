@@ -17,26 +17,24 @@
 #    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 # -----------------------------------------------------------------------------
 
-import os
+from django.shortcuts import render_to_response as rr
+from django.http import Http404
+from django.template import RequestContext
+from django.utils.translation import ugettext as _
 
-from django.conf.urls.defaults import *
-from django.contrib import admin
-from django.conf import settings
+from models import Page
 
-admin.autodiscover()
 
-urlpatterns = patterns('',
-    (r'^faq/$', "faq.views.index"),
-    (r'^news/', include('news.urls')),
-    (r'^page/', include('page.urls')),
-    (r'^$', 'views.index'),
-    (r'^admin/', include(admin.site.urls)),
-)
+def show_page(request, slug):
+    """
+    show the page with the given slug
+    """
+    try:
+        page = Page.objects.get(slug=slug)
 
-# Local media serving.
-if settings.DEBUG:
-    urlpatterns += patterns('',
-            (r'^statics/(?P<path>.*)$', 'django.views.static.serve',
-             {'document_root': os.path.join(os.path.dirname(__file__),\
-                                    'statics').replace('\\', '/')}),
-)
+    except Page.DoesNotExist:
+        return Http404()
+    return rr("page.djhtml",
+              {"page": page,
+               "title": "%s | %s" % (_("Karajlug"), page.title)},
+              context_instance=RequestContext(request))
