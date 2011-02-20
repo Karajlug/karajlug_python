@@ -46,12 +46,13 @@
 	{% block  content-div %}
 	<div class="content">
 	  {% block content %}
+
 	  {% endblock %}
 	</div>
 	{% endblock %}
       </div>
       {% endblock %}
     </div>
-
+          {{ VERSION }} - {{ PYVERSION }} | {{ DJVERSION }} | rev: {{ REV }}
   </body>
 </html>

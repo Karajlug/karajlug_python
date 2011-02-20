@@ -97,5 +97,14 @@ INSTALLED_APPS = (
     "nav",
 )
 
-NEWS_LIMIT = 10
+TEMPLATE_CONTEXT_PROCESSORS = (
+    "django.contrib.auth.context_processors.auth",
+    "django.core.context_processors.debug",
+    "django.core.context_processors.i18n",
+    "django.core.context_processors.media",
+    "django.contrib.messages.context_processors.messages",
+    "context_processors.info",
+    )
 
+NEWS_LIMIT = 10
+VERSION = "0.1.0"
