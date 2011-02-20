@@ -20,9 +20,12 @@
 from django import template
 from django.template.loader import get_template
 from django.conf import settings
-from apps.nav.models import NavigationTree, NavigationItem
+
+from nav.models import NavigationTree, NavigationItem
+
 
 register = template.Library()
+
 
 class NavigationTreeNode(template.Node):
     slug = None
@@ -38,7 +41,7 @@ class NavigationTreeNode(template.Node):
             {
                 'mainitem': tree.get_trunk(),
                 'parent' : tree,
-                'user': user 
+                'user': user,
             }
         )
         return t.render(c)
@@ -52,12 +55,14 @@ class NavigationTreeNode(template.Node):
         except template.VariableDoesNotExist:
             return ''
 
+
 @register.tag(name='navtree')
 def navtree(parser, token):
     try:
         tag_name, tree_name, user = token.split_contents()
     except ValueError:
-        raise template.TemplateSyntaxError, "%s tag requires exactly 2 arguments. A tree access name and a user."
+        raise template.TemplateSyntaxError, \
+              "%s tag requires exactly 2 arguments. A tree access name and a user."
 
     return NavigationTreeNode(tree_name, user)
 
@@ -72,82 +77,20 @@ class NavigationChildNode(template.Node):
 
     def get_child(self, navnode, user):
         t = get_template('navigation/children.html')
-        
         c = template.Context(
-            
             {
                 'mainitem': navnode.get_children(),
-
-                'user': user 
+                'user': user,
             }
         )
-        
+
         return t.render(c)
 
     def render(self, context):
         try:
-            navnode = NavigationItem.objects.get(id=self.tree.resolve(context).id)
+            navnode = NavigationItem.objects.get(\
+                id=self.tree.resolve(context).id)
             return self.get_child(navnode, self.user)
 
-        except : # template.VariableDoesNotExist:
+        except navnode.DoesNotExist:
             return ''
-
-@register.tag(name='navchild')
-def navtree(parser, token):
-    try:
-        tag_name, tree, user = token.split_contents()
-    except ValueError:
-        raise template.TemplateSyntaxError, "%s tag requires exactly 2 arguments. A tree access name and a user."
-
-    return NavigationChildNode(tree, user)
-
-"""
-class NavigationBranchNode(template.Node):
-#    branch = None
-#    user = None
-
-    def __init__(self, branch, user):
-        self.branch = template.Variable(branch)
-        self.user = template.Variable(user)
-
-    def render(self, context):
-        try:
-            t = get_template('navigation/branch.html')
-            c = template.Context(
-                {
-                    'branch': self.branch.resolve(context),
-                    'user': self.user.resolve(context),
-                    'list_a': [1,2,3,4],
-                    'list_b': [1,2,3,4,5,6,7,8,9],
-                }
-            )
-
-        except template.VariableDoesNotExist:
-            return ''
-
-        return t.render(c)
-
-@register.tag(name='navbranch')
-def navbranch(parser, token):
-    try:
-        tag_name, branch, user = token.split_contents()
-    except ValueError:
-        raise template.TemplateSyntaxError, "%s tag requires exactly 2 arguments. A branch and the user."
-
-    return NavigationBranchNode(branch, user)
-
-@register.filter(name='navleaf_authorized')
-def navleaf_authorized(user, leaf):
-    if leaf.guests_hidden and user.is_authenticated() is False:
-        return False
-
-    if leaf.guests_only and user.is_authenticated() is True:
-        return False
-
-    if leaf.staff_only and user.is_staff is False:
-        return False
-
-    return user.has_perms(leaf.required_permissions.all())
-"""
-
-

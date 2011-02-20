@@ -17,15 +17,19 @@
 #    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 # -----------------------------------------------------------------------------
 
-from django.contrib import admin
-from models import NavigationItem, NavigationTree
 import re
+from django.contrib import admin
+
+from models import NavigationItem, NavigationTree
+
 
 url_re = re.compile(r'^(https??://([a-zA-Z0-9]+\.)+[a-zA-Z0-9]([:@][a-zA-Z0-9@%-_\.]){0,2})?/\S*$')
 
+
 class NavigationItemAdmin(admin.ModelAdmin):
     list_filter = ('tree',)
-    list_display = ('label','title','location',)
+    list_display = ('label', 'title', 'location',)
+
 
 class NavigationTreeAdmin(admin.ModelAdmin):
     pass
