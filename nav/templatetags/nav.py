@@ -21,7 +21,7 @@ from django import template
 from django.template.loader import get_template
 from django.conf import settings
 
-from nav.models import NavigationTree, NavigationItem
+from karajlug_org.nav.models import NavigationTree, NavigationItem
 
 
 register = template.Library()
@@ -94,3 +94,13 @@ class NavigationChildNode(template.Node):
 
         except navnode.DoesNotExist:
             return ''
+
+
+@register.tag(name='navchild')
+def navtree(parser, token):
+    try:
+        tag_name, tree, user = token.split_contents()
+    except ValueError:
+        raise template.TemplateSyntaxError, "%s tag requires exactly 2 arguments. A tree access name and a user."
+
+    return NavigationChildNode(tree, user)
