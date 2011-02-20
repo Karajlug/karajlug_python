@@ -30,7 +30,8 @@ def show_page(request, slug):
     show the page with the given slug
     """
     try:
-        page = Page.objects.get(slug=slug)
+        page = Page.objects.get(slug=slug,
+                                publish=True)
 
     except Page.DoesNotExist:
         return Http404()
