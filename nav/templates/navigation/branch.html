@@ -1,0 +1,17 @@
+{% load nav %}
+
+<ul>
+{% for leaf in branch %}
+	{% if user|navleaf_authorized:leaf %}
+	<li>
+		<a href="{{ leaf.location }}" title="{{ leaf.title }}">{{ leaf.label }}</a>
+
+	{% with leaf.get_children as leaves %}
+		{% if leaves|length %}
+			{% navbranch leaves user %}
+		{% endif %}
+	{% endwith %}
+	</li>
+	{% endif %}
+{% endfor %}
+</ul>

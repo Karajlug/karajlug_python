@@ -1,0 +1,11 @@
+{% load nav %}
+{% if mainitem %}
+<ul>
+  {% for item in mainitem %}
+  <li>
+    <a href='{{item.location}}'>{{item.label}}</a>
+    {% navchild item user %}
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}
