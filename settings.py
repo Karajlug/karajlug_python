@@ -94,6 +94,7 @@ INSTALLED_APPS = (
     "page",
     "news",
     "faq",
+    "nav",
 )
 
 NEWS_LIMIT = 10

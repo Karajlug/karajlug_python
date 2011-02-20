@@ -32,7 +32,8 @@ class NavigationItemAdmin(admin.ModelAdmin):
 
 
 class NavigationTreeAdmin(admin.ModelAdmin):
-    pass
+    list_display = ("name", "slug")
+    prepopulated_fields = {"slug": ("name",)}
 
 admin.site.register(NavigationItem, NavigationItemAdmin)
 admin.site.register(NavigationTree, NavigationTreeAdmin)
