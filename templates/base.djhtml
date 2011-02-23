@@ -10,77 +10,28 @@
       Karajlug.org
       {% endif %}
     </title>
-    <link rel="stylesheet" href="statics/default.css" media="screen" /> 
-  <link rel="stylesheet" href="statics/navigation.css" media="screen" />
+    <link rel="alternate" title="What's New" href="http://www.karajlug.org/news/feed/" type="application/rss+xml" />
+  <link rel="stylesheet" type="text/css" href="/statics/css/grids-min.css">
+    <style>
+    body {
+        margin: auto;
+        width: 100%;
+    }
+ 
+    </style>
     {% block extrahead %}
     {% endblock %}
   </head>
   
   <body>
-  {% block header %}
-  <div class="header">
-  {% block logo %}
-  <div class="logo">
-  </div>  
-  {% endblock %}
-  {% block header-text %}
-  <div class="header-text"> 
-  </div>
-  {% endblock %}
-  </div>
-  {% endblock %}
-    {% block navigation-div %}
-    <div class="navigation">
-      {% block navigation %}
-      {% navtree main request.user %}
-      {% endblock %}
-    </div>
+  <div class="yui3-g">
+    {% block content %}
     {% endblock %}
-    <div class="wrap">
-      {% block models %}
-      <div class="models">
-	{% block models-1-div %}
-	<div id="models-1">
-	<div id="models-1-header">
-	   {% block models-1-header %}	
-تست
-	   {% endblock %}	
-	</div>
-	<div id="models-1-content">
-	  {% block models-1-content %}
-تست
-	  {% endblock %}
-	  </div>
-	</div>
-	{% endblock %}
-	{% block models-2-div %}
-	<div id="models-2">
-	<div id="models-2-header">
-	   {% block models-2-header %}	
-اخبار
-	   {% endblock %}	
-	</div>
-	<div id="models-2-content">
-	  {% block models-2-content %}
-اخبار
-	  {% endblock %}
-	  </div>
-	</div>
-	{% endblock %}
-      </div>
-      {% endblock %}
-      {% block wrap-div %}
-      <div class="wrap">
-	{% block  content-div %}
-	<div class="content">
-	  {% block content %}
-
-	  {% endblock %}
-	</div>
-	{% endblock %}
-      </div>
-      {% endblock %}
+    <div class="footer">
+      {% block footer %}
+      <p align="center">{{ VERSION }} - {{ PYVERSION }} | {{ DJVERSION }} | rev: {{ REV }}</p>
+    {% endblock %}
     </div>
-          {{ VERSION }} - {{ PYVERSION }} | {{ DJVERSION }} | rev: {{ REV }}
+  </div>
   </body>
 </html>
