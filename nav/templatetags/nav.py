@@ -52,8 +52,8 @@ class NavigationTreeNode(template.Node):
 
             return self.get_tree(navigation, self.user)
 
-        except template.VariableDoesNotExist:
-            return ''
+        except:
+            return 'Menu problem'
 
 
 @register.tag(name='navtree')
