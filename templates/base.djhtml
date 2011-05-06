@@ -1,37 +1,86 @@
 {% load nav %}
 {% load i18n %}
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
-  <head>
-    <title>
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	
+	<title>
       {% if title %}
       {{ title }}
       {% else %}
       Karajlug.org
       {% endif %}
-    </title>
-  <link rel="stylesheet" type="text/css" href="/statics/css/grids-min.css">
-      <link rel="stylesheet" type="text/css" href="/statics/css/default.css">
+	</title>
+	
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	
+	<link rel="stylesheet" href="/statics/css/style.css?v=2">
+
+	<script src="/statics/js/libs/modernizr-1.6.min.js"></script>
     {% block extrahead %}
     {% endblock %}
-  </head>
-  
-  <body>
-  <div class="yui3-g">
-    <div class="yui3-u-1 title">
-      <h2>{% trans "Karaj" %}{% trans "Lug" %}</h2>
-    </div>
+</head>
+<body>
+<p class="info">Your HTML5 project is almost ready! Please check the <a href="TODO.txt">TODO list</a>.</p>
+	<div id="header-container">
+		<header class="wrapper">
+			<h1 id="title">{% trans "Karaj" %}{% trans "Lug" %}</h1>
+			<nav>
+				<ul>
+					<li><a href="#">      {% navtree main request.user %}</a></li>
+					<li><a href="#">navigation</a></li>
+					<li><a href="#">links</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
     <div class="yui3-u-1 nav">
-      {% navtree main request.user %}
+
     </div>
-    {% block content %}
-    {% endblock %}
-    <div class="footer">
-      {% block footer %}
-      <p align="center">{{ VERSION }} - {{ PYVERSION }} | {{ DJVERSION }} | rev: {{ REV }}</p>
-    {% endblock %}
-    </div>
-  </div>
-  </body>
+
+	<div id="main" class="wrapper">
+		<aside>
+			<h3>Something aside</h3>
+		</aside>
+		<article>
+			<header>
+				<h2></h2>
+				<p>    {% block content %}
+    {% endblock %}</p>
+			</header>
+			<footer>
+			<h3>About the author</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.</p>
+			</footer>	
+		</article>
+	</div>
+	<div id="footer-container">
+		<footer class="wrapper">
+			<h3>      {% block footer %}
+      <{{ VERSION }} - {{ PYVERSION }} | {{ DJVERSION }} | rev: {{ REV }}
+    {% endblock %}</h3>
+		</footer>
+	</div>
+	<p id="jquery-test" href="#" class="info">jQuery is not loaded</p>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"></script>
+	<script>!window.jQuery && document.write(unescape('%3Cscript src="/statics/js/libs/jquery-1.4.4.js"%3E%3C/script%3E'))</script>
+	<script src="/statics/js/script.js"></script>
+	<!--[if lt IE 7 ]>
+	<script src="/statics/js/libs/dd_belatedpng.js"></script>
+	<script> DD_belatedPNG.fix('img, .png_bg');</script>
+	<![endif]-->
+</body>
 </html>

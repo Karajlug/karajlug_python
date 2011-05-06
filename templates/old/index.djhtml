@@ -1,0 +1,13 @@
+{% extends 'base.djhtml' %}
+{% load i18n %}
+
+{% block content %}
+<h2>{% trans 'Karajlug' %}</h2>
+
+<h3>{% trans "News" %}</h3>
+<ul>
+{% for news_entry in news %}
+<li><a href="{{ news_entry.get_absolute_url }}">{{ news_entry }}</a></li>
+{% endfor %}
+</ul>
+{% endblock %}

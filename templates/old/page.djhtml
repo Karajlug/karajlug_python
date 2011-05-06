@@ -1,0 +1,11 @@
+{% extends 'base.djhtml' %}
+{% load i18n %}
+
+{% block content %}
+{% autoescape off %}
+{{ page.content }}
+{% endautoescape %}
+<p>{% trans 'Date' %}: {{ page.date }}</p>
+<p>{% trans 'User' %}: {{ page.user }}</p>
+
+{% endblock %}

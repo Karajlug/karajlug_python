@@ -2,12 +2,11 @@
 {% load i18n %}
 
 {% block content %}
-<h2>{% trans 'Karajlug' %}</h2>
 
-<h3>{% trans "News" %}</h3>
-<ul>
+<h2>{% trans "News" %}</h2>
+
 {% for news_entry in news %}
-<li><a href="{{ news_entry.get_absolute_url }}">{{ news_entry }}</a></li>
+<p><a href="{{ news_entry.get_absolute_url }}">{{ news_entry }}</a></p>
 {% endfor %}
-</ul>
+
 {% endblock %}

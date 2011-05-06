@@ -1,0 +1,49 @@
+/*------------------------------------------------------------------------
+    Karajlug.org
+    Copyright (C) 2010  Karajlug community
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License along
+    with this program; if not, write to the Free Software Foundation, Inc.,
+    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ --------------------------------------------------------------------------*/
+body {
+    margin: auto;
+    width: 100%;
+    font-family: cursive, Arial, sans-serif;
+    color: #35382A;
+    font-size: 100%;
+    text-align: inherit;
+}
+
+* {
+    letter-spacing: 0!important;
+    word-spacing: 0!important;
+}
+.footer {
+    padding: 1em;
+    margin-top: 1em;
+    
+}
+
+.title {
+    height: 50px;
+    padding-left: 3em;
+    padding-top: 2em;
+}
+
+.nav {
+    background: #BD0000;
+    border-bottom: 5px solid #333333;
+    clear: both;
+    color: WHITE;
+}
