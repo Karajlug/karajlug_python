@@ -2,11 +2,21 @@
 {% load i18n %}
 
 {% block content %}
-
 <h2>{% trans "News" %}</h2>
 
 {% for news_entry in news %}
 <p><a href="{{ news_entry.get_absolute_url }}">{{ news_entry }}</a></p>
 {% endfor %}
 
+{% endblock %}
+{% block home %}
+	<footer>
+			
+			<h3>{% trans "About KarajLug" %}</h3>
+				<p>The Karaj GNU/Linux User Group (G/LUG) began its journey at 25th April 2008 , (repor of first sesson).
+This community is a place to share what we all found intresting about Gnu/Linux operating system and Free Softwares.
+If you are interested, you can join us and have a good time sharing your what you know and like to share.
+You can find all the information you need about this comunity in this website.
+And also it is recommended to join the mailing list to be inform of the news.</p>
+	</footer>
 {% endblock %}

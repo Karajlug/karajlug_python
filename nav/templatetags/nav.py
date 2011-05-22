@@ -21,7 +21,7 @@ from django import template
 from django.template.loader import get_template
 from django.conf import settings
 
-from karajlug_org.nav.models import NavigationTree, NavigationItem
+from nav.models import NavigationTree, NavigationItem
 
 
 register = template.Library()
@@ -49,7 +49,6 @@ class NavigationTreeNode(template.Node):
     def render(self, context):
         try:
             navigation = NavigationTree.objects.get(slug=self.slug)
-
             return self.get_tree(navigation, self.user)
 
         except:
