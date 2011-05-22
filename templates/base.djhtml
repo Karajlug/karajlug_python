@@ -1,6 +1,7 @@
-{% load nav %}
-{% load i18n %}
 <!DOCTYPE html>
+{% load i18n %}
+{% load navigation %}
+
 <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
 <!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
