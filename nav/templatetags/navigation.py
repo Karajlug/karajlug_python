@@ -50,7 +50,6 @@ class NavigationTreeNode(template.Node):
         try:
             navigation = NavigationTree.objects.get(slug=self.slug)
             return self.get_tree(navigation, self.user)
-
         except:
             return 'Menu problem'
 

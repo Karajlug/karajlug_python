@@ -1,0 +1,9 @@
+{% load nav %}
+<ul id="nav-{{parent.slug}}" class="sf-menu" >
+  {% for item in mainitem %}
+  <li>
+    <a href='{{item.location}}'>{{item.label}}</a>
+    {% navchild item user %}
+  </li>
+  {% endfor %}
+</ul>

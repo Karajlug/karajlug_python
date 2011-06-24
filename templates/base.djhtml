@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 {% load i18n %}
-{% load navigation %}
 
 <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
 <!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
@@ -67,7 +66,7 @@
 				 {{ VERSION }} - {{ PYVERSION }} <br/> {{ DJVERSION }} <br/>  rev: {{ REV }}
 				  </p>
       				  <p class="footer-box">
-				 <b>{% trans "KarajLug:" %} </b><br/>
+				 <b>{% trans "Friends:" %} </b><br/>
 					<a href="http://shahbal.net">{% trans "shahbal" %}</a><br/>
 					<a href="http://lxsameer.com">{% trans "lxsameer" %}</a><br/>
 					<a href="http://b3hnam.com">{% trans "b3hnam" %}</a><br/>
