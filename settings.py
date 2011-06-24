@@ -94,7 +94,6 @@ INSTALLED_APPS = (
     "page",
     "news",
     "faq",
-    "nav",
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
