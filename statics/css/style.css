@@ -362,3 +362,6 @@ article header{
   h2, h3{ page-break-after: avoid; }
 }
 
+.page {
+    min-height: 350px;
+}

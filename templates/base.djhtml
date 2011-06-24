@@ -55,8 +55,8 @@
 			{% block home %}
 			{% endblock %}	
 			</header>
-				   {% block content %}
-    {% endblock %}<br/><br/>
+			{% block content %}
+			{% endblock %}<br/><br/>
 		</article>
 	</div>
 	<div id="footer-container">
