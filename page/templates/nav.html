@@ -1,0 +1,5 @@
+<ul class="nav">
+{% for page in pages %}
+<li><a href="{{ page.get_absolute_url}}">{{ page.title|title }}</a></li>
+{% endfor %}
+</ul>

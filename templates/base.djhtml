@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 {% load i18n %}
-{% load navigation %}
+{% load page_nav %}
 
 <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
 <!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
@@ -37,7 +37,7 @@
 		<header class="wrapper">
 			<h1 id="title">{% trans "KarajLug" %}</h1>
 			<nav>
-				{% navtree %}
+			  {% navigation %}
 			</nav>
 		</header>
 	</div>

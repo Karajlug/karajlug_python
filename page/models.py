@@ -36,6 +36,9 @@ class Page(models.Model):
     content = models.TextField(verbose_name=_("News content"))
     publish = models.BooleanField(default=False,
                                   verbose_name=_("Publish"))
+    menu = models.BooleanField(default=False,
+                                  verbose_name=_("Appear in navigation?"))
+
     date = models.DateTimeField(auto_now_add=True, auto_now=False,
                                      verbose_name=_('Date and Time'))
 
