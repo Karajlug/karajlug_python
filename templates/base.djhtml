@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% load i18n %}
+{% load navigation %}
 
 <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
 <!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
@@ -27,7 +28,6 @@
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 	
 	<link rel="stylesheet" href="/statics/css/style.css?v=2">
-	<link rel="stylesheet" href="/statics/css/navigation.css">
 	<script src="/statics/js/libs/modernizr-1.6.min.js"></script>
     {% block extrahead %}
     {% endblock %}
@@ -37,7 +37,7 @@
 		<header class="wrapper">
 			<h1 id="title">{% trans "KarajLug" %}</h1>
 			<nav>
-				{% navtree main request.user %}
+				{% navtree %}
 			</nav>
 		</header>
 	</div>
