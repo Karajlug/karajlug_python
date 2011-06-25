@@ -28,8 +28,7 @@
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 	
-	<link rel="stylesheet" href="/statics/css/style.css?v=2">
-	<script src="/statics/js/libs/modernizr-1.6.min.js"></script>
+	<link rel="stylesheet" href="/statics/css/style.css">
     {% block extrahead %}
     {% endblock %}
 </head>
@@ -65,23 +64,25 @@ The Karaj GNU/Linux User Group (G/LUG) began its journey at 25th April 2008 , (r
 		<footer class="wrapper">
 			<h3>      {% block footer %}
       				  <p class="footer-box">
-				<b>{% trans "KarajLug:" %} </b><br/>
-				 {{ VERSION }} - {{ PYVERSION }} <br/> {{ DJVERSION }} <br/>  rev: {{ REV }}
+				    <b>Sponsers:</b><br/>
+				    <a href="http://www.shahbal.net/">Shahbal co.</a><br/>
+				    <a href="http://www.karanic.com/">KaraNic</a><br/>
+				    <a href="http://iamamemberofsomehackersintownstreetcomputinggroupwhataboutyou.com">Some Hackers In Town</a>
 				  </p>
       				  <p class="footer-box">
 				 <b>{% trans "Friends:" %} </b><br/>
-					<a href="http://shahbal.net">{% trans "shahbal" %}</a><br/>
-					<a href="http://lxsameer.com">{% trans "lxsameer" %}</a><br/>
-					<a href="http://b3hnam.com">{% trans "b3hnam" %}</a><br/>
+				 <a href="http://b3hnam.com">{% trans "b3hnam" %}</a><br/>
+				 <a href="http://lxsameer.com">{% trans "lxsameer" %}</a><br/>
+				 <a href="http://www.mhassanzadeh.com/">{% trans 'mhssanzadeh' %}</a>
 				  </p>
       				  <p class="footer-box">
-				 	<b>{% trans "Relaited websites :" %} </b><br>
-					<a href="http://linux.org">{% trans "Linux" %}</a><br/>
-					<a href="http://gnu.org">{% trans "GNU" %}</a><br/>
-					<a href="http://fsf.org">{% trans "FSF" %}</a><br/>
-						
+				 	<b>{% trans "Related links:" %} </b><br>
+					<a href="http://en.wikipedia.org/wiki/Linux_User_Group" target="_blank">{% trans 'LUG Defination' %}</a><br/>
+					<a href="http://www.linux.org/groups/2484_Karaj_Linux_User_Group.html">Registered LUG</a><br/>
+					<a href="http://wiki.softwarefreedomday.org/2010/Asia/Iran/Karaj/KarajLUG">{% trans 'KarajLug & SFD 2010'%}</a>
 				  </p>
-
+				  
+				  <a id="powered" href="http://www.vandaproject.com/"><p>Powered by Vanda</p></a>
 				{% endblock %}
 
 			</h3>
@@ -90,15 +91,10 @@ The Karaj GNU/Linux User Group (G/LUG) began its journey at 25th April 2008 , (r
 		<div id="copyright">
 		  
 			  <p>
-			  {% trans "KarajLug Version" %}&nbsp; {{ VERSION }} &nbsp; Python: &nbsp;{{ PYVERSION }}&nbsp; <a href="http://www.djangoproject.com/">Django</a>:&nbsp;&nbsp;{{ DJVERSION }}&nbsp;&nbsp; rev: {{ REV }} <br>© 2011 KarajLug (<a href="http://iamamemberofsomehackersintownstreetcomputinggroupwhataboutyou.com">Some Hackers In Town</a>) unless otherwise noted. All th\
+			  {% trans "KarajLug Version" %}&nbsp; {{ VERSION }} &nbsp; Python: &nbsp;{{ PYVERSION }}&nbsp; <a href="http://www.djangoproject.com/">Django</a>:&nbsp;&nbsp;{{ DJVERSION }}&nbsp;&nbsp; rev: {{ REV }} <br></p><p>© 2011 <a href="http://iamamemberofsomehackersintownstreetcomputinggroupwhataboutyou.com">Some Hackers In Town</a> unless otherwise noted. All th\
 e documents in this website are released under the terms of the <a href="http://www.gnu.org/licenses/fdl.html">GNU FDL</a> license.</p>
 		</div>
 	</div>
 
-	<script src="/statics/js/script.js"></script>
-	<!--[if lt IE 7 ]>
-	<script src="/statics/js/libs/dd_belatedpng.js"></script>
-	<script> DD_belatedPNG.fix('img, .png_bg');</script>
-	<![endif]-->
 </body>
 </html>

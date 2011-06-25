@@ -56,7 +56,7 @@ h1,h2,h3,h4,h5,h6 { font-weight: bold; }
 html { overflow-y: scroll; }
 a:hover, a:active { outline: none; }
 a, a:active, a:visited { color: #eeeeec; }
-a:hover { color: #ce5c00; }
+a:hover { color: #ff3333; }
 ul, ol { margin-left: 1.8em; }
 ol { list-style-type: decimal; }
 nav ul, nav li { margin: 0; } 
@@ -280,7 +280,7 @@ article header{
 }
 
 #footer-container footer{
-	color: #999999;
+	color: #dddddf;
 }
 
 .info{
@@ -299,22 +299,18 @@ article header{
 	display:inline;
 	width:20%;
 	float:left;
-	font-size:50%;
+	font-size: 14px;;
+
+}
+.footer-box a{
+    text-decoration:none;
+    padding-left:10px;
+    color: #669999;
+}
+.footer-box a:hover{
+    color:#ff3333;
 }
 
-
-
-
-
-
-
-
-
-
-
-/*
- *  CSS3 Media queries
- */
 
 @media all and (orientation:portrait) { 
   
@@ -350,4 +346,26 @@ article header{
     margin-top: 200px;
     color: #eeeeec;
     font-size: 12px;
+    margin-left:auto;
+    margin-top: auto;
+    padding-top: 70px;
+    margin-right: auto;
+}
+#copyright p{
+    text-align:center;
+}
+#copyright a{
+    text-decoration: none;
+    color: #669999;
+}
+#copyright a:hover{
+    color: #ff3333;
+}
+#powered {
+    display: block;
+    background: url("/statics/images/pow.png") no-repeat scroll 0 0 transparent;
+    height: 75px;
+    margin-left: 80%;
+    text-indent: -9999px;
+
 }
