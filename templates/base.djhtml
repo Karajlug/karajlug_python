@@ -48,7 +48,9 @@
 
 	<div id="main" class="wrapper">
 		<aside>
-			<h3>{% trans "The GNU/Linux User Group of Karaj / Iran" %}</h3>
+		  <h3>About KarajLug</h3>
+		  
+The Karaj GNU/Linux User Group (G/LUG) began its journey at 25th April 2008 , (repor of first sesson). This community is a place to share what we all found intresting about Gnu/Linux operating system and Free Softwares. If you are interested, you can join us and have a good time sharing your what you know and like to share. You can find all the information you need about this comunity in this website. And also it is recommended to join the mailing list to be inform of the news.
 		</aside>
 		<article>
 			<header >
@@ -79,12 +81,18 @@
 					<a href="http://fsf.org">{% trans "FSF" %}</a><br/>
 						
 				  </p>
+			  <p style="font-size: 12px;">
+			  {% trans "KarajLug:" %} <br/>
+			  {{ VERSION }} - {{ PYVERSION }}  {{ DJVERSION }} rev: {{ REV }} </p>
+
 				{% endblock %}
 				
 			</h3>
+							  
 		</footer>
+					
 	</div>
-
+	
 	<script src="{{ MEDIA_URL}}js/libs/jquery-1.4.4.js"></script>
 	<script>!window.jQuery && document.write(unescape('%3Cscript src="/statics/js/libs/jquery-1.4.4.js"%3E%3C/script%3E'))</script>
 	<script src="/statics/js/script.js"></script>
