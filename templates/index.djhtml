@@ -5,7 +5,11 @@
 <h2>{% trans "News" %}</h2>
 
 {% for news_entry in news %}
-<p><a href="{{ news_entry.get_absolute_url }}">{{ news_entry }}</a></p>
+<div class="news_entry">
+<h3><a href="{{ news_entry.get_absolute_url }}">{{ news_entry }}</a></h3>
+<p>{{news_entry.content|linebreaks}}</p>
+<span>{{news_entry.date}}</span>
+</div>
 {% endfor %}
 
 {% endblock %}

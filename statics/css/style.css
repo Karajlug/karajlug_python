@@ -204,7 +204,13 @@ aside{
 #main header h2{
 	padding-bottom:30px;
 }
-
+#main a:hover{
+    color: #ff3333;
+}
+#main a{
+    text-decoration:none;
+    color: #003333;
+}
 article header{
 	margin-bottom:50px;
 	padding-bottom:30px;
@@ -368,4 +374,20 @@ article header{
     margin-left: 80%;
     text-indent: -9999px;
 
+}
+.news_entry {
+    width: 70%;
+}
+.news_entry h3{
+
+    margin: 0px;
+}
+.news_entry p{
+    margin-left: 20px;
+}
+.news_entry span{
+    float:left;
+    margin-left: 70%;
+    padding-top: 10px;
+    padding-bottom: 30px;    
 }
