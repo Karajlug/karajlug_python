@@ -35,7 +35,7 @@
 <body >
 	<div id="header-container">
 		<header class="wrapper">
-			<h1 id="title">{% trans "KarajLug" %}</h1>
+			<h1 id="title"><b>{% trans "KarajLug" %}</b></h1>
 			<nav>
 			  {% navigation %}
 			</nav>
