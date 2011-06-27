@@ -10,18 +10,18 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
+ROOT = os.path.dirname(__file__)
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'db.devdb',
+        'NAME': os.path.join(ROOT, 'db.devdb'),
         'USER': '',
         'PASSWORD': '',
         'HOST': '',
         'PORT': '',
     }
 }
-
-ROOT = os.path.dirname(__file__)
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
