@@ -16,7 +16,7 @@
 #    with this program; if not, write to the Free Software Foundation, Inc.,
 #    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 # -----------------------------------------------------------------------------
-
+import os
 import sys
 from mercurial import ui, hg
 
@@ -27,7 +27,7 @@ from django.conf import settings
 def rev():
     u = ui.ui()
     # get a repo object for the current directory
-    r = hg.repository(u, ".")
+    r = hg.repository(u, os.path.dirname(__file__))
     # get a context object for the "tip" revision
     c = r.changectx("tip")
     return c.rev
