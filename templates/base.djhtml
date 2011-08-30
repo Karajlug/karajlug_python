@@ -34,12 +34,12 @@
 </head>
 <body >
 	<div id="header-container">
-		<header class="wrapper">
-			<h1 id="title"><b>{% trans "KarajLug" %}</b></h1>
-			<nav>
-			  {% navigation %}
-			</nav>
-		</header>
+	  <header class="wrapper">
+	    <a href="/"><h1 id="title"><b>{% trans "KarajLug" %}</b></h1></a>
+	    <nav>
+	      {% navigation %}
+	    </nav>
+	  </header>
 	</div>
     <div class="yui3-u-1 nav">
 
