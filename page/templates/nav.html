@@ -2,6 +2,6 @@
 <li><a href="/">Home</a></li>
 <li><a href="/faq">FAQ</a></li>
 {% for page in pages %}
-<li><a href="{{ page.get_absolute_url}}">{{ page.title|title }}</a></li>
+<li><a href="{{ page.get_absolute_url}}">{{ page.title }}</a></li>
 {% endfor %}
 </ul>
