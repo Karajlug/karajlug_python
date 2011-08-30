@@ -391,3 +391,8 @@ article header{
     padding-top: 10px;
     padding-bottom: 30px;    
 }
+.pub {
+    margin-top: 25px;
+    font-size: 12px;
+    font: 12px/18px Helvetica,Helvetica Neue,Arial;   
+}
