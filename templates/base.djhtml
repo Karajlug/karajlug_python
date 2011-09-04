@@ -66,6 +66,7 @@ The Karaj GNU/Linux User Group (G/LUG) began its journey at 25th April 2008 , (r
 			<h3>      {% block footer %}
       				  <p class="footer-box">
 				    <b>Sponsers:</b><br/>
+				    <a href="http://www.notrica.co/">Notrica</a><br/>
 				    <a href="http://www.shahbal.net/">Shahbal co.</a><br/>
 				    <a href="http://www.karanic.com/">KaraNic</a><br/>
 				    <a href="http://iamamemberofsomehackersintownstreetcomputinggroupwhataboutyou.com">Some Hackers In Town</a>

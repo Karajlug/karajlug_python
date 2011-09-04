@@ -16,11 +16,9 @@
 {% block home %}
 	<footer>
 			
-			<h3>{% trans "About KarajLug" %}</h3>
-				<p>The Karaj GNU/Linux User Group (G/LUG) began its journey at 25th April 2008 , (repor of first sesson).
-This community is a place to share what we all found intresting about Gnu/Linux operating system and Free Softwares.
-If you are interested, you can join us and have a good time sharing your what you know and like to share.
-You can find all the information you need about this comunity in this website.
-And also it is recommended to join the mailing list to be inform of the news.</p>
+<h3><a href="/page/sfd2011">{% trans "SFD 2011 on the way" %}</a></h3>
+<p>Every year the participants of KarajLUG get together to celebrate Software Freedom Day (SFD). This year we plan to set the SFD conference up on 18th of Sep.
+<br />For more information take a look at <a href="/page/sfd2011">here</a>.</p><br/><br/>
+<p align="right"><a href="http://www.softwarefreedomday.org/"><img src="http://www.softwarefreedomday.org/countdown/banner1-UTC+3-en.png" border="0" width="190" height="200" alt="Celebrate SFD with us on September 17!"></a></p>
 	</footer>
 {% endblock %}
