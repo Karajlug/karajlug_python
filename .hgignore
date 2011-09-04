@@ -3,6 +3,7 @@
 .pida-metadata/python/*
 .pida-metadata/*
 .project
+statics/uploads/*
 \#.*\#
 \.\#.*
 db.devdb

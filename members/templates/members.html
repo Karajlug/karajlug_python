@@ -1,0 +1,25 @@
+{% extends 'base.djhtml' %}
+{% load i18n %}
+
+
+{% block aside %}
+{% endblock %}
+{% block content %}
+<table>
+{% for item, member in members %}
+{% if item|divisibleby:"3" %}
+<tr>
+{% endif %} 
+<td>
+<div class="mbox">
+<img class="avatar" src="{{ MEDIA_URL}}{{ member.avatar }}"/><p class="name">{{ member.name }}</p>
+<p class="home_link">{{ member.link }}</p>
+<p class="email">{{ member.mail }}</p>
+</div>
+</td>
+{% if item|divisibleby:"3" %}
+</tr>
+{% endif %} 
+{% endfor %}
+</table>
+{% endblock %}

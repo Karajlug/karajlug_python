@@ -1,0 +1,14 @@
+{% extends 'base.djhtml' %}
+{% load i18n %}
+
+
+{% block aside %}
+{% endblock %}
+{% block content %}
+<ul>
+<li>{{ member.name }} - <img src="{{ MEDIA_URL}}{{ member.avatar }}"/></li>
+{% for detail in details %}
+<li>{{ detail.field_name}}: {{ detail.field_value }}</li>
+{% endfor %}
+</ul>
+{% endblock %}

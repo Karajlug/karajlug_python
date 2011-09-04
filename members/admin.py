@@ -17,27 +17,35 @@
 #    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 # -----------------------------------------------------------------------------
 
-import os
-
-from django.conf.urls.defaults import *
 from django.contrib import admin
-from django.conf import settings
 
-admin.autodiscover()
+from models import Member, MemberDetail
 
-urlpatterns = patterns('',
-    (r'^faq/$', "faq.views.index"),
-    (r'^news/', include('news.urls')),
-    (r'^page/', include('page.urls')),
-    (r'^members/', include('members.urls')),
-    (r'^$', 'views.index'),
-    (r'^admin/', include(admin.site.urls)),
-)
 
-# Local media serving.
-if settings.DEBUG:
-    urlpatterns += patterns('',
-            (r'^statics/(?P<path>.*)$', 'django.views.static.serve',
-             {'document_root': os.path.join(os.path.dirname(__file__),\
-                                    'statics').replace('\\', '/')}),
-)
+class MemberAdmin(admin.ModelAdmin):
+    """
+    Admin interface class for member model
+    """
+    list_display = ("name", "link", "mail", "user")
+    search_fields = ("name", "mail")
+    list_filter = ("user",)
+
+    def save_model(self, request, obj, form, change):
+        obj.user = request.user
+        obj.save()
+
+
+class DetailAdmin(admin.ModelAdmin):
+    """
+    Admin interface class for member detail model
+    """
+    list_display = ("member", "field_name", "field_value", "user", "language")
+    search_fields = ("member", "filed_name")
+    list_filter = ("user", "member")
+
+    def save_model(self, request, obj, form, change):
+        obj.user = request.user
+        obj.save()
+
+admin.site.register(Member, MemberAdmin)
+admin.site.register(MemberDetail, DetailAdmin)

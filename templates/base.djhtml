@@ -47,11 +47,13 @@
     </div>
 
 	<div id="main" class="wrapper">
+	  {% block aside %}
 		<aside>
 		  <h3>About KarajLug</h3>
 		  
 The Karaj GNU/Linux User Group (G/LUG) began its journey at 25th April 2008 , (repor of first sesson). This community is a place to share what we all found intresting about Gnu/Linux operating system and Free Softwares. If you are interested, you can join us and have a good time sharing your what you know and like to share. You can find all the information you need about this comunity in this website. And also it is recommended to join the mailing list to be inform of the news.
 		</aside>
+		{% endblock %}
 		<article>
 			<header >
 			{% block home %}
@@ -75,7 +77,8 @@ The Karaj GNU/Linux User Group (G/LUG) began its journey at 25th April 2008 , (r
 				 <b>{% trans "Friends:" %} </b><br/>
 				 <a href="http://b3hnam.com">{% trans "b3hnam" %}</a><br/>
 				 <a href="http://lxsameer.com">{% trans "lxsameer" %}</a><br/>
-				 <a href="http://www.mhassanzadeh.com/">{% trans 'mhssanzadeh' %}</a>
+				 <a href="http://www.mhassanzadeh.com/">{% trans 'mhssanzadeh' %}</a><br/>
+				 <a href="http://linux-trix.com/">{% trans 'Linux Tricks' %}</a>
 				  </p>
       				  <p class="footer-box">
 				 	<b>{% trans "Related links:" %} </b><br>
