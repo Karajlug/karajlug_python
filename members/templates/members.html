@@ -5,16 +5,21 @@
 {% block aside %}
 {% endblock %}
 {% block content %}
-<table>
+<table class="mtable">
 {% for item, member in members %}
-{% if item|divisibleby:"3" %}
+{% if item|divisibleby:"4" %}
 <tr>
 {% endif %} 
 <td>
 <div class="mbox">
-<img class="avatar" src="{{ MEDIA_URL}}{{ member.avatar }}"/><p class="name">{{ member.name }}</p>
-<p class="home_link">{{ member.link }}</p>
-<p class="email">{{ member.mail }}</p>
+<a href="/members/{{ member.id}}/"><img class="avatar" width="64" height="64" src="{{ MEDIA_URL}}{{ member.avatar }}"/></a>
+<div class="detail">
+<a href="/members/{{ member.id}}/"><span class="name">{{ member.name }}</span></a><br/>
+{% if member.link %}
+<span class="home_link"><a href="{{ member.link }}">{{ member.link }}</a></span><br/>
+{% endif %}
+<span class="email">{{ member.mail }}</span><br/>
+</div>
 </div>
 </td>
 {% if item|divisibleby:"3" %}

@@ -2,13 +2,22 @@
 {% load i18n %}
 
 
-{% block aside %}
-{% endblock %}
+
 {% block content %}
-<ul>
-<li>{{ member.name }} - <img src="{{ MEDIA_URL}}{{ member.avatar }}"/></li>
+<div class="mmain">
+<img height="128" width="128" class="avatar" src="{{ MEDIA_URL}}{{ member.avatar }}"/>
+<div class="mainproperties">
+<h2>{{ member.name }}</h2>
+<h3><a href="{{ member.link }}">{{ member.link }}</a></h3>
+<h3>{{ member.mail }}</h3>
+</div>
+<div class="details">
 {% for detail in details %}
-<li>{{ detail.field_name}}: {{ detail.field_value }}</li>
+<h4><span>{{ detail.field_name}}</spna>: <value>{{ detail.field_value }}</value></h4>
 {% endfor %}
-</ul>
+</div>
+<br/><br/><br/>
+<h3>{% trans 'Bio' %}:</h3>
+<p>{{ member.desc }}</p>
+</div>
 {% endblock %}

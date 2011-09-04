@@ -29,7 +29,7 @@ def members_index(request):
     """
     Main index of members.
     """
-    members = Member.objects.all()
+    members = Member.objects.all().order_by("weight")
     return rr("members.html", {"members": enumerate(members, start=1)},
               context_instance=RequestContext(request))
 
