@@ -42,7 +42,7 @@ def member_view(request, id):
 
     try:
         member = Member.objects.get(id=id)
-    except Member.DoesNotExists:
+    except Member.DoesNotExist:
         raise Http404()
 
     # TODO: lang code here
