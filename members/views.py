@@ -30,7 +30,10 @@ def members_index(request):
     Main index of members.
     """
     members = Member.objects.all().order_by("weight")
-    return rr("members.html", {"members": enumerate(members, start=1)},
+    # god damn b3hnam's server
+    members = [(i + 1, j) for i, j in enumerate(members)]
+    # ---
+    return rr("members.html", {"members": members},
               context_instance=RequestContext(request))
 
 
