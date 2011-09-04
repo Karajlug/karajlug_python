@@ -151,10 +151,15 @@ h2, h3{
 }
 
 #title{
-	font-size: 80px;
-	color:white;
-	padding-top:35px;
-	float:left;
+    Background: url("/statics/images/logo.png") no-repeat scroll 0 0 transparent;
+    font-size: 80px;
+    color:white;
+    padding-top:35px;
+    text-indent: -9999px;
+    width: 315px;
+    height: 100px;
+    margin-top: 20px;
+    float:left;
 }
 
 h2{
@@ -413,7 +418,10 @@ article header{
     height: 75px;
     margin-right: 20px;
     margin-bottom: 25px;
-
+    
+}
+.mbox img{
+border-radius: 10px;
 }
 .avatar{
     border: 5px solid #cccccd;
@@ -445,6 +453,9 @@ article header{
 }
 .mmain{
     min-height: 400px;
+}
+.mmain img{
+border-radius: 10px;
 }
 .mainproperties h3{
     font-size: 22px;

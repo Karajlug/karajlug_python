@@ -36,7 +36,7 @@
 {% block body %}
 	<div id="header-container">
 	  <header class="wrapper">
-	    <a href="/"><h1 id="title"><b>{% trans "KarajLug" %}</b></h1></a>
+	    <a href="/" alt="KarajLUG"><h1 id="title">{% trans "KarajLug" %}</h1></a>
 	    <nav>
 	      {% navigation %}
 	    </nav>

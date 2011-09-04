@@ -5,7 +5,12 @@
 
 {% block content %}
 <div class="mmain">
+{% if member.avatar %}
 <img height="128" width="128" class="avatar" src="{{ MEDIA_URL}}{{ member.avatar }}"/>
+{% else %}
+<img height="128" width="128" class="avatar" src="{{ MEDIA_URL}}images/unknown.png"/>
+{% endif %}
+
 <div class="mainproperties">
 <h2>{{ member.name }}</h2>
 <h3><a href="{{ member.link }}">{{ member.link }}</a></h3>
