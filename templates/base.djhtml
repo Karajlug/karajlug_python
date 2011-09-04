@@ -33,6 +33,7 @@
     {% endblock %}
 </head>
 <body >
+{% block body %}
 	<div id="header-container">
 	  <header class="wrapper">
 	    <a href="/"><h1 id="title"><b>{% trans "KarajLug" %}</b></h1></a>
@@ -95,6 +96,6 @@ The Karaj GNU/Linux User Group (G/LUG) began its journey at 25th April 2008 , (r
 e documents in this website are released under the terms of the <a href="http://www.gnu.org/licenses/fdl.html">GNU FDL</a> license.</p>
 		</div>
 	</div>
-
+{% endblock %}
 </body>
 </html>
