@@ -420,6 +420,9 @@ article header{
     margin-bottom: 25px;
     
 }
+.email{
+    color: #666665;
+}
 .mbox img{
 border-radius: 10px;
 }
