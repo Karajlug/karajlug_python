@@ -1,11 +1,13 @@
 import os
 
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    # ('Your Name', 'your_email@domain.com'),
+    ('Behnam Ahmad Khan Beigi',
+     'b3hnam@b3hnam.com'),
+    ('lxsameer', 'lxsameer@lxsameer.com'),
 )
 
 MANAGERS = ADMINS
