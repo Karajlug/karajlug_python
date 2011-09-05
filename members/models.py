@@ -51,6 +51,9 @@ class Member(models.Model):
     def fullname(self):
         return self.__unicode__()
 
+    def get_absolute_url(self):
+        return "/members/%i/" % self.id
+
     class Meta:
         verbose_name = _("Member")
         verbose_name_plural = _("Members")
