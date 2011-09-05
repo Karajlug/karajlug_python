@@ -1,0 +1,24 @@
+{% extends 'base.djhtml' %}
+{% load i18n %}
+
+
+{% block aside %}
+{% endblock %}
+{% block content %}
+
+{% for book in books.object_list %}
+<div class="bbox">
+{% if book.cover %}
+<a href="{{ member.get_absolute_url }}"><img class="cover" width="64" height="64" src="{{ MEDIA_URL}}{{ books.cover }}"/></a>
+{% else %}
+<a href="{{ member.get_absolute_url }}"><img class="cover" width="64" height="64" src="{{ MEDIA_URL}}images/unknown-cover.png"/></a>
+{% endif %}
+<div class="book_detail">
+<a href="book cove"><span class="name">{{ book }}</span></a><br/>
+{% if book.url %}
+<span class="home_link"><a href="{{ book.url }}">{{ book.url }}</a></span><br/>
+{% endif %}
+</div>
+</div>
+{% endfor %}
+{% endblock %}
