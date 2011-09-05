@@ -476,3 +476,7 @@ border-radius: 10px;
 .details value{
     margin-left: 300px;
 }
+.details_table td{
+    vertical-align:middle;
+    height: 20px;
+}

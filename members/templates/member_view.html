@@ -17,9 +17,13 @@
 <h3>{{ member.mail }}</h3>
 </div>
 <div class="details">
+<table class="details_table">
 {% for detail in details %}
-<h4><span>{{ detail.field_name}}</spna>: <value>{{ detail.field_value }}</value></h4>
+<tr>
+<td><h4><span>{{ detail.field_name}}:</spna></h4></td> <td><h4><value>{{ detail.field_value }}</value></h4></td>
+</tr>
 {% endfor %}
+</table>
 </div>
 <br/><br/><br/>
 <h3>{% trans 'Bio' %}:</h3>
