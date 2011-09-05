@@ -38,6 +38,9 @@ class MemberAdmin(admin.ModelAdmin):
         if request.user == obj.user or request.user.is_superuser or \
                request.user.has_perm("members.member_admin"):
             obj.creator = request.user
+            if not request.user.is_superuser or \
+               not request.user.has_perm("members.member_admin"):
+                obj.weight = 40
             obj.save()
         else:
             return 
