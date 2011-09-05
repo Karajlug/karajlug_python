@@ -40,7 +40,10 @@ class MemberAdmin(admin.ModelAdmin):
             obj.creator = request.user
             if not request.user.is_superuser or \
                not request.user.has_perm("members.member_admin"):
-                obj.weight = 40
+                if change:
+                    obj.weight = Member.objects.filter(id=obj.id)[0].weight
+                else:
+                    obj.weight = 40
             obj.save()
         else:
             return 
@@ -76,7 +79,7 @@ class DetailAdmin(admin.ModelAdmin):
         """
         Return the records that user allowed to see.
         """
-        if request.user.is_superuser or request.has_perm("members.admin"):
+        if request.user.is_superuser or request.user.has_perm("members.admin"):
             return super(DetailAdmin, self).queryset(request)
         else:
             return MemberDetail.objects.filter(member = request.user)
