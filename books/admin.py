@@ -30,3 +30,5 @@ class BookAdmin(admin.ModelAdmin):
     search_fields = ("name", )
     list_filter = ("creator", )
 
+
+admin.site.register(Book, BookAdmin)

@@ -41,13 +41,26 @@ class Book(models.Model):
     maintainer = models.ForeignKey("auth.User",
                                 related_name="%(app_label)s_%(class)s_related",
                                 verbose_name=_("Maintainer"))
+    cover = models.ImageField(blank=True, null=True,
+                    upload_to="uploads/covers/",
+                    verbose_name=_("Book Cover"),
+                    help_text=_("Size: 128x128 DO NOT UPLOAD BIG FILES !!!"))
+
     license = models.CharField(verbose_name=_("License"),
                                blank=True, null=True)
     url = models.URLField(verbose_name=_("URL"),
                           blank=True, null=True)
     online_book = models.BooleanField(default=False,
                                       verbose_name=_("Online book"))
+    weight = models.IntegerField(default=40, verbose_name=_("Order"),
+                help_text=_("Book will appear in menu respect to this value"))
 
     creator = models.ForeignKey("auth.User", verbose_name=_("Creator"),
                              editable=False)
 
+    def __unicode__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = _("Book")
+        verbose_name_plural = _("Books")
