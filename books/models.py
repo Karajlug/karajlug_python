@@ -64,6 +64,8 @@ class Book(models.Model):
     desc = models.TextField(verbose_name=_("Description"),
                             blank=True, null=True)
 
+#    download_link = models.URLField(verbose_name=_("Download URL"),
+#                                    blank=True, null=True)
     creator = models.ForeignKey("auth.User", verbose_name=_("Creator"),
                              editable=False)
 

@@ -490,3 +490,26 @@ word-wrap:break-word;
     width:60%;
     padding-left: 40px;
 }
+.bbox{
+    width: 700px;
+    border: 1px solid #dddddf;
+    background: #eeeeec;
+    padding: 25px;
+    border-radius: 10px;
+    height: 225px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+}
+.cover{
+   border: 5px solid #cccccd;
+   border-radius: 5px;
+}
+.book_details{
+    word-wrap:break-word;
+    margin-top: -230px;
+    margin-left: 180px;
+}
+#bookname {
+    font-size: 46px;
+}
