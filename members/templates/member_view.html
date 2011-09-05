@@ -11,9 +11,13 @@
 {% endif %}
 
 <div class="mainproperties">
-<h2>{{ member.name }}</h2>
+<h2>{{ member }}</h2>
+{% if  member.link %}
 <h3><a href="{{ member.link }}">{{ member.link }}</a></h3>
-<h3>{{ member.mail }}</h3>
+{% else %}
+<h3>{% trans 'No home Page' %}</h3>
+{% endif %}
+<h3>{{ member.user.email }}</h3>
 </div>
 <div class="details">
 <table class="details_table">
@@ -26,6 +30,10 @@
 </div>
 <br/><br/><br/>
 <h3>{% trans 'Bio' %}:</h3>
+{% if member.desc %}
 <p>{{ member.desc }}</p>
+{% else %}
+<p>{% trans 'Nothing yet' %}</p>
+{% endif %}
 </div>
 {% endblock %}

@@ -21,19 +21,35 @@ from django.contrib import admin
 
 from models import Member, MemberDetail
 
+def email(obj):
+    return obj.user.emial
+
 
 class MemberAdmin(admin.ModelAdmin):
     """
     Admin interface class for member model
     """
-    list_display = ("name", "link", "mail", "user")
-    list_editable = ("link", "mail")
-    search_fields = ("name", "mail")
-    list_filter = ("user",)
+    list_display = ("__unicode__", "link", email, "user")
+    list_editable = ("link", )
+    search_fields = ("user", "user__email")
+    list_filter = ("user", )
 
     def save_model(self, request, obj, form, change):
-        obj.user = request.user
-        obj.save()
+        if request.user == obj.user or request.user.is_superuser or \
+               request.user.has_perm("members.member_admin"):
+            obj.creator = request.user
+            obj.save()
+        else:
+            return 
+
+    def queryset(self, request):
+        """
+        Return the records that user allowed to see.
+        """
+        if request.user.is_superuser or request.user.has_perm("members.admin"):
+            return super(MemberAdmin, self).queryset(request)
+        else:
+            return Member.objects.filter(user = request.user)
 
 
 class DetailAdmin(admin.ModelAdmin):
@@ -46,8 +62,22 @@ class DetailAdmin(admin.ModelAdmin):
     list_filter = ("user", "member")
 
     def save_model(self, request, obj, form, change):
-        obj.user = request.user
-        obj.save()
+        if request.user == obj.member or request.user.is_superuser or \
+               request.user.has_perm("members.admin"):
+            obj.user = request.user
+            obj.save()
+        else:
+            return
+
+    def queryset(self, request):
+        """
+        Return the records that user allowed to see.
+        """
+        if request.user.is_superuser or request.has_perm("members.admin"):
+            return super(DetailAdmin, self).queryset(request)
+        else:
+            return MemberDetail.objects.filter(member = request.user)
+
 
 admin.site.register(Member, MemberAdmin)
 admin.site.register(MemberDetail, DetailAdmin)

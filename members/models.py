@@ -25,32 +25,33 @@ class Member(models.Model):
     """
     Member model of karajlug.
     """
-
-    name = models.CharField(max_length=32,
-                            verbose_name=_("Name"))
+    user = models.OneToOneField("auth.User", verbose_name=_("User"),
+                                related_name="%(app_label)s_%(class)s_related")
     link = models.URLField(verbose_name=_("Home Page"),
                            blank=True, null=True)
-    mail = models.CharField(verbose_name=_("Email"),
-                            max_length=64,
-                            blank=True, null=True)
+
     avatar = models.ImageField(blank=True, null=True,
                                upload_to="uploads/avarars/",
                                verbose_name=_("Avatar"))
     weight = models.IntegerField(default=40, verbose_name=_("Item Weight"))
 
-
     desc = models.TextField(verbose_name=_("Description"),
                             blank=True, null=True)
-    user = models.ForeignKey("auth.User", verbose_name=_("Creator"),
+    creator = models.ForeignKey("auth.User", verbose_name=_("Creator"),
                              editable=False)
 
-
     def __unicode__(self):
-        return self.name
+        return self.user.get_full_name()
+
+    def fullname(self):
+        return self.__unicode__()
 
     class Meta:
         verbose_name = _("Member")
         verbose_name_plural = _("Members")
+        permissions = (
+            ("admin", _("Can Add new members and details.")),
+        )
 
 
 class MemberDetail(models.Model):

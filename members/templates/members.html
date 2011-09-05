@@ -18,11 +18,11 @@
 <a href="/members/{{ member.id}}/"><img class="avatar" width="64" height="64" src="{{ MEDIA_URL}}images/unknown.png"/></a>
 {% endif %}
 <div class="detail">
-<a href="/members/{{ member.id}}/"><span class="name">{{ member.name }}</span></a><br/>
+<a href="/members/{{ member.id}}/"><span class="name">{{ member }}</span></a><br/>
 {% if member.link %}
 <span class="home_link"><a href="{{ member.link }}">{{ member.link }}</a></span><br/>
 {% endif %}
-<a class="email"><span class="email">{{ member.mail }}</span></a><br/>
+<a class="email"><span class="email">{{ member.user.email }}</span></a><br/>
 </div>
 </div>
 </td>
@@ -36,11 +36,11 @@
 <a href="/members/{{ member.id}}/"><img class="avatar" width="64" height="64" src="{{ MEDIA_URL}}images/unknown.png"/></a>
 {% endif %}
 <div class="detail">
-<a href="/members/{{ member.id}}/"><span class="name">{{ member.name }}</span></a><br/>
+<a href="/members/{{ member.id}}/"><span class="name">{{ member }}</span></a><br/>
 {% if member.link %}
 <span class="home_link"><a href="{{ member.link }}">{{ member.link }}</a></span><br/>
 {% endif %}
-<a class="email"><span class="email">{{ member.mail }}</span></a><br/>
+<a class="email"><span class="email">{{ member.user.email }}</span></a><br/>
 </div>
 </div>
 </td>
