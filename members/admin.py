@@ -27,6 +27,7 @@ class MemberAdmin(admin.ModelAdmin):
     Admin interface class for member model
     """
     list_display = ("name", "link", "mail", "user")
+    list_editable = ("link", "mail")
     search_fields = ("name", "mail")
     list_filter = ("user",)
 
@@ -40,6 +41,7 @@ class DetailAdmin(admin.ModelAdmin):
     Admin interface class for member detail model
     """
     list_display = ("member", "field_name", "field_value", "user", "language")
+    list_editable = ("field_name", "field_value", "language")
     search_fields = ("member", "filed_name")
     list_filter = ("user", "member")
 

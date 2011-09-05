@@ -473,10 +473,20 @@ border-radius: 10px;
 .details span{
     color: #003333;
 }
-.details value{
-    margin-left: 300px;
+
+.details_table {
+    width: 74%;
+    table-layout:fixed;
+word-wrap:break-word;
 }
 .details_table td{
     vertical-align:middle;
-    height: 20px;
+    height: 30px;
+}
+#field_name{
+    width:40%;
+}
+#field_value{
+    width:60%;
+    padding-left: 40px;
 }

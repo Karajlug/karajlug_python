@@ -2,7 +2,6 @@
 {% load i18n %}
 
 
-
 {% block content %}
 <div class="mmain">
 {% if member.avatar %}
@@ -20,7 +19,7 @@
 <table class="details_table">
 {% for detail in details %}
 <tr>
-<td><h4><span>{{ detail.field_name}}:</spna></h4></td> <td><h4><value>{{ detail.field_value }}</value></h4></td>
+<td id="field_name"><h4><span>{{ detail.field_name}}:</spna></h4></td> <td id="field_value"><h4><value>{{ detail.field_value }}</value></h4></td>
 </tr>
 {% endfor %}
 </table>
