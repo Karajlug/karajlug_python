@@ -35,7 +35,8 @@ class Member(models.Model):
     avatar = models.ImageField(blank=True, null=True,
                                upload_to="uploads/avarars/",
                                verbose_name=_("Avatar"),
-                               help_text=_("Please use your real face avatar."))
+                               help_text=_("Please use your real face avatar. ") +
+                               _("Size: 128x128 DO NOT UPLOAD BIG FILES !!!"))
     weight = models.IntegerField(default=40, verbose_name=_("Item Weight"),
                                  help_text=_("This field is not important"))
 
