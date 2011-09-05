@@ -51,6 +51,7 @@ class Book(models.Model):
                     help_text=_("Size: 128x128 DO NOT UPLOAD BIG FILES !!!"))
 
     license = models.CharField(verbose_name=_("License"),
+                               max_length=16,
                                blank=True, null=True)
     url = models.URLField(verbose_name=_("URL"),
                           blank=True, null=True)

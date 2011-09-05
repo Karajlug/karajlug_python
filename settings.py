@@ -97,6 +97,7 @@ INSTALLED_APPS = (
     "news",
     "faq",
     "members",
+    "books",
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
@@ -109,5 +110,5 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     )
 
 NEWS_LIMIT = 10
-VERSION = "0.3.14"
+VERSION = "0.4.2"
 AUTH_PROFILE_MODULE = 'members.Member'

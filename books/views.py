@@ -30,7 +30,12 @@ def books_index(request):
     Main index of registered books.
     """
     books = Book.objects.all().order_by("weight")
-    paginator = Paginator(books, settings.BOOK_IN_PAGE or 4)
+    book_per_page = 4
+    try:
+        book_per_page = settings.BOOK_IN_PAGE
+    except AttributeError:
+        pass
+    paginator = Paginator(books, book_per_page)
 
     try:
         page = int(request.GET.get('page', '1'))
@@ -45,3 +50,10 @@ def books_index(request):
 
     return rr("books.html", {"books": books_list},
               context_instance=RequestContext(request))
+
+
+def book_view(request):
+    """
+    View of each Book
+    """
+    pass

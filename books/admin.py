@@ -31,5 +31,9 @@ class BookAdmin(admin.ModelAdmin):
     list_filter = ("creator", )
     prepopulated_fields = {"slug": ("name",)}
 
+    def save_model(self, request, obj, form, change):
+        obj.creator = request.user
+        obj.save()
+
 
 admin.site.register(Book, BookAdmin)
