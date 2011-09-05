@@ -35,12 +35,16 @@ class Book(models.Model):
                             max_length=1,
                             verbose_name=_("Language"),
                             help_text=_("Site language (en-us at this time)"))
+
     name = models.CharField(max_length=80,
                             verbose_name=_("Book Name"))
+    slug = models.SlugField(verbose_name=_("Slug"),
+                            unique=True)
 
     maintainer = models.ForeignKey("auth.User",
                                 related_name="%(app_label)s_%(class)s_related",
                                 verbose_name=_("Maintainer"))
+
     cover = models.ImageField(blank=True, null=True,
                     upload_to="uploads/covers/",
                     verbose_name=_("Book Cover"),
@@ -52,14 +56,21 @@ class Book(models.Model):
                           blank=True, null=True)
     online_book = models.BooleanField(default=False,
                                       verbose_name=_("Online book"))
+
     weight = models.IntegerField(default=40, verbose_name=_("Order"),
                 help_text=_("Book will appear in menu respect to this value"))
+
+    desc = models.TextField(verbose_name=_("Description"),
+                            blank=True, null=True)
 
     creator = models.ForeignKey("auth.User", verbose_name=_("Creator"),
                              editable=False)
 
     def __unicode__(self):
         return self.name
+
+    def get_absolute_url(self):
+        return "/books/%s/" % self.slug
 
     class Meta:
         verbose_name = _("Book")

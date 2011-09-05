@@ -29,6 +29,7 @@ class BookAdmin(admin.ModelAdmin):
     list_editable = ("url", )
     search_fields = ("name", )
     list_filter = ("creator", )
+    prepopulated_fields = {"slug": ("name",)}
 
 
 admin.site.register(Book, BookAdmin)
