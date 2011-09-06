@@ -536,27 +536,3 @@ margin-right: 30px;
     border-radius: 10px;
     margin-top: 100px;
 }
-.download{
-    width: 300px;
-    padding-top: 20px;
-    Background: #8ae234;
-    border: 2px solid #73d216;
-    height: 50px;
-    border-radius: 10px;
-    text-align: center;
-}
-.download .text{
-    font-size: 24px;
-    font-weight: 600;
-    margin-right: 70px;
-
-}
-.download .icon{
-    float: left;
-    Background: url("/statics/images/down.png") no-repeat scroll 0 0 transparent;
-    width: 48px;
-    height: 48px;
-    margin-left: 65px;
-    margin-top: -10px;
-    text-indent: -999px;
-}
