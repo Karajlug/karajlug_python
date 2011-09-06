@@ -31,7 +31,7 @@
 <br/><br/><br/>
 <h3>{% trans 'Bio' %}:</h3>
 {% if member.desc %}
-<p>{{ member.desc }}</p>
+<p>{{ member.desc|linebreaks }}</p>
 {% else %}
 <p>{% trans 'Nothing yet' %}</p>
 {% endif %}

@@ -52,8 +52,13 @@ def books_index(request):
               context_instance=RequestContext(request))
 
 
-def book_view(request):
+def book_view(request, slug):
     """
     View of each Book
     """
-    pass
+    try:
+        book = Book.objects.get(slug=slug)
+    except Book.DoesNotExist:
+        raise Http404()
+    return rr("book_view.html", {"book": book},
+              context_instance=RequestContext(request))

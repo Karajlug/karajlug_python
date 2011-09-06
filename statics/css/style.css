@@ -491,7 +491,7 @@ word-wrap:break-word;
     padding-left: 40px;
 }
 .bbox{
-    width: 700px;
+    width: 600px;
     border: 1px solid #dddddf;
     background: #eeeeec;
     padding: 25px;
@@ -512,4 +512,51 @@ word-wrap:break-word;
 }
 #bookname {
     font-size: 46px;
+}
+.minor_details{
+    line-height: 25px;
+}
+#cover{
+
+float: right;
+margin-right: 30px;
+}
+.book_properties {
+    word-wrap:break-word;
+    width: 63%
+}
+.book_properties h3{
+    font-size: 30px;
+    line-height: 10px;
+}
+.desc{
+    Background: #eeeeec;
+    padding: 0px 20px 20px 20px;
+    border: 2px solid #cccccd;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+.download{
+    width: 300px;
+    padding-top: 20px;
+    Background: #8ae234;
+    border: 2px solid #73d216;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+.download .text{
+    font-size: 24px;
+    font-weight: 600;
+    margin-right: 70px;
+
+}
+.download .icon{
+    float: left;
+    Background: url("/statics/images/down.png") no-repeat scroll 0 0 transparent;
+    width: 48px;
+    height: 48px;
+    margin-left: 65px;
+    margin-top: -10px;
+    text-indent: -999px;
 }

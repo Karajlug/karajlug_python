@@ -50,6 +50,10 @@ class Book(models.Model):
                     verbose_name=_("Book Cover"),
                     help_text=_("Size: 128x128 DO NOT UPLOAD BIG FILES !!!"))
 
+    isbn = models.CharField(blank=True, null=True,
+                            verbose_name=_("ISBN"),
+                            max_length=32)
+
     license = models.CharField(verbose_name=_("License"),
                                max_length=16,
                                blank=True, null=True)
@@ -58,14 +62,17 @@ class Book(models.Model):
     online_book = models.BooleanField(default=False,
                                       verbose_name=_("Online book"))
 
+    completed = models.BooleanField(default=False,
+                                    verbose_name=_("Complete"))
+
     weight = models.IntegerField(default=40, verbose_name=_("Order"),
                 help_text=_("Book will appear in menu respect to this value"))
 
     desc = models.TextField(verbose_name=_("Description"),
                             blank=True, null=True)
 
-#    download_link = models.URLField(verbose_name=_("Download URL"),
-#                                    blank=True, null=True)
+    downloadlink = models.URLField(verbose_name=_("Download URL"),
+                                    blank=True, null=True)
     creator = models.ForeignKey("auth.User", verbose_name=_("Creator"),
                              editable=False)
 

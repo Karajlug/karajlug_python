@@ -11,13 +11,30 @@
 {% if book.cover %}
 <a href="{{ book.get_absolute_url }}"><img class="cover" width="150" height="210" src="{{ MEDIA_URL}}{{ book.cover }}"/></a>
 {% else %}
-<a href="{{ book.get_absolute_url }}"><img class="cover" width="150" height="210" src="{{ MEDIA_URL}}images/unknown-cover.png"/></a>
+<a href="{{ book.get_absolute_url }}"><img class="cover" width="150" height="210" src="{{ MEDIA_URL}}images/ucover.png"/></a>
 {% endif %}
 <div class="book_details">
 <a href="{{ book.get_absolute_url }}"><span id="bookname" class="name">{{ book }}</span></a><br/>
-{% if book.url %}
-<span class="home_link"><a href="{{ book.url }}">{{ book.url }}</a></span><br/>
+<div class="minor_details">
+<h4>{% trans 'Author' %}: <a href="{{ book.maintainer.get_profile.get_absolute_url }}">{{ book.maintainer.get_full_name }}</a></h4>
+{% if book.isbn %}
+<h4>{% trans 'ISBN' %}: {{ book.isbn }}</h4>
 {% endif %}
+{% if book.license %}
+<h4>{% trans 'License' %}: {{ book.license }}</h4>
+{% endif %}
+{% if book.url %}
+<h4> {% trans 'Home page' %}: <span class="home_link"><a href="{{ book.url }}">{{ book.url }}</a></span></h4>
+{% endif %}
+{% if book.online_book %}
+<h4>{% trans "It's an online book." %}</h4>
+{% else %}
+<h4>{% trans "It's an offset book." %}</h4>
+{% endif %}
+{% if not book.completed %}
+<h4>{% trans 'Not Completed' %}</h4>
+{% endif %}
+</div>
 </div>
 </div>
 {% endfor %}
