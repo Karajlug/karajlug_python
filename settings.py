@@ -109,6 +109,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "context_processors.info",
     )
 
+BOOK_IN_PAGE = 5
 NEWS_LIMIT = 10
-VERSION = "0.5.0"
+VERSION = "0.5.2"
 AUTH_PROFILE_MODULE = 'members.Member'
