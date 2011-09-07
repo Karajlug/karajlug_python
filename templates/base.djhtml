@@ -102,8 +102,7 @@ The Karaj GNU/Linux User Group (G/LUG) began its journey at 25th April 2008 , (r
 		<div id="copyright">
 		  
 			  <p>
-			  {% trans "KarajLug Version" %}&nbsp; {{ VERSION }} &nbsp; Python: &nbsp;{{ PYVERSION }}&nbsp; <a href="http://www.djangoproject.com/">Django</a>:&nbsp;&nbsp;{{ DJVERSION }}&nbsp;&nbsp; rev: {{ REV }} <br></p><p>© 2011 <a href="http://iamamemberofsomehackersintownstreetcomputinggroupwhataboutyou.com">Some Hackers In Town</a> unless otherwise noted. All th\
-e documents in this website are released under the terms of the <a href="http://www.gnu.org/licenses/fdl.html">GNU FDL</a> license.</p>
+			  {% trans "KarajLug Version" %}&nbsp; {{ VERSION }} &nbsp; Python: &nbsp;{{ PYVERSION }}&nbsp; <a href="http://www.djangoproject.com/">Django</a>:&nbsp;&nbsp;{{ DJVERSION }}&nbsp;&nbsp; rev: {{ REV }} <br></p><p>© 2011 <a href="http://iamamemberofsomehackersintownstreetcomputinggroupwhataboutyou.com">Some Hackers In Town</a> unless otherwise noted. All the documents in this website are released under the terms of the <a href="http://www.gnu.org/licenses/fdl.html">GNU FDL</a> license.</p>
 		</div>
 	</div>
 {% endblock %}
