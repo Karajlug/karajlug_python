@@ -21,6 +21,6 @@ from django.conf.urls.defaults import patterns
 
 
 urlpatterns = patterns('',
-        (r'^(\w+)/$', 'books.views.book_view'),
+        (r'^([^\.]+)/$', 'books.views.book_view'),
         (r'^$', 'books.views.books_index'),
 )
