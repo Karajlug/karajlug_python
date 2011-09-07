@@ -35,7 +35,7 @@ class BookAdmin(admin.ModelAdmin):
         (None, {
             'fields': ('language', ('name', 'slug', 'online_book',
                                     'completed'),
-                       ('maintainer', 'weight'))
+                       ('maintainers', 'weight'))
             }),
         ('Optional Fields', {
             'classes': ('collapse',),

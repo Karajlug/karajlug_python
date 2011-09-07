@@ -13,7 +13,7 @@
 
 <div class="book_properties">
 <h2>{{ book }}</h2>
-<h3>{% trans 'Author' %}: <a href="{{ book.maintainer.get_profile.get_absolute_url }}">{{ book.maintainer.get_full_name }}</a></h3>
+<h3><author>{% trans 'Author' %}: {% for author in book.maintainers.all %}<a href="{{ author.get_profile.get_absolute_url }}">{{ author.get_full_name }}</a>, {% endfor %}</author></h3>
 {% if book.isbn %}
 <h3>{% trans 'ISBN' %}: {{ book.isbn }}</h3>
 {% endif %}

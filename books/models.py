@@ -41,9 +41,9 @@ class Book(models.Model):
     slug = models.SlugField(verbose_name=_("Slug"),
                             unique=True)
 
-    maintainer = models.ForeignKey("auth.User",
+    maintainers = models.ManyToManyField("auth.User",
                                 related_name="%(app_label)s_%(class)s_related",
-                                verbose_name=_("Maintainer"))
+                                verbose_name=_("Maintainers"))
 
     cover = models.ImageField(blank=True, null=True,
                     upload_to="uploads/covers/",

@@ -16,7 +16,7 @@
 <div class="book_details">
 <a href="{{ book.get_absolute_url }}"><span id="bookname" class="name">{{ book }}</span></a><br/>
 <div class="minor_details">
-<h4>{% trans 'Author' %}: <a href="{{ book.maintainer.get_profile.get_absolute_url }}">{{ book.maintainer.get_full_name }}</a></h4>
+<h4>{% trans 'Author' %}: {% for author in book.maintainers.all %}<a href="{{ author.get_profile.get_absolute_url }}">{{ author.get_full_name }}</a>, {% endfor %}</h4>
 {% if book.isbn %}
 <h4>{% trans 'ISBN' %}: {{ book.isbn }}</h4>
 {% endif %}

@@ -529,6 +529,9 @@ margin-right: 30px;
     font-size: 30px;
     line-height: 10px;
 }
+.book_properties author{
+    line-height: 30px;
+}
 .desc{
     Background: #eeeeec;
     padding: 0px 20px 20px 20px;
