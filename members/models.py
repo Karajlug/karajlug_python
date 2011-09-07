@@ -58,7 +58,7 @@ class Member(models.Model):
         verbose_name = _("Member")
         verbose_name_plural = _("Members")
         permissions = (
-            ("admin", _("Can Add new members and details.")),
+            ("member_admin", _("Can Add new members and details.")),
         )
 
 

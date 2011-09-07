@@ -52,7 +52,7 @@ class MemberAdmin(admin.ModelAdmin):
         """
         Return the records that user allowed to see.
         """
-        if request.user.is_superuser or request.user.has_perm("members.admin"):
+        if request.user.is_superuser or request.user.has_perm("members.member_admin"):
             return super(MemberAdmin, self).queryset(request)
         else:
             return Member.objects.filter(user = request.user)
@@ -69,7 +69,7 @@ class DetailAdmin(admin.ModelAdmin):
 
     def save_model(self, request, obj, form, change):
         if request.user == obj.member or request.user.is_superuser or \
-               request.user.has_perm("members.admin"):
+               request.user.has_perm("members.member_admin"):
             obj.user = request.user
             obj.save()
         else:
@@ -79,7 +79,7 @@ class DetailAdmin(admin.ModelAdmin):
         """
         Return the records that user allowed to see.
         """
-        if request.user.is_superuser or request.user.has_perm("members.admin"):
+        if request.user.is_superuser or request.user.has_perm("members.member_admin"):
             return super(DetailAdmin, self).queryset(request)
         else:
             return MemberDetail.objects.filter(member = request.user)
