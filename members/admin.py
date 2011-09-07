@@ -53,7 +53,7 @@ class MemberAdmin(admin.ModelAdmin):
         Return the records that user allowed to see.
         """
         if request.user.is_superuser or request.user.has_perm("members.member_admin"):
-            return super(MemberAdmin, self).queryset(request)
+            return Member.objects.all()
         else:
             return Member.objects.filter(user = request.user)
 
@@ -80,7 +80,7 @@ class DetailAdmin(admin.ModelAdmin):
         Return the records that user allowed to see.
         """
         if request.user.is_superuser or request.user.has_perm("members.member_admin"):
-            return super(DetailAdmin, self).queryset(request)
+            return MemberDetail.objects.all()
         else:
             return MemberDetail.objects.filter(member = request.user)
 
