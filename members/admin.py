@@ -48,14 +48,14 @@ class MemberAdmin(admin.ModelAdmin):
         else:
             return 
 
-    def queryset(self, request):
-        """
-        Return the records that user allowed to see.
-        """
-        if request.user.is_superuser or request.user.has_perm("members.member_admin"):
-            return Member.objects.all()
-        else:
-            return Member.objects.filter(user = request.user)
+    ## def queryset(self, request):
+    ##     """
+    ##     Return the records that user allowed to see.
+    ##     """
+    ##     if request.user.is_superuser or request.user.has_perm("members.member_admin"):
+    ##         return Member.objects.all()
+    ##     else:
+    ##         return Member.objects.filter(user = request.user)
 
 
 class DetailAdmin(admin.ModelAdmin):
@@ -75,14 +75,14 @@ class DetailAdmin(admin.ModelAdmin):
         else:
             return
 
-    def queryset(self, request):
-        """
-        Return the records that user allowed to see.
-        """
-        if request.user.is_superuser or request.user.has_perm("members.member_admin"):
-            return MemberDetail.objects.all()
-        else:
-            return MemberDetail.objects.filter(member = request.user)
+    ## def queryset(self, request):
+    ##     """
+    ##     Return the records that user allowed to see.
+    ##     """
+    ##     if request.user.is_superuser or request.user.has_perm("members.member_admin"):
+    ##         return MemberDetail.objects.all()
+    ##     else:
+    ##         return MemberDetail.objects.filter(member = request.user)
 
 
 admin.site.register(Member, MemberAdmin)
