@@ -29,10 +29,27 @@ def projects_index(request):
     """
     project index page
     """
-    projects = Projects.objects.all().order_by("weight")
+    projects = Project.objects.all().order_by("weight")
     # god damn b3hnam's server
     projects = [(i + 1, j) for i, j in enumerate(projects)]
     # ---
     return rr("projects.html",
               {"projects": projects},
               context_instance=RequestContext(request))
+
+
+def project_view(request, slug):
+    """
+    Project view
+    """
+    try:
+        project = Project.objects.get(slug=slug)
+    except Project.DoesNotExist:
+        raise Http404()
+
+    repos = Repository.objects.filter(project=project).order_by("weight")
+    return rr("project_view.html",
+              {"project": project,
+               "repositories": repos},
+              context_instance=RequestContext(request))              
+              

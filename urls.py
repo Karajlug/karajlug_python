@@ -31,6 +31,7 @@ urlpatterns = patterns('',
     (r'^page/', include('page.urls')),
     (r'^members/', include('members.urls')),
     (r'^books/', include('books.urls')),
+    (r'^projects/', include('projects.urls')),
     (r'^$', 'views.index'),
     (r'^admin/', include(admin.site.urls)),
 )
