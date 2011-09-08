@@ -22,7 +22,9 @@
 {% if member.link %}
 <span class="home_link"><a href="{{ member.link }}">{{ member.link }}</a></span><br/>
 {% endif %}
-<a class="email"><span class="email">{{ member.user.email }}</span></a><br/>
+{% autoescape off %}
+{{ member.safe_email }}
+{% endautoescape  %}<br/>
 </div>
 </div>
 </td>

@@ -55,6 +55,26 @@ class Member(models.Model):
     def get_absolute_url(self):
         return "/members/%i/" % self.id
 
+    def safe_email(self):
+        """
+        use js to hide email.
+        """
+        template = """
+        <SCRIPT LANGUAGE="JavaScript">
+        user = '$$username$$';
+        site = '$$domain$$';
+        document.write('<a href=\"mailto:' + user + '@' + site + '\">');
+        document.write(user + '@' + site + '</a>');
+        </SCRIPT>
+        """
+        if self.user.email:
+            username, domain = self.user.email.split("@")
+            result = template.replace("$$username$$", username).replace(
+                "$$domain$$", domain)
+            return result
+        else:
+            return ""
+
     class Meta:
         verbose_name = _("Member")
         verbose_name_plural = _("Members")

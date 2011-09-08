@@ -29,10 +29,6 @@
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 	
 	<link rel="stylesheet" href="/statics/css/style.css">
-        <script type="text/javascript" src="{{ MEDIA_URL }}js/email.js"></script>  
-	<script language="javascript">
-	    window.onload = EmailUnobsfuscate;
-	</script>
     {% block extrahead %}
     {% endblock %}
 </head>
