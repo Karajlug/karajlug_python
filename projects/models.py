@@ -64,7 +64,7 @@ class Project(models.Model):
                                blank=True, null=True)
     home = models.URLField(verbose_name=_("Home Page"),
                            blank=True, null=True)
-    vcs = models.CharField(max_length=0,
+    vcs = models.CharField(max_length=1,
                            choices=VCS,
                            blank=True, null=True,
                            verbose_name=_("VCS"))
@@ -74,7 +74,7 @@ class Project(models.Model):
                              editable=False)
 
     weight = models.IntegerField(default=40, verbose_name=_("Order"),
-                help_text=_("Book will appear in menu respect to this value"))
+                help_text=_("Projects will appear in menu respect to this value"))
 
     desc = models.TextField(verbose_name=_("Description"),
                             blank=True, null=True)
@@ -98,6 +98,9 @@ class Repository(models.Model):
                                 verbose_name=_("Project"))
     address = models.CharField(max_length=265,
                                verbose_name=_("Address"))
+
+    weight = models.IntegerField(default=40, verbose_name=_("Order"),
+        help_text=_("Repository will appear in menu respect to this value"))
 
     def __unicode__(self):
         return self.address
