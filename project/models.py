@@ -18,10 +18,14 @@
 # -----------------------------------------------------------------------------
 
 from django.db import models
+from django.utils.translation import ugettext as _
 
 
 class Project(models.Model):
     """
     Project main model
     """
-    pass
+    name = models.CharField(max_length=64,
+                            verbose_name=_("Project Name"))
+    home = models.URLField(verbose_name=_("Home Page"),
+                           blank=True, null=True)
