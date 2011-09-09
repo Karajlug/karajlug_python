@@ -99,6 +99,7 @@ INSTALLED_APPS = (
     "members",
     "books",
     "projects",
+    "dbot",
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
