@@ -194,12 +194,22 @@ class DetailAdmin(admin.ModelAdmin):
             raise PermissionDenied(_("You can add only yourself as a member."))
 
     def save_form(self, request, form, change):
-        if request.user == form.cleaned_data["member"].user or request.user.is_superuser or \
-               request.user.has_perm("members.member_admin"):
-            return form.save(commit=False)
-        else:
-            raise PermissionDenied(_("You can add only details about yourself."))
+        if "member" in form.cleaned_data:
+            if request.user == form.cleaned_data["member"].user or \
+                   request.user.is_superuser or \
+                   request.user.has_perm("members.member_admin"):
 
+                return form.save(commit=False)
+            else:
+                raise PermissionDenied(_("You can add only details about yourself."))
+        else:
+            if request.user == form.cleaned_data["id"].member or \
+                   request.user.is_superuser or \
+                   request.user.has_perm("members.member_admin"):
+
+                return form.save(commit=False)
+            else:
+                raise PermissionDenied(_("You can add only details about yourself."))
 
     def add_view(self, request, form_url='', extra_context=None):
         "The 'add' admin view for this model."
