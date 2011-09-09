@@ -14,7 +14,11 @@ def irc_send(signal, sender, **kwargs):
     msg = "%s model has been changed by %s.\n" % \
                             (kwargs["instance"].content_type, kwargs["instance"].user)
     sock = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
-    sock.connect("/tmp/socket")
-    sock.send(msg)
-    data = sock.recv(1024)
+    try:
+        sock.connect("/tmp/socket")
+
+        sock.send(msg)
+        data = sock.recv(1024)
+    except socket.error:
+        pass
     sock.close()
