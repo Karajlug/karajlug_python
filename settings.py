@@ -98,8 +98,8 @@ INSTALLED_APPS = (
     "faq",
     "members",
     "books",
-    "projects",
-    "dbot",
+#    "projects",
+#    "dbot",
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
@@ -113,5 +113,5 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 
 BOOK_IN_PAGE = 5
 NEWS_LIMIT = 10
-VERSION = "0.6.0"
+VERSION = "0.7.4"
 AUTH_PROFILE_MODULE = 'members.Member'
