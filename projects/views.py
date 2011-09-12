@@ -47,9 +47,12 @@ def project_view(request, slug):
     except Project.DoesNotExist:
         raise Http404()
 
+    if project.vcs:
+        vcsdict = dict(Project.VCS)
+        project.vcs = vcsdict[project.vcs]
+
     repos = Repository.objects.filter(project=project).order_by("weight")
     return rr("project_view.html",
               {"project": project,
                "repositories": repos},
               context_instance=RequestContext(request))              
-              

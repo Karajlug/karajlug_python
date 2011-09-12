@@ -1,6 +1,8 @@
 {% extends 'base.djhtml' %}
 {% load i18n %}
 
+{% block aside %}
+{% endblock %}
 
 {% block content %}
 <div class="mmain">
@@ -30,11 +32,13 @@
 </table>
 </div>
 <br/><br/><br/>
+<div class="desc">
 <h3>{% trans 'Bio' %}:</h3>
 {% if member.desc %}
 <p>{{ member.desc|linebreaks }}</p>
 {% else %}
 <p>{% trans 'Nothing yet' %}</p>
 {% endif %}
+</div>
 </div>
 {% endblock %}
