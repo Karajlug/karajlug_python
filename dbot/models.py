@@ -11,7 +11,7 @@ from django.contrib.admin.models import LogEntry
 
 @receiver(post_save, sender=LogEntry)
 def irc_send(signal, sender, **kwargs):
-    msg = "%s model has been changed by %s.\n" % \
+    msg = "Karajlug.org: %s model has been changed by %s.\n" % \
                             (kwargs["instance"].content_type, kwargs["instance"].user)
     sock = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
     try:
