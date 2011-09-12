@@ -76,6 +76,8 @@ class Project(models.Model):
     weight = models.IntegerField(default=40, verbose_name=_("Order"),
                 help_text=_("Projects will appear in menu respect to this value"))
 
+    kproject = models.BooleanField(default=False,
+                                   verbose_name=_("KarajLUG Project"))
     desc = models.TextField(verbose_name=_("Description"),
                             blank=True, null=True)
 

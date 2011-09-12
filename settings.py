@@ -98,8 +98,8 @@ INSTALLED_APPS = (
     "faq",
     "members",
     "books",
-#    "projects",
-#    "dbot",
+    "projects",
+    "dbot",
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
