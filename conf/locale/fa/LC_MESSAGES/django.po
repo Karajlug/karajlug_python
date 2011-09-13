@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-09-13 12:16+0430\n"
-"PO-Revision-Date: 2011-09-13 17:34+0330\n"
+"PO-Revision-Date: 2011-09-13 17:55+0330\n"
 "Last-Translator: \n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -249,80 +249,81 @@ msgstr "نام فیلد"
 
 #: members/models.py:105
 msgid "Profile property name"
-msgstr ""
+msgstr "نام خاصیت دارایی"
 
 #: members/models.py:108
 msgid "Properties with lower weight will appear sooner."
 msgstr ""
 
 #: members/models.py:118
+#, fuzzy
 msgid "Member Detail"
-msgstr ""
+msgstr "جزئیات عضو"
 
 #: members/models.py:119
 msgid "Member Details"
-msgstr ""
+msgstr "جزئیات اعضا"
 
 #: members/templates/member_view.html:36
 msgid "Bio"
-msgstr ""
+msgstr "بیوگرافی"
 
 #: news/models.py:32
 #: page/models.py:32
 msgid "Title"
-msgstr ""
+msgstr "عنوان"
 
 #: news/models.py:33
 #: page/models.py:36
 msgid "News content"
-msgstr ""
+msgstr "محتویات اخبار"
 
 #: news/models.py:44
 #: news/models.py:45
 msgid "News"
-msgstr ""
+msgstr "اخبار"
 
 #: page/models.py:38
 msgid "Publish"
-msgstr ""
+msgstr "انتشار"
 
 #: page/models.py:40
 msgid "Appear in navigation?"
-msgstr ""
+msgstr "نمایان در ناوبرری"
 
 #: page/models.py:52
 msgid "Pages"
-msgstr ""
+msgstr "صفحه‌ها"
 
 #: page/models.py:53
 msgid "Page"
-msgstr ""
+msgstr "صفحه"
 
 #: page/views.py:40
 msgid "Karajlug"
-msgstr ""
+msgstr "کرج لاگ"
 
 #: page/templates/nav.html:6
 #: projects/models.py:94
 msgid "Projects"
-msgstr ""
+msgstr "پروژه‌ها"
 
 #: projects/models.py:45
 msgid "Project Name"
-msgstr ""
+msgstr "نام پروژه"
 
 #: projects/models.py:49
 msgid "Version"
-msgstr ""
+msgstr "نسخه"
 
 #: projects/models.py:59
 msgid "Project logo"
-msgstr ""
+msgstr "نشان پروژه"
 
 #: projects/models.py:71
 #: projects/templates/project_view.html:35
 msgid "VCS"
-msgstr ""
+msgstr "کنترل‌کنندهٔ نسخه"
 
 #: projects/models.py:79
 msgid "Projects will appear in menu respect to this value"
@@ -330,16 +331,16 @@ msgstr ""
 
 #: projects/models.py:82
 msgid "KarajLUG Project"
-msgstr ""
+msgstr "پروژهٔ کرج لاگ"
 
 #: projects/models.py:93
 #: projects/models.py:102
 msgid "Project"
-msgstr ""
+msgstr "پروژه"
 
 #: projects/models.py:104
 msgid "Address"
-msgstr ""
+msgstr "نشانی"
 
 #: projects/models.py:107
 msgid "Repository will appear in menu respect to this value"
@@ -347,29 +348,29 @@ msgstr ""
 
 #: projects/models.py:113
 msgid "Repository"
-msgstr ""
+msgstr "مخزن"
 
 #: projects/models.py:114
 msgid "Reporsitories"
-msgstr ""
+msgstr "مخازن"
 
 #: projects/templates/project_view.html:20
 #: projects/templates/projects.html:25
 #: projects/templates/projects.html:48
 msgid "Maintainer"
-msgstr ""
+msgstr "نگه‌دارنده"
 
 #: projects/templates/project_view.html:24
 #: projects/templates/projects.html:27
 #: projects/templates/projects.html:50
 msgid "A KarajLUG project"
-msgstr ""
+msgstr "یک پروژهٔ کرج لاگ"
 
 #: projects/templates/project_view.html:26
 #: projects/templates/projects.html:29
 #: projects/templates/projects.html:52
 msgid "Participated project"
-msgstr ""
+msgstr "پروژهٔ مشارکت‌کرده"
 
 #: projects/templates/project_view.html:29
 msgid "Latest version"
