@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-09-13 12:16+0430\n"
-"PO-Revision-Date: 2011-09-13 17:55+0330\n"
+"PO-Revision-Date: 2011-09-13 18:05+0330\n"
 "Last-Translator: \n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -86,7 +86,7 @@ msgstr "سفارش"
 
 #: books/models.py:69
 msgid "Book will appear in menu respect to this value"
-msgstr "کتاب در منوی متناظر با این مقدار ظاهر خواهد شد"
+msgstr "با توجه به مقدار وارد شده، کتاب در منو نمایش داده می‌شود."
 
 #: books/models.py:71
 #: books/templates/book_view.html:36
@@ -253,10 +253,9 @@ msgstr "نام خاصیت دارایی"
 
 #: members/models.py:108
 msgid "Properties with lower weight will appear sooner."
-msgstr ""
+msgstr "خصوصیت با وزن کمتر، بالاتر نمایش داده می‌شود."
 
 #: members/models.py:118
-#, fuzzy
 msgid "Member Detail"
 msgstr "جزئیات عضو"
 
@@ -327,7 +326,7 @@ msgstr "کنترل‌کنندهٔ نسخه"
 
 #: projects/models.py:79
 msgid "Projects will appear in menu respect to this value"
-msgstr ""
+msgstr "با توجه به مقدار وارد شده، پروژه در منو نمایش داده می‌شود."
 
 #: projects/models.py:82
 msgid "KarajLUG Project"
@@ -344,7 +343,7 @@ msgstr "نشانی"
 
 #: projects/models.py:107
 msgid "Repository will appear in menu respect to this value"
-msgstr ""
+msgstr "با توجه به مقدار وارد شده، مخزن در منو نمایش داده می‌شود."
 
 #: projects/models.py:113
 msgid "Repository"
