@@ -38,11 +38,11 @@
 <h3><a href="{{ project.downloadlink }}">{% trans 'Download ' %}</a></h3>
 {% endif %}
 {% if repositories %}
-<h3>{% trans 'Repositories' %}
+<br/><br/>
+<h3>{% trans 'Repositories' %}:</h3>
 {% for repo in repositories %}
 <h4><value>{{ repo.address }}</value></h4>
 {% endfor %}
-</table>
 {% endif %}
 </div>
 <br/><br/><br/>
