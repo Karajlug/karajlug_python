@@ -39,11 +39,8 @@
 {% endif %}
 {% if repositories %}
 <h3>{% trans 'Repositories' %}
-<table class="details_table">
 {% for repo in repositories %}
-<tr>
-<td id="field_name"><h4><span>{{ repo.address}}:</spna></h4></td> <td id="field_value"><h4><value>{{ repo.address }}</value></h4></td>
-</tr>
+<h4><value>{{ repo.address }}</value></h4>
 {% endfor %}
 </table>
 {% endif %}

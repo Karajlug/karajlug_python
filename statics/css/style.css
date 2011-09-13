@@ -438,6 +438,7 @@ border-radius: 10px;
 }
 .details h3{
     font-size: 30px;
+    line-height: 10px;
 }
 .name{
     font-size: 22px;
