@@ -77,7 +77,6 @@ The Karaj GNU/Linux User Group (G/LUG) began its journey at 25th April 2008 , (r
 				 <b>{% trans "Friends:" %} </b><br/>
 				 <a href="http://b3hnam.com">{% trans "b3hnam" %}</a><br/>
 				 <a href="http://lxsameer.com">{% trans "lxsameer" %}</a><br/>
-				 <a href="http://www.mhassanzadeh.com/">{% trans 'mhssanzadeh' %}</a><br/>
 				 <a href="http://linux-trix.com/">{% trans 'Linux Tricks' %}</a><br/>
 				 <a href="http://Kernel-ir.com/">{% trans 'Kernel-ir.com' %}</a><br/>
 				 <a href="http://emacs.ir/">{% trans 'emacs.ir' %}</a>

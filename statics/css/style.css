@@ -436,6 +436,9 @@ border-radius: 10px;
     margin-left: 80px;
 
 }
+.details h3{
+    font-size: 30px;
+}
 .name{
     font-size: 22px;
     font-weight:500;
