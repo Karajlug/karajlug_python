@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-09-13 12:16+0430\n"
-"PO-Revision-Date: 2011-09-13 17:27+0330\n"
+"PO-Revision-Date: 2011-09-13 17:34+0330\n"
 "Last-Translator: \n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -373,13 +373,13 @@ msgstr ""
 
 #: projects/templates/project_view.html:29
 msgid "Latest version"
-msgstr ""
+msgstr "آخرین نسخه"
 
 #: projects/templates/project_view.html:38
 msgid "Download "
-msgstr ""
+msgstr "بارگیری"
 
 #: projects/templates/project_view.html:41
 msgid "Repositories"
-msgstr ""
+msgstr "مخازن"
 
