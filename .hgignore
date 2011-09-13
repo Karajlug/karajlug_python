@@ -2,7 +2,6 @@
 .pida-metadata
 .pida-metadata/python/*
 .pida-metadata/*
-.project
 statics/uploads/*
 \#.*\#
 \.\#.*
