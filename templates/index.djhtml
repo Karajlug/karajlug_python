@@ -7,7 +7,9 @@
 {% for news_entry in news %}
 <div class="news_entry">
 <h3><a href="{{ news_entry.get_absolute_url }}">{{ news_entry }}</a></h3>
+{% autoescape off %}
 <p>{{news_entry.content|linebreaks}}</p>
+{% endautoescape %}
 <span>{{news_entry.date}}</span>
 </div>
 {% endfor %}
