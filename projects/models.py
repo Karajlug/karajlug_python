@@ -89,6 +89,26 @@ class Project(models.Model):
     def get_absolute_url(self):
         return "/projects/%s/" % self.slug
 
+    def irc_repr(self, logentry):
+
+        if logentry.is_addition():
+            return ["%s Project added by %s at %s" % (
+                self.name,
+                self.creator,
+                self.get_absolute_url())]
+
+        phrase = ""
+        if logentry.is_change():
+            phrase = "changed"
+        elif logentry.is_delete():
+            phrase = "deleted"
+
+        return ["%s %s the %s project: %s" % (
+            self.creator,
+            phrase,
+            self.name,
+            self.get_absolute_url())]
+
     class Meta:
         verbose_name = _("Project")
         verbose_name_plural = _("Projects")
@@ -108,6 +128,18 @@ class Repository(models.Model):
 
     def __unicode__(self):
         return self.address
+
+    def irc_repr(self, logentry):
+
+        phrase = "added for"
+        if logentry.is_change():
+            phrase = "changed for"
+        elif logentry.is_delete():
+            phrase = "deleted from"
+
+        return ["A repository %s %s" % (
+            phrase,
+            self.project.name)]
 
     class Meta:
         verbose_name = _("Repository")

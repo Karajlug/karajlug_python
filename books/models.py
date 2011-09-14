@@ -82,6 +82,25 @@ class Book(models.Model):
     def get_absolute_url(self):
         return "/books/%s/" % self.slug
 
+    def irc_repr(self, logentry):
+
+        if logentry.is_addition():
+            return ["New book added %s by %s at %s" % (
+                self.name,
+                self.creator,
+                self.get_absolute_url())]
+
+        phrase = ""
+        if logentry.is_change():
+            phrase = "change"
+        elif logentry.is_delete():
+            phrase = "delete"
+
+        return ["%s %s a book: %s" % (
+            self.creator,
+            phrase,
+            self.get_absolute_url())]
+
     class Meta:
         verbose_name = _("Book")
         verbose_name_plural = _("Books")

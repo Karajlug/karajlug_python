@@ -48,6 +48,20 @@ class Page(models.Model):
     def get_absolute_url(self):
         return "/page/%s" % self.slug
 
+    def irc_repr(self, logentry):
+
+        phrase = "added"
+        if logentry.is_change():
+            phrase = "change"
+        elif logentry.is_delete():
+            phrase = "delete"
+
+        return ["%s page %s by %s at %s" % (
+            self.title,
+            phrase,
+            self.user,
+            self.get_absolute_url())]
+
     class Meta:
         verbose_name_plural = _("Pages")
         verbose_name = _('Page')

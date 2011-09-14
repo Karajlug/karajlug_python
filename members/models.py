@@ -75,6 +75,24 @@ class Member(models.Model):
         else:
             return ""
 
+    def irc_repr(self, logentry):
+
+        if logentry.is_addition():
+            return ["New member added by %s - %s" % (
+                self.user,
+                self.get_absolute_url())]
+
+        phrase = ""
+        if logentry.is_change():
+            phrase = "change"
+        elif logentry.is_delete():
+            phrase = "delete"
+
+        return ["%s %s a member: %s" % (
+            self.user,
+            phrase,
+            self.get_absolute_url())]
+
     class Meta:
         verbose_name = _("Member")
         verbose_name_plural = _("Members")
@@ -113,6 +131,22 @@ class MemberDetail(models.Model):
     def __unicode__(self):
         return "%s - %s" % (self.field_name,
                             self.field_value)
+
+    def irc_repr(self, logentry):
+
+        if logentry.is_addition():
+            return ["Some details added for %s" % (
+                        self.member.user)]
+
+        phrase = ""
+        if logentry.is_change():
+            phrase = "changed"
+        elif logentry.is_delete():
+            phrase = "deleted"
+
+        return ["A profile detail for %s %s" % (
+            self.member.user,
+            phrase)]
 
     class Meta:
         verbose_name = _("Member Detail")

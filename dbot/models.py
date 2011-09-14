@@ -23,25 +23,28 @@ from django.db.models.signals import post_save
 from django.dispatch import receiver
 from django.contrib.admin.models import LogEntry
 from django.contrib.contenttypes.models import ContentType
+from django.conf import settings
 
 
 @receiver(post_save, sender=LogEntry)
 def irc_send(signal, sender, **kwargs):
 
-    obj = ContentType.objects.get(
-        app_label=kwargs["instance"].content_type.app_label,
-        model=kwargs["instance"].content_type.model)
-    obj = obj.get_object_for_this_type(id=kwargs["instance"].object_id)
+    site = getattr(settings, "DOMAIN", "Karajlug.org")
+    obj = kwargs["instance"].get_edited_object()
 
     func = getattr(obj, "irc_repr", None)
 
-    msg = "Karajlug.org: %s model has been changed by %s.\n" % \
-          (kwargs["instance"].content_type, kwargs["instance"].user)
+    msg = "%s - %s model has been changed by %s.\n" % \
+          (site,
+           kwargs["instance"].content_type,
+           kwargs["instance"].user)
 
     if func:
-        msg = func()
+        j = kwargs["instance"]
+        msg = ["%s - %s" % (site, i) for i in func(j)]
         msg = "\r\n".join(msg)
 
+    print "<><><><", msg
     sock = socket.socket(socket.AF_UNIX,
                          socket.SOCK_STREAM)
     try:

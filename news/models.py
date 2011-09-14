@@ -40,10 +40,24 @@ class News(models.Model):
     def get_absolute_url(self):
         return "/news/%s" % self.id
 
-    def irc_repr(self):
-        return ["%s add a news: %s" % (
-            self.user.get_full_name(),
-            self.title)]
+    def irc_repr(self, logentry):
+
+        if logentry.is_addition():
+            return ["News: %s by %s at %s" % (
+                self.title,
+                self.user,
+                self.get_absolute_url())]
+
+        phrase = ""
+        if logentry.is_change():
+            phrase = "change"
+        elif logentry.is_delete():
+            phrase = "delete"
+
+        return ["%s %s a news: %s" % (
+            self.user,
+            phrase,
+            self.get_absolute_url())]
 
     class Meta:
         verbose_name_plural = _("News")
