@@ -44,6 +44,7 @@ def irc_send(signal, sender, **kwargs):
         msg = ["%s - %s" % (site, i) for i in func(j)]
         msg = "\r\n".join(msg)
 
+    print ">>> ", msg
     sock = socket.socket(socket.AF_UNIX,
                          socket.SOCK_STREAM)
     try:
