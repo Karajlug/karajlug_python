@@ -224,8 +224,8 @@ article header{
 	   -moz-box-shadow:0 45px 60px -60px #AAA;
 	        box-shadow:0 45px 60px -60px #AAA;
 }
-article {
-    min-height: 300px;
+article div{
+    min-height: 400px;
 }
 
 #builder a{
