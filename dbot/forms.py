@@ -16,35 +16,10 @@
 #    with this program; if not, write to the Free Software Foundation, Inc.,
 #    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 # -----------------------------------------------------------------------------
-
-from django.db import models
-from django.utils.translation import ugettext as _
-from django.contrib.auth.models import User
+from django import forms
 
 
-class News(models.Model):
-    """
-    News module main model
-    """
-    user = models.ForeignKey(User, editable=False,
-                             verbose_name=_("User"))
-    title = models.CharField(max_length=60,
-                            verbose_name=_("Title"))
-    content = models.TextField(verbose_name=_("News content"))
-    date = models.DateTimeField(auto_now_add=True, auto_now=False,
-                                     verbose_name=_('Date and Time'))
-
-    def __unicode__(self):
-        return self.title
-
-    def get_absolute_url(self):
-        return "/news/%s" % self.id
-
-    def irc_repr(self):
-        return ["%s add a news: %s" % (
-            self.user.get_full_name(),
-            self.title)]
-
-    class Meta:
-        verbose_name_plural = _("News")
-        verbose_name = _('News')
+class WebServiceForm(forms.Form):
+    user = forms.CharField(max_length=30)
+    hash = forms.CharField(max_length=40)
+    msg = forms.CharField(max_length=256)
