@@ -89,13 +89,18 @@ class Project(models.Model):
     def get_absolute_url(self):
         return "/projects/%s/" % self.slug
 
+    def full_path(self):
+        from django.conf import settings
+        site = getattr(settings, "URL", "www.karajlug.org")
+        return "%s%s" % (site, self.get_absolute_url())
+
     def irc_repr(self, logentry):
 
         if logentry.is_addition():
             return ["%s Project added by %s at %s" % (
                 self.name,
                 self.creator,
-                self.get_absolute_url())]
+                self.full_path())]
 
         phrase = ""
         if logentry.is_change():
@@ -107,7 +112,7 @@ class Project(models.Model):
             self.creator,
             phrase,
             self.name,
-            self.get_absolute_url())]
+            self.full_path())]
 
     class Meta:
         verbose_name = _("Project")

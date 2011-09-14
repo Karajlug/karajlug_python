@@ -75,12 +75,17 @@ class Member(models.Model):
         else:
             return ""
 
+    def full_path(self):
+        from django.conf import settings
+        site = getattr(settings, "URL", "www.karajlug.org")
+        return "%s%s" % (site, self.get_absolute_url())
+
     def irc_repr(self, logentry):
 
         if logentry.is_addition():
             return ["New member added by %s - %s" % (
                 self.user,
-                self.get_absolute_url())]
+                self.full_path())]
 
         phrase = ""
         if logentry.is_change():
@@ -91,7 +96,7 @@ class Member(models.Model):
         return ["%s %s a member: %s" % (
             self.user,
             phrase,
-            self.get_absolute_url())]
+            self.full_path())]
 
     class Meta:
         verbose_name = _("Member")

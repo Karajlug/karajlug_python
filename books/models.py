@@ -82,13 +82,18 @@ class Book(models.Model):
     def get_absolute_url(self):
         return "/books/%s/" % self.slug
 
+    def full_path(self):
+        from django.conf import settings
+        site = getattr(settings, "URL", "www.karajlug.org")
+        return "%s%s" % (site, self.get_absolute_url())
+
     def irc_repr(self, logentry):
 
         if logentry.is_addition():
             return ["New book added %s by %s at %s" % (
                 self.name,
                 self.creator,
-                self.get_absolute_url())]
+                self.full_path())]
 
         phrase = ""
         if logentry.is_change():
@@ -99,7 +104,7 @@ class Book(models.Model):
         return ["%s %s a book: %s" % (
             self.creator,
             phrase,
-            self.get_absolute_url())]
+            self.full_path())]
 
     class Meta:
         verbose_name = _("Book")
