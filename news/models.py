@@ -43,7 +43,7 @@ class News(models.Model):
     def irc_repr(self, logentry):
 
         if logentry.is_addition():
-            return ["News: %s by %s at %s" % (
+            return ["News: %s added by %s at %s" % (
                 self.title,
                 self.user,
                 self.get_absolute_url())]
