@@ -1,6 +1,11 @@
 {% extends 'base.djhtml' %}
 {% load i18n %}
+{% title %}
 
+      {% block title %}
+      	 {{ news.title }}
+	 {% trans " KarajLug " %}
+      {% endblock %}
 {% block content %}
 <div id="news">
 <h3>{{ news.title }}</h3>

@@ -12,11 +12,9 @@
 	<meta charset="UTF-8">
 	
 	<title>
-      {% if title %}
-      {{ title }}
-      {% else %}
-      {% trans "KarajLug" %}
-      {% endif %}
+      {% block title %}
+      {% trans " KarajLug " %}
+      {% endblock %}
 	</title>
 	
 	<meta name="description" content="KarajLug Karaj Linux users group">
