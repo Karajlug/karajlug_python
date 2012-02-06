@@ -32,6 +32,7 @@ class Page(models.Model):
                              verbose_name=_("Title"))
     slug = models.SlugField(max_length=30, unique=True,
                             verbose_name=_("Slug"))
+
     # IMPORTANT: content field will render as html
     content = models.TextField(verbose_name=_("News content"))
     publish = models.BooleanField(default=False,
