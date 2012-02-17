@@ -19,11 +19,11 @@ msgstr ""
 #: settings.py:44
 #, fuzzy
 msgid "Persian"
-msgstr "نسخه"
+msgstr "پارسی"
 
 #: settings.py:45
 msgid "English"
-msgstr ""
+msgstr "انگلیسی"
 
 #: books/models.py:36 members/models.py:121 news/models.py:37
 #: page/models.py:46 page/models.py:90 projects/models.py:41
@@ -125,7 +125,7 @@ msgstr "تکمیل نشده"
 #: books/templates/book_view.html:29 members/models.py:32
 #: projects/models.py:65
 msgid "Home Page"
-msgstr "صفحهٔ شخصی"
+msgstr "صفحهٔ خانگی"
 
 #: books/templates/book_view.html:40 members/templates/member_view.html:40
 #: projects/templates/project_view.html:54
@@ -134,7 +134,7 @@ msgstr "هیچی تا به حال"
 
 #: books/templates/books.html:27
 msgid "Home page"
-msgstr "صفحهٔ شخصی"
+msgstr "صفحهٔ خانگی"
 
 #: faq/models.py:30 mediacenter/models.py:32 members/models.py:29
 #: news/models.py:33 page/models.py:33 page/models.py:82
@@ -156,19 +156,19 @@ msgstr "تاریخ و زمان"
 
 #: faq/models.py:41 page/templates/nav.html:3
 msgid "FAQ"
-msgstr "پرسش و پاسخ‌های متداول"
+msgstr "سین جیم"
 
 #: mediacenter/models.py:30
 msgid "File"
-msgstr ""
+msgstr "فایل"
 
 #: mediacenter/models.py:40
 msgid "upload file"
-msgstr ""
+msgstr "فایل آپلود"
 
 #: mediacenter/models.py:41
 msgid "upload files"
-msgstr ""
+msgstr "فایل های آپلودی"
 
 #: members/admin.py:51 members/admin.py:65
 msgid "You can only add yourself as a member"
