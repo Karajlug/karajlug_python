@@ -73,13 +73,10 @@ TEMPLATE_LOADERS = (
 )
 
 MIDDLEWARE_CLASSES = (
-<<<<<<< local
     'django.middleware.common.GZipMiddleware',
-=======
-    'middleware.I18nMiddleware',
->>>>>>> other
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'locales.middleware.I18nMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',

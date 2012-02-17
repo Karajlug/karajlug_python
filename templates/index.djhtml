@@ -18,8 +18,8 @@
 {% endblock %}
 
 {% block home %}
-<h3><a href="/page/sfd2011">{% trans "SFD 2011 on the way" %}</a></h3>
-<p>Every year the participants of KarajLUG get together to celebrate Software Freedom Day (SFD). This year we plan to set the SFD conference up on 18th of Sep.
-<br />For more information take a look at <a href="/page/sfd2011">here</a>.</p><br/><br/>
-<p align="right"><a href="http://www.softwarefreedomday.org/"><img src="http://www.softwarefreedomday.org/countdown/banner1-UTC+3-en.png" border="0" width="190" height="200" alt="Celebrate SFD with us on September 17!"></a></p>
+<h3>{{ page.title }}</a></h3>
+{% autoescape off %}
+{{ page.content }}
+{% endautoescape %}
 {% endblock %}

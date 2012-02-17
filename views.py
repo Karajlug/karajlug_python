@@ -22,6 +22,7 @@ from django.template import RequestContext
 from django.conf import settings
 
 from news.models import News
+from page.models import FirstPage
 
 
 def index(request):
@@ -29,7 +30,9 @@ def index(request):
     index view of karajlug.org
     """
     news = News.objects.all().order_by("-date")[:settings.NEWS_LIMIT]
+    page = FirstPage.objects.latest("-datetime")
     return rr("index.djhtml",
               {"news": news,
+               "page": page,
                },
               context_instance=RequestContext(request))
