@@ -30,7 +30,10 @@ def index(request):
     index view of karajlug.org
     """
     news = News.objects.all().order_by("-date")[:settings.NEWS_LIMIT]
-    page = FirstPage.objects.latest("-datetime")
+    try:
+        page = FirstPage.objects.latest("date")
+    except FirstPage.DoesNotExist:
+        page = None
     return rr("index.djhtml",
               {"news": news,
                "page": page,

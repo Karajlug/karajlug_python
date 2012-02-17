@@ -49,4 +49,4 @@ class FPageAdmin(admin.ModelAdmin):
         obj.save()
 
 admin.site.register(Page, PageAdmin)
-admin.site.register(FirstPagePage, FPageAdmin)
+admin.site.register(FirstPage, FPageAdmin)
