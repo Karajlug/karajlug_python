@@ -116,4 +116,4 @@ class FirstPage(models.Model):
         verbose_name_plural = _("First Pages")
         verbose_name = _('First Page')
 
-        orgering = ["date", ]
+        ordering = ["date", ]
