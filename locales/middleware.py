@@ -30,8 +30,8 @@ class I18nMiddleware(object):
         lang = server.split(".")[0]
         if lang == "en":
             translation.activate("en")
-        else:
-            translation.activate("fa")
+        ## else:
+        ##     translation.activate("fa")
         request.LANGUAGE_CODE = translation.get_language()
         return None
 

@@ -459,7 +459,7 @@ msgstr ""
 
 #: templates/base.html:104
 msgid "Python"
-msgstr ""
+msgstr "پایتون"
 
 #: templates/base.html:104
 msgid "Django"

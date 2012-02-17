@@ -19,3 +19,4 @@ syntax: glob
 *.e4p
 *.wpr
 data/*
+django.mo
