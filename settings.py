@@ -109,6 +109,7 @@ INSTALLED_APPS = (
     "books",
     "projects",
     "dbot",
+    "mediacenter",
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (

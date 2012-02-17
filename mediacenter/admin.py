@@ -17,25 +17,20 @@
 #    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 # -----------------------------------------------------------------------------
 
-from django.db import models
-from django.utils.translation import ugettext as _
-from django.contrib.auth.models import User
+from django.contrib import admin
+
+from models import UploadFile
 
 
-class UploadFile(models.Model):
+class UPAdmin(admin.ModelAdmin):
     """
-    This model store the address of uploads files.
+    Admin interface class for news model
     """
+    list_display = ("get_address", "user", "date")
+    list_filter = ("user", )
 
-    ufile = models.FileField(_("File"), upload_to="uploads/")
-    user = models.ForeignKey(User, editable=False,
-                             verbose_name=_("User"))
-    date = models.DateTimeField(auto_now_add=True, auto_now=False,
-                                     verbose_name=_('Date and Time'))
+    def save_model(self, request, obj, form, change):
+        obj.user = request.user
+        obj.save()
 
-    def get_address(self):
-        return "/statics/%s" % self.ufile
-
-    class Meta:
-        verbose_name = _("upload file")
-        verbose_name_plural = _("upload files")
+admin.site.register(UploadFile, UPAdmin)
