@@ -99,19 +99,6 @@ class FirstPage(models.Model):
     def __unicode__(self):
         return self.title
 
-    def irc_repr(self, logentry):
-
-        phrase = "added"
-        if logentry.is_change():
-            phrase = "change"
-        elif logentry.is_delete():
-            phrase = "delete"
-
-        return ["%s first page %s by %s." % (
-            self.title,
-            phrase,
-            self.user)]
-
     class Meta:
         verbose_name_plural = _("First Pages")
         verbose_name = _('First Page')
