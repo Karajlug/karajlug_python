@@ -458,7 +458,7 @@ msgid ""
 "\n"
 "\t\t  The Karaj GNU/Linux User Group (G/LUG) began its journey at 25th April 2008 , (repor of first sesson). This community is a place to share what we all found intresting about Gnu/Linux operating system and Free Softwares. If you are interested, you can join us and have a good time sharing your what you know and like to share. You can find all the information you need about this comunity in this website. And also it is recommended to join the mailing list to be inform of the news.\n"
 "\t\t  "
-msgstr ""
+msgstr "\nگروه کاربران گنو/لینوکس کرج فعالیت خود را در ۲۵ آپریل سال ۲۰۰۸ شروع کرد (گزارش جلسه اول).کرج لاگ محلی است برای اشتراک مطالب جالبی که در رابطه گنو/لینوکس و نرم‌افزار های آزاد می دانیم.در صورت تمایل شما نیز میتوانید به ما بپیوندید و اوقات خوبی را با به اشتراک مطالبی که می دانید سپری کنید.‫‏‫در این پایگاه وب کلیه اطلاعات مورد نیاز را می توانید بیابید. همچنین می توانید در لیست پستی مشترک شوید تا از اخبار اطلاع پیدا کنید."
 
 #: templates/base.html:76
 msgid "Sponsers:"
@@ -478,15 +478,15 @@ msgstr "دوستان"
 
 #: templates/base.html:82
 msgid "b3hnam"
-msgstr ""
+msgstr "بهنام"
 
 #: templates/base.html:83
 msgid "lxsameer"
-msgstr ""
+msgstr "سمیر"
 
 #: templates/base.html:84
 msgid "Linux Tricks"
-msgstr ""
+msgstr "ترفند های لینوکسی"
 
 #: templates/base.html:85
 msgid "Kernel-ir.com"
@@ -506,7 +506,7 @@ msgstr "تعریف لاگ"
 
 #: templates/base.html:91
 msgid "Registered LUG"
-msgstr "لاگ ثبت شده"
+msgstr "لاگ های ثبت شده"
 
 #: templates/base.html:92
 msgid "KarajLug & SFD 2010"
@@ -526,15 +526,15 @@ msgstr "پایتون"
 
 #: templates/base.html:104
 msgid "Django"
-msgstr ""
+msgstr "جنگو"
 
 #: templates/base.html:104
 msgid "rev"
-msgstr ""
+msgstr "بازدید"
 
 #: templates/base.html:104
 msgid "Some Hackers In Town</a> unless otherwise noted. All the documents in this website are released under the terms of the <a href=\"http://www.gnu.org/licenses/fdl.html\">GNU FDL</a> license."
-msgstr ""
+msgstr "Some Hackers In Town</a>. تمامی مستندات این سابت تحت مجوز <a href=\"http://www.gnu.org/licenses/fdl.html\">GNU FDL</a> می باشند."
 
 #: templates/news_entry.html:18
 #: templates/page.html:10
