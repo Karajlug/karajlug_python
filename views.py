@@ -34,7 +34,7 @@ def index(request):
         page = FirstPage.objects.latest("date")
     except FirstPage.DoesNotExist:
         page = None
-    return rr("index.djhtml",
+    return rr("index.html",
               {"news": news,
                "page": page,
                },

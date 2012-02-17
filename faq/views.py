@@ -28,6 +28,6 @@ def index(request):
     show the whole index
     """
     faqs = FAQ.objects.all()
-    return rr("faq.djhtml",
+    return rr("faq.html",
               {"faq": faqs,},
               context_instance=RequestContext(request))

@@ -35,7 +35,7 @@ def show_page(request, slug):
 
     except Page.DoesNotExist:
         return Http404()
-    return rr("page.djhtml",
+    return rr("page.html",
               {"page": page,
                "title": "%s | %s" % (_("Karajlug"), page.title)},
               context_instance=RequestContext(request))

@@ -36,7 +36,7 @@ TIME_ZONE = 'Asia/Tehran'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'fa'
 
 _ = lambda s: s
 
@@ -123,5 +123,5 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 
 BOOK_IN_PAGE = 5
 NEWS_LIMIT = 10
-VERSION = "0.12.9-b2"
+VERSION = "0.21.36"
 AUTH_PROFILE_MODULE = 'members.Member'

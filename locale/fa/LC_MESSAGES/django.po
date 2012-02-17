@@ -3,291 +3,291 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-17 19:57+0330\n"
-"PO-Revision-Date: 2011-09-13 18:05+0330\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2012-02-17 21:11+0330\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 
 #: settings.py:44
-#, fuzzy
 msgid "Persian"
-msgstr "پارسی"
+msgstr ""
 
 #: settings.py:45
 msgid "English"
-msgstr "انگلیسی"
+msgstr ""
 
 #: books/models.py:36 members/models.py:121 news/models.py:37
 #: page/models.py:46 page/models.py:90 projects/models.py:41
 msgid "Language"
-msgstr "زبان"
+msgstr ""
 
 #: books/models.py:37 members/models.py:122 projects/models.py:42
 msgid "Site language (en-us at this time)"
-msgstr "زبان وب‌گاه (fa در این لحظه)"
+msgstr ""
 
 #: books/models.py:40
 msgid "Book Name"
-msgstr "نام کتاب"
+msgstr ""
 
 #: books/models.py:41 page/models.py:37 projects/models.py:50
 msgid "Slug"
-msgstr "اسلاگ"
+msgstr ""
 
 #: books/models.py:46 projects/models.py:55
 msgid "Maintainers"
-msgstr "نگاه‌دارنده"
+msgstr ""
 
 #: books/models.py:50
 msgid "Book Cover"
-msgstr "جلد کتاب"
+msgstr ""
 
 #: books/models.py:51 members/models.py:40 projects/models.py:60
 msgid "Size: 128x128 DO NOT UPLOAD BIG FILES !!!"
-msgstr "اندازه: ۱۲۸×۱۲۸ پرونده‌های بزرگ بارگذاری نکنید !!!"
+msgstr ""
 
 #: books/models.py:54 books/templates/book_view.html:18
 #: books/templates/books.html:21
 msgid "ISBN"
-msgstr "ISBN"
+msgstr ""
 
 #: books/models.py:57 books/templates/books.html:24 projects/models.py:62
 #: projects/templates/project_view.html:32
 msgid "License"
-msgstr "مجوز"
+msgstr ""
 
 #: books/models.py:60
 msgid "URL"
-msgstr "نشانی اینترنتی"
+msgstr ""
 
 #: books/models.py:63
 msgid "Online book"
-msgstr "کتاب آنلاین"
+msgstr ""
 
 #: books/models.py:66
 msgid "Complete"
-msgstr "کامل"
+msgstr ""
 
 #: books/models.py:68 projects/models.py:78 projects/models.py:131
 msgid "Order"
-msgstr "سفارش"
+msgstr ""
 
 #: books/models.py:69
 msgid "Book will appear in menu respect to this value"
-msgstr "با توجه به مقدار وارد شده، کتاب در منو نمایش داده می‌شود."
+msgstr ""
 
 #: books/models.py:71 books/templates/book_view.html:36 members/models.py:44
 #: projects/models.py:83 projects/templates/project_view.html:50
 msgid "Description"
-msgstr "توضیحات"
+msgstr ""
 
 #: books/models.py:74 projects/models.py:72
 msgid "Download URL"
-msgstr "نشانی بارگیری"
+msgstr ""
 
 #: books/models.py:76 members/models.py:46 members/models.py:133
 #: projects/models.py:75
 msgid "Creator"
-msgstr "سازنده"
+msgstr ""
 
 #: books/models.py:110
 msgid "Book"
-msgstr "کتاب"
+msgstr ""
 
 #: books/models.py:111 page/templates/nav.html:5
 msgid "Books"
-msgstr "کتاب‌ها"
+msgstr ""
 
 #: books/templates/book_view.html:16 books/templates/books.html:19
 msgid "Author"
-msgstr "نویسنده"
+msgstr ""
 
 #: books/templates/book_view.html:21 books/templates/books.html:30
 msgid "It's an online book."
-msgstr "آن  یک کتاب آنلاین است."
+msgstr ""
 
 #: books/templates/book_view.html:23 books/templates/books.html:32
 msgid "It's an offset book."
-msgstr "آن یک کتاب آفست است."
+msgstr ""
 
 #: books/templates/book_view.html:26 books/templates/books.html:35
 msgid "Not Completed"
-msgstr "تکمیل نشده"
+msgstr ""
 
 #: books/templates/book_view.html:29 members/models.py:32
 #: projects/models.py:65
 msgid "Home Page"
-msgstr "صفحهٔ خانگی"
+msgstr ""
 
 #: books/templates/book_view.html:40 members/templates/member_view.html:40
 #: projects/templates/project_view.html:54
 msgid "Nothing yet"
-msgstr "هیچی تا به حال"
+msgstr ""
 
 #: books/templates/books.html:27
 msgid "Home page"
-msgstr "صفحهٔ خانگی"
+msgstr ""
 
 #: faq/models.py:30 mediacenter/models.py:32 members/models.py:29
 #: news/models.py:33 page/models.py:33 page/models.py:82
+#: templates/news_entry.html:19 templates/page.html:11
 msgid "User"
-msgstr "کاربر"
+msgstr ""
 
 #: faq/models.py:32 faq/models.py:42
 msgid "Question"
-msgstr "سوال"
+msgstr ""
 
 #: faq/models.py:33
 msgid "Answer"
-msgstr "پاسخ"
+msgstr ""
 
 #: faq/models.py:35 mediacenter/models.py:34 news/models.py:42
 #: page/models.py:51 page/models.py:95
 msgid "Date and Time"
-msgstr "تاریخ و زمان"
+msgstr ""
 
-#: faq/models.py:41 page/templates/nav.html:3
+#: faq/models.py:41 page/templates/nav.html:3 templates/faq.html:6
 msgid "FAQ"
-msgstr "سین جیم"
+msgstr ""
 
 #: mediacenter/models.py:30
 msgid "File"
-msgstr "فایل"
+msgstr ""
 
 #: mediacenter/models.py:40
 msgid "upload file"
-msgstr "فایل آپلود"
+msgstr ""
 
 #: mediacenter/models.py:41
 msgid "upload files"
-msgstr "فایل های آپلودی"
+msgstr ""
 
 #: members/admin.py:51 members/admin.py:65
 msgid "You can only add yourself as a member"
-msgstr "شما فقط خودتان را می‌توانید به عنوان عضو بیافزایید"
+msgstr ""
 
 #: members/admin.py:152 members/admin.py:298
 #, python-format
 msgid "Add %s"
-msgstr "اضافه‌کرده %s"
+msgstr ""
 
 #: members/admin.py:194
 msgid "You can add only yourself as a member."
-msgstr "شما فقط خودتان را می‌توانید به عنوان عضو بیافزایید."
+msgstr ""
 
 #: members/admin.py:204 members/admin.py:212
 msgid "You can add only details about yourself."
-msgstr "شما فقط خودتان می‌توانید جزئیاتی دربارهٔ خودتان بیافزایید."
+msgstr ""
 
 #: members/models.py:31
 msgid "Who is the owner of this profile?"
-msgstr "چه کسی صاحب این این پروفایل است؟"
+msgstr ""
 
 #: members/models.py:34
 msgid "Home page link"
-msgstr "پیوند صفحهٔ شخصی"
+msgstr ""
 
 #: members/models.py:38
 msgid "Avatar"
-msgstr "آواتار"
+msgstr ""
 
 #: members/models.py:39
 msgid "Please use your real face avatar. "
-msgstr "لطفاً از آواتار چهره واقعی خودتان استفاده کنید."
+msgstr ""
 
 #: members/models.py:41 members/models.py:130
 msgid "Item Weight"
-msgstr "وزن فقره"
+msgstr ""
 
 #: members/models.py:42
 msgid "This field is not important"
-msgstr "این فیلد مهم نیست"
+msgstr ""
 
 #: members/models.py:102 members/models.py:124
 msgid "Member"
-msgstr "عضو"
+msgstr ""
 
 #: members/models.py:103 page/templates/nav.html:4
 msgid "Members"
-msgstr "اعضا"
+msgstr ""
 
 #: members/models.py:105
 msgid "Can Add new members and details."
-msgstr "می‌تواند اغضای جدید و جزئیات اضافه کند."
+msgstr ""
 
 #: members/models.py:125
 msgid "Who is the owner of this property?"
-msgstr "چه کسی صاحب این ویژگی است؟"
+msgstr ""
 
 #: members/models.py:127
 msgid "Field Name"
-msgstr "نام فیلد"
+msgstr ""
 
 #: members/models.py:128
 msgid "Profile property name"
-msgstr "نام خاصیت دارایی"
+msgstr ""
 
 #: members/models.py:131
 msgid "Properties with lower weight will appear sooner."
-msgstr "خصوصیت با وزن کمتر، بالاتر نمایش داده می‌شود."
+msgstr ""
 
 #: members/models.py:157
 msgid "Member Detail"
-msgstr "جزئیات عضو"
+msgstr ""
 
 #: members/models.py:158
 msgid "Member Details"
-msgstr "جزئیات اعضا"
+msgstr ""
 
 #: members/templates/member_view.html:36
 msgid "Bio"
-msgstr "بیوگرافی"
+msgstr ""
 
 #: news/models.py:35 page/models.py:35 page/models.py:85
 msgid "Title"
-msgstr "عنوان"
+msgstr ""
 
 #: news/models.py:36 page/models.py:40 page/models.py:88
 msgid "News content"
-msgstr "محتویات اخبار"
+msgstr ""
 
-#: news/models.py:77 news/models.py:78
+#: news/models.py:77 news/models.py:78 templates/index.html:5
 msgid "News"
-msgstr "اخبار"
+msgstr ""
 
 #: page/models.py:42
 msgid "Publish"
-msgstr "انتشار"
+msgstr ""
 
 #: page/models.py:44
 msgid "Appear in navigation?"
-msgstr "نمایان در ناوبرری"
+msgstr ""
 
 #: page/models.py:53
-#, fuzzy
 msgid "Weight"
-msgstr "وزن فقره"
+msgstr ""
 
 #: page/models.py:76
 msgid "Pages"
-msgstr "صفحه‌ها"
+msgstr ""
 
-#: page/models.py:77
+#: page/models.py:77 templates/news_list.html:18
 msgid "Page"
-msgstr "صفحه"
+msgstr ""
 
 #: page/models.py:103
-#, fuzzy
 msgid "First Pages"
-msgstr "صفحه‌ها"
+msgstr ""
 
 #: page/models.py:104
 msgid "First Page"
@@ -295,79 +295,195 @@ msgstr ""
 
 #: page/views.py:40
 msgid "Karajlug"
-msgstr "کرج لاگ"
+msgstr ""
 
 #: page/templates/nav.html:6 projects/models.py:119
 msgid "Projects"
-msgstr "پروژه‌ها"
+msgstr ""
 
 #: projects/models.py:45
 msgid "Project Name"
-msgstr "نام پروژه"
+msgstr ""
 
 #: projects/models.py:49
 msgid "Version"
-msgstr "نسخه"
+msgstr ""
 
 #: projects/models.py:59
 msgid "Project logo"
-msgstr "نشان پروژه"
+msgstr ""
 
 #: projects/models.py:71 projects/templates/project_view.html:35
 msgid "VCS"
-msgstr "کنترل‌کنندهٔ نسخه"
+msgstr ""
 
 #: projects/models.py:79
 msgid "Projects will appear in menu respect to this value"
-msgstr "با توجه به مقدار وارد شده، پروژه در منو نمایش داده می‌شود."
+msgstr ""
 
 #: projects/models.py:82
 msgid "KarajLUG Project"
-msgstr "پروژهٔ کرج لاگ"
+msgstr ""
 
 #: projects/models.py:118 projects/models.py:127
 msgid "Project"
-msgstr "پروژه"
+msgstr ""
 
 #: projects/models.py:129
 msgid "Address"
-msgstr "نشانی"
+msgstr ""
 
 #: projects/models.py:132
 msgid "Repository will appear in menu respect to this value"
-msgstr "با توجه به مقدار وارد شده، مخزن در منو نمایش داده می‌شود."
+msgstr ""
 
 #: projects/models.py:150
 msgid "Repository"
-msgstr "مخزن"
+msgstr ""
 
 #: projects/models.py:151
 msgid "Reporsitories"
-msgstr "مخازن"
+msgstr ""
 
 #: projects/templates/project_view.html:20 projects/templates/projects.html:25
 #: projects/templates/projects.html:48
 msgid "Maintainer"
-msgstr "نگه‌دارنده"
+msgstr ""
 
 #: projects/templates/project_view.html:24 projects/templates/projects.html:27
 #: projects/templates/projects.html:50
 msgid "A KarajLUG project"
-msgstr "یک پروژهٔ کرج لاگ"
+msgstr ""
 
 #: projects/templates/project_view.html:26 projects/templates/projects.html:29
 #: projects/templates/projects.html:52
 msgid "Participated project"
-msgstr "پروژهٔ مشارکت‌کرده"
+msgstr ""
 
 #: projects/templates/project_view.html:29
 msgid "Latest version"
-msgstr "آخرین نسخه"
+msgstr ""
 
 #: projects/templates/project_view.html:38
 msgid "Download "
-msgstr "بارگیری"
+msgstr ""
 
 #: projects/templates/project_view.html:42
 msgid "Repositories"
-msgstr "مخازن"
+msgstr ""
+
+#: templates/base.html:16 templates/news_entry.html:7
+msgid " KarajLug "
+msgstr ""
+
+#: templates/base.html:42
+msgid "KarajLug"
+msgstr ""
+
+#: templates/base.html:55
+msgid "About KarajLug"
+msgstr ""
+
+#: templates/base.html:56
+msgid ""
+"\n"
+"\t\t  The Karaj GNU/Linux User Group (G/LUG) began its journey at 25th April "
+"2008 , (repor of first sesson). This community is a place to share what we "
+"all found intresting about Gnu/Linux operating system and Free Softwares. If "
+"you are interested, you can join us and have a good time sharing your what "
+"you know and like to share. You can find all the information you need about "
+"this comunity in this website. And also it is recommended to join the "
+"mailing list to be inform of the news.\n"
+"\t\t  "
+msgstr ""
+
+#: templates/base.html:76
+msgid "Sponsers:"
+msgstr ""
+
+#: templates/base.html:77
+msgid "KaraNic"
+msgstr ""
+
+#: templates/base.html:78
+msgid "Some Hackers In Town"
+msgstr ""
+
+#: templates/base.html:81
+msgid "Friends:"
+msgstr ""
+
+#: templates/base.html:82
+msgid "b3hnam"
+msgstr ""
+
+#: templates/base.html:83
+msgid "lxsameer"
+msgstr ""
+
+#: templates/base.html:84
+msgid "Linux Tricks"
+msgstr ""
+
+#: templates/base.html:85
+msgid "Kernel-ir.com"
+msgstr ""
+
+#: templates/base.html:86
+msgid "emacs.ir"
+msgstr ""
+
+#: templates/base.html:89
+msgid "Related links:"
+msgstr ""
+
+#: templates/base.html:90
+msgid "LUG Defination"
+msgstr ""
+
+#: templates/base.html:91
+msgid "Registered LUG"
+msgstr ""
+
+#: templates/base.html:92
+msgid "KarajLug & SFD 2010"
+msgstr ""
+
+#: templates/base.html:95
+msgid "Powered by Vanda"
+msgstr ""
+
+#: templates/base.html:104
+msgid "KarajLug Version"
+msgstr ""
+
+#: templates/base.html:104
+msgid "Python"
+msgstr ""
+
+#: templates/base.html:104
+msgid "Django"
+msgstr ""
+
+#: templates/base.html:104
+msgid "rev"
+msgstr ""
+
+#: templates/base.html:104
+msgid ""
+"Some Hackers In Town</a> unless otherwise noted. All the documents in this "
+"website are released under the terms of the <a href=\"http://www.gnu.org/"
+"licenses/fdl.html\">GNU FDL</a> license."
+msgstr ""
+
+#: templates/news_entry.html:18 templates/page.html:10
+msgid "Date"
+msgstr ""
+
+#: templates/news_list.html:14
+msgid "previous"
+msgstr ""
+
+#: templates/news_list.html:22
+msgid "next"
+msgstr ""
