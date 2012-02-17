@@ -27,13 +27,14 @@ class I18nMiddleware(object):
     """
     def process_request(self, request):
         server = request.META["HTTP_HOST"]
-
+        print "request; ", server
         lang = server.split(".")[0]
         if lang == "en":
             translation.activate("en")
         else:
             translation.activate("fa")
         request.LANGUAGE_CODE = translation.get_language()
+        print ">>> ", settings.LANGUAGE_CODE
         return None
 
     def process_view(self, request, view_func, view_args, view_kwargs):

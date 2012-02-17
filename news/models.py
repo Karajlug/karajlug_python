@@ -1,6 +1,6 @@
 # -----------------------------------------------------------------------------
 #    Karajlug.org
-#    Copyright (C) 2010  Karajlug community
+#    Copyright (C) 2010-2012  Karajlug community
 #
 #    This program is free software; you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -20,6 +20,9 @@
 from django.db import models
 from django.utils.translation import ugettext as _
 from django.contrib.auth.models import User
+from django.conf import settings
+
+from locales.managers import I18nManager
 
 
 class News(models.Model):
@@ -31,8 +34,14 @@ class News(models.Model):
     title = models.CharField(max_length=60,
                             verbose_name=_("Title"))
     content = models.TextField(verbose_name=_("News content"))
+    lang = models.CharField(_("Language"), max_length=8,
+                            choices=settings.LANGUAGES,
+                            default=settings.LANGUAGE_CODE)
+
     date = models.DateTimeField(auto_now_add=True, auto_now=False,
                                      verbose_name=_('Date and Time'))
+
+    objects = I18nManager()
 
     def __unicode__(self):
         return self.title

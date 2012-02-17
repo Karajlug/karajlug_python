@@ -2,8 +2,9 @@
 {% load i18n %}
 
 {% block content %}
-<h2>{% trans "News" %}</h2>
-<a href="/news/feed/" style="float:right;margin-right: 300px;margin-top: -80px;"><img src="{{ MEDIA_URL }}images/rss.png"></a>
+<h2 id="newstitle">{% trans "News" %}</h2>
+<a href="/news/feed/" class="rss"><img src="{{ MEDIA_URL }}images/rss.png"></a>
+
 {% for news_entry in news %}
 <div class="news_entry">
 <h3><a href="{{ news_entry.get_absolute_url }}">{{ news_entry }}</a></h3>
@@ -15,12 +16,10 @@
 {% endfor %}
 
 {% endblock %}
+
 {% block home %}
-	<footer>
-			
 <h3><a href="/page/sfd2011">{% trans "SFD 2011 on the way" %}</a></h3>
 <p>Every year the participants of KarajLUG get together to celebrate Software Freedom Day (SFD). This year we plan to set the SFD conference up on 18th of Sep.
 <br />For more information take a look at <a href="/page/sfd2011">here</a>.</p><br/><br/>
 <p align="right"><a href="http://www.softwarefreedomday.org/"><img src="http://www.softwarefreedomday.org/countdown/banner1-UTC+3-en.png" border="0" width="190" height="200" alt="Celebrate SFD with us on September 17!"></a></p>
-	</footer>
 {% endblock %}

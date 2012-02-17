@@ -40,7 +40,7 @@ input, select { vertical-align:middle; }
 fonts.css from the YUI Library: developer.yahoo.com/yui/ */
 
 body { font:13px/1.231 sans-serif; *font-size:small; } /* hack retained to preserve specificity */
-select, input, textarea, button { font:99% sans-serif; }
+select, input, textarea, button { font:1% sans-serif; }
 pre, code, kbd, samp { font-family: monospace, sans-serif; }
 
 
@@ -57,7 +57,7 @@ html { overflow-y: scroll; }
 a:hover, a:active { outline: none; }
 a, a:active, a:visited { color: #eeeeec; }
 a:hover { color: #ff3333; }
-ul, ol { margin-left: 1.8em; }
+ul, ol { margin-right: 1.8em; }
 ol { list-style-type: decimal; }
 nav ul, nav li { margin: 0; } 
 small { font-size: 85%; }
@@ -73,7 +73,7 @@ pre {
   word-wrap: break-word; /* IE */
 }
 textarea { overflow: auto; } /* thnx ivannikolic! www.sitepoint.com/blogs/2010/08/20/ie-remove-textarea-scrollbars/ */
-.ie6 legend, .ie7 legend { margin-left: -7px; } /* thnx ivannikolic! */
+.ie6 legend, .ie7 legend { margin-right: -7px; } /* thnx ivannikolic! */
 input[type="radio"] { vertical-align: text-bottom; }
 input[type="checkbox"] { vertical-align: bottom; }
 .ie7 input[type="checkbox"] { vertical-align: baseline; }
@@ -103,7 +103,7 @@ button {  width: auto; overflow: visible; }
  */
 
 /* for image replacement */
-.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: right; direction: ltr; }
 
 /* Hide for both screenreaders and browsers */
 .hidden { display: none; visibility: hidden; } 
@@ -159,7 +159,7 @@ h2, h3{
     width: 315px;
     height: 100px;
     margin-top: 20px;
-    float:left;
+    float:right;
 }
 
 h2{
@@ -171,7 +171,7 @@ h3{
 }
 
 nav{
-	float:right;
+	float:left;
 	margin-top:128px;
 }
 
@@ -189,15 +189,15 @@ nav a{
 aside{
 	color: #eeeeec;
 	padding:20px;
-	float:right;
+	float:left;
 	height:405px;
 	width:200px;
 	background-color: #ff3333; //#f16529;
 	border-bottom:20px solid #003333;
 	margin-bottom:50px;
-	-webkit-box-shadow:0 0px 40px -10px #AAA;
-	   -moz-box-shadow:0 0px 40px -10px #AAA;
-	        box-shadow:0 0px 40px -10px #AAA;	
+	-webkit-box-shadow:0 -10px 40px 0px #AAA;
+	   -moz-box-shadow:0 -10px 40px 0px #AAA;
+	        box-shadow:0 -10px 40px 0px #AAA;	
 }
 
 #main p{
@@ -220,9 +220,7 @@ article header{
 	margin-bottom:50px;
 	padding-bottom:30px;
 	width:700px;
-	-webkit-box-shadow:0 45px 60px -60px #AAA;
-	   -moz-box-shadow:0 45px 60px -60px #AAA;
-	        box-shadow:0 45px 60px -60px #AAA;
+	float: right;
 }
 #news{
     min-height: 400px;
@@ -237,13 +235,13 @@ article header{
 	font-size: 30px;
 	color:white;
 	margin-bottom:50px;
-	-webkit-box-shadow:0px 15px 20px -10px #AAA;
-	   -moz-box-shadow:0px 15px 20px -10px #AAA;
-	        box-shadow:0px 15px 20px -10px #AAA;
+	-webkit-box-shadow:0px -10px 20px 15px #AAA;
+	   -moz-box-shadow:0px -10px 20px 15px #AAA;
+	        box-shadow:0px -10px 20px 15px #AAA;
 	background-color:#bbb;
 	border-bottom:20px solid #aaa;
-	float:left;
-	margin-right:40px;
+	float:right;
+	margin-left:40px;
 }
 
 #builder a.selected{
@@ -263,8 +261,8 @@ article header{
 }
 
 #builder #download img{
-	float:right;
-	margin-right:10px;
+	float:left;
+	margin-left:10px;
 	position:relative;
 	bottom:10px;
 }
@@ -275,9 +273,9 @@ article header{
 
 #builder section{
 	width:660px;
-	-webkit-box-shadow:0 45px 60px -60px #AAA;
-	   -moz-box-shadow:0 45px 60px -60px #AAA;
-	        box-shadow:0 45px 60px -60px #AAA;
+	-webkit-box-shadow:0 -60px 60px 45px #AAA;
+	   -moz-box-shadow:0 -60px 60px 45px #AAA;
+	        box-shadow:0 -60px 60px 45px #AAA;
 	        padding-bottom:0px;
 }
 
@@ -311,13 +309,13 @@ article header{
 .footer-box {
 	display:inline;
 	width:20%;
-	float:left;
+	float:right;
 	font-size: 14px;;
 
 }
 .footer-box a{
     text-decoration:none;
-    padding-left:10px;
+    padding-right:10px;
     color: #669999;
 }
 .footer-box a:hover{
@@ -359,10 +357,10 @@ article header{
     margin-top: 200px;
     color: #eeeeec;
     font-size: 12px;
-    margin-left:auto;
+    margin-right:auto;
     margin-top: auto;
     padding-top: 70px;
-    margin-right: auto;
+    margin-left: auto;
 }
 #copyright p{
     text-align:center;
@@ -378,7 +376,7 @@ article header{
     display: block;
     background: url("/statics/images/pow.png") no-repeat scroll 0 0 transparent;
     height: 75px;
-    margin-left: 80%;
+    margin-right: 80%;
     text-indent: -9999px;
 
 }
@@ -390,11 +388,11 @@ article header{
     margin: 0px;
 }
 .news_entry p{
-    margin-left: 20px;
+    margin-right: 20px;
 }
 .news_entry span{
-    float:left;
-    margin-left: 70%;
+    float:right;
+    margin-right: 70%;
     padding-top: 10px;
     padding-bottom: 30px;    
 }
@@ -405,8 +403,8 @@ article header{
 }
 .mtable {
     width: 100%;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
 }
 .mtable td{
     width: 100%;
@@ -418,7 +416,7 @@ article header{
     padding: 15px;
     border-radius: 10px;
     height: 75px;
-    margin-right: 20px;
+    margin-left: 20px;
     margin-bottom: 25px;
     
 }
@@ -435,7 +433,7 @@ border-radius: 10px;
 .detail{
     width: 320px;
     margin-top: -70px;
-    margin-left: 80px;
+    margin-right: 80px;
 
 }
 .details h3{
@@ -456,7 +454,7 @@ border-radius: 10px;
     font-weight:300;
 }
 .mainproperties{
-    margin-left: 180px;
+    margin-right: 180px;
     margin-top: -185px;
 
 }
@@ -494,7 +492,7 @@ word-wrap:break-word;
 }
 #field_value{
     width:60%;
-    padding-left: 40px;
+    padding-right: 40px;
 }
 .bbox{
     width: 600px;
@@ -503,8 +501,8 @@ word-wrap:break-word;
     padding: 25px;
     border-radius: 10px;
     height: 225px;
-    margin-right: auto;
     margin-left: auto;
+    margin-right: auto;
     margin-bottom: 25px;
 }
 .cover{
@@ -514,7 +512,7 @@ word-wrap:break-word;
 .book_details{
     word-wrap:break-word;
     margin-top: -230px;
-    margin-left: 180px;
+    margin-right: 180px;
 }
 #bookname {
     font-size: 46px;
@@ -524,8 +522,8 @@ word-wrap:break-word;
 }
 #cover{
 
-float: right;
-margin-right: 30px;
+float: left;
+margin-left: 30px;
 }
 .book_properties {
     word-wrap:break-word;
@@ -547,7 +545,11 @@ margin-right: 30px;
 }
 
 .rss {
-    float:right;
-    margin-right: 300px;
+    float:left;
+    margin-left: 300px;
     margin-top: -80px;
+}
+
+#newstitle {
+    margin-left: 80%
 }

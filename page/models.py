@@ -20,6 +20,9 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.utils.translation import ugettext as _
+from django.conf import settings
+
+from locales.managers import I18nManager
 
 
 class Page(models.Model):
@@ -40,8 +43,14 @@ class Page(models.Model):
     menu = models.BooleanField(default=False,
                                   verbose_name=_("Appear in navigation?"))
 
+    lang = models.CharField(_("Language"), max_length=8,
+                            choices=settings.LANGUAGES,
+                            default=settings.LANGUAGE_CODE)
+
     date = models.DateTimeField(auto_now_add=True, auto_now=False,
                                      verbose_name=_('Date and Time'))
+
+    objects = I18nManager()
 
     def __unicode__(self):
         return self.title
@@ -66,3 +75,45 @@ class Page(models.Model):
     class Meta:
         verbose_name_plural = _("Pages")
         verbose_name = _('Page')
+
+
+class FirstPage(models.Model):
+    user = models.ForeignKey(User, editable=False,
+                             verbose_name=_("User"))
+
+    title = models.CharField(max_length=30,
+                             verbose_name=_("Title"))
+
+    # IMPORTANT: content field will render as html
+    content = models.TextField(verbose_name=_("News content"))
+
+    lang = models.CharField(_("Language"), max_length=8,
+                            choices=settings.LANGUAGES,
+                            default=settings.LANGUAGE_CODE)
+
+    date = models.DateTimeField(auto_now_add=True, auto_now=False,
+                                     verbose_name=_('Date and Time'))
+
+    objects = I18nManager()
+
+    def __unicode__(self):
+        return self.title
+
+    def irc_repr(self, logentry):
+
+        phrase = "added"
+        if logentry.is_change():
+            phrase = "change"
+        elif logentry.is_delete():
+            phrase = "delete"
+
+        return ["%s first page %s by %s." % (
+            self.title,
+            phrase,
+            self.user)]
+
+    class Meta:
+        verbose_name_plural = _("First Pages")
+        verbose_name = _('First Page')
+
+        orgering = ["date", ]

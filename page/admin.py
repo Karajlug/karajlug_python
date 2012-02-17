@@ -19,7 +19,7 @@
 
 from django.contrib import admin
 
-from models import Page
+from models import Page, FirstPage
 
 
 class PageAdmin(admin.ModelAdmin):
@@ -35,4 +35,18 @@ class PageAdmin(admin.ModelAdmin):
         obj.user = request.user
         obj.save()
 
+
+class FPageAdmin(admin.ModelAdmin):
+    """
+    Admin interface class for paeg model
+    """
+    list_display = ("title", "user", "date")
+    search_fields = ("title", "content")
+    list_filter = ("user",)
+
+    def save_model(self, request, obj, form, change):
+        obj.user = request.user
+        obj.save()
+
 admin.site.register(Page, PageAdmin)
+admin.site.register(FirstPagePage, FPageAdmin)

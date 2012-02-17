@@ -12,9 +12,9 @@
 	<meta charset="UTF-8">
 	
 	<title>
-      {% block title %}
-      {% trans " KarajLug " %}
-      {% endblock %}
+	  {% block title %}
+	  {% trans " KarajLug " %}
+	  {% endblock %}
 	</title>
 	
 	<meta name="description" content="KarajLug Karaj Linux users group">
@@ -25,8 +25,13 @@
 	
 	<link rel="shortcut icon" href="/statics/favicon.png">
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
-	
-	<link rel="stylesheet" href="/statics/css/style.css">
+
+	{% get_language_info for LANGUAGE_CODE as lang %}
+	{% if lang.bidi %}
+	<link rel="stylesheet" href="/statics/css/bidi/style.css">	
+	{% else %}
+	<link rel="stylesheet" href="/statics/css/style.css">	
+	{% endif %}
     {% block extrahead %}
     {% endblock %}
 </head>
@@ -58,17 +63,17 @@ The Karaj GNU/Linux User Group (G/LUG) began its journey at 25th April 2008 , (r
 			{% endblock %}	
 			</header>
 			{% block content %}
-			{% endblock %}<br/><br/>
+			{% endblock %}
+			<br/>
+			<br/>
 		</article>
 	</div>
 	<div id="footer-container">
 		<footer class="wrapper">
 			<h3>      {% block footer %}
       				  <p class="footer-box">
-				    <b>Sponsers:</b><br/>
-				    <a href="http://www.notrica.co/">Notrica</a><br/>
-				    <a href="http://www.shahbal.net/">Shahbal co.</a><br/>
-				    <a href="http://www.karanic.com/">KaraNic</a><br/>
+				    <b>{% trans 'Sponsers:' %}</b><br/>
+				    <a href="http://www.karanic.com/">{% trans 'KaraNic' %}</a><br/>
 				    <a href="http://iamamemberofsomehackersintownstreetcomputinggroupwhataboutyou.com">Some Hackers In Town</a>
 				  </p>
       				  <p class="footer-box">
@@ -82,11 +87,11 @@ The Karaj GNU/Linux User Group (G/LUG) began its journey at 25th April 2008 , (r
       				  <p class="footer-box">
 				 	<b>{% trans "Related links:" %} </b><br>
 					<a href="http://en.wikipedia.org/wiki/Linux_User_Group" target="_blank">{% trans 'LUG Defination' %}</a><br/>
-					<a href="http://www.linux.org/groups/2484_Karaj_Linux_User_Group.html">Registered LUG</a><br/>
+					<a href="http://www.linux.org/groups/2484_Karaj_Linux_User_Group.html">{% trans 'Registered LUG' %}</a><br/>
 					<a href="http://wiki.softwarefreedomday.org/2010/Asia/Iran/Karaj/KarajLUG">{% trans 'KarajLug & SFD 2010'%}</a>
 				  </p>
 				  
-				  <a id="powered" href="http://www.vandaproject.com/"><p>Powered by Vanda</p></a>
+				  <a id="powered" href="http://www.vandaproject.com/"><p>{% trans 'Powered by Vanda' %}</p></a>
 				{% endblock %}
 
 			</h3>

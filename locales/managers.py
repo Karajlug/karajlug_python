@@ -18,11 +18,10 @@
 # -----------------------------------------------------------------------------
 
 from django.db import models
-from django.conf import settings
-from django.contrib.sites.models import Site
+from django.utils import translation
 
 
 class I18nManager(models.Manager):
     def get_query_set(self):
-        current_site = Site.objects.get(id=settings.SITE_ID)
-        return super(I18nManager, self).get_query_set().filter(site=current_site)
+        lang = translation.get_language()
+        return super(I18nManager, self).get_query_set().filter(lang=lang)
