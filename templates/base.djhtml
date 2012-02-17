@@ -52,9 +52,10 @@
 	<div id="main" class="wrapper">
 	  {% block aside %}
 		<aside>
-		  <h3>About KarajLug</h3>
-		  
-The Karaj GNU/Linux User Group (G/LUG) began its journey at 25th April 2008 , (repor of first sesson). This community is a place to share what we all found intresting about Gnu/Linux operating system and Free Softwares. If you are interested, you can join us and have a good time sharing your what you know and like to share. You can find all the information you need about this comunity in this website. And also it is recommended to join the mailing list to be inform of the news.
+		  <h3>{% trans 'About KarajLug' %}</h3>
+		  {% blocktrans %}
+		  The Karaj GNU/Linux User Group (G/LUG) began its journey at 25th April 2008 , (repor of first sesson). This community is a place to share what we all found intresting about Gnu/Linux operating system and Free Softwares. If you are interested, you can join us and have a good time sharing your what you know and like to share. You can find all the information you need about this comunity in this website. And also it is recommended to join the mailing list to be inform of the news.
+		  {% endblocktrans %}
 		</aside>
 		{% endblock %}
 		<article>
@@ -74,7 +75,7 @@ The Karaj GNU/Linux User Group (G/LUG) began its journey at 25th April 2008 , (r
       				  <p class="footer-box">
 				    <b>{% trans 'Sponsers:' %}</b><br/>
 				    <a href="http://www.karanic.com/">{% trans 'KaraNic' %}</a><br/>
-				    <a href="http://iamamemberofsomehackersintownstreetcomputinggroupwhataboutyou.com">Some Hackers In Town</a>
+				    <a href="http://iamamemberofsomehackersintownstreetcomputinggroupwhataboutyou.com">{% 'Some Hackers In Town' %}</a>
 				  </p>
       				  <p class="footer-box">
 				 <b>{% trans "Friends:" %} </b><br/>
@@ -100,7 +101,7 @@ The Karaj GNU/Linux User Group (G/LUG) began its journey at 25th April 2008 , (r
 		<div id="copyright">
 		  
 			  <p>
-			  {% trans "KarajLug Version" %}&nbsp; {{ VERSION }} &nbsp; Python: &nbsp;{{ PYVERSION }}&nbsp; <a href="http://www.djangoproject.com/">Django</a>:&nbsp;&nbsp;{{ DJVERSION }}&nbsp;&nbsp; rev: {{ REV }} <br></p><p>© 2011 <a href="http://iamamemberofsomehackersintownstreetcomputinggroupwhataboutyou.com">Some Hackers In Town</a> unless otherwise noted. All the documents in this website are released under the terms of the <a href="http://www.gnu.org/licenses/fdl.html">GNU FDL</a> license.</p>
+			  {% trans "KarajLug Version" %}&nbsp; {{ VERSION }} &nbsp; {% trans 'Python' %}: &nbsp;{{ PYVERSION }}&nbsp; <a href="http://www.djangoproject.com/">{% trans 'Django' %}</a>:&nbsp;&nbsp;{{ DJVERSION }}&nbsp;&nbsp; {% trans 'rev'%}: {{ REV }} <br></p><p>© 2011-2012 <a href="http://iamamemberofsomehackersintownstreetcomputinggroupwhataboutyou.com"> {% trans 'Some Hackers In Town</a> unless otherwise noted. All the documents in this website are released under the terms of the <a href="http://www.gnu.org/licenses/fdl.html">GNU FDL</a> license.' %}</p>
 		</div>
 	</div>
 {% endblock %}

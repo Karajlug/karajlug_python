@@ -50,6 +50,8 @@ class Page(models.Model):
     date = models.DateTimeField(auto_now_add=True, auto_now=False,
                                      verbose_name=_('Date and Time'))
 
+    weight = models.IntegerField(_("Weight"), default=50)
+
     objects = I18nManager()
 
     def __unicode__(self):
@@ -63,8 +65,6 @@ class Page(models.Model):
         phrase = "added"
         if logentry.is_change():
             phrase = "change"
-        elif logentry.is_delete():
-            phrase = "delete"
 
         return ["%s page %s by %s at %s" % (
             self.title,
