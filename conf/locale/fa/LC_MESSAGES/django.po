@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-17 19:14+0330\n"
+"POT-Creation-Date: 2012-02-17 19:57+0330\n"
 "PO-Revision-Date: 2011-09-13 18:05+0330\n"
 "Last-Translator: \n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -136,8 +136,8 @@ msgstr "هیچی تا به حال"
 msgid "Home page"
 msgstr "صفحهٔ شخصی"
 
-#: faq/models.py:30 members/models.py:29 news/models.py:33 page/models.py:33
-#: page/models.py:82
+#: faq/models.py:30 mediacenter/models.py:32 members/models.py:29
+#: news/models.py:33 page/models.py:33 page/models.py:82
 msgid "User"
 msgstr "کاربر"
 
@@ -149,13 +149,26 @@ msgstr "سوال"
 msgid "Answer"
 msgstr "پاسخ"
 
-#: faq/models.py:35 news/models.py:42 page/models.py:51 page/models.py:95
+#: faq/models.py:35 mediacenter/models.py:34 news/models.py:42
+#: page/models.py:51 page/models.py:95
 msgid "Date and Time"
 msgstr "تاریخ و زمان"
 
 #: faq/models.py:41 page/templates/nav.html:3
 msgid "FAQ"
 msgstr "پرسش و پاسخ‌های متداول"
+
+#: mediacenter/models.py:30
+msgid "File"
+msgstr ""
+
+#: mediacenter/models.py:40
+msgid "upload file"
+msgstr ""
+
+#: mediacenter/models.py:41
+msgid "upload files"
+msgstr ""
 
 #: members/admin.py:51 members/admin.py:65
 msgid "You can only add yourself as a member"
