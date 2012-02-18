@@ -53,6 +53,7 @@ class Page(models.Model):
     weight = models.IntegerField(_("Weight"), default=50)
 
     pages = I18nManager()
+    objects = models.Manager()
 
     def __unicode__(self):
         return self.title
