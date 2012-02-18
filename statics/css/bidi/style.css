@@ -405,9 +405,15 @@ article header{
 }
 .mtable {
     width: 100%;
-    margin-right: auto;
+    margin-right:auto;
     margin-left: auto;
+
 }
+
+article {
+    direction: ltr;
+}
+
 .mtable td{
     width: 100%;
 }
@@ -418,6 +424,7 @@ article header{
     padding: 15px;
     border-radius: 10px;
     height: 75px;
+    direction:ltr;
     margin-left: 20px;
     margin-bottom: 25px;
     
@@ -435,7 +442,8 @@ border-radius: 10px;
 .detail{
     width: 320px;
     margin-top: -70px;
-    margin-right: 80px;
+    margin-left: 80px;
+    direction: ltr;
 
 }
 .details h3{
@@ -497,6 +505,7 @@ word-wrap:break-word;
     padding-right: 40px;
 }
 .bbox{
+    direction: ltr;
     width: 600px;
     border: 1px solid #dddddf;
     background: #eeeeec;
@@ -508,13 +517,15 @@ word-wrap:break-word;
     margin-bottom: 25px;
 }
 .cover{
+   position: absolute;
    border: 5px solid #cccccd;
    border-radius: 5px;
 }
 .book_details{
     word-wrap:break-word;
-    margin-top: -230px;
-    margin-right: 180px;
+    margin-top: 0px;
+    margin-left: 180px;
+    direction: ltr;
 }
 #bookname {
     font-size: 46px;
@@ -522,10 +533,12 @@ word-wrap:break-word;
 .minor_details{
     line-height: 25px;
 }
+#bookname {
+    font-size: 30px;
+}
 #cover{
-
-float: left;
-margin-left: 30px;
+    float: left;
+    margin-left: 30px;
 }
 .book_properties {
     word-wrap:break-word;
@@ -557,4 +570,9 @@ margin-left: 30px;
 }
 
 #copyright p{
+}
+
+#languages {
+    float: left;
+
 }

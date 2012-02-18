@@ -39,10 +39,21 @@
 {% block body %}
 	<div id="header-container">
 	  <header class="wrapper">
+
 	    <a href="/" alt="KarajLUG"><h1 id="title">{% trans "KarajLug" %}</h1></a>
+	    <div id="languages">
+	    {% if lang.bidi %}
+	    <a href="http://en.karajlug.org/">English</a>
+	    {% else %}
+	    <a href="http://fa.karajlug.org/">فارسی</a>
+	    {% endif %}
+	    
+	  </div>
+
 	    <nav>
 	      {% navigation %}
 	    </nav>
+
 	  </header>
 	</div>
     <div class="yui3-u-1 nav">

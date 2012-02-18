@@ -551,3 +551,6 @@ margin-right: 30px;
     margin-right: 300px;
     margin-top: -80px;
 }
+#languages {
+    float: right;
+}
