@@ -20,3 +20,4 @@ syntax: glob
 *.wpr
 data/*
 django.mo
+karajlug_secret.py
