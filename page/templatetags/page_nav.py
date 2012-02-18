@@ -33,7 +33,7 @@ def navigation(parser, token):
 class NavigationNode(template.Node):
 
     def render(self, context):
-        nav_pages = Page.objects.filter(menu=True).order_by("-weight")
+        nav_pages = Page.pages.filter(menu=True).order_by("-weight")
         rendered_template = render_to_string("nav.html",
                                              {"pages": nav_pages})
         return rendered_template
