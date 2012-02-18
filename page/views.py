@@ -30,13 +30,13 @@ def show_page(request, slug):
     show the page with the given slug
     """
     try:
-        page = Page.objects.get(slug=slug,
-                                publish=True)
+        page = Page.objects.filter(slug=slug,
+                                   publish=True)
 
     except Page.DoesNotExist:
         raise Http404()
 
     return rr("page.html",
-              {"page": page,
+              {"page": page[0],
                "title": "%s | %s" % (_("Karajlug"), page.title)},
               context_instance=RequestContext(request))
