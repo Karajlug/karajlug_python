@@ -18,26 +18,26 @@
 # -----------------------------------------------------------------------------
 import os
 import sys
-#from mercurial import ui, hg
+from mercurial import ui, hg
 
 import django
 from django.conf import settings
 
 
-## def rev():
-##     u = ui.ui()
-##     # get a repo object for the current directory
-##     r = hg.repository(u, os.path.dirname(__file__))
-##     # get a context object for the "tip" revision
-##     c = r.changectx("tip")
-##     return c.rev
+def rev():
+    u = ui.ui()
+    # get a repo object for the current directory
+    r = hg.repository(u, os.path.dirname(__file__))
+    # get a context object for the "tip" revision
+    c = r.changectx("tip")
+    return c.rev
 
 
 def info(request):
     pyversion = ".".join([str(i) for i in sys.version_info])
     djversion = ".".join([str(i) for i in django.VERSION])
     return {"VERSION": settings.VERSION,
-            "REV": "N/A",
+            "REV": rev(),
             "PYVERSION": pyversion,
             "DJVERSION": djversion,
             }
