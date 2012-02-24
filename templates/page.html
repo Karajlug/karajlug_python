@@ -1,3 +1,4 @@
+
 {% extends 'base.html' %}
 {% load i18n %}
 
@@ -6,9 +7,9 @@
 {% autoescape off %}
 {{ page.content }}
 {% endautoescape %}
-<div class="pub">
+<!--<div class="pub">
 <span id="pubdate" >{% trans 'Date' %}: {{ page.date }}</span><br>
 <span id="pubuser" >{% trans 'User' %}: {{ page.user }}</span>
-</div>
+</div>-->
 </div>
 {% endblock %}
