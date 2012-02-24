@@ -413,6 +413,7 @@ article header{
 
 article {
     direction: ltr;
+    min-height: 400px;
 }
 
 .mtable td{
