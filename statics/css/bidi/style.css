@@ -392,6 +392,7 @@ article header{
 }
 .news_entry p{
     margin-right: 20px;
+    margin-top: 20px;
 }
 .news_entry span{
     float:right;
