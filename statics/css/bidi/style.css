@@ -383,7 +383,8 @@ article header{
 
 }
 .news_entry {
-    width: 100%;
+    width: 70%;
+    margin-left: 30%;
 }
 .news_entry h3{
 
