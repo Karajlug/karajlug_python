@@ -1,3 +1,21 @@
+# -----------------------------------------------------------------------------
+#    Karajlug.org
+#    Copyright (C) 2010  Karajlug community
+#
+#    This program is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation; either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License along
+#    with this program; if not, write to the Free Software Foundation, Inc.,
+#    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+# -----------------------------------------------------------------------------
 import os
 
 
@@ -17,7 +35,7 @@ ROOT = os.path.dirname(__file__)
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(ROOT, 'db.devdb'),
+        'NAME': os.path.join(ROOT, 'db.sqlite3'),
         'USER': '',
         'PASSWORD': '',
         'HOST': '',
@@ -27,7 +45,6 @@ DATABASES = {
 
 try:
     import karajlug_secret as ks
-
     DATABASES = ks.DATABASES
 except ImportError:
     pass
@@ -64,7 +81,7 @@ USE_L10N = True
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/"
-MEDIA_ROOT = os.path.join(ROOT, 'statics').replace("\\", "/")
+MEDIA_ROOT = os.path.join(ROOT, '../statics').replace("\\", "/")
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).
@@ -74,7 +91,9 @@ MEDIA_URL = '/statics/'
 # URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
 # trailing slash.
 # Examples: "http://foo.com/media/", "/media/".
-ADMIN_MEDIA_PREFIX = '/media/'
+#ADMIN_MEDIA_PREFIX = '/statics/admin/'
+
+WSGI_APPLICATION = 'karajlug_org.wsgi.application'
 
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = 'gjf)nm7ksjh@*vaiax%2u)tnlig4$yq5fm-99tszdx=75f4ak1'
@@ -83,7 +102,7 @@ SECRET_KEY = 'gjf)nm7ksjh@*vaiax%2u)tnlig4$yq5fm-99tszdx=75f4ak1'
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
-
+#     'django.template.loaders.eggs.Loader',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -96,10 +115,10 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
 )
 
-ROOT_URLCONF = 'urls'
+ROOT_URLCONF = 'karajlug_org.urls'
 
 TEMPLATE_DIRS = (
-    os.path.join(ROOT, 'templates').replace("\\", "/")
+    os.path.join(ROOT, '../templates').replace("\\", "/")
 )
 
 INSTALLED_APPS = (
@@ -108,6 +127,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.messages',
+    #'django.contrib.staticfiles',
     'django.contrib.admin',
     "page",
     "news",
@@ -125,10 +145,35 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "django.core.context_processors.i18n",
     "django.core.context_processors.media",
     "django.contrib.messages.context_processors.messages",
-    "context_processors.info",
+    "karajlug_org.context_processors.info",
     )
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'filters': {
+        'require_debug_false': {
+            '()': 'django.utils.log.RequireDebugFalse'
+        }
+    },
+    'handlers': {
+        'mail_admins': {
+            'level': 'ERROR',
+            'filters': ['require_debug_false'],
+            'class': 'django.utils.log.AdminEmailHandler'
+        }
+    },
+    'loggers': {
+        'django.request': {
+            'handlers': ['mail_admins'],
+            'level': 'ERROR',
+            'propagate': True,
+        },
+    }
+}
 
 BOOK_IN_PAGE = 5
 NEWS_LIMIT = 10
 VERSION = "0.21.36"
 AUTH_PROFILE_MODULE = 'members.Member'
+

@@ -16,28 +16,31 @@
 #    with this program; if not, write to the Free Software Foundation, Inc.,
 #    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 # -----------------------------------------------------------------------------
-import os
-import sys
-from mercurial import ui, hg
 
-import django
+import os
+
+from django.conf.urls.defaults import *
+from django.contrib import admin
 from django.conf import settings
 
+admin.autodiscover()
 
-def rev():
-    u = ui.ui()
-    # get a repo object for the current directory
-    r = hg.repository(u, os.path.dirname(__file__))
-    # get a context object for the "tip" revision
-    c = r.changectx("tip")
-    return c.rev
+urlpatterns = patterns('',
+    (r'^faq/$', "faq.views.index"),
+    (r'^news/', include('news.urls')),
+    (r'^page/', include('page.urls')),
+    (r'^members/', include('members.urls')),
+    (r'^books/', include('books.urls')),
+    (r'^projects/', include('projects.urls')),
+    (r'^bot/', include('dbot.urls')),
+    (r'^$', 'karajlug_org.views.index'),
+    (r'^admin/', include(admin.site.urls)),
+)
 
-
-def info(request):
-    pyversion = ".".join([str(i) for i in sys.version_info])
-    djversion = ".".join([str(i) for i in django.VERSION])
-    return {"VERSION": settings.VERSION,
-            "REV": rev(),
-            "PYVERSION": pyversion,
-            "DJVERSION": djversion,
-            }
+# Local media serving.
+if settings.DEBUG:
+    urlpatterns += patterns('',
+            (r'^statics/(?P<path>.*)$', 'django.views.static.serve',
+             {'document_root': os.path.join(os.path.dirname(__file__),\
+                                    '../statics').replace('\\', '/')}),
+)

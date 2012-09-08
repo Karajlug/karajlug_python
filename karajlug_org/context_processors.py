@@ -16,31 +16,17 @@
 #    with this program; if not, write to the Free Software Foundation, Inc.,
 #    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 # -----------------------------------------------------------------------------
-
 import os
+import sys
 
-from django.conf.urls.defaults import *
-from django.contrib import admin
+import django
 from django.conf import settings
 
-admin.autodiscover()
 
-urlpatterns = patterns('',
-    (r'^faq/$', "faq.views.index"),
-    (r'^news/', include('news.urls')),
-    (r'^page/', include('page.urls')),
-    (r'^members/', include('members.urls')),
-    (r'^books/', include('books.urls')),
-    (r'^projects/', include('projects.urls')),
-    (r'^bot/', include('dbot.urls')),
-    (r'^$', 'views.index'),
-    (r'^admin/', include(admin.site.urls)),
-)
-
-# Local media serving.
-if settings.DEBUG:
-    urlpatterns += patterns('',
-            (r'^statics/(?P<path>.*)$', 'django.views.static.serve',
-             {'document_root': os.path.join(os.path.dirname(__file__),\
-                                    'statics').replace('\\', '/')}),
-)
+def info(request):
+    pyversion = ".".join([str(i) for i in sys.version_info])
+    djversion = ".".join([str(i) for i in django.VERSION])
+    return {"VERSION": settings.VERSION,
+            "PYVERSION": pyversion,
+            "DJVERSION": djversion,
+            }
