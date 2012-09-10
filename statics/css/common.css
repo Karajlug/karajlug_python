@@ -1,14 +1,14 @@
 * {padding: 0; margin: 0;}
 
 body {
-    width: 100%;
+
     Background: white;
     color: #2a2a2a;
 
 }
 
 header {
-    width: 100%;
+
     height: 70px;
     padding: 0 10px 10px 10px;
 
@@ -33,12 +33,12 @@ header .beta {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     padding: 5px;
-    Background: #aba73c;
+    Background: #9eb653;
     border-radius: 3px;
     color: white;
     font-size: 16px;
     font-weight: 700;
-    width: 35px;
+    width: 36px;
     position: absolute;
     top: 50px;
     left: 440px;
@@ -49,28 +49,72 @@ header h1{
     Background: url('/statics/images/logo.png') 0 10px no-repeat transparent;
     height: 120px;
     font-size: 90px;
+    width: 600px;
+    border-bottom: 1px solid #1a1a1a;
 }
 
 #content {
-    min-width: 99%;
-    min-height: 400px;
-    margin: 50px auto 50px auto;
+    min-height: 600px;
+    margin: 50px 0 50px 0;
 
 }
 aside {
-    min-width: 30%;
-    float:right;
-    right: 20px;
+    width: 300px;
+    left: 900px;
+    position: absolute;
 
 }
+.menu {
+    width: 300px;
+    border-radius: 5px;
+    margin: 20px 0 0 0;
 
+}
 .menu ul {
     list-style: none;
+    padding: 10px 0 20px 10px;
+    color :#3a3a3a;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .menu ul a {
     font-size: 22px;
-    font-weight: 700;
+    font-weight: 600;
     text-decoration: none;
-    color: #4a4a4a;
+    color: #f7f7f7;
+    margin-left: 10px;
 }
+
+.menu ul li:hover {
+    padding-left: 40px;
+    -moz-transition: padding-left 300ms linear 0ms;
+    -webkit-transition: padding-indent 300ms linear 0ms;
+}
+
+.blue {
+    Background: #5071af;
+}
+.green {
+    Background: #7c942e;
+}
+
+article {
+    width: 800px;
+    padding: 20px;
+    margin: 15px 0 0px 20px;
+    border-radius: 5px;
+}
+
+article:hover {
+    Background: #f7f7f7;
+    -moz-transition: Background 300ms linear 0ms;
+    -webkit-transition: Background 300ms linear 0ms;
+    
+}
+
+footer {
+    font-size: 12px;
+    text-align: center;
+}
+
