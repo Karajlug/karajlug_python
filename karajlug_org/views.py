@@ -35,7 +35,7 @@ def index(request):
     except FirstPage.DoesNotExist:
         page = None
     return rr("index.html",
-              {"news": news,
+              {"news_list": news,
                "page": page,
                },
               context_instance=RequestContext(request))

@@ -106,6 +106,16 @@ article {
     border-radius: 5px;
 }
 
+#firstpage {
+    width: 800px;
+    padding: 20px;
+    margin: 15px 0 80px 20px;
+    border-radius: 5px;
+}
+
+#firstpage h1 {
+    font-size: 48px;
+}
 article:hover {
     Background: #f7f7f7;
     -moz-transition: Background 300ms linear 0ms;
@@ -113,8 +123,34 @@ article:hover {
     
 }
 
+section p {
+    padding-left: 10px;
+}
+section{
+    text-indent: 20px;
+    margin-bottom: 20px;
+}
+
+article span {
+    font-size: 12px;
+    float: right;
+
+}
 footer {
     font-size: 12px;
     text-align: center;
 }
 
+article h2 a {
+    text-decoration: none;
+    color: #2a2a2a;
+    text-transform: capitalize;
+}
+article h2 a:visited {
+    color: #2a2a2a;
+}
+article h2:hover{
+   padding-left: 40px;
+    -moz-transition: padding-left 300ms linear 0ms;
+    -webkit-transition: padding-indent 300ms linear 0ms;
+}

@@ -3,13 +3,13 @@
 {% load i18n %}
 
 {% block content %}
-<div class="page">
-{% autoescape off %}
-{{ page.content }}
-{% endautoescape %}
-<!--<div class="pub">
-<span id="pubdate" >{% trans 'Date' %}: {{ page.date }}</span><br>
-<span id="pubuser" >{% trans 'User' %}: {{ page.user }}</span>
-</div>-->
-</div>
+<article>
+  <h2>{{ page.title }}</h2>
+  <section>
+    {% autoescape off %}
+    {{ page.content }}
+    {% endautoescape %}
+  </section>
+  <span>{% trans "On" %} {{ page.date }} {% trans "by" %} {{ page.user }}</span>
+</article>
 {% endblock %}

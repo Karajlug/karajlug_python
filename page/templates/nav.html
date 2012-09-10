@@ -1,10 +1,6 @@
-<ul class="nav">
 {% load i18n %}
-<li><a href="/faq">{% trans 'FAQ' %}</a></li>
-<li><a href="/members/">{% trans 'Members' %}</a></li>
-<li><a href="/books/">{% trans 'Books' %}</a></li>
-<li><a href="/projects/">{% trans 'Projects' %}</a></li>
-{% for page in pages %}
-<li><a href="{{ page.get_absolute_url}}">{{ page.title }}</a></li>
-{% endfor %}
-</ul>
+  <ul class="menu">{% trans "Pages" %}
+    {% for page in pages %}
+    <li><a href="{{ page.get_absolute_url}}">{{ page.title }}</a></li>
+    {% endfor %}
+  </ul>
