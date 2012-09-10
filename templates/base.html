@@ -1,123 +1,67 @@
 <!DOCTYPE html>
 {% load i18n %}
 {% load page_nav %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    
+    <title>
+      {% block title %}
+      {% trans " KarajLug " %}
+      {% endblock %}
+    </title>
+    
+    <meta name="description" content="KarajLug Karaj Linux users group">
+    <meta name="author" content="Sameer Rahmani - Behnam Ahmad Khan Beigi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> 
-<html lang="en" class="no-js"> <!--<![endif]-->
-<head>
-	<meta charset="UTF-8">
-	
-	<title>
-	  {% block title %}
-	  {% trans " KarajLug " %}
-	  {% endblock %}
-	</title>
-	
-	<meta name="description" content="KarajLug Karaj Linux users group">
-	<meta name="author" content="Sameer Rahmani - Behnam Ahmad Khan Beigi">
-	
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<link rel="shortcut icon" href="/statics/favicon.png">
-	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="/statics/favicon.png">
+    <link rel="stylesheet" href="/statics/css/fonts.css">
+    <link rel="stylesheet" href="/statics/css/common.css">	
 
-	{% get_language_info for LANGUAGE_CODE as lang %}
-	{% if lang.bidi %}
-	<link rel="stylesheet" href="/statics/css/bidi/style.css">	
-	{% else %}
-	<link rel="stylesheet" href="/statics/css/style.css">	
-	{% endif %}
+
+    {% get_language_info for LANGUAGE_CODE as lang %}
+    {% if lang.bidi %}
+    <link rel="stylesheet" href="/statics/css/bidi/style.css">	
+    {% else %}
+    <link rel="stylesheet" href="/statics/css/style.css">	
+    {% endif %}
     {% block extrahead %}
     {% endblock %}
-</head>
-<body >
+  </head>
+<body>
 {% block body %}
-	<div id="header-container">
-	  <header class="wrapper">
+<header>
+  <div id="lang">
+    {% get_language_info for LANGUAGE_CODE as lang %}
+    {% if lang.bidi %}
+    {% trans "English" %}
+    {% else %}
+    {% trans "Persian" %}
+    {% endif %}
+  </div>
+  <h1>{% trans "Karajlug" %}</h1><div class="beta">{% trans "BETA" %}</div>
+</header>
 
-	    <a href="/" alt="KarajLUG"><h1 id="title">{% trans "KarajLug" %}</h1></a>
-	    <div id="languages">
-	    {% if lang.bidi %}
-	    <a href="http://en.karajlug.org/">English</a>
-	    {% else %}
-	    <a href="http://fa.karajlug.org/">فارسی</a>
-	    {% endif %}
-	    
-	  </div>
+<div id="content">
+<aside>
+<nav id="mainmenu" class="menu">
+<ul class="menu">
+  <li><a href="/members/">{% trans "Members" %}</a></li>
+  <li><a href="/Books/">{% trans "Books" %}</a></li>
+  <li><a href="/projects/">{% trans "Projects" %}</a></li>
+  <li><a href="/faq/">{% trans "FAQ" %}</a></li>
+</ul>
+</nav>
+<nav id="pagemenu" class="menu">
+</nav>
+</aside>
 
-	    <nav>
-	      {% navigation %}
-	    </nav>
 
-	  </header>
-	</div>
-    <div class="yui3-u-1 nav">
+</div>
 
-    </div>
-
-	<div id="main" class="wrapper">
-	  {% block aside %}
-		<aside>
-		  <h3>{% trans 'About KarajLug' %}</h3>
-		  {% blocktrans %}
-		  The Karaj GNU/Linux User Group (G/LUG) began its journey at 25th April 2008 , (repor of first sesson). This community is a place to share what we all found intresting about Gnu/Linux operating system and Free Softwares. If you are interested, you can join us and have a good time sharing your what you know and like to share. You can find all the information you need about this comunity in this website. And also it is recommended to join the mailing list to be inform of the news.
-		  {% endblocktrans %}
-		</aside>
-		{% endblock %}
-		<article>
-			<header >
-			{% block home %}
-			{% endblock %}	
-			</header>
-			{% block content %}
-			{% endblock %}
-			<br/>
-			<br/>
-		</article>
-	</div>
-	<div id="footer-container">
-		<footer class="wrapper">
-			<h3>      {% block footer %}
-      				  <p class="footer-box">
-				    <b>{% trans 'Sponsers:' %}</b><br/>
-				    <a href="http://www.servers24.ir/">{% trans 'Servers24' %}</a><br/>
-				    <a href="http://www.karanic.com/">{% trans 'KaraNic' %}</a><br/>
-				    <!--<a href="http://iamamemberofsomehackersintownstreetcomputinggroupwhataboutyou.com">{% trans 'Some Hackers In Town' %}</a>-->
-				  </p>
-      				  <p class="footer-box">
-				 <b>{% trans "Friends:" %} </b><br/>
-				 <a href="http://b3hnam.com">{% trans "b3hnam" %}</a><br/>
-				 <a href="http://lxsameer.com">{% trans "lxsameer" %}</a><br/>
-				 <a href="http://linux-trix.com/">{% trans 'Linux Tricks' %}</a><br/>
-				 <a href="http://Kernel-ir.com/">{% trans 'Kernel-ir.com' %}</a><br/>
-				 <a href="http://emacs.ir/">{% trans 'emacs.ir' %}</a>
-				  </p>
-      				  <p class="footer-box">
-				 	<b>{% trans "Related links:" %} </b><br>
-					<a href="http://en.wikipedia.org/wiki/Linux_User_Group" target="_blank">{% trans 'LUG Defination' %}</a><br/>
-					<a href="http://www.linux.org/groups/2484_Karaj_Linux_User_Group.html">{% trans 'Registered LUG' %}</a><br/>
-					<a href="http://wiki.softwarefreedomday.org/2010/Asia/Iran/Karaj/KarajLUG">{% trans 'KarajLug & SFD 2010'%}</a>
-				  </p>
-				  
-				  <a id="powered" href="http://www.vandaproject.com/"><p>{% trans 'Powered by Vanda' %}</p></a>
-				{% endblock %}
-
-			</h3>
-			
-		</footer>
-		<div id="copyright">
-		  
-			  <p>
-			  {% trans "KarajLug Version" %}&nbsp; {{ VERSION }} &nbsp; {% trans 'Python' %}: &nbsp; <span dir='ltr'>{{ PYVERSION }}</span>&nbsp; <a href="http://www.djangoproject.com/">{% trans 'Django' %}</a>:&nbsp;&nbsp;<span dir='ltr'>{{ DJVERSION }}</span>&nbsp;&nbsp;<br></p>
-			  <p>
-			    © 2011-2012 <a href="http://iamamemberofsomehackersintownstreetcomputinggroupwhataboutyou.com"> {% trans 'Some Hackers In Town</a> unless otherwise noted. All the documents in this website are released under the terms of the <a href="http://www.gnu.org/licenses/fdl.html">GNU FDL</a> license.' %}</p>
-		</div>
-	</div>
+<footer>
+</footer>
 {% endblock %}
 </body>
 </html>
