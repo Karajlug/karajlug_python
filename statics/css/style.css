@@ -5,3 +5,28 @@
 #lang {
     float: right;
 }
+
+header .beta {
+    top: 50px;
+    left: 440px;
+}
+
+header h1{
+    Background: url('/statics/images/logo.png') 0 10px no-repeat transparent;
+}
+aside {
+    left: 900px;
+}
+
+.menu ul {
+    padding: 10px 0px 20px 10px;
+}
+.menu ul a {
+    margin-left: 10px;
+}
+
+.menu ul li:hover {
+    padding-left: 40px;
+    -moz-transition: padding-left 300ms linear 0ms;
+    -webkit-transition: padding-indent 300ms linear 0ms;
+}

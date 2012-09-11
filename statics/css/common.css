@@ -40,13 +40,10 @@ header .beta {
     font-weight: 700;
     width: 36px;
     position: absolute;
-    top: 50px;
-    left: 440px;
 
 }
 header h1{
     text-indent: 100px;
-    Background: url('/statics/images/logo.png') 0 10px no-repeat transparent;
     height: 120px;
     font-size: 90px;
     width: 600px;
@@ -58,9 +55,9 @@ header h1{
     margin: 50px 0 50px 0;
 
 }
+
 aside {
     width: 300px;
-    left: 900px;
     position: absolute;
 
 }
@@ -72,7 +69,6 @@ aside {
 }
 .menu ul {
     list-style: none;
-    padding: 10px 0 20px 10px;
     color :#3a3a3a;
     font-size: 20px;
     font-weight: 700;
@@ -86,11 +82,7 @@ aside {
     margin-left: 10px;
 }
 
-.menu ul li:hover {
-    padding-left: 40px;
-    -moz-transition: padding-left 300ms linear 0ms;
-    -webkit-transition: padding-indent 300ms linear 0ms;
-}
+
 
 .blue {
     Background: #5071af;
