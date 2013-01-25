@@ -17,7 +17,7 @@
 #    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 # -----------------------------------------------------------------------------
 
-from django.conf.urls.defaults import patterns
+from django.conf.urls import patterns
 
 
 urlpatterns = patterns('',

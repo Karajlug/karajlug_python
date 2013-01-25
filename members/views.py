@@ -20,9 +20,9 @@ from django.shortcuts import render_to_response as rr
 from django.core.paginator import Paginator
 from django.template import RequestContext
 from django.http import Http404
-from  django.utils.translation import get_language
+from django.utils.translation import get_language
 
-from models import Member
+from .models import Member
 
 
 def members_index(request):

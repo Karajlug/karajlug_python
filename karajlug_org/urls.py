@@ -19,7 +19,7 @@
 
 import os
 
-from django.conf.urls.defaults import *
+from django.conf.urls import *
 from django.contrib import admin
 from django.conf import settings
 
@@ -32,9 +32,9 @@ urlpatterns = patterns('',
     (r'^members/', include('members.urls')),
     (r'^books/', include('books.urls')),
     (r'^projects/', include('projects.urls')),
-    (r'^bot/', include('dbot.urls')),
+    #(r'^bot/', include('dbot.urls')),
     (r'^$', 'karajlug_org.views.index'),
-    (r'^admin/', include(admin.site.urls)),
+    #(r'^admin/', include(admin.site.urls)),
 )
 
 # Local media serving.

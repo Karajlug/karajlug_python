@@ -35,9 +35,9 @@
   <div id="lang">
     {% get_language_info for LANGUAGE_CODE as lang %}
     {% if lang.bidi %}
-    {% trans "English" %}
+    <a href="/en{{ request.path }}">{% trans "English" %}</a>
     {% else %}
-    {% trans "Persian" %}
+    <a href="/fa{{ request.path }}">{% trans "Persian" %}</a>
     {% endif %}
   </div>
   <h1>{% trans "Karajlug" %}</h1><div class="beta">{% trans "BETA" %}</div>
@@ -71,7 +71,7 @@
 </div>
 
 <footer>
-<p>Copyright 2010-2012 Karajlug Community.</p>
+<p>Copyright 2010-2013 Karajlug Community.</p>
 </footer>
 {% endblock %}
 </body>
