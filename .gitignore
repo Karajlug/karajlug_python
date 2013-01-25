@@ -1,6 +1,5 @@
 *.pyc
 db*
-multilang/*
 *~
 env/
 env3/
