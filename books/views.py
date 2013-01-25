@@ -22,7 +22,7 @@ from django.template import RequestContext
 from django.core.paginator import Paginator, InvalidPage, EmptyPage
 from django.conf import settings
 
-from models import Book
+from .models import Book
 
 
 def books_index(request):

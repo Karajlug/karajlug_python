@@ -151,19 +151,15 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # Uncomment the next line to enable the admin:
     'django.contrib.admin',
-    # Uncomment the next line to enable admin documentation:
-    # 'django.contrib.admindocs',
     "page",
     "news",
     "faq",
     "members",
     "books",
     "projects",
-    "dbot",
+    #"dbot",
     "mediacenter",
-
 )
 
 # A sample logging configuration. The only tangible logging
@@ -206,5 +202,5 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 
 BOOK_IN_PAGE = 5
 NEWS_LIMIT = 10
-VERSION = "0.21.36"
+VERSION = "0.22.1"
 AUTH_PROFILE_MODULE = 'members.Member'

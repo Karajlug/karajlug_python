@@ -22,7 +22,7 @@ from django.http import Http404
 from django.template import RequestContext
 from django.utils.translation import ugettext as _
 
-from models import Page
+from page.models import Page
 
 
 def show_page(request, slug):

@@ -2,3 +2,5 @@
 db*
 multilang/*
 *~
+env/
+env3/

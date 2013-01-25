@@ -23,7 +23,7 @@ from django.http import Http404
 from django.core.paginator import Paginator, InvalidPage, EmptyPage
 from django.conf import settings
 
-from models import News
+from news.models import News
 
 
 def news_entry(request, id_=None):

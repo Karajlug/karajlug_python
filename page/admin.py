@@ -19,7 +19,7 @@
 
 from django.contrib import admin
 
-from models import Page, FirstPage
+from page.models import Page, FirstPage
 
 
 class PageAdmin(admin.ModelAdmin):

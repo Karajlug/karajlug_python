@@ -20,9 +20,9 @@ from django.shortcuts import render_to_response as rr
 from django.core.paginator import Paginator
 from django.template import RequestContext
 from django.http import Http404
-from  django.utils.translation import get_language
+from django.utils.translation import get_language
 
-from models import Project, Repository
+from .models import Project, Repository
 
 
 def projects_index(request):

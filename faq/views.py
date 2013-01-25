@@ -20,7 +20,7 @@
 from django.shortcuts import render_to_response as rr
 from django.template import RequestContext
 
-from models import FAQ
+from faq.models import FAQ
 
 
 def index(request):

@@ -19,7 +19,7 @@
 
 from django.contrib import admin
 
-from models import FAQ
+from faq.models import FAQ
 
 
 class FAQAdmin(admin.ModelAdmin):

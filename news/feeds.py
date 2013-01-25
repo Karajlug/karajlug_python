@@ -20,7 +20,7 @@
 from django.contrib.syndication.views import Feed
 from django.conf import settings
 
-from models import News
+from .models import News
 
 
 class LatestNews(Feed):

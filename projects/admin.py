@@ -20,7 +20,7 @@
 from django.contrib import admin
 from django.utils.translation import ugettext as _
 
-from models import Project, Repository
+from .models import Project, Repository
 
 
 class ProjectAdmin(admin.ModelAdmin):

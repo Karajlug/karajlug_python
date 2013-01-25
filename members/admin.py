@@ -21,12 +21,11 @@ from django.contrib import admin
 from django.core.exceptions import PermissionDenied
 from django.contrib.admin import widgets, helpers
 from django.utils.translation import ugettext as _
-from django.utils.encoding import force_unicode
 from django.utils.safestring import mark_safe
 from django.forms.formsets import all_valid
 from django.forms.util import ErrorList
 
-from models import Member, MemberDetail
+from .models import Member, MemberDetail
 
 
 def email(obj):
@@ -82,7 +81,7 @@ class MemberAdmin(admin.ModelAdmin):
                 try:
                     new_object = self.save_form(request, form, change=False)
                     form_validated = True
-                except PermissionDenied, e:
+                except PermissionDenied as e:
                     form_validated = False
                     error_msg = str(e)
                     new_object = self.model()
@@ -90,7 +89,8 @@ class MemberAdmin(admin.ModelAdmin):
                 form_validated = False
                 new_object = self.model()
             prefixes = {}
-            for FormSet, inline in zip(self.get_formsets(request), self.inline_instances):
+            for FormSet, inline in zip(self.get_formsets(request),
+                                       self.inline_instances):
                 prefix = FormSet.get_default_prefix()
                 prefixes[prefix] = prefixes.get(prefix, 0) + 1
                 if prefixes[prefix] != 1:
@@ -149,7 +149,7 @@ class MemberAdmin(admin.ModelAdmin):
             form.errors["user"] = ErrorList([error_msg])
 
         context = {
-            'title': _('Add %s') % force_unicode(opts.verbose_name),
+            'title': _('Add %s') % unicode(opts.verbose_name),
             'adminform': adminForm,
             'is_popup': "_popup" in request.REQUEST,
             'show_delete': False,
@@ -228,7 +228,7 @@ class DetailAdmin(admin.ModelAdmin):
                 try:
                     new_object = self.save_form(request, form, change=False)
                     form_validated = True
-                except PermissionDenied, e:
+                except PermissionDenied as e:
                     form_validated = False
                     error_msg = str(e)
                     new_object = self.model()

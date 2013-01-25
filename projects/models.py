@@ -63,14 +63,12 @@ class Project(models.Model):
                                max_length=16,
                                blank=True, null=True)
     home = models.URLField(verbose_name=_("Home Page"),
-                           verify_exists=False,
                            blank=True, null=True)
     vcs = models.CharField(max_length=1,
                            choices=VCS,
                            blank=True, null=True,
                            verbose_name=_("VCS"))
     downloadlink = models.URLField(verbose_name=_("Download URL"),
-                                   verify_exists=False,
                                    blank=True, null=True)
     creator = models.ForeignKey("auth.User", verbose_name=_("Creator"),
                              editable=False)
