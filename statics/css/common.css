@@ -1,17 +1,13 @@
 * {padding: 0; margin: 0;}
 
 body {
-
-    Background: white;
+    background: white;
     color: #2a2a2a;
-
 }
 
 header {
-
     height: 70px;
     padding: 0 10px 10px 10px;
-
 }
 
 #lang {
@@ -23,24 +19,19 @@ header {
 }
 
 #lang:hover {
-    Background: #f7dd77;
+    background: #f7dd77;
     -moz-transition: Background 300ms linear 0ms;
     -webkit-transition: Background 300ms linear 0ms;
 }
 
 header .beta {
-    -moz-transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
     padding: 5px;
-    Background: #9eb653;
+    background: #9eb653;
     border-radius: 3px;
     color: white;
     font-size: 16px;
     font-weight: 700;
-    width: 36px;
     position: absolute;
-
 }
 header h1{
     text-indent: 100px;
@@ -85,10 +76,10 @@ aside {
 
 
 .blue {
-    Background: #5071af;
+    background: #5071af;
 }
 .green {
-    Background: #7c942e;
+    background: #7c942e;
 }
 
 article {
@@ -109,7 +100,7 @@ article {
     font-size: 48px;
 }
 article:hover {
-    Background: #f7f7f7;
+    background: #f7f7f7;
     -moz-transition: Background 300ms linear 0ms;
     -webkit-transition: Background 300ms linear 0ms;
     

@@ -26,8 +26,12 @@ body {
 }
 
 header .beta {
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
     top: 50px;
-    right: 440px;
+    right: 415px;
+    width: 64px;
 }
 
 header h1{
