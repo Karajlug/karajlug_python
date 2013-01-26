@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-11 14:32+0430\n"
+"POT-Creation-Date: 2013-01-26 19:29+0330\n"
 "PO-Revision-Date: 2012-02-17 23:27+0330\n"
 "Last-Translator: anoNxeRo (Lagman) <anonxero@linuxmail.org >\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,7 +68,7 @@ msgstr "کتاب آنلاین"
 msgid "Complete"
 msgstr "کامل"
 
-#: books/models.py:68 projects/models.py:78 projects/models.py:131
+#: books/models.py:68 projects/models.py:76 projects/models.py:129
 msgid "Order"
 msgstr "درخواست"
 
@@ -77,16 +77,16 @@ msgid "Book will appear in menu respect to this value"
 msgstr "نمایش کتاب بر اساس این مقدار در منو نمایش داده می‌شود"
 
 #: books/models.py:71 books/templates/book_view.html:36 members/models.py:44
-#: projects/models.py:83 projects/templates/project_view.html:50
+#: projects/models.py:81 projects/templates/project_view.html:50
 msgid "Description"
 msgstr "شرح"
 
-#: books/models.py:74 projects/models.py:72
+#: books/models.py:74 projects/models.py:71
 msgid "Download URL"
 msgstr "آدرس ٔانلود"
 
 #: books/models.py:76 members/models.py:46 members/models.py:133
-#: projects/models.py:75
+#: projects/models.py:73
 msgid "Creator"
 msgstr "خالق هثر"
 
@@ -171,7 +171,7 @@ msgid "upload files"
 msgstr "بارگزاری فایل‌ها"
 
 # درست نمیدونم چی به چیه!:/
-#: members/admin.py:51 members/admin.py:65
+#: members/admin.py:50 members/admin.py:64
 msgid "You can only add yourself as a member"
 msgstr "می‌توانید عضو شوید."
 
@@ -303,6 +303,10 @@ msgstr "صفحه‌ی اول"
 msgid "Karajlug"
 msgstr "لاگ کرج"
 
+#: page/views.py:42
+msgid "Karaj Linux User Group"
+msgstr ""
+
 #: projects/models.py:45
 msgid "Project Name"
 msgstr "نام پروژه"
@@ -316,40 +320,40 @@ msgid "Project logo"
 msgstr "نماد پروژه"
 
 # درست نمیدونم چی به چیه!:/
-#: projects/models.py:71 projects/templates/project_view.html:35
+#: projects/models.py:70 projects/templates/project_view.html:35
 #, fuzzy
 msgid "VCS"
 msgstr "وی سی اس"
 
-#: projects/models.py:79
+#: projects/models.py:77
 msgid "Projects will appear in menu respect to this value"
 msgstr "نمایش پروژه بر اساس این مقدار در منو نمایش داده می‌شود"
 
-#: projects/models.py:82
+#: projects/models.py:80
 msgid "KarajLUG Project"
 msgstr "پروژه‌های لاگ کرج"
 
-#: projects/models.py:118 projects/models.py:127
+#: projects/models.py:116 projects/models.py:125
 msgid "Project"
 msgstr "پروژه"
 
-#: projects/models.py:119 templates/base.html:53
+#: projects/models.py:117 templates/base.html:53
 msgid "Projects"
 msgstr "پروژه‌ها"
 
-#: projects/models.py:129
+#: projects/models.py:127
 msgid "Address"
 msgstr "آدرس"
 
-#: projects/models.py:132
+#: projects/models.py:130
 msgid "Repository will appear in menu respect to this value"
 msgstr "نمایش مخزن بر اساس این مقدار در منو نمایش داده می‌شود"
 
-#: projects/models.py:150
+#: projects/models.py:148
 msgid "Repository"
 msgstr "مخزن"
 
-#: projects/models.py:151
+#: projects/models.py:149
 msgid "Reporsitories"
 msgstr "مخازن"
 
@@ -397,11 +401,11 @@ msgstr ""
 msgid "Home"
 msgstr "صفحه خانه"
 
-#: templates/index.html:24 templates/news_entry.html:17 templates/page.html:13
+#: templates/index.html:29 templates/news_entry.html:17 templates/page.html:13
 msgid "On"
 msgstr ""
 
-#: templates/index.html:24 templates/news_entry.html:17 templates/page.html:13
+#: templates/index.html:29 templates/news_entry.html:17 templates/page.html:13
 msgid "by"
 msgstr ""
 

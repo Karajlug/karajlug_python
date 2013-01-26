@@ -38,4 +38,4 @@ def index(request):
               {"news_list": news,
                "page": page,
                },
-              context_instance=RequestContext(request))
+              context_instance = RequestContext(request))
