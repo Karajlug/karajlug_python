@@ -1,13 +1,7 @@
 * {padding: 0; margin: 0;}
 
 body {
-    background: white;
     color: #2a2a2a;
-}
-
-header {
-    height: 70px;
-    padding: 0 10px 10px 10px;
 }
 
 #lang {
@@ -31,7 +25,7 @@ header {
 }
 header .beta {
     padding: 5px;
-    background: #9eb653;
+    background: #0099CC;
     border-radius: 3px;
     color: white;
     font-size: 16px;
@@ -47,13 +41,16 @@ header h1{
 }
 
 header {
-    height: 100px;
-    width: 600px;
-    border-bottom: 1px solid #1a1a1a;
+	background: #0074c1;
+    padding: 0 0 1em;
+    width: 100%;
+}
+header hgroup {
+    margin: 0 10px;
 }
 #content {
+    background: #F9F9F9;
     min-height: 600px;
-    margin: 50px 0 50px 0;
 }
 
 aside {
@@ -69,7 +66,6 @@ aside {
 }
 .menu ul {
     list-style: none;
-    color :#3a3a3a;
     font-size: 20px;
     font-weight: 700;
 }
@@ -85,10 +81,12 @@ aside {
 
 
 .blue {
-    background: #5071af;
+    color: #C5EAF8;
+    background: #0099CC;
 }
 .green {
-    background: #7c942e;
+    color: #E2F0B6;
+    background: #669900;
 }
 
 article {
@@ -101,7 +99,7 @@ article {
 #firstpage {
     width: 800px;
     padding: 20px;
-    margin: 15px 0 80px 20px;
+    margin: 0 0 60px 20px;
     border-radius: 5px;
 }
 
@@ -130,6 +128,8 @@ article span {
 
 }
 footer {
+    padding: 2em 0;
+    width: 100%;
     font-size: 12px;
     text-align: center;
 }
@@ -160,6 +160,7 @@ article h2:hover {
 }
 
 header h1 {
+    border-bottom: 1px solid #1a1a1a;
     background-image: url('/statics/images/logo.svg');
     background-position-y: 5px;
     background-repeat: no-repeat;
