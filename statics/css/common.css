@@ -29,15 +29,6 @@ header {
     text-decoration: none;
     color: grey;
 }
-header .beta {
-    padding: 5px;
-    background: #9eb653;
-    border-radius: 3px;
-    color: white;
-    font-size: 16px;
-    font-weight: 700;
-    position: absolute;
-}
 header h1{
     text-indent: 100px;
     height: 120px;
@@ -159,20 +150,7 @@ article h2:hover {
     text-indent: 10px;
 }
 
-header h1 {
-    background-image: url('/statics/images/logo.svg');
-    background-position-y: 5px;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    background-size: 107px;
-}
-
 .page {
     width: 800px;
     margin: 50px;
-}
-
-header h2 {
-    padding: 0 104px;
-    font-size: 100%;
 }

@@ -34,10 +34,6 @@ header .beta {
     width: 64px;
 }
 
-header h1{
-    background-position-x: 495px;
-}
-
 aside {
     right: 900px;
 }
@@ -48,4 +44,31 @@ aside {
 
 .menu ul a {
     margin-right: 10px;
+}
+header h1 {
+    background: url('/statics/images/logo.svg') 490px 0px no-repeat transparent;
+    padding-top: 10px;
+    background-size: 107px;
+}
+
+header h2 {
+    float:left;
+    font-size: 14px;
+    margin-top: 0px;
+}
+header {
+    height: 110px;
+}
+
+header .beta {
+    padding: 5px;
+    background: #9eb653;
+    border-radius: 3px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    text-align: center;
+    top: 60px;
+    right: 490px;
 }
