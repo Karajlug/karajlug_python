@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-09-11 14:32+0430\n"
-"PO-Revision-Date: 2012-02-17 23:27+0330\n"
-"Last-Translator: anoNxeRo (Lagman) <anonxero@linuxmail.org >\n"
+"PO-Revision-Date: 2013-01-27 00:09+0330\n"
+"Last-Translator: Ebrahim Byagowi <ebrahim@byagowi.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.5.4\n"
 
 #: books/models.py:36 members/models.py:121 news/models.py:37
 #: page/models.py:46 page/models.py:91 projects/models.py:41
@@ -222,7 +222,7 @@ msgstr "عضو"
 msgid "Members"
 msgstr "اعضا"
 
-# I think the english is a bit fuzzy :/, 
+# I think the english is a bit fuzzy :/,
 #: members/models.py:105
 #, fuzzy
 msgid "Can Add new members and details."
@@ -386,11 +386,11 @@ msgstr "لاگ کرج"
 
 #: templates/base.html:43
 msgid "BETA"
-msgstr ""
+msgstr "بتا"
 
 #: templates/base.html:49
 msgid "Navigation"
-msgstr ""
+msgstr "ناوبری"
 
 #: templates/base.html:50
 #, fuzzy
@@ -399,11 +399,11 @@ msgstr "صفحه خانه"
 
 #: templates/index.html:24 templates/news_entry.html:17 templates/page.html:13
 msgid "On"
-msgstr ""
+msgstr "در"
 
 #: templates/index.html:24 templates/news_entry.html:17 templates/page.html:13
 msgid "by"
-msgstr ""
+msgstr "توسط"
 
 #: templates/news_list.html:14
 msgid "previous"
