@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-26 19:58+0330\n"
+"POT-Creation-Date: 2013-01-26 23:44+0330\n"
 "PO-Revision-Date: 2012-02-17 23:27+0330\n"
 "Last-Translator: anoNxeRo (Lagman) <anonxero@linuxmail.org >\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -94,7 +94,7 @@ msgstr "خالق هثر"
 msgid "Book"
 msgstr "کتاب"
 
-#: books/models.py:111 templates/base.html:52
+#: books/models.py:111 templates/base.html:56
 msgid "Books"
 msgstr "کتاب‌ها"
 
@@ -146,15 +146,15 @@ msgstr "جواب"
 msgid "Date and Time"
 msgstr "تاریخ و زمان"
 
-#: faq/models.py:41 templates/base.html:54 templates/faq.html:6
+#: faq/models.py:41 templates/base.html:58 templates/faq.html:6
 msgid "FAQ"
 msgstr "سوال‌های متداول"
 
-#: karajlug_org/settings.py:67 templates/base.html:40
+#: karajlug_org/settings.py:67 templates/base.html:39
 msgid "Persian"
 msgstr "فارسی"
 
-#: karajlug_org/settings.py:68 templates/base.html:38
+#: karajlug_org/settings.py:68 templates/base.html:37
 msgid "English"
 msgstr "انگلیسی"
 
@@ -218,7 +218,7 @@ msgstr "این فیلد احمیتی ندارد"
 msgid "Member"
 msgstr "عضو"
 
-#: members/models.py:103 templates/base.html:51
+#: members/models.py:103 templates/base.html:55
 msgid "Members"
 msgstr "اعضا"
 
@@ -299,7 +299,7 @@ msgstr "صفحات اول"
 msgid "First Page"
 msgstr "صفحه‌ی اول"
 
-#: page/views.py:41 templates/base.html:43
+#: page/views.py:41 templates/base.html:44
 msgid "Karajlug"
 msgstr "لاگ کرج"
 
@@ -333,7 +333,7 @@ msgstr "پروژه‌های لاگ کرج"
 msgid "Project"
 msgstr "پروژه"
 
-#: projects/models.py:117 templates/base.html:53
+#: projects/models.py:117 templates/base.html:57
 msgid "Projects"
 msgstr "پروژه‌ها"
 
@@ -384,28 +384,28 @@ msgstr "مخازن"
 msgid " KarajLug "
 msgstr "لاگ کرج"
 
-#: templates/base.html:43
+#: templates/base.html:45
+msgid "Karaj Linux User Group"
+msgstr ""
+
+#: templates/base.html:47
 msgid "BETA"
 msgstr ""
 
-#: templates/base.html:49
+#: templates/base.html:53
 msgid "Navigation"
 msgstr ""
 
-#: templates/base.html:50
+#: templates/base.html:54
 #, fuzzy
 msgid "Home"
 msgstr "صفحه خانه"
 
-#: templates/index.html:10
-msgid "Karaj Linux User Group"
-msgstr ""
-
-#: templates/index.html:29 templates/news_entry.html:17 templates/page.html:13
+#: templates/index.html:26 templates/news_entry.html:17 templates/page.html:13
 msgid "On"
 msgstr ""
 
-#: templates/index.html:29 templates/news_entry.html:17 templates/page.html:13
+#: templates/index.html:26 templates/news_entry.html:17 templates/page.html:13
 msgid "by"
 msgstr ""
 

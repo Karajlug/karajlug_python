@@ -171,3 +171,8 @@ header h1 {
     width: 800px;
     margin: 50px;
 }
+
+header h2 {
+    padding: 0 104px;
+    font-size: 100%;
+}
