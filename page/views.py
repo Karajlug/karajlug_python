@@ -38,6 +38,5 @@ def show_page(request, slug):
 
     return rr("page.html",
               {"page": page,
-               "title": "%s | %s" % (_("Karajlug"), page.title),
-               "subtitle": "%s | %s" % (_("Karaj Linux User Group"), page.subtitle)},
+               "title": "%s | %s" % (_("Karajlug"), page.title)},
               context_instance=RequestContext(request))

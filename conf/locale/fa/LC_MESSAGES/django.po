@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-26 19:29+0330\n"
+"POT-Creation-Date: 2013-01-26 19:58+0330\n"
 "PO-Revision-Date: 2012-02-17 23:27+0330\n"
 "Last-Translator: anoNxeRo (Lagman) <anonxero@linuxmail.org >\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -303,10 +303,6 @@ msgstr "صفحه‌ی اول"
 msgid "Karajlug"
 msgstr "لاگ کرج"
 
-#: page/views.py:42
-msgid "Karaj Linux User Group"
-msgstr ""
-
 #: projects/models.py:45
 msgid "Project Name"
 msgstr "نام پروژه"
@@ -400,6 +396,10 @@ msgstr ""
 #, fuzzy
 msgid "Home"
 msgstr "صفحه خانه"
+
+#: templates/index.html:10
+msgid "Karaj Linux User Group"
+msgstr ""
 
 #: templates/index.html:29 templates/news_entry.html:17 templates/page.html:13
 msgid "On"
