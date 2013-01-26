@@ -1,15 +1,15 @@
 @font-face {
-  font-family: 'IranianSans';
-  src: url('/statics/fonts/IranianSans.eot?#') format('eot'), /* IE6–8 */
-       url('/statics/fonts/IranianSans.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-       url('/statics/fonts/IranianSans.ttf') format('truetype'); /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+    font-family: 'IranianSans';
+    src: url('/statics/fonts/IranianSans.eot?#') format('eot'), /* IE6–8 */
+         url('/statics/fonts/IranianSans.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+         url('/statics/fonts/IranianSans.ttf') format('truetype'); /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
 }
 
 @font-face {
-  font-family: 'BMahsa';
-  src: url('/statics/fonts/BMahsa.eot?#') format('eot'), /* IE6–8 */
-       url('/statics/fonts/BMahsa.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-       url('/statics/fonts/BMahsa.ttf') format('truetype'); /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+    font-family: 'BMahsa';
+    src: url('/statics/fonts/BMahsa.eot?#') format('eot'), /* IE6–8 */
+         url('/statics/fonts/BMahsa.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+         url('/statics/fonts/BMahsa.ttf') format('truetype'); /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
 }
 
 
@@ -30,12 +30,13 @@ header .beta {
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
     top: 50px;
-    right: 415px;
+    right: 412px;
     width: 64px;
 }
 
 header h1{
-    Background: url('/statics/images/logo.png') 500px 10px  no-repeat transparent;
+    background: url('/statics/images/logo.svg') 495px 5px no-repeat transparent;
+    background-size: 107px;
 }
 
 

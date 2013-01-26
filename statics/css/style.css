@@ -16,7 +16,8 @@ header .beta {
 }
 
 header h1{
-    Background: url('/statics/images/logo.png') 0 10px no-repeat transparent;
+    background: url('/statics/images/logo.svg') -5px 5px no-repeat transparent;
+    background-size: 107px;
 }
 aside {
     left: 900px;
