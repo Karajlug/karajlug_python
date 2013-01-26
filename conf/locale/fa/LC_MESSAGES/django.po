@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-27 00:12+0330\n"
+"POT-Creation-Date: 2013-01-27 01:23+0330\n"
 "PO-Revision-Date: 2013-01-27 00:10+0330\n"
 "Last-Translator: Ebrahim Byagowi <ebrahim@byagowi.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -400,6 +400,10 @@ msgstr "ناوبری"
 #: templates/base.html:54
 msgid "Home"
 msgstr "خانه"
+
+#: templates/base.html:78
+msgid "Copyright 2010-2013 Karajlug Community"
+msgstr ""
 
 #: templates/index.html:26 templates/news_entry.html:17 templates/page.html:13
 msgid "On"

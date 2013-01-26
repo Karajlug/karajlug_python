@@ -28,3 +28,23 @@ aside {
 .menu ul a {
     margin-left: 10px;
 }
+
+header h1 {
+    background: url('/statics/images/logo.svg') 0 5px no-repeat transparent;
+    background-size: 107px;
+}
+header h2 {
+    float: right;
+    font-size: 15px;
+    color: #5a5a5a;
+}
+ 
+header .beta {
+    padding: 5px;
+    background: #9eb653;
+    border-radius: 3px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+}

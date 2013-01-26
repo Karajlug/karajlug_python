@@ -208,3 +208,6 @@ VERSION = "0.23.5"
 AUTH_PROFILE_MODULE = 'members.Member'
 
 APPEND_SLASH = True
+LOCALE_PATHS = (
+    os.path.join(ROOT, "../conf/locale"),
+)
