@@ -24,7 +24,7 @@ msgstr "زبان"
 
 #: books/models.py:37 members/models.py:122 projects/models.py:42
 msgid "Site language (en-us at this time)"
-msgstr "زبان سایت (هم اکنون en-us۰)"
+msgstr "زبان وب‌گاه (هم اکنون en-us)"
 
 #: books/models.py:40
 msgid "Book Name"
@@ -148,7 +148,7 @@ msgstr "تاریخ و زمان"
 
 #: faq/models.py:41 templates/base.html:58 templates/faq.html:6
 msgid "FAQ"
-msgstr "سوال‌های متداول"
+msgstr "سؤال‌های متداول"
 
 #: karajlug_org/settings.py:67 templates/base.html:39
 msgid "Persian"
