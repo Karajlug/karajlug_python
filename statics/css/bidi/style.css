@@ -51,12 +51,3 @@ aside {
 .menu ul a {
     margin-right: 10px;
 }
-
-.menu ul li {
-    -moz-transition: text-indent 300ms linear 0ms;
-    -webkit-transition: text-indent 300ms linear 0ms;
-    text-indent: 0;
-}
-.menu ul li:hover {
-    text-indent: 10px;
-}
