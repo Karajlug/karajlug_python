@@ -28,3 +28,6 @@ aside {
 .menu ul a {
     margin-left: 10px;
 }
+header sub {
+    float: right;
+}

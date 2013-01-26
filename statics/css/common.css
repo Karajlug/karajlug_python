@@ -24,6 +24,11 @@ header {
     background: #f7dd77;
 }
 
+#lang a {
+    font-size: 13px;
+    text-decoration: none;
+    color: grey;
+}
 header .beta {
     padding: 5px;
     background: #9eb653;
@@ -38,9 +43,14 @@ header h1{
     height: 120px;
     font-size: 90px;
     width: 600px;
-    border-bottom: 1px solid #1a1a1a;
+
 }
 
+header {
+    height: 100px;
+    width: 600px;
+    border-bottom: 1px solid #1a1a1a;
+}
 #content {
     min-height: 600px;
     margin: 50px 0 50px 0;
@@ -155,4 +165,9 @@ header h1 {
     background-repeat: no-repeat;
     background-color: transparent;
     background-size: 107px;
+}
+
+.page {
+    width: 800px;
+    margin: 50px;
 }

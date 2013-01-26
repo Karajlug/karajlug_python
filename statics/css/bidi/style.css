@@ -49,3 +49,6 @@ aside {
 .menu ul a {
     margin-right: 10px;
 }
+header sub {
+    float: left;
+}

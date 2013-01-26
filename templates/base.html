@@ -31,7 +31,6 @@
   </head>
 <body>
 {% block body %}
-<header>
   <div id="lang">
     {% get_language_info for LANGUAGE_CODE as lang %}
     {% if lang.bidi %}
@@ -40,8 +39,10 @@
     <a href="/fa{{ request.path }}">{% trans "Persian" %}</a>
     {% endif %}
   </div>
+<header>
+
   <h1>{% trans "Karajlug" %}</h1><div class="beta">{% trans "BETA" %}</div>
-  <h2>{% trans "Karaj Linux User Group" %}</h2>
+  <sub>{% trans "Karaj Linux User Group" %}</sub>
 
 </header>
 
