@@ -1,3 +1,4 @@
+# coding: utf-8
 # -----------------------------------------------------------------------------
 #    Karajlug.org
 #    Copyright (C) 2010-2012  Karajlug community
@@ -53,6 +54,19 @@ class News(models.Model):
         from django.conf import settings
         site = getattr(settings, "URL", "www.karajlug.org")
         return "%s%s" % (site, self.get_absolute_url())
+
+    def pdate(self):
+
+        pnum = {"1": u"۱", "2": u"۲", "3": u"۳", "4": u"۴", "5": u"۵",
+                "6": u"۶", "7": u"۷", "8": u"۸", "9": u"۹", "0": u"۰"}
+
+        edate = self.date.strftime("%Y/%m/%d")
+
+        print(edate, type(edate))
+        for i in pnum:
+            edate = edate.replace(i, pnum[i])
+
+        return edate
 
     def irc_repr(self, logentry):
 
