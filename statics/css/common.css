@@ -23,7 +23,6 @@ body {
     text-decoration: none;
     color: grey;
 }
-<<<<<<< HEAD
 header .beta {
     padding: 5px;
     background: #0099CC;
@@ -33,8 +32,6 @@ header .beta {
     font-weight: 700;
     position: absolute;
 }
-=======
->>>>>>> 24b806ba59b97eba794dcd2e0c6a3e96fc8adecd
 header h1{
     text-indent: 100px;
     height: 120px;
@@ -162,7 +159,6 @@ article h2:hover {
     text-indent: 10px;
 }
 
-<<<<<<< HEAD
 header h1 {
     border-bottom: 1px solid #1a1a1a;
     background-image: url('/statics/images/logo.svg');
@@ -172,9 +168,12 @@ header h1 {
     background-size: 107px;
 }
 
-=======
->>>>>>> 24b806ba59b97eba794dcd2e0c6a3e96fc8adecd
 .page {
     width: 800px;
     margin: 50px;
+}
+
+header h2 {
+    padding: 0 104px;
+    font-size: 100%;
 }
