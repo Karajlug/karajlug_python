@@ -38,7 +38,7 @@ if settings.DEBUG:
 )
 
 urlpatterns += patterns('',
-    (r'^(en|fa)/', 'multilang.dispatcher.dispatch_url'),
+    (r'^(en|fa)[/]?', 'multilang.dispatcher.dispatch_url'),
     (r'^$', 'multilang.dispatcher.dispatch_url'),
     (r'.*', 'multilang.dispatcher.dispatch_url'),
 
