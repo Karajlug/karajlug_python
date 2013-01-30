@@ -21,7 +21,7 @@
     {{ news.content|linebreaks }}
     {% endautoescape %}
   </section>
-  <span>{% trans "On" %} {{ news.date }} {% trans "by" %} {{ news.user }}</span>
+  <span>{% trans "On" %} {{ news.pdate }} {% trans "by" %} {{ news.user }}</span>
 </article>
 {% endfor %}
 

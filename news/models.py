@@ -1,3 +1,4 @@
+# coding: utf-8
 # -----------------------------------------------------------------------------
 #    Karajlug.org
 #    Copyright (C) 2010-2012  Karajlug community
@@ -16,6 +17,8 @@
 #    with this program; if not, write to the Free Software Foundation, Inc.,
 #    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 # -----------------------------------------------------------------------------
+
+from calverter import calverter
 
 from django.db import models
 from django.utils.translation import ugettext as _
@@ -53,6 +56,29 @@ class News(models.Model):
         from django.conf import settings
         site = getattr(settings, "URL", "www.karajlug.org")
         return "%s%s" % (site, self.get_absolute_url())
+
+    def to_persian_digits(self, datestr):
+        pnum = {"1": u"۱", "2": u"۲", "3": u"۳", "4": u"۴", "5": u"۵",
+                "6": u"۶", "7": u"۷", "8": u"۸", "9": u"۹", "0": u"۰"}
+        
+        for i in pnum:
+            datestr = datestr.replace(i, pnum[i])
+        
+        return datestr
+        
+    def pdate(self):
+        days_names = (u"شنبه", u"یک‌شنبه", u"دوشنبه", u"سه‌شنبه", u"چهارشنبه", u"پنج‌شنبه")
+        months_names = (u"فروردین", u"اردیبهشت", u"خرداد", u"تیر", u"مرداد", u"شهریور",
+                        u"مهر", u"آبان", u"آذر", u"دی", u"بهمن", u"اسفند")
+        
+        date = self.date
+        cal = calverter()
+        jd = cal.gregorian_to_jd(date.year, date.month, date.day)
+        wday = cal.jwday(jd)
+        jalali = cal.jd_to_jalali(jd)
+        result = u"%s، %d %s %d" % (days_names[wday], jalali[2], months_names[jalali[1]], jalali[0])
+        
+        return self.to_persian_digits(result)
 
     def irc_repr(self, logentry):
 
