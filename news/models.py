@@ -18,7 +18,7 @@
 #    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 # -----------------------------------------------------------------------------
 
-from calverter import calverter
+from .calverter import calverter
 
 from django.db import models
 from django.utils.translation import ugettext as _
@@ -67,18 +67,20 @@ class News(models.Model):
         return datestr
         
     def pdate(self):
-        days_names = (u"شنبه", u"یک‌شنبه", u"دوشنبه", u"سه‌شنبه", u"چهارشنبه", u"پنج‌شنبه")
-        months_names = (u"فروردین", u"اردیبهشت", u"خرداد", u"تیر", u"مرداد", u"شهریور",
-                        u"مهر", u"آبان", u"آذر", u"دی", u"بهمن", u"اسفند")
+        if self.lang == "fa":
+            days_names = (u"شنبه", u"یک‌شنبه", u"دوشنبه", u"سه‌شنبه", u"چهارشنبه", u"پنج‌شنبه")
+            months_names = (u"فروردین", u"اردیبهشت", u"خرداد", u"تیر", u"مرداد", u"شهریور",
+                            u"مهر", u"آبان", u"آذر", u"دی", u"بهمن", u"اسفند")
         
-        date = self.date
-        cal = calverter()
-        jd = cal.gregorian_to_jd(date.year, date.month, date.day)
-        wday = cal.jwday(jd)
-        jalali = cal.jd_to_jalali(jd)
-        result = u"%s، %d %s %d" % (days_names[wday], jalali[2], months_names[jalali[1]], jalali[0])
+            date = self.date
+            cal = calverter()
+            jd = cal.gregorian_to_jd(date.year, date.month, date.day)
+            wday = cal.jwday(jd)
+            jalali = cal.jd_to_jalali(jd)
+            result = u"%s، %d %s %d" % (days_names[wday], jalali[2], months_names[jalali[1]], jalali[0])
         
-        return self.to_persian_digits(result)
+            return self.to_persian_digits(result)
+        return self.date
 
     def irc_repr(self, logentry):
 
