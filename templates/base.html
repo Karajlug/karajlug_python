@@ -48,7 +48,10 @@
 </header>
 
 <div id="content">
+
 <aside>
+{% block aside %}
+
 <nav id="mainmenu" class="menu blue">
   <ul class="menu">{% trans "Navigation" %}
     <li><a href="/">{% trans "Home" %}</a></li>
@@ -62,6 +65,7 @@
 <nav id="pagemenu" class="menu green">
 {% navigation %}
 </nav>
+{% endblock aside %}
 
 </aside>
 
