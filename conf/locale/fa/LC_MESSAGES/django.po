@@ -7,17 +7,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-27 01:23+0330\n"
+"POT-Creation-Date: 2013-02-02 19:31+0330\n"
 "PO-Revision-Date: 2013-01-27 01:35+0330\n"
 "Last-Translator: Ebrahim Byagowi <ebrahim@byagowi.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 1.5.4\n"
 
-#: books/models.py:36 members/models.py:121 news/models.py:37
+#: books/models.py:36 members/models.py:121 news/models.py:40
 #: page/models.py:46 page/models.py:91 projects/models.py:41
 msgid "Language"
 msgstr "زبان"
@@ -94,7 +95,7 @@ msgstr "خالق هنر"
 msgid "Book"
 msgstr "کتاب"
 
-#: books/models.py:111 templates/base.html:56
+#: books/models.py:111 templates/base.html:55
 msgid "Books"
 msgstr "کتاب‌ها"
 
@@ -129,7 +130,7 @@ msgid "Home page"
 msgstr "صفحهٔ خانگی"
 
 #: faq/models.py:30 mediacenter/models.py:32 members/models.py:29
-#: news/models.py:33 page/models.py:33 page/models.py:83
+#: news/models.py:36 page/models.py:33 page/models.py:83
 msgid "User"
 msgstr "کاربر"
 
@@ -141,20 +142,20 @@ msgstr "سؤال"
 msgid "Answer"
 msgstr "جواب"
 
-#: faq/models.py:35 mediacenter/models.py:34 news/models.py:42
+#: faq/models.py:35 mediacenter/models.py:34 news/models.py:45
 #: page/models.py:51 page/models.py:96
 msgid "Date and Time"
 msgstr "تاریخ و زمان"
 
-#: faq/models.py:41 templates/base.html:58 templates/faq.html:6
+#: faq/models.py:41 templates/base.html:57 templates/faq.html:6
 msgid "FAQ"
 msgstr "سؤال‌های متداول"
 
-#: karajlug_org/settings.py:67 templates/base.html:39
+#: karajlug_org/settings.py:67 templates/base.html:38
 msgid "Persian"
 msgstr "فارسی"
 
-#: karajlug_org/settings.py:68 templates/base.html:37
+#: karajlug_org/settings.py:68 templates/base.html:36
 msgid "English"
 msgstr "انگلیسی"
 
@@ -217,7 +218,7 @@ msgstr "این فیلد احمیتی ندارد"
 msgid "Member"
 msgstr "عضو"
 
-#: members/models.py:103 templates/base.html:55
+#: members/models.py:103 templates/base.html:54
 msgid "Members"
 msgstr "اعضا"
 
@@ -254,15 +255,15 @@ msgstr "جزئیات اعضا"
 msgid "Bio"
 msgstr "شرح حال"
 
-#: news/models.py:35 page/models.py:35 page/models.py:86
+#: news/models.py:38 page/models.py:35 page/models.py:86
 msgid "Title"
 msgstr "عنوان"
 
-#: news/models.py:36 page/models.py:40 page/models.py:89
+#: news/models.py:39 page/models.py:40 page/models.py:89
 msgid "News content"
 msgstr "محتوا اخبار"
 
-#: news/models.py:77 news/models.py:78
+#: news/models.py:105 news/models.py:106
 msgid "News"
 msgstr "اخبار"
 
@@ -294,7 +295,7 @@ msgstr "صفحات اول"
 msgid "First Page"
 msgstr "صفحهٔ اول"
 
-#: page/views.py:41 templates/base.html:44
+#: page/views.py:41 templates/base.html:43
 msgid "Karajlug"
 msgstr "کرج‌لاگ"
 
@@ -327,7 +328,7 @@ msgstr "پروژه‌های کرج‌لاگ"
 msgid "Project"
 msgstr "پروژه"
 
-#: projects/models.py:117 templates/base.html:57
+#: projects/models.py:117 templates/base.html:56
 msgid "Projects"
 msgstr "پروژه‌ها"
 
@@ -378,31 +379,36 @@ msgstr "مخازن"
 msgid " KarajLug "
 msgstr " کرج‌لاگ "
 
-#: templates/base.html:45
+#: templates/base.html:44
 msgid "Karaj Linux User Group"
 msgstr "گروه کاربران لینوکس کرج"
 
-#: templates/base.html:47
+#: templates/base.html:46
 msgid "BETA"
 msgstr "آزمایشی"
 
-#: templates/base.html:53
+#: templates/base.html:52
 msgid "Navigation"
 msgstr "ناوبری"
 
-#: templates/base.html:54
+#: templates/base.html:53
 msgid "Home"
 msgstr "خانه"
 
-#: templates/base.html:78
+#: templates/base.html:66
+#, fuzzy
+msgid "Tweets about #karajlug"
+msgstr "توئیت‌های دربارهٔ #karajlug"
+
+#: templates/base.html:82
 msgid "Copyright 2010-2013 Karajlug Community"
 msgstr "کپی‌رایت ۲۰۱۰- ۲۰۱۳ اجتماع کرج‌لاگ"
 
-#: templates/index.html:26 templates/news_entry.html:17 templates/page.html:13
+#: templates/index.html:24 templates/news_entry.html:17 templates/page.html:13
 msgid "On"
 msgstr "در"
 
-#: templates/index.html:26 templates/news_entry.html:17 templates/page.html:13
+#: templates/index.html:24 templates/news_entry.html:17 templates/page.html:13
 msgid "by"
 msgstr "توسط"
 
@@ -416,9 +422,6 @@ msgstr "بعدی"
 
 #~ msgid "KarajLug"
 #~ msgstr "کرج‌لاگ"
-
-#~ msgid "About KarajLug"
-#~ msgstr "دربارهٔ کرج‌لاگ"
 
 #~ msgid ""
 #~ "\n"

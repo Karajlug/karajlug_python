@@ -17,8 +17,7 @@
 
     <link rel="shortcut icon" href="/statics/favicon.png">
     <link rel="stylesheet" href="/statics/css/fonts.css">
-    <link rel="stylesheet" href="/statics/css/common.css">	
-
+    <link rel="stylesheet" href="/statics/css/common.css">
 
     {% get_language_info for LANGUAGE_CODE as lang %}
     {% if lang.bidi %}
@@ -61,6 +60,11 @@
 
 <nav id="pagemenu" class="menu green">
 {% navigation %}
+</nav>
+
+<nav id="twittermenu" class="menu">
+  <a class="twitter-timeline" href="https://twitter.com/search?q=%23karajlug" data-widget-id="297733413555806210">Tweets about "#karajlug"</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </nav>
 
 </aside>
