@@ -13,41 +13,53 @@ body {
     border-radius: 0 0 3px 3px;
     cursor: pointer;
 }
-
 #lang:hover {
     background: #f7dd77;
 }
+    #lang a {
+        font-size: 13px;
+        text-decoration: none;
+        color: grey;
+    }
 
-#lang a {
-    font-size: 13px;
-    text-decoration: none;
-    color: grey;
-}
-header .beta {
-    padding: 5px;
-    background: #0099CC;
-    border-radius: 3px;
-    color: white;
-    font-size: 16px;
-    font-weight: 700;
-    position: absolute;
-}
-header h1{
-    text-indent: 100px;
-    height: 120px;
-    font-size: 90px;
-    width: 600px;
-
-}
 
 header {
 	background: #0074c1;
     padding: 0 0 1em;
     width: 100%;
 }
-header hgroup {
-    margin: 0 10px;
-}
+    header .beta {
+        padding: 5px;
+        background: #0099CC;
+        border-radius: 3px;
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        position: absolute;
+    }
+    header h1{
+        text-indent: 100px;
+        height: 120px;
+        font-size: 90px;
+        width: 600px;
+    }
+    header hgroup {
+        margin: 0 10px;
+        color: white;
+    }
+    header h1 {
+        border-bottom: 1px solid #1a1a1a;
+        background-image: url('/statics/images/logo.svg');
+        background-position-y: 5px;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        background-size: 107px;
+    }
+    header h2 {
+        padding: 0 104px;
+        font-size: 100%;
+    }
+
 #content {
     background: #F9F9F9;
     min-height: 600px;
@@ -58,32 +70,30 @@ aside {
     position: absolute;
 
 }
+
 .menu {
     width: 300px;
     border-radius: 5px;
     margin: 20px 0 0 0;
-
 }
-.menu ul {
-    list-style: none;
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.menu ul a {
-    font-size: 22px;
-    font-weight: 600;
-    text-decoration: none;
-    color: #f7f7f7;
-    margin-left: 10px;
-}
-
-
+    .menu ul {
+        list-style: none;
+        font-size: 20px;
+        font-weight: 700;
+    }
+        .menu ul a {
+            font-size: 22px;
+            font-weight: 600;
+            text-decoration: none;
+            color: #f7f7f7;
+            margin-left: 10px;
+        }
 
 .blue {
     color: #C5EAF8;
     background: #0099CC;
 }
+
 .green {
     color: #E2F0B6;
     background: #669900;
@@ -102,10 +112,10 @@ article {
     margin: 0 0 60px 20px;
     border-radius: 5px;
 }
+    #firstpage h1 {
+        font-size: 48px;
+    }
 
-#firstpage h1 {
-    font-size: 48px;
-}
 article {
     -moz-transition: background 300ms linear 0ms;
     -webkit-transition: background 300ms linear 0ms;
@@ -113,20 +123,19 @@ article {
 article:hover {
     background: #f7f7f7; 
 }
+    article span {
+        font-size: 12px;
+        float: right;
+    }
 
-section p {
-    padding-left: 10px;
-}
-section{
+section {
     text-indent: 20px;
     margin-bottom: 20px;
 }
+    section p {
+        padding-left: 10px;
+    }
 
-article span {
-    font-size: 12px;
-    float: right;
-
-}
 footer {
     padding: 2em 0;
     width: 100%;
@@ -134,14 +143,6 @@ footer {
     text-align: center;
 }
 
-article h2 a {
-    text-decoration: none;
-    color: #2a2a2a;
-    text-transform: capitalize;
-}
-article h2 a:visited {
-    color: #2a2a2a;
-}
 article h2 {
     -moz-transition: padding-left 300ms linear 0ms;
     -webkit-transition: padding-indent 300ms linear 0ms;
@@ -149,6 +150,14 @@ article h2 {
 article h2:hover {
    padding-left: 40px;
 }
+    article h2 a {
+        text-decoration: none;
+        color: #2a2a2a;
+        text-transform: capitalize;
+    }
+    article h2 a:visited {
+        color: #2a2a2a;
+    }
 
 .menu ul li {
     -moz-transition: text-indent 150ms linear 0ms;
@@ -159,21 +168,7 @@ article h2:hover {
     text-indent: 10px;
 }
 
-header h1 {
-    border-bottom: 1px solid #1a1a1a;
-    background-image: url('/statics/images/logo.svg');
-    background-position-y: 5px;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    background-size: 107px;
-}
-
 .page {
     width: 800px;
     margin: 50px;
-}
-
-header h2 {
-    padding: 0 104px;
-    font-size: 100%;
 }

@@ -1,23 +1,12 @@
 @font-face {
-    font-family: 'IranianSans';
+    font-family: IranianSans;
     src: url('/statics/fonts/IranianSans.eot?#') format('eot'), /* IE6–8 */
          url('/statics/fonts/IranianSans.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
          url('/statics/fonts/IranianSans.ttf') format('truetype'); /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
 }
 
-@font-face {
-    font-family: 'BMahsa';
-    src: url('/statics/fonts/BMahsa.eot?#') format('eot'), /* IE6–8 */
-         url('/statics/fonts/BMahsa.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-         url('/statics/fonts/BMahsa.ttf') format('truetype'); /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
-}
-
-
-* {
-    font-family: "IranianSans", "BMahsa";
-
-}
 body {
+    font-family: IranianSans, Tahoma, 'DejaVu Sans';
     direction: rtl;
 }
 
@@ -25,27 +14,29 @@ body {
     float: left;
 }
 
-header .beta {
-    -moz-transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    top: 50px;
-    right: 412px;
-    width: 64px;
+header {
 }
-
-header h1{
-    background-position-x: 495px;
-}
+    header .beta {
+        -moz-transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        top: 50px;
+        right: 412px;
+        width: 64px;
+    }
+    header h1 {
+        background-position-x: 495px;
+    }
 
 aside {
     right: 900px;
 }
 
-.menu ul {
-    padding: 10px 10px 20px 0px;
+.menu {
 }
-
-.menu ul a {
-    margin-right: 10px;
-}
+    .menu ul {
+        padding: 10px 10px 20px 0px;
+    }
+    .menu ul a {
+        margin-right: 10px;
+    }

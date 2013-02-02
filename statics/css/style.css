@@ -1,30 +1,34 @@
 * {
     font-family: "myriad-pro","Trebuchet MS","Arial", sans-serif, 'Helvetica Neue',Helvetica,Arial,sans-serif;
-
 }
+
 #lang {
     float: right;
 }
 
-header .beta {
-    -moz-transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-    top: 50px;
-    left: 440px;
-    width: 36px;
+header {
 }
+    header .beta {
+        -moz-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        top: 50px;
+        left: 440px;
+        width: 36px;
+    }
+    header h1 {
+        background-position-x: =5px;
+    }
 
-header h1 {
-    background-position-x: =5px;
-}
 aside {
     left: 900px;
 }
 
-.menu ul {
-    padding: 10px 0px 20px 10px;
+.menu {
 }
-.menu ul a {
-    margin-left: 10px;
-}
+    .menu ul {
+        padding: 10px 0px 20px 10px;
+    }
+    .menu ul a {
+        margin-left: 10px;
+    }
