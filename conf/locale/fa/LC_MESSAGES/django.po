@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-02 19:31+0330\n"
+"POT-Creation-Date: 2013-02-02 20:04+0330\n"
 "PO-Revision-Date: 2013-01-27 01:35+0330\n"
 "Last-Translator: Ebrahim Byagowi <ebrahim@byagowi.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -396,13 +396,12 @@ msgid "Home"
 msgstr "خانه"
 
 #: templates/base.html:66
-#, fuzzy
-msgid "Tweets about #karajlug"
-msgstr "توئیت‌های دربارهٔ #karajlug"
+msgid "Tweets about Karajlug"
+msgstr "توئیت‌های دربارهٔ کرج‌لاگ"
 
 #: templates/base.html:82
 msgid "Copyright 2010-2013 Karajlug Community"
-msgstr "کپی‌رایت ۲۰۱۰- ۲۰۱۳ اجتماع کرج‌لاگ"
+msgstr "کپی‌رایت ۲۰۱۰-۲۰۱۳ اجتماع کرج‌لاگ"
 
 #: templates/index.html:24 templates/news_entry.html:17 templates/page.html:13
 msgid "On"
