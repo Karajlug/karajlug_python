@@ -86,13 +86,10 @@ def dispatch_url(request, lang=None):
 
     except Http404:
         try:
-            print ("asdasd")
             if not request.path.endswith("/"):
-                print ("aaaaaaaaaaa")
                 request.path = "%s/" % request.path
                 view = resolve(request.path, settings.LEAF_URLCONF)
             else:
-                print ("abdola")
                 raise
         except Http404:
             print ("last")
