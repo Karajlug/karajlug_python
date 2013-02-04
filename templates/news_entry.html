@@ -14,6 +14,21 @@
     {{ news.content|linebreaks }}
     {% endautoescape %}
   </section>
-  <span>{% trans "On" %} {{ news.date }} {% trans "by" %} {{ news.user }}</span>
+  <span>{% trans "On" %} {{ news.pdate }} {% trans "by" %} {{ news.user }}</span>
+  <script type="text/javascript">
+    var addthis_config = {
+
+    ui_language: "fa"
+    } 
+  </script>
+  <!-- AddThis Button BEGIN -->
+  <div class="addthis_toolbox addthis_default_style">
+    <a class="addthis_button_identica"></a>
+    <a class="addthis_button_twitter"></a>
+    <a class="addthis_button_compact"></a>
+    <a class="addthis_counter addthis_bubble_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-5109b187232754b8"></script>
+
 </article>
 {% endblock %}

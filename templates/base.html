@@ -47,7 +47,10 @@
 </header>
 
 <div id="content">
+
 <aside>
+{% block aside %}
+
 <nav id="mainmenu" class="menu blue">
   <ul class="menu">{% trans "Navigation" %}
     <li><a href="/">{% trans "Home" %}</a></li>
@@ -61,6 +64,7 @@
 <nav id="pagemenu" class="menu green">
 {% navigation %}
 </nav>
+{% endblock aside %}
 
 <nav id="twittermenu" class="menu">
   <a class="twitter-timeline" href="https://twitter.com/search?q=%23karajlug" data-widget-id="297733413555806210">{% trans "Tweets about Karajlug" %}</a>
