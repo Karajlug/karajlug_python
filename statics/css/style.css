@@ -1,7 +1,10 @@
 * {
     font-family: "myriad-pro","Trebuchet MS","Arial", sans-serif, 'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
-
+.brand {
+    font-weight: 700;
+}
+/*
 #lang {
     float: right;
 }
@@ -32,3 +35,4 @@ aside {
     .menu ul a {
         margin-left: 10px;
     }
+*/

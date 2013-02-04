@@ -2,31 +2,33 @@
 {% load i18n %}
 
 {% block content %}
-
-<div id="firstpage">
-  <h1>{{ page.title }}</h1>
-  <section id="firstpagecontent">
-    {% autoescape off %}
-    {{ page.content }}
-    {% endautoescape %}
-  </section>
+<div class="row">
+  <div class="span12">
+    <div id="firstpage">
+      <h1>{{ page.title }}</h1>
+      <section id="firstpagecontent">
+	{% autoescape off %}
+	{{ page.content }}
+	{% endautoescape %}
+      </section>
+    </div>
+  </div>
 </div>
 
 
-{% for news in news_list %}
-<article>
-  <h2><a href="{{ news.get_absolute_url }}">{{ news.title }}</a></h2>
-  <section>
-    {% autoescape off %}
-    {{ news.content|linebreaks }}
-    {% endautoescape %}
-  </section>
-  <span>{% trans "On" %} {{ news.pdate }} {% trans "by" %} {{ news.user }}</span>
-
-</article>
-</article>
-{% endfor %}
-
+<div class="row">
+  {% for news in news_list %}
+  <article>
+    <h2><a href="{{ news.get_absolute_url }}">{{ news.title }}</a></h2>
+    <section>
+      {% autoescape off %}
+      {{ news.content|linebreaks }}
+      {% endautoescape %}
+    </section>
+    <span>{% trans "On" %} {{ news.pdate }} {% trans "by" %} {{ news.user }}</span>
+  </article>
+  {% endfor %}
+</div>
 {% endblock %}
 
 
@@ -34,7 +36,6 @@
 {{ block.super }}
 <a class="twitter-timeline" data-dnt=true href="https://twitter.com/Karajlug/karajlug" data-widget-id="296742303635226624">Tweets from @Karajlug/karajlug</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
 {% endblock aside %}
 
 {% block extrahead %}
