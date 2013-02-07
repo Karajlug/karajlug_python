@@ -2,32 +2,34 @@
 {% load i18n %}
 {% load page_nav %}
 {% get_language_info for LANGUAGE_CODE as lang %}
-<html lang="{{ lang }}">
+<html lang="{{ lang.code }}">
   <head>
     <meta charset="UTF-8">
-    
+
     <title>
       {% block title %}
       {% trans " KarajLug " %}
       {% endblock %}
     </title>
-    
+
     <meta name="description" content="KarajLug Karaj Linux users group">
     <meta name="author" content="Sameer Rahmani - Behnam Ahmad Khan Beigi Ebrahim Byagowi">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" href="/statics/favicon.png">
     <link rel="stylesheet" href="/statics/css/fonts.css">
+
+    {% if lang.bidi %}
+    <link rel="stylesheet" href="/statics/css/bidi/style.css">
+    <link href="/statics/bootstrap/bidi/css/bootstrap.rtl.min.css" rel="stylesheet" media="screen">
+
+    {% else %}
+    <link rel="stylesheet" href="/statics/css/style.css">
     <link href="/statics/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    {% endif %}
 
     <link rel="stylesheet" href="/statics/css/common.css">
 
-    {% if lang.bidi %}
-    <link rel="stylesheet" href="/statics/css/bidi/style.css">	
-    {% else %}
-    <link rel="stylesheet" href="/statics/css/style.css">	
-    {% endif %}
-    
     {% block extrahead %}
     {% endblock %}
   </head>
@@ -43,7 +45,7 @@
 	<div class="span12">
 
 	  <a class="brand" href="/"><b>{% trans "Karajlug" %}</b></a>
-	  
+
 	  <ul class="nav">
 	    <li><a href="/members/">{% trans "Members" %}</a></li>
 	    <li><a href="/books/">{% trans "Books" %}</a></li>
@@ -74,12 +76,12 @@
     <div class="span9">
       <h1>{% trans "Karaj Linux User Group" %}</h1>
       <p>{% trans "Karaj Linux User Group is a NGO that is active on GNU/Linux and Free Software fields." %}</p>
-      
+
     </div>
-    
+
     <div class="span3">
       <form class="form-horizontal" action="" method="POST">
-	
+
 	<div class="controls">
 	  <div class="input-prepend ">
 	    <span class="add-on"><i class="icon-user"></i></span>
@@ -150,7 +152,7 @@
 	</ul>
       </div>
 	</div>
-      <div class="span4 vspan4">
+      <div class="span4 vspan4" style="direction: ltr;">
 	<div class="center span3" id="follow">
 	  <h3>{% trans 'Follow' %}</h3>
 	  <!-- AddThis Follow BEGIN -->
@@ -178,6 +180,13 @@
 <!-- <script>
   docuement.JQuery || document.write("<script src='/statics/js/jquery.min.js'></script>");
 </script>-->
+{% if lang.bidi %}
+<script src="/statics/bootstrap/bidi/js/bootstrap-rtl.min.js"></script>
+{% else %}
+
 <script src="/statics/bootstrap/js/bootstrap.min.js"></script>
+
+{% endif %}
+
 </body>
 </html>
