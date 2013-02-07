@@ -76,37 +76,50 @@
       <p>{% trans "Karaj Linux User Group is a NGO that is active on GNU/Linux and Free Software fields." %}</p>
       
     </div>
-
+    
     <div class="span3">
-      <div class="input-prepend">
-	<span class="add-on"><i class="icon-user"></i></span>
-	<input class="span2" id="prependedInput" name="fullname" type="text" placeholder="{% trans 'Full Name' %}">
-      </div>
+      <form class="form-horizontal" action="" method="POST">
+	
+	<div class="controls">
+	  <div class="input-prepend ">
+	    <span class="add-on"><i class="icon-user"></i></span>
+	    <input class="span2" id="prependedInput" name="fullname" type="text" placeholder="{% trans 'Full Name' %}">
+	  </div>
+	</div>
 
-      <div class="input-prepend">
-	<span class="add-on">@</span>
-	<input class="span2" id="prependedInput" name="email" type="email" placeholder="{% trans 'Email' %}">
-      </div>
+	<div class="controls">
+	  <div class="input-prepend">
+	    <span class="add-on">@</span>
+	    <input class="span2" id="prependedInput" name="email" type="email" placeholder="{% trans 'Email' %}">
+	  </div>
+	</div>
 
-      <div class="input-prepend">
-	<span class="add-on"><i class="icon-asterisk"></i></span>
-	<input class="span2" id="prependedInput" name="pw" type="password" placeholder="{% trans 'Password' %}">
-      </div>
-      <div class="input-prepend">
-	<span class="add-on"><i class="icon-asterisk"></i></span>
-	<input class="span2" id="prependedInput" name="pw-conf" type="password" placeholder="{% trans 'Confirm password' %}">
-      </div>
+	<div class="controls">
+	  <div class="input-prepend">
+	    <span class="add-on"><i class="icon-asterisk"></i></span>
+	    <input class="span2" id="prependedInput" name="pw" type="password" placeholder="{% trans 'Password' %}">
+	  </div>
+	</div>
 
-      <a class="btn btn-success">
-	{% trans "Join" %}
-      </a>
+	<div class="controls">
+	  <div class="input-prepend">
+	    <span class="add-on"><i class="icon-asterisk"></i></span>
+	    <input class="span2" id="prependedInput" name="pw-conf" type="password" placeholder="{% trans 'Confirm password' %}">
+	  </div>
+	</div>
+
+	<div class="controls">
+	  <input type="submit" value="{% trans "Join" %}" class="btn btn-success">
+	</div>
+
+      </form>
     </div>
   </div>
 
 </div>
 
 
-<div class="container">
+<div class="container maincontainer">
 {% block content %}
 
 {% endblock content %}
@@ -118,19 +131,43 @@
 
     <div class="row">
 
-      <div class="span4">
-	{% navigation %}
+      <div class="span4 vspan4">
+	<div class="center span3">
+	<h3>{% trans 'Other Lugs' %}</h3>
+	  <ul>
+	    <li><a href="#">{% trans 'Tehlug' %}</a></li>
+	    <li><a href="#">{% trans 'Isfahan Lug' %}</a></li>
+	    <li><a href="#">{% trans 'Zanjan Lug' %}</a></li>
+	    <li><a href="#">{% trans 'Mashhad Lug' %}</a></li>
+	  </ul>
+	</div>
       </div>
-      <div class="span4">
-	{% navigation %}
+      <div class="span4 vspan4">
+	<div class="center span3">
+	<h3>{% trans 'Useful links' %}</h3>
+	<ul>
+	  <li><a href="#">{% trans 'GNU Project' %}</a></li>
+	</ul>
       </div>
-      <div class="span4">
+	</div>
+      <div class="span4 vspan4">
+	<div class="center span3" id="follow">
+	  <h3>{% trans 'Follow' %}</h3>
+	  <!-- AddThis Follow BEGIN -->
+	  <div class="addthis_toolbox addthis_32x32_style addthis_vertical_style">
+	    <a class="addthis_button_facebook_follow" addthis:userid="groups/229260650455573/"></a>
+	    <a class="addthis_button_twitter_follow" addthis:userid="Karajlug/karajlug"></a>
+	    <a class="addthis_button_rss_follow" addthis:userid="karajlug.org/news/feed/"></a>
+	  </div>
+	  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-51099eb16d71fbe2"></script>
+	  <!-- AddThis Follow END -->
+
       </div>
 
     </div>
     <div class="row">
       <div class="span12">
-	<p>{% trans "Copyright 2010-2013 Karajlug Community" %}.</p>
+	<p align="center"  class="small">{% trans "Copyright 2010-2013 Karajlug Community" %}.</p>
       </div>
     </div>
   </div>
