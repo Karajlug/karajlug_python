@@ -84,3 +84,15 @@ footer ul a:hover {
 #follow div{
     margin: 0 20px;
 }
+
+#banner {
+    background-color: #E6E6E6;
+    background: url(images/linear_bg_2.png);
+    background-repeat: repeat-x;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#E6E6E6), to(#DEDEDE));
+    background: -webkit-linear-gradient(top, #DEDEDE, #E6E6E6);
+    background: -moz-linear-gradient(top, #DEDEDE, #E6E6E6);
+    background: -ms-linear-gradient(top, #DEDEDE, #E6E6E6);
+    background: -o-linear-gradient(top, #DEDEDE, #E6E6E6);
+    box-shadow: 0px -1px 3px rgba(0, 0, 0, 0.1) inset;
+}

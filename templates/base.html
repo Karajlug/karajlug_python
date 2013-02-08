@@ -37,10 +37,12 @@
 <body dir="{% if lang.bidi %}rtl{% else %}ltr{% endif %}">
 {% block body %}
 
+
 <div class="navbar navbar-fixed-top navbar-inverse">
 
+
   <div class="navbar-inner">
-    <div class="container">
+    <div class="container" id="topmenu">
       <div class="row">
 	<div class="span12">
 
@@ -53,7 +55,7 @@
 	    <li><a href="/faq/">{% trans "FAQ" %}</a></li>
 	  </ul>
 
-	  <ul class="nav {% if lang.bidi %}pull-left{% else %}pull-right{% endif %}">
+	  <ul class="nav pull-right">
 	    {% get_language_info for LANGUAGE_CODE as lang %}
 	    {% if lang.bidi %}
 	    <li><a href="/en{{ request.path }}">{% trans "English" %}</a></li>
@@ -68,7 +70,7 @@
   </div>
 </div>
 
-
+<div class="container-flude" id="banner">
 <div class="container">
 
   <div class="row header">
@@ -82,7 +84,7 @@
     <div class="span3">
       <form class="form-horizontal" action="" method="POST">
 
-	<div class="controls">
+	<div class="controls" id="firstcontrols">
 	  <div class="input-prepend ">
 	    <span class="add-on"><i class="icon-user"></i></span>
 	    <input class="span2" id="prependedInput" name="fullname" type="text" placeholder="{% trans 'Full Name' %}">
@@ -119,7 +121,7 @@
   </div>
 
 </div>
-
+</div>
 
 <div class="container maincontainer">
 {% block content %}

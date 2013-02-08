@@ -9,35 +9,9 @@ body {
     font-family: IranianSans, Tahoma, 'DejaVu Sans';
     direction: rtl;
 }
-/*
-#lang {
-    float: left;
+#topmenu {
+    width: 940px;
 }
-
-header {
+#firstcontrols {
+    padding-right: 20px;
 }
-    header .beta {
-        -moz-transform: rotate(-90deg);
-        -webkit-transform: rotate(-90deg);
-        transform: rotate(-90deg);
-        top: 50px;
-        right: 412px;
-        width: 64px;
-    }
-    header h1 {
-        background-position-x: 495px;
-    }
-
-aside {
-    right: 900px;
-}
-
-.menu {
-}
-    .menu ul {
-        padding: 10px 10px 20px 0px;
-    }
-    .menu ul a {
-        margin-right: 10px;
-    }
-*/
