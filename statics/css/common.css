@@ -1,5 +1,9 @@
 .header {
-    padding: 90px 0 20px 0;
+    padding: 0px 0 20px 0;
+    Background: #1f1f1f;
+    position: absolute;
+    height: 460px;
+    width: 100%;
 }
 
 footer {
@@ -7,7 +11,7 @@ footer {
     background-color: #C53D0D;
     border-top: 3px solid #F06D3E;
     z-index: 50;
-    background-image: radial-gradient(circle farthest-corner at center center , #F27041 0%, #C53D0D 100%);    
+    background-image: radial-gradient(circle farthest-corner at center center , #F27041 0%, #C53D0D 100%);
     color : white;
 
 }
@@ -78,7 +82,7 @@ footer ul a:hover {
 
 #follow {
     opacity: 1;
-    
+
 }
 
 #follow div{
@@ -95,4 +99,9 @@ footer ul a:hover {
     background: -ms-linear-gradient(top, #DEDEDE, #E6E6E6);
     background: -o-linear-gradient(top, #DEDEDE, #E6E6E6);
     box-shadow: 0px -1px 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+#Carousel {
+
+    height: 500px;
 }
