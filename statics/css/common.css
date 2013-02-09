@@ -4,6 +4,29 @@
     position: absolute;
     height: 460px;
     width: 100%;
+    top: 0px;
+    z-index: 100;
+    box-shadow: 0 2px 2px black;
+    -moz-box-shadow: 0 2px 2px black;
+    -werbkit-box-shadow: 0 2px 2px black;
+}
+
+.headerpattern {
+    padding: 0px 0 20px 0;
+    Background: url('/statics/images/pattern.gif') 0 0 repeat #1f1f1f;
+    position: absolute;
+    top: 0px;
+    height: 460px;
+    width: 100%;
+    z-index: 120;
+    opacity: 0.1;
+}
+.secbanner {
+    padding: 50px 0 0 0;
+    Background: #f1f1f1;
+    margin: -50px 0 0 0;
+    background-image: radial-gradient(circle farthest-corner at center center , #f1f1f1 0%, #bdbdbd 100%);
+    border-bottom: 1px solid #adadad;
 }
 
 footer {
@@ -102,6 +125,6 @@ footer ul a:hover {
 }
 
 #Carousel {
-
+    z-index: 300;
     height: 500px;
 }

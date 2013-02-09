@@ -12,7 +12,7 @@ input[type=search]::-webkit-search-decoration,input[type=search]::-webkit-search
 textarea{overflow:auto;vertical-align:top;height:auto}
 .hide-text{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}
 .input-block-level{display:block;width:100%;min-height:30px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
-body{direction:rtl;font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;font-size:14px;line-height:20px;color:#333;background-color:#fff;margin:0}
+body{direction:rtl;font-family: "BZiba", "Helvetica Neue", Helvetica, Arial, sans-serif;font-size:19px;line-height:20px;color:#333;background-color:#fff;margin:0}
 a{color:#08c;text-decoration:none}
 a:hover{color:#005580;text-decoration:underline}
 .img-polaroid{background-color:#fff;border:1px solid rgba(0,0,0,0.2);-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.1);-moz-box-shadow:0 1px 3px rgba(0,0,0,0.1);box-shadow:0 1px 3px rgba(0,0,0,0.1);padding:4px}
@@ -86,7 +86,7 @@ p{margin:0 0 10px}
 small{font-size:85%}
 em{font-style:italic}
 cite{font-style:normal}
-h1,h2,h3,h4,h5,h6{font-family:inherit;font-weight:700;line-height:1;color:inherit;text-rendering:optimizelegibility;margin:10px 0}
+h1,h2,h3,h4,h5,h6{font-weight:700;line-height:1;color:inherit;text-rendering:optimizelegibility;margin:10px 0}
 h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{font-weight:400;line-height:1;color:#999}
 h1{font-size:36px;line-height:40px}
 h2{font-size:30px;line-height:40px}

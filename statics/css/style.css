@@ -4,35 +4,21 @@
 .brand {
     font-weight: 700;
 }
-/*
-#lang {
-    float: right;
+
+#mlform {
+    margin-left: -150px;
 }
 
-header {
-}
-    header .beta {
-        -moz-transform: rotate(90deg);
-        -webkit-transform: rotate(90deg);
-        transform: rotate(90deg);
-        top: 50px;
-        left: 440px;
-        width: 36px;
-    }
-    header h1 {
-        background-position-x: =5px;
-    }
-
-aside {
-    left: 900px;
+#sitetitle h1{
+    Background: url("/statics/images/logo.png") 0 0 no-repeat transparent;
+    text-indent: 100px;
+    height: 100px;
+    font-size: 50px;
+    padding-top: 10px;
+    margin-top: 40px;
 }
 
-.menu {
+#sitetitle p {
+    margin: -60px 0 0 100px;
+    font-size: 15px;
 }
-    .menu ul {
-        padding: 10px 0px 20px 10px;
-    }
-    .menu ul a {
-        margin-left: 10px;
-    }
-*/

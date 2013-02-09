@@ -5,13 +5,32 @@
          url('/statics/fonts/IranianSans.ttf') format('truetype'); /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
 }
 
+
 body {
-    font-family: IranianSans, Tahoma, 'DejaVu Sans';
     direction: rtl;
+    font-family: BNazanin, IranianSans, Tahoma, 'DejaVu Sans';
+
 }
 #topmenu {
     width: 940px;
 }
 #firstcontrols {
     padding-right: 20px;
+}
+
+#sitetitle h1{
+    Background: url("/statics/images/logo.png") right 0 no-repeat transparent;
+    text-indent: 100px;
+    height: 100px;
+    font-size: 40px;
+    padding-top: 15px;
+    margin-top: 40px;
+}
+
+#sitetitle p {
+    margin: -60px 100px 0 0px;
+    font-size: 15px;
+}
+#carousel-control {
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }

@@ -20,7 +20,9 @@
     <link rel="stylesheet" href="/statics/css/fonts.css">
 
     {% if lang.bidi %}
+    <link rel="stylesheet" href="/statics/css/bidi/fonts.min.css">
     <link rel="stylesheet" href="/statics/css/bidi/style.css">
+
     <link href="/statics/bootstrap/bidi/css/bootstrap.rtl.min.css" rel="stylesheet" media="screen">
 
     {% else %}
@@ -105,23 +107,24 @@
 	      <p>asd asdas dakljnd sdajdnladasldfsdf skflnsf sdlfkasfbsdfhklb</p>
 	  </div></div>
 	</div>
-	<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-	<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+	<a class="carousel-control left" id="carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+	<a class="carousel-control right" href="#myCarousel" id="carousel-control" data-slide="next">&rsaquo;</a>
       </div>
     </div>
   </div>
 </div>
 
+<div class="secbanner">
 <div class="container">
   <div class="row ">
 
-    <div class="span9">
+    <div class="span9" id="sitetitle">
       <h1>{% trans "Karaj Linux User Group" %}</h1>
       <p>{% trans "Karaj Linux User Group is a NGO that is active on GNU/Linux and Free Software fields." %}</p>
 
     </div>
 
-    <div class="span3">
+    <div class="span3" id="mlform">
       <form class="form-horizontal" action="" method="POST">
 
 	<div class="controls" id="firstcontrols">
@@ -164,8 +167,8 @@
 </div>
 
 
-
-
+<div class="headerpattern">
+</div>
 
 <div class="container maincontainer">
 {% block content %}
