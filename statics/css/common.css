@@ -9,17 +9,17 @@
     box-shadow: 0 2px 2px black;
     -moz-box-shadow: 0 2px 2px black;
     -werbkit-box-shadow: 0 2px 2px black;
+    Background: url('/statics/images/pattern.gif') 0 0 repeat #1f1f1f;
+
 }
 
 .headerpattern {
     padding: 0px 0 20px 0;
-    Background: url('/statics/images/pattern.gif') 0 0 repeat #1f1f1f;
     position: absolute;
     top: 0px;
     height: 460px;
     width: 100%;
     z-index: 120;
-    opacity: 0.1;
 }
 .secbanner {
     padding: 50px 0 0 0;
@@ -30,13 +30,10 @@
 }
 
 footer {
-    Background: #C53D0D;
-    background-color: #C53D0D;
-    border-top: 3px solid #F06D3E;
+    border-top: 3px solid #e1e1e1;
     z-index: 50;
-    background-image: radial-gradient(circle farthest-corner at center center , #F27041 0%, #C53D0D 100%);
     color : white;
-
+    Background: url("/statics/images/footpat.png") 0 0 repeat transparent;
 }
 
 footer a {
@@ -86,8 +83,9 @@ footer ul a:hover {
 }
 
 .maincontainer {
-    min-height: 300px;
-    padding: 20px 0 20px 0;
+    min-height: 500px;
+    margin-top: 30px;
+    padding: 20px 0 70px 0;
 }
 .vspan4 {
     padding: 20px 0 20px 0;
@@ -128,3 +126,13 @@ footer ul a:hover {
     z-index: 300;
     height: 500px;
 }
+
+section p {
+    text-align: justify;
+    padding-top: 10px;
+}
+
+article {
+    margin-bottom: 30px;
+}
+

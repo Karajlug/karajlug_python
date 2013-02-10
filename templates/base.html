@@ -54,6 +54,7 @@
 	    <li><a href="/members/">{% trans "Members" %}</a></li>
 	    <li><a href="/books/">{% trans "Books" %}</a></li>
 	    <li><a href="/projects/">{% trans "Projects" %}</a></li>
+	    <li><a href="/pages/contact/">{% trans "Contact" %}</a></li>
 	    <li><a href="/faq/">{% trans "FAQ" %}</a></li>
 	  </ul>
 
@@ -76,99 +77,10 @@
 
 
 
-<div class="header">
-</div>
+{% block header %}
 
-<div class="container-flude">
-  <div class="container">
+{% endblock header %}
 
-    <div class="row">
-      <div id="Carousel" class="carousel slide span12">
-	<ol class="carousel-indicators">
-	  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-	  <li data-target="#myCarousel" data-slide-to="1"></li>
-	  <li data-target="#myCarousel" data-slide-to="2"></li>
-	</ol>
-	<div class="carousel-inner">
-	  <div class="active item"><img src="/statics/images/karajlug.jpg" >
-	    <div class="carousel-caption">
-	      <h4>{% trans "SFD 2011" %}</h4>
-	      <p>asd asdas dakljnd sdajdnladasldfsdf skflnsf sdlfkasfbsdfhklb</p>
-	    </div>
-	  </div>
-	  <div class="item"><img src="/statics/images/k1.jpg" >
-	    <div class="carousel-caption">
-	      <h4>{% trans "SFD 2011" %}</h4>
-	      <p>asd asdas dakljnd sdajdnladasldfsdf skflnsf sdlfkasfbsdfhklb</p>
-	  </div></div>
-	  <div class="item"><img src="/statics/images/k2.jpg" >
-	    <div class="carousel-caption">
-	      <h4>{% trans "SFD 2011" %}</h4>
-	      <p>asd asdas dakljnd sdajdnladasldfsdf skflnsf sdlfkasfbsdfhklb</p>
-	  </div></div>
-	</div>
-	<a class="carousel-control left" id="carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-	<a class="carousel-control right" href="#myCarousel" id="carousel-control" data-slide="next">&rsaquo;</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="secbanner">
-<div class="container">
-  <div class="row ">
-
-    <div class="span9" id="sitetitle">
-      <h1>{% trans "Karaj Linux User Group" %}</h1>
-      <p>{% trans "Karaj Linux User Group is a NGO that is active on GNU/Linux and Free Software fields." %}</p>
-
-    </div>
-
-    <div class="span3" id="mlform">
-      <form class="form-horizontal" action="" method="POST">
-
-	<div class="controls" id="firstcontrols">
-	  <div class="input-prepend ">
-	    <span class="add-on"><i class="icon-user"></i></span>
-	    <input class="span2" id="prependedInput" name="fullname" type="text" placeholder="{% trans 'Full Name' %}">
-	  </div>
-	</div>
-
-	<div class="controls">
-	  <div class="input-prepend">
-	    <span class="add-on">@</span>
-	    <input class="span2" id="prependedInput" name="email" type="email" placeholder="{% trans 'Email' %}">
-	  </div>
-	</div>
-
-	<div class="controls">
-	  <div class="input-prepend">
-	    <span class="add-on"><i class="icon-asterisk"></i></span>
-	    <input class="span2" id="prependedInput" name="pw" type="password" placeholder="{% trans 'Password' %}">
-	  </div>
-	</div>
-
-	<div class="controls">
-	  <div class="input-prepend">
-	    <span class="add-on"><i class="icon-asterisk"></i></span>
-	    <input class="span2" id="prependedInput" name="pw-conf" type="password" placeholder="{% trans 'Confirm password' %}">
-	  </div>
-	</div>
-
-	<div class="controls">
-	  <input type="submit" value="{% trans "Join" %}" class="btn btn-success">
-	</div>
-
-      </form>
-    </div>
-  </div>
-
-</div>
-</div>
-
-
-<div class="headerpattern">
-</div>
 
 <div class="container maincontainer">
 {% block content %}
@@ -186,7 +98,7 @@
 	<div class="center span3">
 	<h3>{% trans 'Other Lugs' %}</h3>
 	  <ul>
-	    <li><a href="#">{% trans 'Tehlug' %}</a></li>
+	    <li><a href="#">{% trans 'Tehran lug' %}</a></li>
 	    <li><a href="#">{% trans 'Isfahan Lug' %}</a></li>
 	    <li><a href="#">{% trans 'Zanjan Lug' %}</a></li>
 	    <li><a href="#">{% trans 'Mashhad Lug' %}</a></li>
@@ -197,7 +109,9 @@
 	<div class="center span3">
 	<h3>{% trans 'Useful links' %}</h3>
 	<ul>
-	  <li><a href="#">{% trans 'GNU Project' %}</a></li>
+	  <li><a href="http://en.wikipedia.org/wiki/Linux_user_group">{% trans "What is LUG?" %}</a></li>
+	  <li><a href="https://github.com/Karajlug">{% trans 'Karajlug on Github' %}</a></li>
+	  <li><a href="http://www.gnu.org/">{% trans 'GNU Project' %}</a></li>
 	</ul>
       </div>
 	</div>
@@ -210,7 +124,6 @@
 	    <a class="addthis_button_twitter_follow" addthis:userid="Karajlug/karajlug"></a>
 	    <a class="addthis_button_rss_follow" addthis:userid="karajlug.org/news/feed/"></a>
 	  </div>
-	  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-51099eb16d71fbe2"></script>
 	  <!-- AddThis Follow END -->
 
       </div>
@@ -229,6 +142,9 @@
 <!-- <script>
   docuement.JQuery || document.write("<script src='/statics/js/jquery.min.js'></script>");
 </script>-->
+
+{% block tail %}
+
 {% if lang.bidi %}
 <script src="/statics/bootstrap/js/bootstrap.min.js"></script>
 
@@ -242,6 +158,8 @@ $(function(){
 $('.carousel').carousel();
 });
 </script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-51099eb16d71fbe2"></script>
+{% endblock tail %}
 
 </body>
 </html>
