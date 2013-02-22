@@ -90,7 +90,7 @@ class MemberAdmin(admin.ModelAdmin):
                 new_object = self.model()
             prefixes = {}
             for FormSet, inline in zip(self.get_formsets(request),
-                                       self.inline_instances):
+                                       self.get_inline_instances):
                 prefix = FormSet.get_default_prefix()
                 prefixes[prefix] = prefixes.get(prefix, 0) + 1
                 if prefixes[prefix] != 1:
@@ -122,7 +122,7 @@ class MemberAdmin(admin.ModelAdmin):
             form = ModelForm(initial=initial)
             prefixes = {}
             for FormSet, inline in zip(self.get_formsets(request),
-                                       self.inline_instances):
+                                       self.get_inline_instances):
                 prefix = FormSet.get_default_prefix()
                 prefixes[prefix] = prefixes.get(prefix, 0) + 1
                 if prefixes[prefix] != 1:
