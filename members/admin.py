@@ -34,12 +34,10 @@ email.short_description = "Email"
 
 
 class MemberAdmin(admin.ModelAdmin):
-    list_display = ("__unicode__", "version", "home", "license", "vcs",
-                    "creator", "weight")
+    list_display = ("user", "link", "avatar", "weight", "creator")
     ordering = ("weight", )
-    list_editable = ("home", "weight" )
+    list_editable = ("weight", )
     search_fields = ("name", )
-    prepopulated_fields = {"slug": ("name",)}
     list_filter = ("creator", )
 
     def save_model(self, request, obj, form, change):
@@ -47,14 +45,12 @@ class MemberAdmin(admin.ModelAdmin):
         obj.save()
 
 
-class MemberAdmin(admin.ModelAdmin):
-    list_display = ("__unicode__", "version", "home", "license", "vcs",
-                    "creator", "weight")
+class MemberDetailsAdmin(admin.ModelAdmin):
+    list_display = ("language", "member", "field_name", "field_value", "user",
+                    "weight")
     ordering = ("weight", )
-    list_editable = ("home", "weight" )
-    search_fields = ("name", )
-    prepopulated_fields = {"slug": ("name",)}
-    list_filter = ("creator", )
+    list_editable = ("weight", )
+    search_fields = ("member", )
 
     def save_model(self, request, obj, form, change):
         obj.creator = request.user
@@ -63,4 +59,4 @@ class MemberAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Member, MemberAdmin)
-admin.site.register(MemberDetail, DetailAdmin)
+admin.site.register(MemberDetail, MemberDetailsAdmin)
