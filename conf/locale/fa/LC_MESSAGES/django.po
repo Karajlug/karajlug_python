@@ -8,10 +8,9 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-02-22 16:42+0330\n"
-"PO-Revision-Date: 2013-01-27 01:35+0330\n"
+"PO-Revision-Date: 2013-02-22 17:09+0330\n"
 "Last-Translator: Ebrahim Byagowi <ebrahim@byagowi.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -363,50 +362,47 @@ msgstr " کرج‌لاگ "
 
 #: templates/base.html:57
 msgid "Contact"
-msgstr ""
+msgstr "ارتباط"
 
 #: templates/base.html:99
 msgid "Other Lugs"
-msgstr ""
+msgstr "لاگ‌های دیگر"
 
 #: templates/base.html:101
 msgid "Tehran lug"
-msgstr ""
+msgstr "تهران‌لاگ"
 
 #: templates/base.html:102
 msgid "Isfahan Lug"
-msgstr ""
+msgstr "اصفهان‌لاگ"
 
 #: templates/base.html:103
 msgid "Zanjan Lug"
-msgstr ""
+msgstr "زنجان‌لاگ"
 
 #: templates/base.html:104
 msgid "Mashhad Lug"
-msgstr ""
+msgstr "مشهدلاگ"
 
 #: templates/base.html:110
-#, fuzzy
 msgid "Useful links"
-msgstr "پیونده‌های مربوطه"
+msgstr "پیوندهای مفید"
 
 #: templates/base.html:112
 msgid "What is LUG?"
-msgstr ""
+msgstr "لاگ چیست؟"
 
 #: templates/base.html:113
-#, fuzzy
 msgid "Karajlug on Github"
-msgstr "کرج‌لاگ"
+msgstr "کرج‌لاگ در گیت‌هاب"
 
 #: templates/base.html:114
-#, fuzzy
 msgid "GNU Project"
-msgstr "پروژه"
+msgstr "پروژه گنو"
 
 #: templates/base.html:120
 msgid "Follow"
-msgstr ""
+msgstr "دنبال‌کردن"
 
 #: templates/base.html:134
 msgid "Copyright 2010-2013 Karajlug Community"
@@ -414,7 +410,7 @@ msgstr "کپی‌رایت ۲۰۱۰-۲۰۱۳ اجتماع کرج‌لاگ"
 
 #: templates/index.html:23 templates/index.html.py:29 templates/index.html:34
 msgid "SFD 2011"
-msgstr ""
+msgstr "روز آزادی نرم‌افزار ۲۰۱۱"
 
 #: templates/index.html:50
 msgid "Karaj Linux User Group"
@@ -425,27 +421,28 @@ msgid ""
 "Karaj Linux User Group is a NGO that is active on GNU/Linux and Free "
 "Software fields."
 msgstr ""
+"کرج‌لاگ یا گروه کاربران لینوکس کرج گروهی است که در زمینه‌های گنو/لینوکس و "
+"نرم‌افزارهای آزاد فعالیت می‌کند. "
 
 #: templates/index.html:61
-#, fuzzy
 msgid "Full Name"
-msgstr "نام فیلد"
+msgstr "نام کامل"
 
 #: templates/index.html:68
 msgid "Email"
-msgstr ""
+msgstr "رایانامه"
 
 #: templates/index.html:75
 msgid "Password"
-msgstr ""
+msgstr "گذرواژه"
 
 #: templates/index.html:82
 msgid "Confirm password"
-msgstr ""
+msgstr "تأیید گذرواژه"
 
 #: templates/index.html:87
 msgid "Join"
-msgstr ""
+msgstr "پیوستن"
 
 #: templates/index.html:123 templates/news_entry.html:17
 #: templates/page.html:13
@@ -464,106 +461,3 @@ msgstr "قبلی"
 #: templates/news_list.html:22
 msgid "next"
 msgstr "بعدی"
-
-# درست نمیدونم چی به چیه!:/
-#~ msgid "You can only add yourself as a member"
-#~ msgstr "می‌توانید عضو شوید."
-
-#~ msgid "Add %s"
-#~ msgstr "اضافه‌کردن %s"
-
-#~ msgid "You can add only yourself as a member."
-#~ msgstr "شما فقط خودتان را می‌توانید به‌عنوان یک عضو بیافزایید."
-
-#~ msgid "You can add only details about yourself."
-#~ msgstr "فقط می‌توانید اطلاعات خود را وارد کنید."
-
-#~ msgid "BETA"
-#~ msgstr "آزمایشی"
-
-#~ msgid "Navigation"
-#~ msgstr "ناوبری"
-
-#~ msgid "Home"
-#~ msgstr "خانه"
-
-#~ msgid "Tweets about Karajlug"
-#~ msgstr "توئیت‌های دربارهٔ کرج‌لاگ"
-
-#~ msgid "KarajLug"
-#~ msgstr "کرج‌لاگ"
-
-#~ msgid ""
-#~ "\n"
-#~ "\t\t  The Karaj GNU/Linux User Group (G/LUG) began its journey at 25th "
-#~ "April 2008 , (repor of first sesson). This community is a place to share "
-#~ "what we all found intresting about Gnu/Linux operating system and Free "
-#~ "Softwares. If you are interested, you can join us and have a good time "
-#~ "sharing your what you know and like to share. You can find all the "
-#~ "information you need about this comunity in this website. And also it is "
-#~ "recommended to join the mailing list to be inform of the news.\n"
-#~ "\t\t  "
-#~ msgstr ""
-#~ "\n"
-#~ "گروه کاربران گنو/لینوکس کرج فعالیت خود را در ۲۵ آپریل سال ۲۰۰۸ شروع کرد "
-#~ "(گزارش جلسه اول).کرج لاگ محلی است برای اشتراک مطالب جالبی که در رابطه گنو/"
-#~ "لینوکس و نرم‌افزار های آزاد می دانیم.در صورت تمایل شما نیز میتوانید به ما "
-#~ "بپیوندید و اوقات خوبی را با به اشتراک مطالبی که می دانید سپری کنید.‫‏‫در این "
-#~ "پایگاه وب کلیه اطلاعات مورد نیاز را می توانید بیابید. همچنین می توانید در "
-#~ "لیست پستی مشترک شوید تا از اخبار اطلاع پیدا کنید."
-
-#~ msgid "Sponsers:"
-#~ msgstr "حامیان"
-
-#~ msgid "Servers24"
-#~ msgstr "سرورز۲۴"
-
-#~ msgid "KaraNic"
-#~ msgstr "کارانیک"
-
-#~ msgid "Friends:"
-#~ msgstr "دوستان"
-
-#~ msgid "b3hnam"
-#~ msgstr "بهنام"
-
-#~ msgid "lxsameer"
-#~ msgstr "سمیر"
-
-#~ msgid "Linux Tricks"
-#~ msgstr "ترفندهای لینوکسی"
-
-#~ msgid "LUG Defination"
-#~ msgstr "تعریف لاگ"
-
-#~ msgid "Registered LUG"
-#~ msgstr "لاگ‌های ثبت‌شده"
-
-#~ msgid "KarajLug & SFD 2010"
-#~ msgstr "کرج‌لاگ و روز آزادی نرم‌افزار ۲۰۱۰"
-
-#~ msgid "Powered by Vanda"
-#~ msgstr "قدرت گرفته از وندا"
-
-#~ msgid "KarajLug Version"
-#~ msgstr "کرج‌لاگ نسخهٔ"
-
-#~ msgid "Python"
-#~ msgstr "پایتون"
-
-#~ msgid "Django"
-#~ msgstr "جنگو"
-
-#~ msgid "rev"
-#~ msgstr "بازبینی"
-
-#~ msgid ""
-#~ "Some Hackers In Town</a> unless otherwise noted. All the documents in "
-#~ "this website are released under the terms of the <a href=\"http://www.gnu."
-#~ "org/licenses/fdl.html\">GNU FDL</a> license."
-#~ msgstr ""
-#~ "Some Hackers In Town</a>. تمامی مستندات این سابت تحت مجوز <a href="
-#~ "\"http://www.gnu.org/licenses/fdl.html\">GNU FDL</a> است."
-
-#~ msgid "Date"
-#~ msgstr "تاریخ"
