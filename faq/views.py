@@ -27,6 +27,7 @@ def index(request):
     """
     show the whole index
     """
+    request.session['django_language']
     faqs = FAQ.objects.all()
     return rr("faq.html",
               {"faq": faqs,},

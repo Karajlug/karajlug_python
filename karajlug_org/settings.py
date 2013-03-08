@@ -156,9 +156,9 @@ INSTALLED_APPS = (
     "page",
     "news",
     "faq",
-    "members",
-    "books",
-    "projects",
+    #"members",
+    #"books",
+    #"projects",
     #"dbot",
     "mediacenter",
 )

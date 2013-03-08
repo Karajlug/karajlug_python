@@ -1,1 +1,2 @@
 * Sitemap
+* uncomment members, projects, books application from settings.py, urls.py, base.html

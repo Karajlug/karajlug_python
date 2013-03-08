@@ -18,6 +18,7 @@
 # -----------------------------------------------------------------------------
 
 from django.db import models
+from django.conf import settings
 from django.contrib.auth.models import User
 from django.utils.translation import ugettext as _
 
@@ -31,6 +32,11 @@ class FAQ(models.Model):
     question = models.CharField(max_length=150,
                                 verbose_name=_("Question"))
     answer = models.TextField(verbose_name=_("Answer"))
+
+    lang = models.CharField(_("Language"), max_length=8,
+                            choices=settings.LANGUAGES,
+                            default=settings.LANGUAGE_CODE)
+
     date = models.DateTimeField(auto_now_add=True, auto_now=False,
                                      verbose_name=_('Date and Time'))
 
