@@ -17,15 +17,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" href="/statics/favicon.png">
-    <link rel="stylesheet" href="/statics/css/fonts.css">
 
     {% if lang.bidi %}
-    <link rel="stylesheet" href="/statics/css/bidi/fonts.min.css">
-    <link rel="stylesheet" href="/statics/css/bidi/style.css">
-
     <link href="/statics/bootstrap/bidi/css/bootstrap.rtl.min.css" rel="stylesheet" media="screen">
 
+    <link rel="stylesheet" href="/statics/css/bidi/style.css">
+
     {% else %}
+    <link rel="stylesheet" href="/statics/css/fonts.css">
     <link rel="stylesheet" href="/statics/css/style.css">
     <link href="/statics/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     {% endif %}
@@ -96,7 +95,7 @@
 
       <div class="span4 vspan4">
 	<div class="center span3">
-	<h3>{% trans 'Other Lugs' %}</h3>
+	<h3 class="ftitle">{% trans 'Other Lugs' %}</h3>
 	  <ul>
 	    <li><a href="#">{% trans 'Tehran lug' %}</a></li>
 	    <li><a href="#">{% trans 'Isfahan Lug' %}</a></li>
@@ -107,7 +106,7 @@
       </div>
       <div class="span4 vspan4">
 	<div class="center span3">
-	<h3>{% trans 'Useful links' %}</h3>
+	<h3 class="ftitle">{% trans 'Useful links' %}</h3>
 	<ul>
 	  <li><a href="http://en.wikipedia.org/wiki/Linux_user_group">{% trans "What is LUG?" %}</a></li>
 	  <li><a href="https://github.com/Karajlug">{% trans 'Karajlug on Github' %}</a></li>
@@ -117,7 +116,7 @@
 	</div>
       <div class="span4 vspan4" style="direction: ltr;">
 	<div class="center span3" id="follow">
-	  <h3>{% trans 'Follow' %}</h3>
+	  <h3 class="ftitle">{% trans 'Follow' %}</h3>
 	  <!-- AddThis Follow BEGIN -->
 	  <div class="addthis_toolbox addthis_32x32_style addthis_vertical_style">
 	    <a class="addthis_button_facebook_follow" addthis:userid="groups/229260650455573/"></a>
