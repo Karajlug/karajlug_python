@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+
+{% block header %}
+{% endblock header %}
+
+{% block content %}
+<div class="row">
+  <div class="span12">
+    <h1>{% trans "Stay in touch with Karajlug" %}</h1>
+    <br /><br /><br />
+    <ul class="offset1">
+      <li><h3>{% trans "IRC" %}</h3></li>
+      <p>{% trans "Server:" %} irc.freenode.net  {% trans "Channel" %}: #5hit</p>
+      <li><h3>{% trans "Mailing List" %}</h3></li>
+      <li><h3>{% trans "Twitter" %}</h3></li>
+      <li><h3>{% trans "Email" %}</h3></li>
+
+    </ul>
+  </div>
+</div>
+{% endblock %}
+
+{% block extrahead %}
+{% endblock extrahead %}

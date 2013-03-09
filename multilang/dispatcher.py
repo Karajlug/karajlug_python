@@ -60,7 +60,8 @@ def dispatch_url(request, lang=None):
             request.path = path
             request.path_info = path
             request.META["PATH_INFO"] = path
-            if "setlang" in request.GET:
+            if "lang" in request.GET:
+                get_dict = request.GET.copy()
                 request.session['django_language'] = _lang
                 need_cookie = True
 

@@ -53,16 +53,16 @@
 	    <!--<li><a href="/members/">{% trans "Members" %}</a></li>
 	    <li><a href="/books/">{% trans "Books" %}</a></li>
 	    <li><a href="/projects/">{% trans "Projects" %}</a></li>-->
-	    <li><a href="/pages/contact/">{% trans "Contact" %}</a></li>
+	    <li><a href="/contact/">{% trans "Contact" %}</a></li>
 	    <li><a href="/faq/">{% trans "FAQ" %}</a></li>
 	  </ul>
 
 	  <ul class="nav pull-right">
 	    {% get_language_info for LANGUAGE_CODE as lang %}
 	    {% if lang.bidi %}
-	    <li><a href="/en{{ request.path }}?setlang=">{% trans "English" %}</a></li>
+	    <li><a href="/en{{ request.path }}?lang=en">{% trans "English" %}</a></li>
 	    {% else %}
-	    <li><a href="/fa{{ request.path }}?setlang=">{% trans "Persian" %}</a></li>
+	    <li><a href="/fa{{ request.path }}?lang=fa">{% trans "Persian" %}</a></li>
 	    {% endif %}
 	  </ul>
 
