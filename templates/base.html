@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="/statics/css/style.css">
     <link href="/statics/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     {% endif %}
-
+    <link rel="stylesheet" href="/statics/css/font-awesome.min.css">
     <link rel="stylesheet" href="/statics/css/common.css">
 
     {% block extrahead %}
@@ -95,7 +95,7 @@
 
       <div class="span4 vspan4">
 	<div class="center span3">
-	<h3 class="ftitle">{% trans 'Other Lugs' %}</h3>
+	<h3 class="ftitle">{% trans 'Other Lugs' %}:</h3>
 	  <ul>
 	    <li><a href="#">{% trans 'Tehran lug' %}</a></li>
 	    <li><a href="#">{% trans 'Isfahan Lug' %}</a></li>
@@ -106,7 +106,7 @@
       </div>
       <div class="span4 vspan4">
 	<div class="center span3">
-	<h3 class="ftitle">{% trans 'Useful links' %}</h3>
+	<h3 class="ftitle">{% trans 'Useful links' %}:</h3>
 	<ul>
 	  <li><a href="http://en.wikipedia.org/wiki/Linux_user_group">{% trans "What is LUG?" %}</a></li>
 	  <li><a href="https://github.com/Karajlug">{% trans 'Karajlug on Github' %}</a></li>
@@ -114,16 +114,12 @@
 	</ul>
       </div>
 	</div>
-      <div class="span4 vspan4" style="direction: ltr;">
+      <div class="span4 vspan4">
 	<div class="center span3" id="follow">
-	  <h3 class="ftitle">{% trans 'Follow' %}</h3>
-	  <!-- AddThis Follow BEGIN -->
-	  <div class="addthis_toolbox addthis_32x32_style addthis_vertical_style">
-	    <a class="addthis_button_facebook_follow" addthis:userid="groups/229260650455573/"></a>
-	    <a class="addthis_button_twitter_follow" addthis:userid="Karajlug/karajlug"></a>
-	    <a class="addthis_button_rss_follow" addthis:userid="karajlug.org/news/feed/"></a>
-	  </div>
-	  <!-- AddThis Follow END -->
+	  <h3 class="ftitle">{% trans 'Karajlug in' %}:</h3>
+	  <a href="https://github.com/Karajlug" ><i class="icon-github icon-3x"></i></a>
+	  <a href="https://www.twitter.com/karajlug" ><i class="icon-twitter icon-3x"></i></a>
+	  <a href="http://www.facebook.com/pages/KarajLug/113288182057531" ><i class="icon-facebook-sign icon-3x"></i></a>
 
       </div>
 
@@ -138,9 +134,9 @@
 </footer>
 {% endblock %}
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-<!-- <script>
-  docuement.JQuery || document.write("<script src='/statics/js/jquery.min.js'></script>");
-</script>-->
+<script type="javascript">
+  console.log("Asd");
+</script>
 
 {% block tail %}
 
@@ -149,8 +145,6 @@
 
 {% else %}
 <script src="/statics/bootstrap/js/bootstrap.min.js"></script>
-
-
 {% endif %}
 <script type="javascript">
 $(function(){
