@@ -8,10 +8,9 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-03-10 15:43+0330\n"
-"PO-Revision-Date: 2013-02-22 17:09+0330\n"
+"PO-Revision-Date: 2013-03-10 19:25+0330\n"
 "Last-Translator: Ebrahim Byagowi <ebrahim@byagowi.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -359,15 +358,15 @@ msgstr "مخازن"
 
 #: templates/404.html:4
 msgid "Page not found!"
-msgstr ""
+msgstr "صفحه یافت نشد!"
 
 #: templates/500.html:4
 msgid "Internal Server Error"
-msgstr ""
+msgstr "خطای داخلی سرور"
 
 #: templates/500.html:5
 msgid "Please Report this to development team."
-msgstr ""
+msgstr "لطفاً این را به تیم توسعه گزارش دهید."
 
 #: templates/base.html:11 templates/news_entry.html:6
 msgid " KarajLug "
@@ -414,9 +413,8 @@ msgid "GNU Project"
 msgstr "پروژه گنو"
 
 #: templates/base.html:119
-#, fuzzy
 msgid "Karajlug in"
-msgstr "کرج‌لاگ"
+msgstr "کرج‌لاگ در"
 
 #: templates/base.html:129
 msgid "Copyright 2010-2013 Karajlug Community"
@@ -424,23 +422,23 @@ msgstr "کپی‌رایت ۲۰۱۰-۲۰۱۳ اجتماع کرج‌لاگ"
 
 #: templates/contact.html:11
 msgid "Stay in touch with Karajlug"
-msgstr ""
+msgstr "با کرج‌لاگ در تماس باشید"
 
 #: templates/contact.html:14
 msgid "IRC"
-msgstr ""
+msgstr "آی‌آرسی"
 
 #: templates/contact.html:14
 msgid "Server:"
-msgstr ""
+msgstr "سرور:"
 
 #: templates/contact.html:14
 msgid "Channel"
-msgstr ""
+msgstr "کانال"
 
 #: templates/contact.html:15
 msgid "Mailing List"
-msgstr ""
+msgstr "میلینگ لیست"
 
 #: templates/index.html:23 templates/index.html.py:29 templates/index.html:34
 msgid "SFD 2011"
@@ -451,6 +449,8 @@ msgid ""
 "Karajlugers celeberate Software freedom day alonge side with the world for "
 "the second year in 2011"
 msgstr ""
+"کرج‌لاگی‌ها جشن روز آزادی نرم‌افزار را به‌همراه دیگران در جهان برای دومین بار در "
+"سال ۲۰۱۱ جشن می‌گیرند."
 
 #: templates/index.html:50
 msgid "Karaj Linux User Group"
