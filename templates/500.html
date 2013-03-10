@@ -1,5 +1,6 @@
-{% extends 'base.djhtml' %}
-
-{% block body %}
-<H1 align="center" style="font-size: 46px; margin-top: 20%;">Internal Server Error.</H1>
+{% extends 'base.html' %}
+{% load i18n %}
+{% block content %}
+<h1 align="center" style="font-size: 46px; margin-top: 20%;">{% trans "Internal Server Error" %}</h1>
+<p align="center">{% trans "Please Report this to development team." %}</p>
 {% endblock %}

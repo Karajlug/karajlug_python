@@ -1,5 +1,5 @@
-{% extends 'base.djhtml' %}
-
-{% block body %}
-<H1 align="center" style="font-size: 46px; margin-top: 20%;">Page not found!</H1>
+{% extends 'base.html' %}
+{% load i18n %}
+{% block content %}
+<h1 align="center" style="font-size: 46px; margin-top: 20%;">{% trans "Page not found!" %}</h1>
 {% endblock %}
