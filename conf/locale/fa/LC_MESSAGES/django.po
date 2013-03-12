@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-03-10 15:43+0330\n"
-"PO-Revision-Date: 2013-03-10 19:25+0330\n"
+"PO-Revision-Date: 2013-03-12 16:22+0330\n"
 "Last-Translator: Ebrahim Byagowi <ebrahim@byagowi.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -374,7 +374,7 @@ msgstr " کرج‌لاگ "
 
 #: templates/base.html:56
 msgid "Contact"
-msgstr "ارتباط"
+msgstr "ارتباط با ما"
 
 #: templates/base.html:98
 msgid "Other Lugs"
