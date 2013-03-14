@@ -8,10 +8,9 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-03-14 16:58+0330\n"
-"PO-Revision-Date: 2013-03-12 16:22+0330\n"
+"PO-Revision-Date: 2013-03-14 17:06+0330\n"
 "Last-Translator: Ebrahim Byagowi <ebrahim@byagowi.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -454,13 +453,12 @@ msgid "Karaj Linux User Group"
 msgstr "گروه کاربران لینوکس کرج"
 
 #: templates/index.html:51
-#, fuzzy
 msgid ""
 "Karaj Linux User Group is a community that is active on GNU/Linux and Free "
 "Software fields."
 msgstr ""
-"کرج‌لاگ یا گروه کاربران لینوکس کرج گروهی است که در زمینه‌های گنو/لینوکس و "
-"نرم‌افزارهای آزاد فعالیت می‌کند. "
+"کرج‌لاگ یا گروه کاربران لینوکس کرج اجتماعی است که در زمینهٔ گنو/لینوکس و "
+"نرم‌افزارهای آزاد فعال است. "
 
 #: templates/index.html:61
 msgid "Full Name"
@@ -487,22 +485,24 @@ msgid ""
 "6th unit, 3th floor, Parvaz Complex (Above the Ghoghnous market), Motahari "
 "st, Azadegan bridge, Karaj."
 msgstr ""
+"کرج، پل آزادگان، خیابان مطهری، مجتمع پرواز (بالای فروشگاه ققنوس)، طبقهٔ سوم، "
+"واحد ۶ "
 
 #: templates/index.html:123
 msgid "For more information call Sameer"
-msgstr ""
+msgstr "برای اطلاعات بیشتر با سمیر تماس بگیرید"
 
 #: templates/index.html:128
 msgid "View"
-msgstr ""
+msgstr "دیدن"
 
 #: templates/index.html:128
 msgid "Parvaz Complex"
-msgstr ""
+msgstr "متجمع پرواز"
 
 #: templates/index.html:128
 msgid "in a larger map"
-msgstr ""
+msgstr "در یک نقشهٔ بزرگ"
 
 #: templates/index.html:147 templates/news_entry.html:17
 #: templates/page.html:13
