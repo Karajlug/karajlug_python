@@ -52,17 +52,18 @@ def dispatch_url(request, lang=None):
     """
     _lang = lang
     need_cookie = True
-
+    print(request.path, _lang)
     if _lang:
 
-        if request.path.startswith("/%s/" % _lang):
+        if request.path.startswith("/%s/" % _lang) or \
+               request.path == "/%s" % _lang:
+            print ("ZZZZZZZZZZZZ")
             path = request.path[len(_lang) + 1:]
             request.path = path
             request.path_info = path
             request.META["PATH_INFO"] = path
             if "lang" in request.GET:
-                get_dict = request.GET.copy()
-                request.session['django_language'] = _lang
+                request.session['django_language'] = request.GET["lang"]
                 need_cookie = True
 
     else:
