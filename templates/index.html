@@ -113,23 +113,29 @@
 </div>
 
 
-<div class="address secbanner">
+<div class="address">
 <div class="container">
 <div class="row">
 <div class="span6">
-  <h2>{% trans "Address" %}</h2>
-  <p>{% trans "6th unit, 3th floor, Parvaz Complex (Above the Ghoghnous market), Motahari st, Azadega bridge, Karaj." %}</p>
+  <h2><i class="icon-map-marker icon-large"> </i> {% trans "Address" %}</h2>
+  <p>{% trans "6th unit, 3th floor, Parvaz Complex (Above the Ghoghnous market), Motahari st, Azadegan bridge, Karaj." %}</p>
+  <br />
+  <p>{% trans "For more information call Sameer" %}:</p>
+  <p class="pull-{% if lang.bidi %}left{% else %}right{% endif %}">0935-8180918</p>
 </div>
 <div class="span6">
-<iframe width="460" height="380" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=212648998858427801347.0004d7cdbbc51518fb008&amp;ie=UTF8&amp;ll=35.835065,50.993616&amp;spn=0,0&amp;t=h&amp;output=embed"></iframe><br /><small>{% trans "View" %} <a href="https://maps.google.com/maps/ms?msa=0&amp;msid=212648998858427801347.0004d7cdbbc51518fb008&amp;ie=UTF8&amp;ll=35.835065,50.993616&amp;spn=0,0&amp;t=h&amp;source=embed" style="color:#0000FF;text-align:left">{% trans "Parvaz Complex" %}</a>{% trans "in a larger map" %}</small>
+  <div class="pull-{% if lang.bidi %}left{% else %}right{% endif %}" id="map">
+<iframe width="400" height="320" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=212648998858427801347.0004d7cdbbc51518fb008&amp;ie=UTF8&amp;ll=35.835065,50.993616&amp;spn=0,0&amp;t=h&amp;output=embed"></iframe><br /><small>{% trans "View" %} <a href="https://maps.google.com/maps/ms?msa=0&amp;msid=212648998858427801347.0004d7cdbbc51518fb008&amp;ie=UTF8&amp;ll=35.835065,50.993616&amp;spn=0,0&amp;t=h&amp;source=embed" style="text-align:left">{% trans "Parvaz Complex" %} </a>{% trans "in a larger map" %}</small>
+</div>
 </div>
 </div>
 </div>
 </div>
 
+<div  class="newslist">
+  <div class="container">
+    <div class="row">
 
-<div class="container">
-<div class="row">
   {% for news in news_list %}
   <article>
     <h1><a href="{{ news.get_absolute_url }}">{{ news.title }}</a></h1>
@@ -141,7 +147,8 @@
     <span>{% trans "On" %} {{ news.pdate }} {% trans "by" %} {{ news.user }}</span>
   </article>
   {% endfor %}
-</div>
+    </div>
+  </div>
 {% endblock %}
 
 {% block extrahead %}
