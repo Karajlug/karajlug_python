@@ -58,27 +58,40 @@ class News(models.Model):
         return "%s%s" % (site, self.get_absolute_url())
 
     def to_persian_digits(self, datestr):
-        pnum = {"1": u"۱", "2": u"۲", "3": u"۳", "4": u"۴", "5": u"۵",
-                "6": u"۶", "7": u"۷", "8": u"۸", "9": u"۹", "0": u"۰"}
-        
+        pnum = {"1": "۱", "2": "۲", "3": "۳", "4": "۴", "5": "۵",
+                "6": "۶", "7": "۷", "8": "۸", "9": "۹", "0": "۰"}
+
         for i in pnum:
             datestr = datestr.replace(i, pnum[i])
-        
+
         return datestr
-        
+
     def pdate(self):
         if self.lang == "fa":
-            days_names = (u"شنبه", u"یک‌شنبه", u"دوشنبه", u"سه‌شنبه", u"چهارشنبه", u"پنج‌شنبه")
-            months_names = (u"فروردین", u"اردیبهشت", u"خرداد", u"تیر", u"مرداد", u"شهریور",
-                            u"مهر", u"آبان", u"آذر", u"دی", u"بهمن", u"اسفند")
-        
+            days_names = (
+                "شنبه",
+                "یکشنبه",
+                "دوشنبه",
+                "سه شینبه",
+                "چهارشنبه",
+                "پنج شنبه",
+                "جمعه",
+            )
+
+            months_names = ("فروردین", "اردیبهشت", "خرداد", "تیر", "مرداد",
+                            "شهریور", "مهر", "آبان", "آذر", "دی", "بهمن",
+                            "اسفند")
+
             date = self.date
             cal = calverter()
-            jd = cal.gregorian_to_jd(date.year, date.month, date.day)
+            jd = cal.gregorian_to_jd(date.year, date.month,
+                                     date.day)
+
             wday = cal.jwday(jd)
             jalali = cal.jd_to_jalali(jd)
-            result = u"%s، %d %s %d" % (days_names[wday], jalali[2], months_names[jalali[1]], jalali[0])
-        
+
+            result = "%s، %d %s %d" % (days_names[wday], jalali[2],
+                                        months_names[jalali[1] - 1], jalali[0])
             return self.to_persian_digits(result)
         return self.date
 
