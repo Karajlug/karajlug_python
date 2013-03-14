@@ -31,7 +31,7 @@ class Page(models.Model):
     """
     user = models.ForeignKey(User, editable=False,
                              verbose_name=_("User"))
-    title = models.CharField(max_length=30,
+    title = models.CharField(max_length=64,
                              verbose_name=_("Title"))
     slug = models.SlugField(max_length=30, unique=True,
                             verbose_name=_("Slug"))
@@ -82,7 +82,7 @@ class FirstPage(models.Model):
     user = models.ForeignKey(User, editable=False,
                              verbose_name=_("User"))
 
-    title = models.CharField(max_length=30,
+    title = models.CharField(max_length=64,
                              verbose_name=_("Title"))
 
     # IMPORTANT: content field will render as html
