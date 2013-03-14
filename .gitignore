@@ -4,3 +4,5 @@ db*
 env/
 env3/
 statics/uploads/*
+deployment
+

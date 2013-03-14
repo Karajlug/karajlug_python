@@ -21,6 +21,14 @@ import os
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
+ROOT = os.path.dirname(__file__)
+
+
+if os.path.exists(os.path.join(ROOT, "../deployment")):
+    DEBUG = False
+    TEMPLATE_DEBUG = DEBUG
+
+
 ADMINS = (
     ('Behnam Ahmad Khan Beigi',
      'b3hnam@b3hnam.com'),
@@ -28,7 +36,6 @@ ADMINS = (
 )
 
 MANAGERS = ADMINS
-ROOT = os.path.dirname(__file__)
 
 DATABASES = {
     'default': {
@@ -204,7 +211,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 
 BOOK_IN_PAGE = 5
 NEWS_LIMIT = 10
-VERSION = "0.23.5"
+VERSION = "0.48.19"
 AUTH_PROFILE_MODULE = 'members.Member'
 
 APPEND_SLASH = True
