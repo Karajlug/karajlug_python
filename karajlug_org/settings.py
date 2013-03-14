@@ -222,4 +222,7 @@ LOCALE_PATHS = (
 
 ALLOWED_HOSTS = (
     "127.0.0.1:7020",
+    "www.karajlug.org",
+    "karajlug.org",
+    "127.0.0.1",
 )
