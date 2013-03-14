@@ -194,3 +194,22 @@ article {
     border-radius: 2px;
 
 }
+
+#firstpage {
+    font-size: 20px;
+    line-height: 2;
+}
+
+#firstpage h1{
+    font-size: 50px;
+    padding: 15px 0;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+    -moz-text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+    -webkit-text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+    -o-text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+
+}
+p:first-line{
+    text-indent: 20px;
+    padding-left: 30px;
+}
