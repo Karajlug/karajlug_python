@@ -2,6 +2,7 @@
     -webkit-font-smoothing: antialiased;
     -webkit-text-stroke-width: 0.1px;
 }
+
 .header {
     padding: 0px 0 20px 0;
     Background: #1f1f1f;
@@ -41,7 +42,7 @@ footer {
     border-top: 3px solid #e1e1e1;
     z-index: 50;
     color : white;
-    Background: url("/statics/images/footpat.png") 0 0 repeat transparent;
+    background: url("/statics/images/footpat.png") 0 0 repeat transparent;
 }
 
 footer a {
@@ -53,6 +54,7 @@ footer a {
     -webkit-transition: text-shadow 300ms linear 0ms;
 
 }
+
 footer a:hover {
     color: white;
     text-decoration: none;
@@ -62,6 +64,7 @@ footer a:hover {
     -webkit-transition: text-shadow 300ms linear 0ms;
 
 }
+
 footer ul a {
     color: white;
     text-shadow: 0px 2px 3px black;
@@ -71,14 +74,17 @@ footer ul a {
     opacity: 0.8;
 
 }
+
 footer ul {
     list-style: none;
 
 }
+
 footer ul li {
     margin: 5px 0 5px 0;
 
 }
+
 footer ul a:hover {
     color: white;
     text-decoration: none;
@@ -105,6 +111,7 @@ footer ul a:hover {
 .controls {
     margin: 10px 0 10px 0;
 }
+
 .center {
     margin: 0 auto;
     float: none;
@@ -144,16 +151,19 @@ section p {
 article {
     margin-bottom: 30px;
 }
+
 .newslist {
     padding-top: 50px;
     min-height: 400px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2) inset;
 
 }
+
 .address h2{
     font-size: 45px;
 
 }
+
 .address {
     padding: 200px 0 0 0;
     Background: #f1f1f1;
@@ -176,7 +186,8 @@ article {
     -o-text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
 
 }
-.address p{
+
+.address p {
     font-size: 22px;
     line-height: 2;
     text-align: justify;
@@ -214,4 +225,8 @@ article {
 section p {
     font-size: 18px;
     line-height: 1.5;
+}
+
+.ltr-text {
+    direction: ltr; unicode-bidi: embed; 
 }
