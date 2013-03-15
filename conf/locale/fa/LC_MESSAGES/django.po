@@ -7,10 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-14 17:14+0330\n"
+"POT-Creation-Date: 2013-03-15 14:21+0330\n"
 "PO-Revision-Date: 2013-03-15 12:55+0330\n"
 "Last-Translator: Ebrahim Byagowi <ebrahim@byagowi.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -146,15 +147,15 @@ msgstr "جواب"
 msgid "Date and Time"
 msgstr "تاریخ و زمان"
 
-#: faq/models.py:47 templates/base.html:57 templates/faq.html:6
+#: faq/models.py:47 templates/base.html:58 templates/faq.html:6
 msgid "FAQ"
 msgstr "سؤال‌های متداول"
 
-#: karajlug_org/settings.py:67 templates/base.html:65
+#: karajlug_org/settings.py:74 templates/base.html:66
 msgid "Persian"
 msgstr "فارسی"
 
-#: karajlug_org/settings.py:68 templates/base.html:63
+#: karajlug_org/settings.py:75 templates/base.html:64
 msgid "English"
 msgstr "انگلیسی"
 
@@ -244,7 +245,7 @@ msgstr "عنوان"
 msgid "News content"
 msgstr "محتوا اخبار"
 
-#: news/models.py:105 news/models.py:106
+#: news/models.py:118 news/models.py:119
 msgid "News"
 msgstr "اخبار"
 
@@ -376,43 +377,47 @@ msgstr " کرج‌لاگ "
 msgid "Contact"
 msgstr "ارتباط با ما"
 
-#: templates/base.html:98
+#: templates/base.html:57
+msgid "WebChat"
+msgstr ""
+
+#: templates/base.html:99
 msgid "Other Lugs"
 msgstr "لاگ‌های دیگر"
 
-#: templates/base.html:100
+#: templates/base.html:101
 msgid "Tehran lug"
 msgstr "تهران‌لاگ"
 
-#: templates/base.html:101
+#: templates/base.html:102
 msgid "Isfahan Lug"
 msgstr "اصفهان‌لاگ"
 
-#: templates/base.html:102
+#: templates/base.html:103
 msgid "Zanjan Lug"
 msgstr "زنجان‌لاگ"
 
-#: templates/base.html:103
+#: templates/base.html:104
 msgid "Mashhad Lug"
 msgstr "مشهدلاگ"
 
-#: templates/base.html:109
+#: templates/base.html:110
 msgid "Useful links"
 msgstr "پیوندهای مفید"
 
-#: templates/base.html:111
+#: templates/base.html:112
 msgid "What is LUG?"
 msgstr "لاگ چیست؟"
 
-#: templates/base.html:112
+#: templates/base.html:113
 msgid "GNU Project"
 msgstr "پروژه گنو"
 
-#: templates/base.html:118
+#: templates/base.html:119
 msgid "Karajlug in"
 msgstr "کرج‌لاگ در"
 
-#: templates/base.html:130
+#: templates/base.html:131
 msgid "Copyright 2010-2013 Karajlug Community"
 msgstr "کپی‌رایت ۲۰۱۰-۲۰۱۳ اجتماع کرج‌لاگ"
 
@@ -436,7 +441,7 @@ msgstr "کانال"
 msgid "Mailing List"
 msgstr "میلینگ لیست"
 
-#: templates/index.html:23 templates/index.html.py:29 templates/index.html:34
+#: templates/index.html:23
 msgid "SFD 2011"
 msgstr "روز آزادی نرم‌افزار ۲۰۱۱"
 
