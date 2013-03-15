@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-03-14 17:14+0330\n"
-"PO-Revision-Date: 2013-03-15 12:37+0330\n"
+"PO-Revision-Date: 2013-03-15 12:55+0330\n"
 "Last-Translator: Ebrahim Byagowi <ebrahim@byagowi.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -358,7 +358,7 @@ msgstr "مخازن"
 
 #: templates/404.html:4
 msgid "Page not found!"
-msgstr "صفحه یافت نشد!"
+msgstr "صفحه‌ای یافت نشد!"
 
 #: templates/500.html:4
 msgid "Internal Server Error"
