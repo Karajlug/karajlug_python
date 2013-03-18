@@ -2,94 +2,110 @@
 {% load i18n %}
 
 {% block header %}
-<div class="header">
-</div>
+<div class="header"></div>
 
 <div class="container-flude">
   <div class="container">
-
     <div class="row">
       <div id="Carousel" class="carousel slide span12">
-	<ol class="carousel-indicators">
-	  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-	  <li data-target="#myCarousel" data-slide-to="1"></li>
-	  <li data-target="#myCarousel" data-slide-to="2"></li>
-	</ol>
-	<div class="carousel-inner">
-	  <div class="active item"><img src="/statics/images/karajlug.jpg" >
-	    <div class="carousel-caption">
-	      <h4>{% trans "SFD 2011" %}</h4>
-	      <p>{% trans "Karajlugers celeberate Software freedom day along side with the world for the second year in 2011" %}</p>
-	    </div>
-	  </div>
-	  <div class="item"><img src="/statics/images/k1.jpg" >
-	    <div class="carousel-caption">
-	      <h4></h4>
-	      <p></p>
-	  </div></div>
-	  <div class="item"><img src="/statics/images/k2.jpg" >
-	    <div class="carousel-caption">
-	      <h4></h4>
-	      <p></p>
-	  </div></div>
-	</div>
-	<a class="carousel-control left" id="carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-	<a class="carousel-control right" href="#myCarousel" id="carousel-control" data-slide="next">&rsaquo;</a>
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <!--
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          -->
+        </ol>
+        <div class="carousel-inner">
+          <div class="active item">
+            <img src="/statics/images/karajlug.jpg" >
+            <div class="carousel-caption">
+              <h4>
+                {% trans "SFD 2011" %}
+              </h4>
+              <p>
+                {% trans "Karajlugers celeberate Software freedom day along side with the world for the second year in 2011" %}
+              </p>
+            </div>
+          </div>
+          <!--
+          <div class="item">
+            <img src="/statics/images/k1.jpg" >
+            <div class="carousel-caption">
+              <h4>
+              </h4>
+              <p>
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="/statics/images/k2.jpg" >
+            <div class="carousel-caption">
+              <h4>
+              </h4>
+              <p>
+              </p>
+            </div>
+          </div>
+          -->
+        </div>
+        <a class="carousel-control left" id="carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right" href="#myCarousel" id="carousel-control" data-slide="next">&rsaquo;</a>
       </div>
     </div>
   </div>
 </div>
 
 <div class="secbanner">
-<div class="container">
-  <div class="row ">
-
-    <div class="span9" id="sitetitle">
-      <h1>{% trans "Karaj Linux User Group" %}</h1>
-      <p>{% trans "Karaj Linux User Group is a community that is active on GNU/Linux and Free Software fields." %}</p>
-
-    </div>
-
-    <div class="span3" id="mlform">
-      <form class="form-horizontal" action="https://lists.nongnu.org/mailman/subscribe/karajlug-general" method="POST">
-
-	<div class="controls" id="firstcontrols">
-	  <div class="input-prepend ">
-	    <span class="add-on"><i class="icon-user"></i></span>
-	    <input class="span2" id="prependedInput" name="fullname" type="text" placeholder="{% trans 'Full Name' %}">
-	  </div>
-	</div>
-
-	<div class="controls">
-	  <div class="input-prepend">
-	    <span class="add-on">@</span>
-	    <input class="span2" id="prependedInput" name="email" type="email" placeholder="{% trans 'Email' %}">
-	  </div>
-	</div>
-
-	<div class="controls">
-	  <div class="input-prepend">
-	    <span class="add-on"><i class="icon-asterisk"></i></span>
-	    <input class="span2" id="prependedInput" name="pw" type="password" placeholder="{% trans 'Password' %}">
-	  </div>
-	</div>
-
-	<div class="controls">
-	  <div class="input-prepend">
-	    <span class="add-on"><i class="icon-asterisk"></i></span>
-	    <input class="span2" id="prependedInput" name="pw-conf" type="password" placeholder="{% trans 'Confirm password' %}">
-	  </div>
-	</div>
-	<input type="radio" checked="" style="display: none;" value="0" name="digest">
-	<div class="controls">
-	  <input type="submit" value="{% trans "Join" %}" class="btn btn-success">
-	</div>
-
-      </form>
+  <div class="container">
+    <div class="row">
+      <div class="span9" id="sitetitle">
+        <h1>
+          {% trans "Karaj Linux User Group" %}
+        </h1>
+        <p>
+          {% trans "Karaj Linux User Group is a community that is active on GNU/Linux and Free Software fields." %}
+        </p>
+      </div>
+      <div class="span3" id="mlform">
+        <form class="form-horizontal" action="https://lists.nongnu.org/mailman/subscribe/karajlug-general" method="POST">
+          <div class="controls" id="firstcontrols">
+            <div class="input-prepend ">
+              <span class="add-on">
+                <i class="icon-user"></i>
+              </span>
+              <input class="span2" id="prependedInput" name="fullname" type="text" placeholder="{% trans 'Full Name' %}">
+            </div>
+          </div>
+          <div class="controls">
+            <div class="input-prepend">
+              <span class="add-on">@</span>
+              <input class="span2" id="prependedInput" name="email" type="email" placeholder="{% trans 'Email' %}">
+            </div>
+          </div>
+          <div class="controls">
+            <div class="input-prepend">
+              <span class="add-on">
+                <i class="icon-asterisk"></i>
+              </span>
+              <input class="span2" id="prependedInput" name="pw" type="password" placeholder="{% trans 'Password' %}">
+            </div>
+          </div>
+          <div class="controls">
+            <div class="input-prepend">
+              <span class="add-on">
+                <i class="icon-asterisk"></i>
+              </span>
+              <input class="span2" id="prependedInput" name="pw-conf" type="password" placeholder="{% trans 'Confirm password' %}">
+            </div>
+          </div>
+          <input type="radio" checked="" style="display: none;" value="0" name="digest">
+          <div class="controls">
+            <input type="submit" value="{% trans "Join" %}" class="btn btn-success">
+          </div>
+        </form>
+      </div>
     </div>
   </div>
-
-</div>
 </div>
 
 {% endblock header %}
@@ -98,11 +114,13 @@
 <div class="row">
   <div class="span12">
     <div id="firstpage">
-      <h1>{{ page.title }}</h1>
+      <h1>
+        {{ page.title }}
+      </h1>
       <section id="firstpagecontent">
-	{% autoescape off %}
-	{{ page.content }}
-	{% endautoescape %}
+        {% autoescape off %}
+        {{ page.content }}
+        {% endautoescape %}
       </section>
     </div>
   </div>
@@ -110,46 +128,68 @@
 </div>
 
 <div class="address">
-<div class="container">
-<div class="row">
-<div class="span6">
-  <h2><i class="icon-map-marker icon-large"> </i> {% trans "Address" %}</h2>
-  <p>{% trans "6th unit, 3th floor, Parvaz Complex (Above the Ghoghnous market), Motahari st, Azadegan bridge, Karaj." %}</p>
-  <br />
-  <p>{% trans "For more information call Sameer" %}:</p>
-  <p class="pull-{% if lang.bidi %}left{% else %}right{% endif %}">0935-8180918</p>
-</div>
-<div class="span6">
-  <div class="pull-{% if lang.bidi %}left{% else %}right{% endif %}" id="map">
-  <a href="http://goo.gl/maps/EnYEY"  title="{% trans "View" %} {% trans "Parvaz Complex" %} {% trans "in a larger map" %}">
-    <!-- Image source: http://maps.googleapis.com/maps/api/staticmap?maptype=hybrid&center=35.833065,50.996616&zoom=16&size=400x300&markers=35.835065,50.993616&sensor=false -->
-    <img src="/statics/images/staticmap.png" alt="KarajLug on map" />
-  </a>
-  <br /><small>{% trans "View" %} <a href="http://goo.gl/maps/EnYEY">{% trans "Parvaz Complex" %} </a>{% trans "in a larger map" %}</small>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div  class="newslist">
   <div class="container">
     <div class="row">
+      <div class="span6">
+        <h2>
+          <i class="icon-map-marker icon-large"></i>
+          {% trans "Address" %}
+        </h2>
+        <p>
+          {% trans "6th unit, 3th floor, Parvaz Complex (Above the Ghoghnous market), Motahari st, Azadegan bridge, Karaj." %}
+        </p>
+        <br />
+        <p>
+          {% trans "For more information call Sameer" %}:
+        </p>
+        <p class="pull-{% if lang.bidi %}left{% else %}right{% endif %}">
+          0935-8180918
+        </p>
+      </div>
+      <div class="span6">
+        <div class="pull-{% if lang.bidi %}left{% else %}right{% endif %}" id="map">
+          <a href="http://goo.gl/maps/EnYEY"  title="{% trans "View" %} {% trans "Parvaz Complex" %} {% trans "in a larger map" %}">
+            <!-- Image source: http://maps.googleapis.com/maps/api/staticmap?maptype=hybrid&center=35.833065,50.996616&zoom=16&size=400x300&markers=35.835065,50.993616&sensor=false -->
+            <img src="/statics/images/staticmap.png" alt="KarajLug on map" />
+          </a>
+          <br />
+          <small>
+            {% trans "View" %}
+            <a href="http://goo.gl/maps/EnYEY">
+              {% trans "Parvaz Complex" %}
+            </a>
+            {% trans "in a larger map" %}
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-  {% for news in news_list %}
-  <article>
-    <h1><a href="{{ news.get_absolute_url }}">{{ news.title }}</a></h1>
-    <section>
-      {% autoescape off %}
-      {{ news.content|linebreaks }}
-      {% endautoescape %}
-    </section>
-    <span>{% trans "On" %} {{ news.pdate }} {% trans "by" %} {{ news.user }}</span>
-  </article>
-  {% endfor %}
+<div class="newslist">
+  <div class="container">
+    <div class="row">
+      {% for news in news_list %}
+      <article>
+        <h1>
+          <a href="{{ news.get_absolute_url }}">
+            {{ news.title }}
+          </a>
+        </h1>
+        <section>
+          {% autoescape off %}
+          {{ news.content|linebreaks }}
+          {% endautoescape %}
+        </section>
+        <span>
+          {% trans "On" %} {{ news.pdate }} {% trans "by" %} {{ news.user }}
+        </span>
+      </article>
+      {% endfor %}
     </div>
   </div>
 {% endblock %}
 
 {% block extrahead %}
 {% endblock extrahead %}
+  
