@@ -1,11 +1,9 @@
 {% extends 'base.html' %}
 {% load i18n %}
 
-
 {% block header %}
 <div class="header">
 </div>
-
 
 <div class="container-flude">
   <div class="container">
@@ -109,9 +107,7 @@
     </div>
   </div>
 </div>
-
 </div>
-
 
 <div class="address">
 <div class="container">
@@ -125,7 +121,11 @@
 </div>
 <div class="span6">
   <div class="pull-{% if lang.bidi %}left{% else %}right{% endif %}" id="map">
-<iframe width="400" height="320" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=212648998858427801347.0004d7cdbbc51518fb008&amp;ie=UTF8&amp;ll=35.835065,50.993616&amp;spn=0,0&amp;t=h&amp;output=embed"></iframe><br /><small>{% trans "View" %} <a href="https://maps.google.com/maps/ms?msa=0&amp;msid=212648998858427801347.0004d7cdbbc51518fb008&amp;ie=UTF8&amp;ll=35.835065,50.993616&amp;spn=0,0&amp;t=h&amp;source=embed" style="text-align:left">{% trans "Parvaz Complex" %} </a>{% trans "in a larger map" %}</small>
+  <a href="http://goo.gl/maps/EnYEY"  title="{% trans "View" %} {% trans "Parvaz Complex" %} {% trans "in a larger map" %}">
+    <!-- Image source: http://maps.googleapis.com/maps/api/staticmap?maptype=hybrid&center=35.833065,50.996616&zoom=16&size=400x300&markers=35.835065,50.993616&sensor=false -->
+    <img src="/statics/images/staticmap.png" alt="KarajLug on map" />
+  </a>
+  <br /><small>{% trans "View" %} <a href="http://goo.gl/maps/EnYEY">{% trans "Parvaz Complex" %} </a>{% trans "in a larger map" %}</small>
 </div>
 </div>
 </div>
