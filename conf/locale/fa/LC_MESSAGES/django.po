@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-02 20:04+0330\n"
+"POT-Creation-Date: 2013-03-22 21:18+0430\n"
 "PO-Revision-Date: 2013-01-27 01:35+0330\n"
 "Last-Translator: Ebrahim Byagowi <ebrahim@byagowi.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -147,15 +147,15 @@ msgstr "جواب"
 msgid "Date and Time"
 msgstr "تاریخ و زمان"
 
-#: faq/models.py:41 templates/base.html:57 templates/faq.html:6
+#: faq/models.py:41 templates/base.html:58 templates/faq.html:6
 msgid "FAQ"
 msgstr "سؤال‌های متداول"
 
-#: karajlug_org/settings.py:67 templates/base.html:38
+#: karajlug_org/settings.py:67 templates/base.html:66
 msgid "Persian"
 msgstr "فارسی"
 
-#: karajlug_org/settings.py:68 templates/base.html:36
+#: karajlug_org/settings.py:68 templates/base.html:64
 msgid "English"
 msgstr "انگلیسی"
 
@@ -295,7 +295,7 @@ msgstr "صفحات اول"
 msgid "First Page"
 msgstr "صفحهٔ اول"
 
-#: page/views.py:41 templates/base.html:43
+#: page/views.py:41 templates/base.html:51
 msgid "Karajlug"
 msgstr "کرج‌لاگ"
 
@@ -375,39 +375,103 @@ msgstr "بارگیری"
 msgid "Repositories"
 msgstr "مخازن"
 
-#: templates/base.html:10 templates/news_entry.html:6
+#: templates/base.html:11 templates/news_entry.html:6
 msgid " KarajLug "
 msgstr " کرج‌لاگ "
 
-#: templates/base.html:44
-msgid "Karaj Linux User Group"
-msgstr "گروه کاربران لینوکس کرج"
+#: templates/base.html:57
+msgid "Contact"
+msgstr ""
 
-#: templates/base.html:46
-msgid "BETA"
-msgstr "آزمایشی"
+#: templates/base.html:99
+msgid "Other Lugs"
+msgstr ""
 
-#: templates/base.html:52
-msgid "Navigation"
-msgstr "ناوبری"
+#: templates/base.html:101
+msgid "Tehran lug"
+msgstr ""
 
-#: templates/base.html:53
-msgid "Home"
-msgstr "خانه"
+#: templates/base.html:102
+msgid "Isfahan Lug"
+msgstr ""
 
-#: templates/base.html:66
-msgid "Tweets about Karajlug"
-msgstr "توئیت‌های دربارهٔ کرج‌لاگ"
+#: templates/base.html:103
+msgid "Zanjan Lug"
+msgstr ""
 
-#: templates/base.html:82
+#: templates/base.html:104
+msgid "Mashhad Lug"
+msgstr ""
+
+#: templates/base.html:110
+#, fuzzy
+msgid "Useful links"
+msgstr "پیونده‌های مربوطه"
+
+#: templates/base.html:112
+msgid "What is LUG?"
+msgstr ""
+
+#: templates/base.html:113
+#, fuzzy
+msgid "Karajlug on Github"
+msgstr "کرج‌لاگ"
+
+#: templates/base.html:114
+#, fuzzy
+msgid "GNU Project"
+msgstr "پروژه"
+
+#: templates/base.html:120
+msgid "Follow"
+msgstr ""
+
+#: templates/base.html:134
 msgid "Copyright 2010-2013 Karajlug Community"
 msgstr "کپی‌رایت ۲۰۱۰-۲۰۱۳ اجتماع کرج‌لاگ"
 
-#: templates/index.html:24 templates/news_entry.html:17 templates/page.html:13
+#: templates/index.html:23 templates/index.html.py:29 templates/index.html:34
+msgid "SFD 2011"
+msgstr ""
+
+#: templates/index.html:50
+msgid "Karaj Linux User Group"
+msgstr "گروه کاربران لینوکس کرج"
+
+#: templates/index.html:51
+msgid ""
+"Karaj Linux User Group is a NGO that is active on GNU/Linux and Free "
+"Software fields."
+msgstr ""
+
+#: templates/index.html:61
+#, fuzzy
+msgid "Full Name"
+msgstr "نام فیلد"
+
+#: templates/index.html:68
+msgid "Email"
+msgstr ""
+
+#: templates/index.html:75
+msgid "Password"
+msgstr ""
+
+#: templates/index.html:82
+msgid "Confirm password"
+msgstr ""
+
+#: templates/index.html:87
+msgid "Join"
+msgstr ""
+
+#: templates/index.html:123 templates/news_entry.html:17
+#: templates/page.html:13
 msgid "On"
 msgstr "در"
 
-#: templates/index.html:24 templates/news_entry.html:17 templates/page.html:13
+#: templates/index.html:123 templates/news_entry.html:17
+#: templates/page.html:13
 msgid "by"
 msgstr "توسط"
 
@@ -418,6 +482,18 @@ msgstr "قبلی"
 #: templates/news_list.html:22
 msgid "next"
 msgstr "بعدی"
+
+#~ msgid "BETA"
+#~ msgstr "آزمایشی"
+
+#~ msgid "Navigation"
+#~ msgstr "ناوبری"
+
+#~ msgid "Home"
+#~ msgstr "خانه"
+
+#~ msgid "Tweets about Karajlug"
+#~ msgstr "توئیت‌های دربارهٔ کرج‌لاگ"
 
 #~ msgid "KarajLug"
 #~ msgstr "کرج‌لاگ"
@@ -461,9 +537,6 @@ msgstr "بعدی"
 
 #~ msgid "Linux Tricks"
 #~ msgstr "ترفندهای لینوکسی"
-
-#~ msgid "Related links:"
-#~ msgstr "پیونده‌های مربوطه"
 
 #~ msgid "LUG Defination"
 #~ msgstr "تعریف لاگ"
