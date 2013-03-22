@@ -168,11 +168,12 @@
     <div class="row">
       {% for news in news_list %}
       <article>
-        <h1>
+        {% include 'social_links.html' %}
+        <h2>
           <a href="{{ news.get_absolute_url }}">
             {{ news.title }}
           </a>
-        </h1>
+        </h2>
         <section>
           {% autoescape off %}
           {{ news.content|linebreaks }}

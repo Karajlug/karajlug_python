@@ -230,3 +230,10 @@ section p {
 .ltr-text {
     direction: ltr; unicode-bidi: embed; 
 }
+
+.sociallinks i:hover {
+    text-decoration: initial;
+}
+.sociallinks {
+    font-size: 80%;
+}
