@@ -231,9 +231,10 @@ section p {
     direction: ltr; unicode-bidi: embed; 
 }
 
+.sociallinks {
+    font-size: 90%;
+}
+
 .sociallinks i:hover {
     text-decoration: initial;
-}
-.sociallinks {
-    font-size: 80%;
 }
