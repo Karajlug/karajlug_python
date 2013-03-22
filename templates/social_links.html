@@ -1,7 +1,7 @@
 {% load i18n %}
 <div class="sociallinks">
   {% trans "Share it" %}:
-  <a href="https://twitter.com/intent/tweet?source=KarajLug&text={{ news.title|urlencode }}&url={{ news.full_path|urlencode }}"><i class="icon-twitter"></i></a>
-  <a href="http://www.facebook.com/sharer.php?u={{ news.full_path|urlencode }}&t={{ news.title|urlencode }}"><i class="icon-facebook-sign"></i></a>
-  <a href="https://plus.google.com/share?url={{ news.full_path|urlencode }}"><i class="icon-google-plus"></i></a>
+  <a href="https://twitter.com/intent/tweet?source=KarajLug&text={{ news.title|urlencode }}&url={{ news.full_path_protocol|urlencode }}"><i class="icon-twitter"></i></a>
+  <a href="http://www.facebook.com/sharer.php?u={{ news.full_path_protocol|urlencode }}&t={{ news.title|urlencode }}"><i class="icon-facebook-sign"></i></a>
+  <a href="https://plus.google.com/share?url={{ news.full_path_protocol|urlencode }}"><i class="icon-google-plus"></i></a>
 </div>

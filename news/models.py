@@ -57,6 +57,9 @@ class News(models.Model):
         site = getattr(settings, "URL", "www.karajlug.org")
         return "%s%s" % (site, self.get_absolute_url())
 
+    def full_path_protocol(self):
+        return 'http://' + self.full_path()
+
     def to_persian_digits(self, datestr):
         pnum = {"1": "۱", "2": "۲", "3": "۳", "4": "۴", "5": "۵",
                 "6": "۶", "7": "۷", "8": "۸", "9": "۹", "0": "۰"}
