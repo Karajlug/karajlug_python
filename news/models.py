@@ -41,7 +41,7 @@ class News(models.Model):
                             choices=settings.LANGUAGES,
                             default=settings.LANGUAGE_CODE)
 
-    date = models.DateTimeField(auto_now_add = True, auto_now = False,
+    date = models.DateTimeField(auto_now_add=True, auto_now=False,
                                      verbose_name=_('Date and Time'))
 
     objects = I18nManager()
