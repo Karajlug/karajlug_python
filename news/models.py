@@ -17,7 +17,7 @@
 #    with this program; if not, write to the Free Software Foundation, Inc.,
 #    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 # -----------------------------------------------------------------------------
-
+import urllib
 from .calverter import calverter
 
 from django.db import models
@@ -58,7 +58,9 @@ class News(models.Model):
         return "%s%s" % (site, self.get_absolute_url())
 
     def full_path_protocol(self):
-        return 'http://' + self.full_path()
+        a = urllib.quote_plus('http://%s' % self.full_path())
+        print ">>>>> ", a
+        return a
 
     def to_persian_digits(self, datestr):
         pnum = {"1": "۱", "2": "۲", "3": "۳", "4": "۴", "5": "۵",
