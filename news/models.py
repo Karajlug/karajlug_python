@@ -32,16 +32,16 @@ class News(models.Model):
     """
     News module main model
     """
-    user = models.ForeignKey(User, editable=False,
-                             verbose_name=_("User"))
-    title = models.CharField(max_length=60,
-                            verbose_name=_("Title"))
-    content = models.TextField(verbose_name=_("News content"))
+    user = models.ForeignKey(User, editable = False,
+                             verbose_name = _("User"))
+    title = models.CharField(max_length = 60,
+                            verbose_name = _("Title"))
+    content = models.TextField(verbose_name = _("News content"))
     lang = models.CharField(_("Language"), max_length=8,
-                            choices=settings.LANGUAGES,
-                            default=settings.LANGUAGE_CODE)
+                            choices = settings.LANGUAGES,
+                            default = settings.LANGUAGE_CODE)
 
-    date = models.DateTimeField(auto_now_add=True, auto_now=False,
+    date = models.DateTimeField(auto_now_add = True, auto_now = False,
                                      verbose_name=_('Date and Time'))
 
     objects = I18nManager()
@@ -50,17 +50,14 @@ class News(models.Model):
         return self.title
 
     def get_absolute_url(self):
-        return "/news/%s" % self.id
+        return "/%s/news/%s" % (self.lang, self.id)
 
     def full_path(self):
-        from django.conf import settings
         site = getattr(settings, "URL", "www.karajlug.org")
         return "%s%s" % (site, self.get_absolute_url())
 
     def full_path_protocol(self):
-        a = urllib.quote_plus('http://%s' % self.full_path())
-        print ">>>>> ", a
-        return a
+        return urllib.quote_plus("http://%s" % self.full_path())
 
     def to_persian_digits(self, datestr):
         pnum = {"1": "۱", "2": "۲", "3": "۳", "4": "۴", "5": "۵",
