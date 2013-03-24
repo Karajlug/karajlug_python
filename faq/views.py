@@ -30,5 +30,5 @@ def index(request):
     request.session['django_language']
     faqs = FAQ.objects.all()
     return rr("faq.html",
-              {"faq": faqs,},
+              {"faq": faqs, },
               context_instance=RequestContext(request))

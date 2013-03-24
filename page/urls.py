@@ -20,7 +20,7 @@
 from django.conf.urls import patterns
 
 
-urlpatterns = patterns('',
-        (r'^(\w+)/$', 'page.views.show_page'),
-
+urlpatterns = patterns(
+    '',
+    (r'^(\w+)/$', 'page.views.show_page'),
 )

@@ -31,7 +31,7 @@ class UploadFile(models.Model):
     user = models.ForeignKey(User, editable=False,
                              verbose_name=_("User"))
     date = models.DateTimeField(auto_now_add=True, auto_now=False,
-                                     verbose_name=_('Date and Time'))
+                                verbose_name=_('Date and Time'))
 
     def get_address(self):
         return "/statics/%s" % self.ufile

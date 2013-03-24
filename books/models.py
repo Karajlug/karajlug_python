@@ -30,25 +30,29 @@ class Book(models.Model):
         ["1", "fa"],
     ]
 
-    language = models.CharField(choices=LANGUAGES,
-                            default="0",
-                            max_length=1,
-                            verbose_name=_("Language"),
-                            help_text=_("Site language (en-us at this time)"))
+    language = models.CharField(
+        choices=LANGUAGES,
+        default="0",
+        max_length=1,
+        verbose_name=_("Language"),
+        help_text=_("Site language (en-us at this time)"))
 
     name = models.CharField(max_length=80,
                             verbose_name=_("Book Name"))
     slug = models.SlugField(verbose_name=_("Slug"),
                             unique=True)
 
-    maintainers = models.ManyToManyField("auth.User",
-                                related_name="%(app_label)s_%(class)s_related",
-                                verbose_name=_("Maintainers"))
+    maintainers = models.ManyToManyField(
+        "auth.User",
+        related_name="%(app_label)s_%(class)s_related",
+        verbose_name=_("Maintainers"))
 
-    cover = models.ImageField(blank=True, null=True,
-                    upload_to="uploads/covers/",
-                    verbose_name=_("Book Cover"),
-                    help_text=_("Size: 128x128 DO NOT UPLOAD BIG FILES !!!"))
+    cover = models.ImageField(
+        blank=True,
+        null=True,
+        upload_to="uploads/covers/",
+        verbose_name=_("Book Cover"),
+        help_text=_("Size: 128x128 DO NOT UPLOAD BIG FILES !!!"))
 
     isbn = models.CharField(blank=True, null=True,
                             verbose_name=_("ISBN"),
@@ -65,16 +69,19 @@ class Book(models.Model):
     completed = models.BooleanField(default=False,
                                     verbose_name=_("Complete"))
 
-    weight = models.IntegerField(default=40, verbose_name=_("Order"),
-                help_text=_("Book will appear in menu respect to this value"))
+    weight = models.IntegerField(
+        default=40,
+        verbose_name=_("Order"),
+        help_text=_("Book will appear in menu respect to this value"))
 
     desc = models.TextField(verbose_name=_("Description"),
                             blank=True, null=True)
 
     downloadlink = models.URLField(verbose_name=_("Download URL"),
-                                    blank=True, null=True)
+                                   blank=True, null=True)
+
     creator = models.ForeignKey("auth.User", verbose_name=_("Creator"),
-                             editable=False)
+                                editable=False)
 
     def __unicode__(self):
         return self.name

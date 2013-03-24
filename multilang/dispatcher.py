@@ -55,7 +55,7 @@ def dispatch_url(request, lang=None):
     if _lang:
 
         if request.path.startswith("/%s/" % _lang) or \
-               request.path == "/%s" % _lang:
+                request.path == "/%s" % _lang:
             path = request.path[len(_lang) + 1:]
             request.path = path
             request.path_info = path

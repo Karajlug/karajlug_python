@@ -56,7 +56,5 @@ class MemberDetailsAdmin(admin.ModelAdmin):
         obj.creator = request.user
         obj.save()
 
-
-
 admin.site.register(Member, MemberAdmin)
 admin.site.register(MemberDetail, MemberDetailsAdmin)

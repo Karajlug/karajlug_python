@@ -26,7 +26,8 @@ class BookAdmin(admin.ModelAdmin):
     """
     Admin interface for book model.
     """
-    list_display = ("__unicode__", "url", "completed", "online_book", "creator")
+    list_display = ("__unicode__", "url", "completed",
+                    "online_book", "creator")
     list_editable = ("url", )
     search_fields = ("name", )
     list_filter = ("creator", )
@@ -37,13 +38,13 @@ class BookAdmin(admin.ModelAdmin):
             'fields': ('language', ('name', 'slug', 'online_book',
                                     'completed'),
                        ('maintainers', 'weight'))
-            }),
+        }),
         ('Optional Fields', {
             'classes': ('collapse',),
             'fields': ('cover', ('isbn', 'license'),
                        ('url', 'downloadlink'), 'desc')
-            })
-        )
+        })
+    )
 
     def save_model(self, request, obj, form, change):
         obj.creator = request.user

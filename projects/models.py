@@ -34,12 +34,13 @@ class Project(models.Model):
         ("0", "Git"),
         ("1", "Mercurial"),
         ("2", "SVN"),
-        ]
-    language = models.CharField(choices=LANGUAGES,
-                            default="0",
-                            max_length=1,
-                            verbose_name=_("Language"),
-                            help_text=_("Site language (en-us at this time)"))
+    ]
+    language = models.CharField(
+        choices=LANGUAGES,
+        default="0",
+        max_length=1,
+        verbose_name=_("Language"),
+        help_text=_("Site language (en-us at this time)"))
 
     name = models.CharField(max_length=64,
                             verbose_name=_("Project Name"))
@@ -50,14 +51,16 @@ class Project(models.Model):
     slug = models.SlugField(verbose_name=_("Slug"),
                             unique=True)
 
-    maintainers = models.ManyToManyField("auth.User",
-                                related_name="%(app_label)s_%(class)s_related",
-                                verbose_name=_("Maintainers"))
+    maintainers = models.ManyToManyField(
+        "auth.User",
+        related_name="%(app_label)s_%(class)s_related",
+        verbose_name=_("Maintainers"))
 
-    logo = models.ImageField(blank=True, null=True,
-                    upload_to="uploads/logos/",
-                    verbose_name=_("Project logo"),
-                    help_text=_("Size: 128x128 DO NOT UPLOAD BIG FILES !!!"))
+    logo = models.ImageField(
+        blank=True, null=True,
+        upload_to="uploads/logos/",
+        verbose_name=_("Project logo"),
+        help_text=_("Size: 128x128 DO NOT UPLOAD BIG FILES !!!"))
 
     license = models.CharField(verbose_name=_("License"),
                                max_length=16,
@@ -71,10 +74,11 @@ class Project(models.Model):
     downloadlink = models.URLField(verbose_name=_("Download URL"),
                                    blank=True, null=True)
     creator = models.ForeignKey("auth.User", verbose_name=_("Creator"),
-                             editable=False)
+                                editable=False)
 
-    weight = models.IntegerField(default=40, verbose_name=_("Order"),
-                help_text=_("Projects will appear in menu respect to this value"))
+    weight = models.IntegerField(
+        default=40, verbose_name=_("Order"),
+        help_text=_("Projects will appear in menu respect to this value"))
 
     kproject = models.BooleanField(default=False,
                                    verbose_name=_("KarajLUG Project"))
@@ -126,7 +130,8 @@ class Repository(models.Model):
     address = models.CharField(max_length=265,
                                verbose_name=_("Address"))
 
-    weight = models.IntegerField(default=40, verbose_name=_("Order"),
+    weight = models.IntegerField(
+        default=40, verbose_name=_("Order"),
         help_text=_("Repository will appear in menu respect to this value"))
 
     def __unicode__(self):

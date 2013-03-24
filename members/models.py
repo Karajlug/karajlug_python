@@ -26,25 +26,30 @@ class Member(models.Model):
     """
     Member model of karajlug.
     """
-    user = models.OneToOneField("auth.User", verbose_name=_("User"),
-                            related_name="%(app_label)s_%(class)s_related",
-                            help_text=_("Who is the owner of this profile?"))
+    user = models.OneToOneField(
+        "auth.User", verbose_name=_("User"),
+        related_name="%(app_label)s_%(class)s_related",
+        help_text=_("Who is the owner of this profile?"))
+
     link = models.URLField(verbose_name=_("Home Page"),
                            blank=True, null=True,
                            help_text=_("Home page link"))
 
-    avatar = models.ImageField(blank=True, null=True,
-                            upload_to="uploads/avarars/",
-                            verbose_name=_("Avatar"),
-                            help_text=_("Please use your real face avatar. ") +
-                            _("Size: 128x128 DO NOT UPLOAD BIG FILES !!!"))
+    avatar = models.ImageField(
+        blank=True, null=True,
+        upload_to="uploads/avarars/",
+        verbose_name=_("Avatar"),
+        help_text=_("Please use your real face avatar. ") +
+        _("Size: 128x128 DO NOT UPLOAD BIG FILES !!!"))
+
     weight = models.IntegerField(default=40, verbose_name=_("Item Weight"),
                                  help_text=_("This field is not important"))
 
     desc = models.TextField(verbose_name=_("Description"),
                             blank=True, null=True)
+
     creator = models.ForeignKey("auth.User", verbose_name=_("Creator"),
-                             editable=False)
+                                editable=False)
 
     def __unicode__(self):
         return self.user.get_full_name()
@@ -115,20 +120,26 @@ class MemberDetail(models.Model):
         ["1", "fa"],
     ]
 
-    language = models.CharField(choices=LANGUAGES,
-                            default="0",
-                            max_length=1,
-                            verbose_name=_("Language"),
-                            help_text=_("Site language (en-us at this time)"))
+    language = models.CharField(
+        choices=LANGUAGES,
+        default="0",
+        max_length=1,
+        verbose_name=_("Language"),
+        help_text=_("Site language (en-us at this time)"))
 
-    member = models.ForeignKey(Member, verbose_name=_("Member"),
-                            help_text=_("Who is the owner of this property?"))
+    member = models.ForeignKey(
+        Member, verbose_name=_("Member"),
+        help_text=_("Who is the owner of this property?"))
+
     field_name = models.CharField(max_length=64,
                                   verbose_name=_("Field Name"),
                                   help_text=_("Profile property name"))
+
     field_value = models.CharField(max_length=256)
-    weight = models.IntegerField(default=40, verbose_name=_("Item Weight"),
-            help_text=_("Properties with lower weight will appear sooner."))
+
+    weight = models.IntegerField(
+        default=40, verbose_name=_("Item Weight"),
+        help_text=_("Properties with lower weight will appear sooner."))
 
     user = models.ForeignKey("auth.User", verbose_name=_("Creator"),
                              editable=False)
@@ -140,8 +151,7 @@ class MemberDetail(models.Model):
     def irc_repr(self, logentry):
 
         if logentry.is_addition():
-            return ["Some details added for %s" % (
-                        self.member.user)]
+            return ["Some details added for %s" % (self.member.user)]
 
         phrase = ""
         if logentry.is_change():

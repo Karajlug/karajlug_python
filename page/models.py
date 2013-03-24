@@ -41,14 +41,14 @@ class Page(models.Model):
     publish = models.BooleanField(default=False,
                                   verbose_name=_("Publish"))
     menu = models.BooleanField(default=False,
-                                  verbose_name=_("Appear in navigation?"))
+                               verbose_name=_("Appear in navigation?"))
 
     lang = models.CharField(_("Language"), max_length=8,
                             choices=settings.LANGUAGES,
                             default=settings.LANGUAGE_CODE)
 
     date = models.DateTimeField(auto_now_add=True, auto_now=False,
-                                     verbose_name=_('Date and Time'))
+                                verbose_name=_('Date and Time'))
 
     weight = models.IntegerField(_("Weight"), default=50)
 
@@ -93,7 +93,7 @@ class FirstPage(models.Model):
                             default=settings.LANGUAGE_CODE)
 
     date = models.DateTimeField(auto_now_add=True, auto_now=False,
-                                     verbose_name=_('Date and Time'))
+                                verbose_name=_('Date and Time'))
 
     objects = I18nManager()
 

@@ -35,14 +35,14 @@ class News(models.Model):
     user = models.ForeignKey(User, editable=False,
                              verbose_name=_("User"))
     title = models.CharField(max_length=60,
-                            verbose_name=_("Title"))
+                             verbose_name=_("Title"))
     content = models.TextField(verbose_name=_("News content"))
     lang = models.CharField(_("Language"), max_length=8,
                             choices=settings.LANGUAGES,
                             default=settings.LANGUAGE_CODE)
 
     date = models.DateTimeField(auto_now_add=True, auto_now=False,
-                                     verbose_name=_('Date and Time'))
+                                verbose_name=_('Date and Time'))
 
     objects = I18nManager()
 

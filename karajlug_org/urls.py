@@ -25,7 +25,8 @@ from django.conf import settings
 
 admin.autodiscover()
 
-urlpatterns = patterns('',
+urlpatterns = patterns(
+    '',
     (r'^faq/$', "faq.views.index"),
     (r'^news/', include('news.urls')),
     (r'^page/', include('page.urls')),
@@ -40,8 +41,9 @@ urlpatterns = patterns('',
 
 # Local media serving.
 if settings.DEBUG:
-    urlpatterns += patterns('',
-            (r'^statics/(?P<path>.*)$', 'django.views.static.serve',
-             {'document_root': os.path.join(os.path.dirname(__file__),\
-                                    '../statics').replace('\\', '/')}),
-)
+    urlpatterns += patterns(
+        '',
+        (r'^statics/(?P<path>.*)$', 'django.views.static.serve',
+        {'document_root': os.path.join(os.path.dirname(__file__),
+         '../statics').replace('\\', '/')}),
+    )

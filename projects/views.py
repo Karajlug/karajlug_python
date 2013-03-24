@@ -55,4 +55,4 @@ def project_view(request, slug):
     return rr("project_view.html",
               {"project": project,
                "repositories": repos},
-              context_instance=RequestContext(request))              
+              context_instance=RequestContext(request))

@@ -20,6 +20,7 @@
 from django.conf.urls.defaults import patterns
 
 
-urlpatterns = patterns('',
-        (r'^$', 'dbot.views.webservice'),
+urlpatterns = patterns(
+    '',
+    (r'^$', 'dbot.views.webservice'),
 )

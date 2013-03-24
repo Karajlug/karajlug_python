@@ -20,7 +20,8 @@
 from django.conf.urls.defaults import patterns
 
 
-urlpatterns = patterns('',
-        (r'^(\d+)/$', 'members.views.member_view'),
-        (r'^$', 'members.views.members_index'),
+urlpatterns = patterns(
+    '',
+    (r'^(\d+)/$', 'members.views.member_view'),
+    (r'^$', 'members.views.members_index'),
 )

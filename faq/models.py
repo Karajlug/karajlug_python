@@ -38,7 +38,7 @@ class FAQ(models.Model):
                             default=settings.LANGUAGE_CODE)
 
     date = models.DateTimeField(auto_now_add=True, auto_now=False,
-                                     verbose_name=_('Date and Time'))
+                                verbose_name=_('Date and Time'))
 
     def __unicode__(self):
         return self.question

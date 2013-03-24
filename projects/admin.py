@@ -30,7 +30,7 @@ class ProjectAdmin(admin.ModelAdmin):
     list_display = ("__unicode__", "version", "home", "license", "vcs",
                     "creator", "weight")
     ordering = ("weight", )
-    list_editable = ("home", "weight" )
+    list_editable = ("home", "weight")
     search_fields = ("name", )
     prepopulated_fields = {"slug": ("name",)}
     list_filter = ("creator", )

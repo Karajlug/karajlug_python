@@ -20,7 +20,8 @@
 from django.conf.urls.defaults import patterns
 
 
-urlpatterns = patterns('',
-        (r'^([^\.]+)/$', 'projects.views.project_view'),
-        (r'^$', 'projects.views.projects_index'),
+urlpatterns = patterns(
+    '',
+    (r'^([^\.]+)/$', 'projects.views.project_view'),
+    (r'^$', 'projects.views.projects_index'),
 )
