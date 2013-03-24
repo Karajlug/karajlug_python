@@ -98,7 +98,6 @@ class News(models.Model):
         return self.date
 
     def irc_repr(self, logentry):
-
         if logentry.is_addition():
             return ["News: %s added by %s at %s" % (
                 self.title,
