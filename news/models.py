@@ -18,7 +18,7 @@
 #    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 # -----------------------------------------------------------------------------
 import urllib
-from .calverter import calverter
+from calverter import Calverter
 
 from django.db import models
 from django.utils.translation import ugettext as _
@@ -85,7 +85,7 @@ class News(models.Model):
                             "اسفند")
 
             date = self.date
-            cal = calverter()
+            cal = Calverter()
             jd = cal.gregorian_to_jd(date.year, date.month,
                                      date.day)
 

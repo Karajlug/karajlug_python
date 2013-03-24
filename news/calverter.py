@@ -137,7 +137,7 @@ class Calverter:
 
         if wjd < self.gregorian_to_jd(year, 3, 1):
             leapadj = 0
-        else if self.leap_gregorian(year):
+        elif self.leap_gregorian(year):
             leapadj = 1
         else:
             leapadj = 2
