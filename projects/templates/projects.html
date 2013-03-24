@@ -1,64 +1,54 @@
 {% extends 'base.html' %}
 {% load i18n %}
 
-
 {% block aside %}
 {% endblock %}
 {% block content %}
 <table class="mtable">
 {% for item, project in projects %}
 {% if not item|divisibleby:"2" %}
-<tr>
-
-<td>
-<div class="mbox">
-{% if project.logo %}
-<a href="{{ project.get_absolute_url }}"><img class="avatar" width="64" height="64" src="{{ MEDIA_URL}}{{ project.log }}"/></a>
-{% else %}
-<a href="{{ project.get_absolute_url }}"><img class="avatar" width="64" height="64" src="{{ MEDIA_URL}}images/ulogo.png"/></a>
-{% endif %}
-<div class="detail">
-<a href="{{ project.get_absolute_url }}"><span class="name">{{ project }}</span></a><br/>
-{% if project.link %}
-<span class="home_link"><a href="{{ project.home }}">{{ project.home }}</a></span><br/>
-{% endif %}
-<h4>{% trans 'Maintainer' %}: {% for maintainer in project.maintainers.all %}<a href="{{ maintainer.get_profile.get_absolute_url }}">{{ maintainer.get_full_name }}</a>, {% endfor %}</h4>
-{% if project.kproject %}
-<h4>{% trans 'A KarajLUG project' %}</h4>
-{% else %}
-<h4>{% trans 'Participated project' %}</h4>
-{% endif %}
-</div>
-</div>
-</td>
-
-{% else %}
-<td>
-<div class="mbox">
-{% if project.logo %}
-<a href="{{ project.get_absolute_url }}"><img class="avatar" width="64" height="64" src="{{ MEDIA_URL}}{{ project.log }}"/></a>
-{% else %}
-<a href="{{ project.get_absolute_url }}"><img class="avatar" width="64" height="64" src="{{ MEDIA_URL}}images/ulogo.png"/></a>
-{% endif %}
-<div class="detail">
-<a href="{{ project.get_absolute_url }}"><span class="name">{{ project }}</span></a><br/>
-{% if project.link %}
-<span class="home_link"><a href="{{ project.home }}">{{ project.home }}</a></span><br/>
-{% endif %}
-<h4>{% trans 'Maintainer' %}: {% for maintainer in project.maintainers.all %}<a href="{{ maintainer.get_profile.get_absolute_url }}">{{ maintainer.get_full_name }}</a>, {% endfor %}</h4>
-{% if project.kproject %}
-<h4>{% trans 'A KarajLUG project' %}</h4>
-{% else %}
-<h4>{% trans 'Participated project' %}</h4>
-{% endif %}
-</div>
-</div>
-</td>
-
-</tr>
-
-
-{% endif %} 
-{% endfor %}
+  <tr>
+    <td><div class="mbox">
+      {% if project.logo %}
+      <a href="{{ project.get_absolute_url }}"><img class="avatar" width="64" height="64" src="{{ MEDIA_URL}}{{ project.log }}"/></a>
+      {% else %}
+      <a href="{{ project.get_absolute_url }}"><img class="avatar" width="64" height="64" src="{{ MEDIA_URL}}images/ulogo.png"/></a>
+      {% endif %}
+      <div class="detail">
+          <a href="{{ project.get_absolute_url }}"><span class="name">{{ project }}</span></a><br/>
+          {% if project.link %}
+          <span class="home_link"><a href="{{ project.home }}">{{ project.home }}</a></span><br/>
+          {% endif %}
+          <h4>{% trans 'Maintainer' %}: {% for maintainer in project.maintainers.all %}<a href="{{ maintainer.get_profile.get_absolute_url }}">{{ maintainer.get_full_name }}</a>, {% endfor %}</h4>
+          {% if project.kproject %}
+          <h4>{% trans 'A KarajLUG project' %}</h4>
+          {% else %}
+          <h4>{% trans 'Participated project' %}</h4>
+          {% endif %}
+      </div>
+    </div></td>
+    {% else %}
+    <td><div class="mbox">
+      {% if project.logo %}
+      <a href="{{ project.get_absolute_url }}"><img class="avatar" width="64" height="64" src="{{ MEDIA_URL}}{{ project.log }}"/></a>
+      {% else %}
+      <a href="{{ project.get_absolute_url }}"><img class="avatar" width="64" height="64" src="{{ MEDIA_URL}}images/ulogo.png"/></a>
+      {% endif %}
+      <div class="detail">
+      <a href="{{ project.get_absolute_url }}"><span class="name">{{ project }}</span></a><br/>
+      {% if project.link %}
+      <span class="home_link"><a href="{{ project.home }}">{{ project.home }}</a></span><br/>
+      {% endif %}
+      <h4>{% trans 'Maintainer' %}: {% for maintainer in project.maintainers.all %}<a href="{{ maintainer.get_profile.get_absolute_url }}">{{ maintainer.get_full_name }}</a>, {% endfor %}</h4>
+      {% if project.kproject %}
+      <h4>{% trans 'A KarajLUG project' %}</h4>
+      {% else %}
+      <h4>{% trans 'Participated project' %}</h4>
+      {% endif %}
+      </div>
+    </div></td>
+  </tr>
+  {% endif %} 
+  {% endfor %}
 </table>
 {% endblock %}

@@ -6,39 +6,39 @@
 
 {% block content %}
 <div class="mmain">
-{% if member.avatar %}
-<img height="128" width="128" class="avatar" src="{{ MEDIA_URL}}{{ member.avatar }}"/>
-{% else %}
-<img height="128" width="128" class="avatar" src="{{ MEDIA_URL}}images/unknown.png"/>
-{% endif %}
-
-<div class="mainproperties">
-<h2>{{ member }}</h2>
-{% if  member.link %}
-<h3><a href="{{ member.link }}">{{ member.link }}</a></h3>
-
-{% endif %}
-<h3>{% autoescape off %}
-{{ member.safe_email }}
-{% endautoescape  %}</h3>
-</div>
-<div class="details">
-<table class="details_table">
-{% for detail in details %}
-<tr>
-<td id="field_name"><h4><span>{{ detail.field_name}}:</spna></h4></td> <td id="field_value"><h4><value>{{ detail.field_value }}</value></h4></td>
-</tr>
-{% endfor %}
-</table>
-</div>
-<br/><br/><br/>
-<div class="desc">
-<h3>{% trans 'Bio' %}:</h3>
-{% if member.desc %}
-<p>{{ member.desc|linebreaks }}</p>
-{% else %}
-<p>{% trans 'Nothing yet' %}</p>
-{% endif %}
-</div>
+  {% if member.avatar %}
+  <img height="128" width="128" class="avatar" src="{{ MEDIA_URL}}{{ member.avatar }}"/>
+  {% else %}
+  <img height="128" width="128" class="avatar" src="{{ MEDIA_URL}}images/unknown.png"/>
+  {% endif %}
+  
+  <div class="mainproperties">
+    <h2>{{ member }}</h2>
+    {% if  member.link %}
+    <h3><a href="{{ member.link }}">{{ member.link }}</a></h3>
+    
+    {% endif %}
+    <h3>{% autoescape off %}
+    {{ member.safe_email }}
+    {% endautoescape  %}</h3>
+  </div>
+  <div class="details">
+    <table class="details_table">
+      {% for detail in details %}
+      <tr>
+      <td id="field_name"><h4><span>{{ detail.field_name}}:</spna></h4></td> <td id="field_value"><h4><value>{{ detail.field_value }}</value></h4></td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+  <br/><br/><br/>
+  <div class="desc">
+    <h3>{% trans 'Bio' %}:</h3>
+    {% if member.desc %}
+    <p>{{ member.desc|linebreaks }}</p>
+    {% else %}
+    <p>{% trans 'Nothing yet' %}</p>
+    {% endif %}
+  </div>
 </div>
 {% endblock %}

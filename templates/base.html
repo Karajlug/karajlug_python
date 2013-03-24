@@ -20,9 +20,7 @@
 
     {% if lang.bidi %}
     <link href="/statics/bootstrap/bidi/css/bootstrap.rtl.min.css" rel="stylesheet" media="screen">
-
     <link rel="stylesheet" href="/statics/css/bidi/style.css">
-
     {% else %}
     <link rel="stylesheet" href="/statics/css/fonts.css">
     <link rel="stylesheet" href="/statics/css/style.css">
@@ -34,116 +32,102 @@
     {% block extrahead %}
     {% endblock %}
   </head>
+  <body dir="{% if lang.bidi %}rtl{% else %}ltr{% endif %}">
+  {% block body %}
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container" id="topmenu">
+          <div class="row">
+	        <div class="span12">
+              <a class="brand" href="/"><b>{% trans "Karajlug" %}</b></a>
+              <ul class="nav">
+                <!--<li><a href="/members/">{% trans "Members" %}</a></li>
+                <li><a href="/books/">{% trans "Books" %}</a></li>
+                <li><a href="/projects/">{% trans "Projects" %}</a></li>-->
+                <li><a href="/contact/">{% trans "Contact" %}</a></li>
+                <li><a href="http://webchat.freenode.net/?channels=5hit&uio=d4" target="_blank">{% trans "WebChat" %}</a></li>
+                <li><a href="/faq/">{% trans "FAQ" %}</a></li>
+              </ul>
 
-<body dir="{% if lang.bidi %}rtl{% else %}ltr{% endif %}">
-{% block body %}
-
-
-<div class="navbar navbar-fixed-top">
-
-
-  <div class="navbar-inner">
-    <div class="container" id="topmenu">
-      <div class="row">
-	<div class="span12">
-
-	  <a class="brand" href="/"><b>{% trans "Karajlug" %}</b></a>
-
-	  <ul class="nav">
-	    <!--<li><a href="/members/">{% trans "Members" %}</a></li>
-	    <li><a href="/books/">{% trans "Books" %}</a></li>
-	    <li><a href="/projects/">{% trans "Projects" %}</a></li>-->
-	    <li><a href="/contact/">{% trans "Contact" %}</a></li>
-	    <li><a href="http://webchat.freenode.net/?channels=5hit&uio=d4" target="_blank">{% trans "WebChat" %}</a></li>
-	    <li><a href="/faq/">{% trans "FAQ" %}</a></li>
-	  </ul>
-
-	  <ul class="nav pull-right">
-	    {% get_language_info for LANGUAGE_CODE as lang %}
-	    {% if lang.bidi %}
-	    <li><a href="/en{{ request.path }}?lang=en">{% trans "English" %}</a></li>
-	    {% else %}
-	    <li><a href="/fa{{ request.path }}?lang=fa">{% trans "Persian" %}</a></li>
-	    {% endif %}
-	  </ul>
-
-	</div>
+              <ul class="nav pull-right">
+                {% get_language_info for LANGUAGE_CODE as lang %}
+                {% if lang.bidi %}
+                <li><a href="/en{{ request.path }}?lang=en">{% trans "English" %}</a></li>
+                {% else %}
+                <li><a href="/fa{{ request.path }}?lang=fa">{% trans "Persian" %}</a></li>
+                {% endif %}
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
+    {% block header %}
 
+    {% endblock header %}
 
+    <div class="container maincontainer">
+    {% block content %}
 
-
-{% block header %}
-
-{% endblock header %}
-
-
-<div class="container maincontainer">
-{% block content %}
-
-{% endblock content %}
-</div>
-
-
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="span4 vspan4">
-	<div class="center span3">
-	<h3 class="ftitle">{% trans 'Other Lugs' %}:</h3>
-	  <ul>
-	    <li><a href="http://tehlug.org/">{% trans 'Tehran Lug' %}</a></li>
-	    <li><a href="http://www.isfahanlug.org/">{% trans 'Isfahan Lug' %}</a></li>
-	    <li><a href="http://www.zanjanlug.org/">{% trans 'Zanjan Lug' %}</a></li>
-	    <li><a href="http://www.mashhadlug.org/">{% trans 'Mashhad Lug' %}</a></li>
-	  </ul>
-	</div>
-      </div>
-      <div class="span4 vspan4">
-	<div class="center span3">
-	<h3 class="ftitle">{% trans 'Useful links' %}:</h3>
-	<ul>
-	  <li><a href="http://en.wikipedia.org/wiki/Linux_user_group">{% trans "What is LUG?" %}</a></li>
-	  <li><a href="http://www.gnu.org/">{% trans 'GNU Project' %}</a></li>
-	</ul>
-      </div>
-	</div>
-      <div class="span4 vspan4">
-	<div class="center span4" id="follow">
-	  <h3 class="ftitle">{% trans 'Karajlug in' %}:</h3>
-	  <a href="https://github.com/Karajlug" ><i class="icon-github icon-3x"></i></a>
-	  <a href="https://www.twitter.com/karajlug" ><i class="icon-twitter icon-3x"></i></a>
-	  <a href="http://www.facebook.com/pages/KarajLug/113288182057531" ><i class="icon-facebook-sign icon-3x"></i></a>
-	  <a href="/news/feed/" ><i class="icon-rss icon-3x"></i></a>
-      </div>
+    {% endblock content %}
     </div>
-    <div class="row">
-      <div class="span12">
-	<p align="center"  class="small">©{% trans "Copyright 2010-2013 Karajlug Community" %}.</p>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="span4 vspan4">
+        <div class="center span3">
+        <h3 class="ftitle">{% trans 'Other Lugs' %}:</h3>
+          <ul>
+            <li><a href="http://tehlug.org/">{% trans 'Tehran Lug' %}</a></li>
+            <li><a href="http://www.isfahanlug.org/">{% trans 'Isfahan Lug' %}</a></li>
+            <li><a href="http://www.zanjanlug.org/">{% trans 'Zanjan Lug' %}</a></li>
+            <li><a href="http://www.mashhadlug.org/">{% trans 'Mashhad Lug' %}</a></li>
+          </ul>
+        </div>
+          </div>
+          <div class="span4 vspan4">
+        <div class="center span3">
+        <h3 class="ftitle">{% trans 'Useful links' %}:</h3>
+        <ul>
+          <li><a href="http://en.wikipedia.org/wiki/Linux_user_group">{% trans "What is LUG?" %}</a></li>
+          <li><a href="http://www.gnu.org/">{% trans 'GNU Project' %}</a></li>
+        </ul>
+          </div>
+        </div>
+          <div class="span4 vspan4">
+        <div class="center span4" id="follow">
+          <h3 class="ftitle">{% trans 'Karajlug in' %}:</h3>
+          <a href="https://github.com/Karajlug" ><i class="icon-github icon-3x"></i></a>
+          <a href="https://www.twitter.com/karajlug" ><i class="icon-twitter icon-3x"></i></a>
+          <a href="http://www.facebook.com/pages/KarajLug/113288182057531" ><i class="icon-facebook-sign icon-3x"></i></a>
+          <a href="/news/feed/" ><i class="icon-rss icon-3x"></i></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="span12">
+        <p align="center"  class="small">©{% trans "Copyright 2010-2013 Karajlug Community" %}.</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</footer>
-{% endblock %}
-<script src="/statics/js/jquery-1.9.1.min.js"></script>
+    </footer>
+    {% endblock %}
+    <script src="/statics/js/jquery-1.9.1.min.js"></script>
 
-{% block tail %}
+    {% block tail %}
 
-{% if lang.bidi %}
-<script src="/statics/bootstrap/js/bootstrap.min.js"></script>
+    {% if lang.bidi %}
+    <script src="/statics/bootstrap/js/bootstrap.min.js"></script>
 
-{% else %}
-<script src="/statics/bootstrap/js/bootstrap.min.js"></script>
-{% endif %}
-<script type="javascript">
-$(function(){
-  $('.carousel').carousel();
-});
-</script>
-{% endblock tail %}
-</body>
+    {% else %}
+    <script src="/statics/bootstrap/js/bootstrap.min.js"></script>
+    {% endif %}
+    <script type="javascript">
+    $(function(){
+      $('.carousel').carousel();
+    });
+    </script>
+    {% endblock tail %}
+  </body>
 </html>

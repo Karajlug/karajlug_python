@@ -5,39 +5,39 @@
 {% endblock %}
 {% block content %}
 <div class="mmain">
-{% if book.cover %}
-<img height="420" width="300" class="avatar" id="cover" src="{{ MEDIA_URL}}{{ book.cover }}"/>
-{% else %}
-<img height="420" width="300" class="avatar" id="cover" src="{{ MEDIA_URL}}images/ucover.png"/>
-{% endif %}
-
-<div class="book_properties">
-<h2>{{ book }}</h2>
-<h3><author>{% trans 'Author' %}: {% for author in book.maintainers.all %}<a href="{{ author.get_profile.get_absolute_url }}">{{ author.get_full_name }}</a>, {% endfor %}</author></h3>
-{% if book.isbn %}
-<h3>{% trans 'ISBN' %}: {{ book.isbn }}</h3>
-{% endif %}
-{% if book.online_book %}
-<h3>{% trans "It's an online book." %}</h3>
-{% else %}
-<h3>{% trans "It's an offset book." %}</h3>
-{% endif %}
-{% if not book.completed %}
-<h3>{% trans 'Not Completed' %}</h3>
-{% endif %}
-{% if  book.url %}
-<h3><a href="{{ book.url }}">{% trans 'Home Page' %}</a></h3>
-{% endif %}
-</div>
-{% if book.downloadlink %}
-<h3><a href="{{ book.downloadlink }}">Download</a></h3>
-{% endif %}
-<div class="desc">
-<h3>{% trans 'Description' %}:</h3>
-{% if book.desc %}
-<p>{{ book.desc|linebreaks }}</p>
-{% else %}
-<p>{% trans 'Nothing yet' %}</p>
-{% endif %}
-</div>
+  {% if book.cover %}
+  <img height="420" width="300" class="avatar" id="cover" src="{{ MEDIA_URL}}{{ book.cover }}"/>
+  {% else %}
+  <img height="420" width="300" class="avatar" id="cover" src="{{ MEDIA_URL}}images/ucover.png"/>
+  {% endif %}
+  
+  <div class="book_properties">
+    <h2>{{ book }}</h2>
+    <h3><author>{% trans 'Author' %}: {% for author in book.maintainers.all %}<a href="{{ author.get_profile.get_absolute_url }}">{{ author.get_full_name }}</a>, {% endfor %}</author></h3>
+    {% if book.isbn %}
+    <h3>{% trans 'ISBN' %}: {{ book.isbn }}</h3>
+    {% endif %}
+    {% if book.online_book %}
+    <h3>{% trans "It's an online book." %}</h3>
+    {% else %}
+    <h3>{% trans "It's an offset book." %}</h3>
+    {% endif %}
+    {% if not book.completed %}
+    <h3>{% trans 'Not Completed' %}</h3>
+    {% endif %}
+    {% if  book.url %}
+    <h3><a href="{{ book.url }}">{% trans 'Home Page' %}</a></h3>
+    {% endif %}
+  </div>
+  {% if book.downloadlink %}
+  <h3><a href="{{ book.downloadlink }}">Download</a></h3>
+  {% endif %}
+  <div class="desc">
+    <h3>{% trans 'Description' %}:</h3>
+    {% if book.desc %}
+    <p>{{ book.desc|linebreaks }}</p>
+    {% else %}
+    <p>{% trans 'Nothing yet' %}</p>
+    {% endif %}
+  </div>
 {% endblock %}

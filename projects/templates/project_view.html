@@ -6,53 +6,58 @@
 
 {% block content %}
 <div class="mmain">
-{% if project.avatar %}
-<img height="128" width="128" class="avatar" src="{{ MEDIA_URL}}{{ project.logo }}"/>
-{% else %}
-<img height="128" width="128" class="avatar" src="{{ MEDIA_URL}}images/ulogo.png"/>
-{% endif %}
+  {% if project.avatar %}
+  <img height="128" width="128" class="avatar" src="{{ MEDIA_URL}}{{ project.logo }}"/>
+  {% else %}
+  <img height="128" width="128" class="avatar" src="{{ MEDIA_URL}}images/ulogo.png"/>
+  {% endif %}
 
-<div class="mainproperties">
-<h2>{{ project }}</h2>
-{% if  project.home %}
-<h3><a href="{{ project.home }}">{{ project.home }}</a></h3>
-{% endif %}
-<h3>{% trans 'Maintainer' %}: {% for maintainer in project.maintainers.all %}<a href="{{ maintainer.get_profile.get_absolute_url }}">{{ maintainer.get_full_name }}</a>, {% endfor %}</h3>
-</div>
-<div class="details">
-{% if project.kproject %}
-<h3>{% trans 'A KarajLUG project' %}</h3>
-{% else %}
-<h3>{% trans 'Participated project' %}</h3>
-{% endif %}
-{% if project.version %}
-<h3>{% trans 'Latest version' %}: {{ project.version }}</h3>
-{% endif %}
-{% if project.license %}
-<h3>{% trans 'License' %}: {{ project.license }}</h3>
-{% endif %}
-{% if project.vcs %}
-<h3>{% trans 'VCS' %}: {{ project.vcs }}</h3>
-{% endif %}
-{% if project.downloadlink %}
-<h3><a href="{{ project.downloadlink }}">{% trans 'Download ' %}</a></h3>
-{% endif %}
-{% if repositories %}
-<br/><br/>
-<h3>{% trans 'Repositories' %}:</h3>
-{% for repo in repositories %}
-<h4><value>{{ repo.address }}</value></h4>
-{% endfor %}
-{% endif %}
-</div>
-<br/><br/><br/>
-<div class="desc">
-<h3>{% trans 'Description' %}:</h3>
-{% if project.desc %}
-<p>{{ project.desc|linebreaks }}</p>
-{% else %}
-<p>{% trans 'Nothing yet' %}</p>
-{% endif %}
-</div>
+  <div class="mainproperties">
+    <h2>{{ project }}</h2>
+    {% if  project.home %}
+    <h3><a href="{{ project.home }}">{{ project.home }}</a></h3>
+    {% endif %}
+    <h3>{% trans 'Maintainer' %}: {% for maintainer in project.maintainers.all %}<a href="{{ maintainer.get_profile.get_absolute_url }}">{{ maintainer.get_full_name }}</a>, {% endfor %}</h3>
+  </div>
+  <div class="details">
+    {% if project.kproject %}
+    <h3>{% trans 'A KarajLUG project' %}</h3>
+    {% else %}
+    <h3>{% trans 'Participated project' %}</h3>
+    {% endif %}
+    
+    {% if project.version %}
+    <h3>{% trans 'Latest version' %}: {{ project.version }}</h3>
+    {% endif %}
+    
+    {% if project.license %}
+    <h3>{% trans 'License' %}: {{ project.license }}</h3>
+    {% endif %}
+    
+    {% if project.vcs %}
+    <h3>{% trans 'VCS' %}: {{ project.vcs }}</h3>
+    {% endif %}
+    
+    {% if project.downloadlink %}
+    <h3><a href="{{ project.downloadlink }}">{% trans 'Download ' %}</a></h3>
+    {% endif %}
+    
+    {% if repositories %}
+    <br/><br/>
+    <h3>{% trans 'Repositories' %}:</h3>
+    {% for repo in repositories %}
+      <h4><value>{{ repo.address }}</value></h4>
+    {% endfor %}
+    {% endif %}
+  </div>
+  <br/><br/><br/>
+  <div class="desc">
+    <h3>{% trans 'Description' %}:</h3>
+    {% if project.desc %}
+    <p>{{ project.desc|linebreaks }}</p>
+    {% else %}
+    <p>{% trans 'Nothing yet' %}</p>
+    {% endif %}
+  </div>
 </div>
 {% endblock %}

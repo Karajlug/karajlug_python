@@ -3,10 +3,10 @@
 {% load i18n %}
 {% block content %}
 <div class="page">
-<h2>{% trans 'FAQ' %}</h2>
-{% for i in faq %}
-<h3>{{ i }}</h3>
-<p>{{ i.answer }}</p>
-{% endfor %}
+  <h2>{% trans 'FAQ' %}</h2>
+  {% for i in faq %}
+    <h3>{{ i }}</h3>
+    <p>{{ i.answer }}</p>
+  {% endfor %}
 </div>
 {% endblock %}

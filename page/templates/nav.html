@@ -1,6 +1,6 @@
 {% load i18n %}
-  <ul class="menu">{% trans "Pages" %}
-    {% for page in pages %}
-    <li><a href="{{ page.get_absolute_url}}">{{ page.title }}</a></li>
-    {% endfor %}
-  </ul>
+<ul class="menu">{% trans "Pages" %}
+  {% for page in pages %}
+  <li><a href="{{ page.get_absolute_url}}">{{ page.title }}</a></li>
+  {% endfor %}
+</ul>

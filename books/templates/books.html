@@ -8,51 +8,51 @@
 
 {% for book in books.object_list %}
 <div class="bbox">
-{% if book.cover %}
-<a href="{{ book.get_absolute_url }}"><img class="cover" width="150" height="210" src="{{ MEDIA_URL}}{{ book.cover }}"/></a>
-{% else %}
-<a href="{{ book.get_absolute_url }}"><img class="cover" width="150" height="210" src="{{ MEDIA_URL}}images/ucover.png"/></a>
-{% endif %}
-<div class="book_details">
-<a href="{{ book.get_absolute_url }}"><span id="bookname" class="name">{{ book }}</span></a><br/>
-<div class="minor_details">
-<h4>{% trans 'Author' %}: {% for author in book.maintainers.all %}<a href="{{ author.get_profile.get_absolute_url }}">{{ author.get_full_name }}</a>, {% endfor %}</h4>
-{% if book.isbn %}
-<h4>{% trans 'ISBN' %}: {{ book.isbn }}</h4>
-{% endif %}
-{% if book.license %}
-<h4>{% trans 'License' %}: {{ book.license }}</h4>
-{% endif %}
-{% if book.url %}
-<h4> {% trans 'Home page' %}: <span class="home_link"><a href="{{ book.url }}">{{ book.url }}</a></span></h4>
-{% endif %}
-{% if book.online_book %}
-<h4>{% trans "It's an online book." %}</h4>
-{% else %}
-<h4>{% trans "It's an offset book." %}</h4>
-{% endif %}
-{% if not book.completed %}
-<h4>{% trans 'Not Completed' %}</h4>
-{% endif %}
-</div>
-</div>
+  {% if book.cover %}
+  <a href="{{ book.get_absolute_url }}"><img class="cover" width="150" height="210" src="{{ MEDIA_URL}}{{ book.cover }}"/></a>
+  {% else %}
+  <a href="{{ book.get_absolute_url }}"><img class="cover" width="150" height="210" src="{{ MEDIA_URL}}images/ucover.png"/></a>
+  {% endif %}
+  <div class="book_details">
+    <a href="{{ book.get_absolute_url }}"><span id="bookname" class="name">{{ book }}</span></a><br/>
+    <div class="minor_details">
+      <h4>{% trans 'Author' %}: {% for author in book.maintainers.all %}<a href="{{ author.get_profile.get_absolute_url }}">{{ author.get_full_name }}</a>, {% endfor %}</h4>
+      {% if book.isbn %}
+      <h4>{% trans 'ISBN' %}: {{ book.isbn }}</h4>
+      {% endif %}
+      {% if book.license %}
+      <h4>{% trans 'License' %}: {{ book.license }}</h4>
+      {% endif %}
+      {% if book.url %}
+      <h4> {% trans 'Home page' %}: <span class="home_link"><a href="{{ book.url }}">{{ book.url }}</a></span></h4>
+      {% endif %}
+      {% if book.online_book %}
+      <h4>{% trans "It's an online book." %}</h4>
+      {% else %}
+      <h4>{% trans "It's an offset book." %}</h4>
+      {% endif %}
+      {% if not book.completed %}
+      <h4>{% trans 'Not Completed' %}</h4>
+      {% endif %}
+    </div>
+  </div>
 </div>
 
 {% endfor %}
 <br/><br/><br/><br/><br/><br/>
 <div class="pagination">
-    <span class="step-links">
-        {% if books.has_previous %}
-            <a href="?page={{ books.previous_page_number }}">previous</a>
-        {% endif %}
+  <span class="step-links">
+    {% if books.has_previous %}
+      <a href="?page={{ books.previous_page_number }}">previous</a>
+    {% endif %}
 
-        <span class="current">
-            Page {{ books.number }} of {{ books.paginator.num_pages }}.
-        </span>
-
-        {% if books.has_next %}
-            <a href="?page={{ books.next_page_number }}">next</a>
-        {% endif %}
+    <span class="current">
+      Page {{ books.number }} of {{ books.paginator.num_pages }}.
     </span>
+
+    {% if books.has_next %}
+      <a href="?page={{ books.next_page_number }}">next</a>
+    {% endif %}
+  </span>
 </div>
 {% endblock %}

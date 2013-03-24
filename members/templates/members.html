@@ -6,53 +6,49 @@
 {% endblock %}
 {% block content %}
 <table class="mtable">
-{% for item, member in members %}
-{% if not item|divisibleby:"2" %}
-<tr>
+  {% for item, member in members %}
+  {% if not item|divisibleby:"2" %}
+  <tr>
+    <td>
+      <div class="mbox">
+        {% if member.avatar %}
+        <a href="/members/{{ member.id}}/"><img class="avatar" width="64" height="64" src="{{ MEDIA_URL}}{{ member.avatar }}"/></a>
+        {% else %}
+        <a href="/members/{{ member.id}}/"><img class="avatar" width="64" height="64" src="{{ MEDIA_URL}}images/unknown.png"/></a>
+        {% endif %}
+        <div class="detail">
+          <a href="/members/{{ member.id}}/"><span class="name">{{ member }}</span></a><br/>
+          {% if member.link %}
+          <span class="home_link"><a href="{{ member.link }}">{{ member.link }}</a></span><br/>
+          {% endif %}
+          {% autoescape off %}
+          {{ member.safe_email }}
+          {% endautoescape  %}<br/>
+        </div>
+      </div>
+    </td>
 
-<td>
-<div class="mbox">
-{% if member.avatar %}
-<a href="/members/{{ member.id}}/"><img class="avatar" width="64" height="64" src="{{ MEDIA_URL}}{{ member.avatar }}"/></a>
-{% else %}
-<a href="/members/{{ member.id}}/"><img class="avatar" width="64" height="64" src="{{ MEDIA_URL}}images/unknown.png"/></a>
-{% endif %}
-<div class="detail">
-<a href="/members/{{ member.id}}/"><span class="name">{{ member }}</span></a><br/>
-{% if member.link %}
-<span class="home_link"><a href="{{ member.link }}">{{ member.link }}</a></span><br/>
-{% endif %}
-{% autoescape off %}
-{{ member.safe_email }}
-{% endautoescape  %}<br/>
-</div>
-</div>
-</td>
-
-{% else %}
-<td>
-<div class="mbox">
-{% if member.avatar %}
-<a href="/members/{{ member.id}}/"><img class="avatar" width="64" height="64" src="{{ MEDIA_URL}}{{ member.avatar }}"/></a>
-{% else %}
-<a href="/members/{{ member.id}}/"><img class="avatar" width="64" height="64" src="{{ MEDIA_URL}}images/unknown.png"/></a>
-{% endif %}
-<div class="detail">
-<a href="/members/{{ member.id}}/"><span class="name">{{ member }}</span></a><br/>
-{% if member.link %}
-<span class="home_link"><a href="{{ member.link }}">{{ member.link }}</a></span><br/>
-{% endif %}
-{% autoescape off %}
-{{ member.safe_email }}
-{% endautoescape  %}<br/>
-</div>
-</div>
-</td>
-
-</tr>
-
-
-{% endif %} 
-{% endfor %}
+    {% else %}
+    <td>
+      <div class="mbox">
+        {% if member.avatar %}
+        <a href="/members/{{ member.id}}/"><img class="avatar" width="64" height="64" src="{{ MEDIA_URL}}{{ member.avatar }}"/></a>
+        {% else %}
+        <a href="/members/{{ member.id}}/"><img class="avatar" width="64" height="64" src="{{ MEDIA_URL}}images/unknown.png"/></a>
+        {% endif %}
+        <div class="detail">
+          <a href="/members/{{ member.id}}/"><span class="name">{{ member }}</span></a><br/>
+          {% if member.link %}
+          <span class="home_link"><a href="{{ member.link }}">{{ member.link }}</a></span><br/>
+          {% endif %}
+          {% autoescape off %}
+          {{ member.safe_email }}
+          {% endautoescape  %}<br/>
+        </div>
+      </div>
+    </td>
+  </tr>
+  {% endif %} 
+  {% endfor %}
 </table>
 {% endblock %}
