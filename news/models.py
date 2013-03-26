@@ -17,16 +17,12 @@
 #    with this program; if not, write to the Free Software Foundation, Inc.,
 #    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 # -----------------------------------------------------------------------------
-import urllib
-
 from django.db import models
 from django.utils.translation import ugettext as _
 from django.contrib.auth.models import User
 from django.conf import settings
 
 from locales.managers import I18nManager
-
-from utils.modelsutils import ModelsUtils
 
 
 class News(models.Model):
@@ -52,16 +48,6 @@ class News(models.Model):
 
     def get_absolute_url(self):
         return "/%s/news/%s" % (self.lang, self.id)
-
-    def full_path(self):
-        site = getattr(settings, "URL", "www.karajlug.org")
-        return "%s%s" % (site, self.get_absolute_url())
-
-    def full_path_protocol(self):
-        return urllib.quote_plus("http://%s" % self.full_path())
-
-    def formatted_date(self):
-        return ModelsUtils.format_date(self.date, self.lang)
 
     def irc_repr(self, logentry):
         if logentry.is_addition():

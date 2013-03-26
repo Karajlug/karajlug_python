@@ -1,7 +1,7 @@
 # coding: utf-8
 # -----------------------------------------------------------------------------
 #    Karajlug.org
-#    Copyright (C) 2010-2012  Karajlug community
+#    Copyright (C) 2010-2013  Karajlug community
 #
 #    This program is free software; you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -19,6 +19,10 @@
 # -----------------------------------------------------------------------------
 from calverter import Calverter
 
+from django.conf import settings
+
+import urllib
+
 
 DAYS_NAMES = ("شنبه", "یکشنبه", "دوشنبه", "سه شینبه",
               "چهارشنبه", "پنج شنبه", "جمعه")
@@ -31,25 +35,29 @@ MONTHS_NAMES = ("فروردین", "اردیبهشت", "خرداد", "تیر", "�
                 "اسفند")
 
 
-class ModelsUtils:
-    @staticmethod
-    def format_date(date, lang):
-        if lang == "fa":
-            cal = Calverter()
-            jd = cal.gregorian_to_jd(date.year, date.month,
-                                     date.day)
+def format_date(date, lang):
+    if lang == "fa":
+        cal = Calverter()
+        jd = cal.gregorian_to_jd(date.year, date.month,
+                                 date.day)
 
-            wday = cal.jwday(jd)
-            jalali = cal.jd_to_jalali(jd)
+        wday = cal.jwday(jd)
+        jalali = cal.jd_to_jalali(jd)
 
-            result = "%s، %d %s %d" % (DAYS_NAMES[wday], jalali[2],
-                                       MONTHS_NAMES[jalali[1] - 1], jalali[0])
-            return ModelsUtils.to_persian_digits(result)
-        return date
+        result = "%s، %d %s %d" % (DAYS_NAMES[wday], jalali[2],
+                                   MONTHS_NAMES[jalali[1] - 1], jalali[0])
+        return to_persian_digits(result)
+    return date
 
-    @staticmethod
-    def to_persian_digits(datestr):
-        for i in PERSIAN_DIGITS:
-            datestr = datestr.replace(i, PERSIAN_DIGITS[i])
+def to_persian_digits(datestr):
+    for i in PERSIAN_DIGITS:
+        datestr = datestr.replace(i, PERSIAN_DIGITS[i])
 
-        return datestr
+    return datestr
+
+def quote(url):
+    return urllib.quote_plus("%s" % url)
+
+def full_path(absolute_url):
+    site = getattr(settings, "URL", "www.karajlug.org")
+    return "http://%s%s" % (site, absolute_url)

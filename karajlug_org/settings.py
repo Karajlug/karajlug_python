@@ -168,6 +168,7 @@ INSTALLED_APPS = (
     #"projects",
     #"dbot",
     "mediacenter",
+    "viewhelper",
 )
 
 # A sample logging configuration. The only tangible logging

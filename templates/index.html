@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load i18n %}
+{% load helper %}
 
 {% block header %}
 <div class="header"></div>
@@ -168,7 +169,7 @@
     <div class="row">
       {% for news in news_list %}
       <article>
-        {% include 'social_links.html' %}
+        {% include 'social_links.html' with url=news.get_absolute_url title=news.title %}
         <h2>
           <a href="{{ news.get_absolute_url }}">
             {{ news.title }}
@@ -180,7 +181,7 @@
           {% endautoescape %}
         </section>
         <span>
-          {% trans "On" %} {{ news.formatted_date }} {% trans "by" %} {{ news.user }}
+          {% trans "On" %} {{ news.date|format_date:news.lang }} {% trans "by" %} {{ news.user }}
         </span>
       </article>
       {% endfor %}
