@@ -39,8 +39,8 @@ def news_entry(request, id_=None):
     except News.DoesNotExist:
         raise Http404()
 
-    return rr("news_entry.html",
-              {"news": news_ent},
+    return rr('news_view.html',
+              {'news': news_ent},
               context_instance=RequestContext(request))
 
 
@@ -48,7 +48,7 @@ def index(request):
     """
     show all the news with pagination.
     """
-    news = News.objects.all().order_by("-date")
+    news = News.objects.all().order_by('-date')
     p = Paginator(news, settings.NEWS_LIMIT)
 
     try:
@@ -61,5 +61,5 @@ def index(request):
     except (EmptyPage, InvalidPage):
         news_page = p.page(p.num_pages)
 
-    return rr('news_list.html', {"news": news_page},
+    return rr('news_list.html', {'news': news_page},
               context_instance=RequestContext(request))

@@ -163,9 +163,9 @@ INSTALLED_APPS = (
     "page",
     "news",
     "faq",
-    #"members",
+    "members",
     #"books",
-    #"projects",
+    "projects",
     #"dbot",
     "mediacenter",
     "viewhelper",
@@ -219,7 +219,6 @@ APPEND_SLASH = True
 LOCALE_PATHS = (
     os.path.join(ROOT, "../conf/locale"),
 )
-
 
 ALLOWED_HOSTS = (
     "127.0.0.1:7020",

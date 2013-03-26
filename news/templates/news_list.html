@@ -15,7 +15,7 @@
     {% endif %}
 
     <span class="current">
-      {% trans 'Page' %} {{ news.number }} of {{ news.paginator.num_pages }}.
+      {% trans 'Page' %} {{ news.number }} {% trans 'of' %} {{ news.paginator.num_pages }}.
     </span>
 
     {% if contacts.has_next %}
