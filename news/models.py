@@ -49,23 +49,23 @@ class News(models.Model):
     def get_absolute_url(self):
         return "/%s/news/%s" % (self.lang, self.id)
 
-    def irc_repr(self, logentry):
-        if logentry.is_addition():
-            return ["News: %s added by %s at %s" % (
-                self.title,
-                self.user,
-                self.full_path())]
-
-        phrase = ""
-        if logentry.is_change():
-            phrase = "changed"
-        elif logentry.is_delete():
-            phrase = "deleted"
-
-        return ["%s %s a news: %s" % (
-            self.user,
-            phrase,
-            self.full_path())]
+    #def irc_repr(self, logentry):
+    #    if logentry.is_addition():
+    #        return ["News: %s added by %s at %s" % (
+    #            self.title,
+    #            self.user,
+    #            self.full_path())]
+    #
+    #    phrase = ""
+    #    if logentry.is_change():
+    #        phrase = "changed"
+    #    elif logentry.is_delete():
+    #        phrase = "deleted"
+    #
+    #    return ["%s %s a news: %s" % (
+    #        self.user,
+    #        phrase,
+    #        self.full_path())]
 
     class Meta:
         verbose_name_plural = _("News")
