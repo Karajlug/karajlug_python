@@ -180,7 +180,7 @@
           {% endautoescape %}
         </section>
         <span>
-          {% trans "On" %} {{ news.pdate }} {% trans "by" %} {{ news.user }}
+          {% trans "On" %} {{ news.formatted_date }} {% trans "by" %} {{ news.user }}
         </span>
       </article>
       {% endfor %}

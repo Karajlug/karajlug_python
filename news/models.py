@@ -18,7 +18,6 @@
 #    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 # -----------------------------------------------------------------------------
 import urllib
-from calverter import Calverter
 
 from django.db import models
 from django.utils.translation import ugettext as _
@@ -26,6 +25,8 @@ from django.contrib.auth.models import User
 from django.conf import settings
 
 from locales.managers import I18nManager
+
+from utils.modelsutils import ModelsUtils
 
 
 class News(models.Model):
@@ -59,43 +60,8 @@ class News(models.Model):
     def full_path_protocol(self):
         return urllib.quote_plus("http://%s" % self.full_path())
 
-    def to_persian_digits(self, datestr):
-        pnum = {"1": "۱", "2": "۲", "3": "۳", "4": "۴", "5": "۵",
-                "6": "۶", "7": "۷", "8": "۸", "9": "۹", "0": "۰"}
-
-        for i in pnum:
-            datestr = datestr.replace(i, pnum[i])
-
-        return datestr
-
-    def pdate(self):
-        if self.lang == "fa":
-            days_names = (
-                "شنبه",
-                "یکشنبه",
-                "دوشنبه",
-                "سه شینبه",
-                "چهارشنبه",
-                "پنج شنبه",
-                "جمعه",
-            )
-
-            months_names = ("فروردین", "اردیبهشت", "خرداد", "تیر", "مرداد",
-                            "شهریور", "مهر", "آبان", "آذر", "دی", "بهمن",
-                            "اسفند")
-
-            date = self.date
-            cal = Calverter()
-            jd = cal.gregorian_to_jd(date.year, date.month,
-                                     date.day)
-
-            wday = cal.jwday(jd)
-            jalali = cal.jd_to_jalali(jd)
-
-            result = "%s، %d %s %d" % (days_names[wday], jalali[2],
-                                        months_names[jalali[1] - 1], jalali[0])
-            return self.to_persian_digits(result)
-        return self.date
+    def formatted_date(self):
+        return ModelsUtils.format_date(self.date, self.lang)
 
     def irc_repr(self, logentry):
         if logentry.is_addition():
