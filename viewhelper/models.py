@@ -24,7 +24,7 @@ from django.conf import settings
 import urllib
 
 
-DAYS_NAMES = ("شنبه", "یکشنبه", "دوشنبه", "سه شینبه",
+DAYS_NAMES = ("شنبه", "یکشنبه", "دوشنبه", "سه شنبه",
               "چهارشنبه", "پنج شنبه", "جمعه")
 
 PERSIAN_DIGITS = {"1": "۱", "2": "۲", "3": "۳", "4": "۴", "5": "۵",
@@ -49,14 +49,17 @@ def format_date(date, lang):
         return to_persian_digits(result)
     return date
 
+
 def to_persian_digits(datestr):
     for i in PERSIAN_DIGITS:
         datestr = datestr.replace(i, PERSIAN_DIGITS[i])
 
     return datestr
 
+
 def quote(url):
     return urllib.quote_plus("%s" % url)
+
 
 def full_path(absolute_url):
     site = getattr(settings, "URL", "www.karajlug.org")
