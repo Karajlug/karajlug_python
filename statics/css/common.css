@@ -27,7 +27,7 @@
     z-index: 120;
 }
 .secbanner {
-    padding: 50px 0 0 0;
+    padding: 70px 0 0 0;
     Background: #f1f1f1;
     margin: -50px 0 0 0;
     background-image: radial-gradient(circle farthest-corner at center center , #f1f1f1 0%, #bdbdbd 100%);
@@ -228,7 +228,7 @@ section p {
 }
 
 .ltr-text {
-    direction: ltr; unicode-bidi: embed; 
+    direction: ltr; unicode-bidi: embed;
 }
 
 .sociallinks {

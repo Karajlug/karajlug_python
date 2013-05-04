@@ -1,5 +1,7 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+
 * {
-    font-family:  'DejaVu Sans', Tahoma,"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Droid Arabic Naskh', serif;
 }
 body {
     direction: rtl;
