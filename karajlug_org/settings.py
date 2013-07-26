@@ -37,10 +37,14 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
+
+DB_PATH =  os.path.join(
+    os.environ.get("OPENSHIFT_DATA_DIR", ROOT), "db.sqlite3")
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(ROOT, 'db.sqlite3'),
+        'NAME': DB_PATH,
         'USER': '',
         'PASSWORD': '',
         'HOST': '',
