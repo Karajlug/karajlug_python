@@ -6,3 +6,4 @@ env3/
 statics/uploads/*
 deployment
 
+tmp/*

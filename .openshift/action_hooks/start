@@ -1,3 +1,5 @@
+echo "Collecting static files ..."
+$OPENSHIFT_DATA_DIR/bin/python $OPENSHIFT_REPO_DIR/manage.py collectstatic --noinput
 echo "Starting uWSGI and serving Django app in deploy mode ..."
 touch $OPENSHIFT_REPO_DIR/DEPLOY
-$OPENSHIFT_DATA_DIR/bin/uwsgi -s $OPENSHIFT_DIY_IP:$OPENSHIFT_DIY_PORT --socket-protocol http --pp $OPENSHIFT_REPO_DIR/ --module karajlug_org.wsgi -d $OPENSHIFT_DIY_LOG_DIR/app.log --pidfile $OPENSHIFT_TMP_DIR/uwsgi.pid --static-map /statics=$OPENSHIFT_REPO_DIR/statics
+$OPENSHIFT_DATA_DIR/bin/uwsgi -s $OPENSHIFT_DIY_IP:$OPENSHIFT_DIY_PORT --socket-protocol http --pp $OPENSHIFT_REPO_DIR/ --module karajlug_org.wsgi -d $OPENSHIFT_DIY_LOG_DIR/app.log --pidfile $OPENSHIFT_TMP_DIR/uwsgi.pid --static-map /statics=$OPENSHIFT_REPO_DIR/statics --static-map /static=$OPENSHIFT_REPO_DIR/tmp/static
