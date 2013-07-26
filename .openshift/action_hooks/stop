@@ -1,0 +1,1 @@
+kill `cat $OPENSHIFT_TMP_DIR/uwsgi.pid`
