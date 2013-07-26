@@ -18,10 +18,15 @@
 # -----------------------------------------------------------------------------
 import os
 
+ROOT = os.path.dirname(__file__)
+
 DEBUG = True
+
+if os.path.exists(os.path.join (ROOT, "../DEPLOY")):
+    DEBUG = False
+
 TEMPLATE_DEBUG = DEBUG
 
-ROOT = os.path.dirname(__file__)
 
 
 if os.path.exists(os.path.join(ROOT, "../deployment")):
