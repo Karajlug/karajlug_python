@@ -32,7 +32,6 @@ urlpatterns = patterns(
     (r'^page/', include('page.urls')),
     #(r'^members/', include('members.urls')),
     #(r'^books/', include('books.urls')),
-    (r'^projects/', include('projects.urls')),
     #(r'^bot/', include('dbot.urls')),
     (r'^contact/$', 'karajlug_org.views.contact'),
     (r'^$', 'karajlug_org.views.index'),
