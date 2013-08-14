@@ -234,4 +234,5 @@ ALLOWED_HOSTS = (
     "www.karajlug.org",
     "karajlug.org",
     "127.0.0.1",
+    "home-karajlug.rhcloud.com",
 )
