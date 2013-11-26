@@ -30,12 +30,12 @@ urlpatterns = patterns(
     (r'^faq/$', "faq.views.index"),
     (r'^news/', include('news.urls')),
     (r'^page/', include('page.urls')),
-    #(r'^members/', include('members.urls')),
-    #(r'^books/', include('books.urls')),
-    #(r'^bot/', include('dbot.urls')),
+    (r'^members/', include('members.urls')),
+    (r'^books/', include('books.urls')),
+    (r'^bot/', include('dbot.urls')),
     (r'^contact/$', 'karajlug_org.views.contact'),
     (r'^$', 'karajlug_org.views.index'),
-    #(r'^admin/', include(admin.site.urls)),
+    (r'^admin/', include(admin.site.urls)),
 )
 
 # Local media serving.

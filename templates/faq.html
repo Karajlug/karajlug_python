@@ -4,9 +4,11 @@
 {% block content %}
 <div class="page">
   <h2>{% trans 'FAQ' %}</h2>
+<br/>
   {% for i in faq %}
     <h3>{{ i }}</h3>
     <p>{{ i.answer }}</p>
+    <br/>
   {% endfor %}
 </div>
 {% endblock %}
