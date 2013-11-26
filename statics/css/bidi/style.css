@@ -44,3 +44,11 @@ body {
 .sociallinks {
     float: left;
 }
+
+.left{
+   text-align:left !important;
+}
+
+.right {
+   text-align:right !important;
+}
