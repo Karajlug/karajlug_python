@@ -1,22 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Behnam Ahmad Khan Beigi <b3hnam@gnu.org>, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-09 22:39+0330\n"
-"PO-Revision-Date: 2013-03-22 20:44+0330\n"
-"Last-Translator: Ebrahim Byagowi <ebrahim@byagowi.com>\n"
+"POT-Creation-Date: 2013-12-09 23:10+0330\n"
+"PO-Revision-Date: 2013-12-09 23:05+0430\n"
+"Last-Translator: Behnam Ahmad Khan Beigi <b3hnam@gnu.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Virtaal 0.7.1\n"
 
 #: books/models.py:37 faq/models.py:36 members/models.py:127 news/models.py:37
 #: page/models.py:46 page/models.py:91 projects/models.py:42
@@ -409,7 +408,6 @@ msgid "Other Lugs"
 msgstr "لاگ‌های دیگر"
 
 #: templates/base.html:85
-#, fuzzy
 msgid "Tehran Lug"
 msgstr "تهران‌لاگ"
 
@@ -426,9 +424,8 @@ msgid "Mashhad Lug"
 msgstr "مشهدلاگ"
 
 #: templates/base.html:89
-#, fuzzy
 msgid "Guilan Lug"
-msgstr "زنجان‌لاگ"
+msgstr "گیلان‌لاگ"
 
 #: templates/base.html:90
 msgid "Khuzestan Lug"
@@ -439,9 +436,8 @@ msgid "Useful links"
 msgstr "پیوندهای مفید"
 
 #: templates/base.html:98
-#, fuzzy
 msgid "KarajLug on Wikipedia"
-msgstr "کرج‌لاگ در گیت‌هاب"
+msgstr "کرج‌لاگ در ویکیپدیا"
 
 #: templates/base.html:99
 msgid "What is LUG?"
@@ -548,12 +544,20 @@ msgid "More Information"
 msgstr "اطلاعات بیشتر"
 
 #: templates/index.html:144
-msgid "Sameer Rahmani:"
+msgid "Sameer Rahmani"
 msgstr "سمیر رحمانی"
 
+#: templates/index.html:144
+msgid "0935-8180918"
+msgstr "۰۹۳۵۸۱۸۰۹۱۸"
+
 #: templates/index.html:145
-msgid "Behnam Khan Beigi:"
+msgid "Behnam Khan Beigi"
 msgstr "بهنام خان‌بیگی"
+
+#: templates/index.html:145
+msgid "0936-6452290"
+msgstr "۰۹۳۶۶۴۵۲۲۹۰"
 
 #: templates/index.html:150 templates/index.html.py:156
 msgid "View"
@@ -570,9 +574,6 @@ msgstr "در یک نقشهٔ بزرگ"
 #: templates/social_links.html:4
 msgid "Share it"
 msgstr "به اشتراک بگذارید"
-
-#~ msgid "For more information call Sameer"
-#~ msgstr "برای اطلاعات بیشتر با سمیر تماس بگیرید"
 
 #~ msgid "Follow"
 #~ msgstr "دنبال‌کردن"
