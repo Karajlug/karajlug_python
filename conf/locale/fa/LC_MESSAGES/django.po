@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-09 23:10+0330\n"
+"POT-Creation-Date: 2013-12-10 11:46+0330\n"
 "PO-Revision-Date: 2013-12-09 23:05+0430\n"
 "Last-Translator: Behnam Ahmad Khan Beigi <b3hnam@gnu.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -548,7 +548,7 @@ msgid "Sameer Rahmani"
 msgstr "سمیر رحمانی"
 
 #: templates/index.html:144
-msgid "0935-8180918"
+msgid "+98-935-8180918"
 msgstr "۰۹۳۵۸۱۸۰۹۱۸"
 
 #: templates/index.html:145
@@ -556,7 +556,7 @@ msgid "Behnam Khan Beigi"
 msgstr "بهنام خان‌بیگی"
 
 #: templates/index.html:145
-msgid "0936-6452290"
+msgid "+98-936-6452290"
 msgstr "۰۹۳۶۶۴۵۲۲۹۰"
 
 #: templates/index.html:150 templates/index.html.py:156
