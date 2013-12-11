@@ -46,6 +46,7 @@
                 <li><a href="/books/">{% trans "Books" %}</a></li>-->
                 <li><a href="https://github.com/Karajlug">{% trans "Projects" %}</a></li>
                 <li><a href="/contact/">{% trans "Contact" %}</a></li>
+                <li><a href="/faq/">{% trans "FAQ" %}</a></li>
                 <li><a href="http://webchat.freenode.net/?channels=5hit&uio=d4" target="_blank">{% trans "WebChat" %}</a></li>
                 <!--<li><a href="/faq/">{% trans "FAQ" %}</a></li>-->
               </ul>
@@ -85,6 +86,8 @@
             <li><a href="http://www.isfahanlug.org/">{% trans 'Isfahan Lug' %}</a></li>
             <li><a href="http://www.zanjanlug.org/">{% trans 'Zanjan Lug' %}</a></li>
             <li><a href="http://www.mashhadlug.org/">{% trans 'Mashhad Lug' %}</a></li>
+            <li><a href="http://www.gullug.org/">{% trans 'Guilan Lug' %}</a></li>
+            <li><a href="http://khuzestanlug.ir/">{% trans 'Khuzestan Lug' %}</a></li>
           </ul>
         </div>
           </div>
@@ -92,8 +95,12 @@
         <div class="center span3">
         <h3 class="ftitle">{% trans 'Useful links' %}:</h3>
         <ul>
+          <li><a href="http://fa.wikipedia.org/wiki/%DA%AF%D8%B1%D9%88%D9%87_%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%D8%A7%D9%86_%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3_%DA%A9%D8%B1%D8%AC">{% trans "KarajLug on Wikipedia" %}</a></li>
           <li><a href="http://en.wikipedia.org/wiki/Linux_user_group">{% trans "What is LUG?" %}</a></li>
+          <li><a href="http://www.fsf.org/">{% trans 'Free Software Foundation' %}</a></li>
           <li><a href="http://www.gnu.org/">{% trans 'GNU Project' %}</a></li>
+          <li><a href="http://www.linuxmag.ir/">{% trans 'LinuxMag' %}</a></li>
+
         </ul>
           </div>
         </div>
@@ -104,6 +111,9 @@
           <a href="https://www.twitter.com/karajlug" ><i class="icon-twitter icon-3x"></i></a>
           <a href="http://www.facebook.com/pages/KarajLug/113288182057531" ><i class="icon-facebook-sign icon-3x"></i></a>
           <a href="/news/feed/" ><i class="icon-rss icon-3x"></i></a>
+          <br/><br/>
+          <h3>{% trans 'Sponsors' %} :</h3>
+          <a href="http://www.jalborz.ir" class="center"><img src="/statics/images/jalborz.png"></a>
           </div>
         </div>
         <div class="row">
@@ -115,7 +125,6 @@
     </footer>
     {% endblock %}
     <script src="/statics/js/jquery-1.9.1.min.js"></script>
-
     {% block tail %}
 
     {% if lang.bidi %}
@@ -124,6 +133,7 @@
     {% else %}
     <script src="/statics/bootstrap/js/bootstrap.min.js"></script>
     {% endif %}
+
     <script type="javascript">
     $(function(){
       $('.carousel').carousel();

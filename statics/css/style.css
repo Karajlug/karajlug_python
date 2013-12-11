@@ -26,3 +26,11 @@
 .sociallinks {
     float: right;
 }
+
+.left{
+   text-align:left !important;
+}
+
+.right {
+   text-align:right !important;
+}
