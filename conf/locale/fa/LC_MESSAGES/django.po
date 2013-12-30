@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-10 11:46+0330\n"
+"POT-Creation-Date: 2013-12-31 00:30+0330\n"
 "PO-Revision-Date: 2013-12-09 23:05+0430\n"
 "Last-Translator: Behnam Ahmad Khan Beigi <b3hnam@gnu.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -146,16 +146,16 @@ msgstr "جواب"
 msgid "Date and Time"
 msgstr "تاریخ و زمان"
 
-#: faq/models.py:47 templates/base.html:49 templates/base.html.py:51
+#: faq/models.py:47 templates/base.html:49 templates/base.html.py:52
 #: templates/faq.html:6
 msgid "FAQ"
 msgstr "سؤال‌های متداول"
 
-#: karajlug_org/settings.py:83 templates/base.html:59
+#: karajlug_org/settings.py:83 templates/base.html:60
 msgid "Persian"
 msgstr "فارسی"
 
-#: karajlug_org/settings.py:84 templates/base.html:57
+#: karajlug_org/settings.py:84 templates/base.html:58
 msgid "English"
 msgstr "انگلیسی"
 
@@ -269,12 +269,12 @@ msgstr "بعدی"
 msgid " KarajLug "
 msgstr " کرج‌لاگ "
 
-#: news/templates/news_view.html:19 templates/index.html:185
+#: news/templates/news_view.html:19 templates/index.html:188
 #: templates/page.html:12
 msgid "On"
 msgstr "در"
 
-#: news/templates/news_view.html:19 templates/index.html:185
+#: news/templates/news_view.html:19 templates/index.html:188
 #: templates/page.html:12
 msgid "by"
 msgstr "توسط"
@@ -340,7 +340,7 @@ msgstr "پروژه"
 msgid "Projects"
 msgstr "پروژه‌ها"
 
-#: projects/models.py:131 templates/index.html:134
+#: projects/models.py:131 templates/index.html:137
 msgid "Address"
 msgstr "نشانی"
 
@@ -403,67 +403,72 @@ msgstr "ارتباط با ما"
 msgid "WebChat"
 msgstr "چت آنلاین"
 
-#: templates/base.html:83
+#: templates/base.html:51
+#, fuzzy
+msgid "Mailing list"
+msgstr "لیست پستی"
+
+#: templates/base.html:84
 msgid "Other Lugs"
 msgstr "لاگ‌های دیگر"
 
-#: templates/base.html:85
+#: templates/base.html:86
 msgid "Tehran Lug"
 msgstr "تهران‌لاگ"
 
-#: templates/base.html:86
+#: templates/base.html:87
 msgid "Isfahan Lug"
 msgstr "اصفهان‌لاگ"
 
-#: templates/base.html:87
+#: templates/base.html:88
 msgid "Zanjan Lug"
 msgstr "زنجان‌لاگ"
 
-#: templates/base.html:88
+#: templates/base.html:89
 msgid "Mashhad Lug"
 msgstr "مشهدلاگ"
 
-#: templates/base.html:89
+#: templates/base.html:90
 msgid "Guilan Lug"
 msgstr "گیلان‌لاگ"
 
-#: templates/base.html:90
+#: templates/base.html:91
 msgid "Khuzestan Lug"
 msgstr "خوزستان‌لاگ"
 
-#: templates/base.html:96
+#: templates/base.html:97
 msgid "Useful links"
 msgstr "پیوندهای مفید"
 
-#: templates/base.html:98
+#: templates/base.html:99
 msgid "KarajLug on Wikipedia"
 msgstr "کرج‌لاگ در ویکیپدیا"
 
-#: templates/base.html:99
+#: templates/base.html:100
 msgid "What is LUG?"
 msgstr "لاگ چیست؟"
 
-#: templates/base.html:100
+#: templates/base.html:101
 msgid "Free Software Foundation"
 msgstr "بنیاد نرم‌افزار‌های آزاد"
 
-#: templates/base.html:101
+#: templates/base.html:102
 msgid "GNU Project"
 msgstr "پروژه گنو"
 
-#: templates/base.html:102
+#: templates/base.html:103
 msgid "LinuxMag"
 msgstr "مجله لینوکس‌مگ"
 
-#: templates/base.html:109
+#: templates/base.html:110
 msgid "Karajlug in"
 msgstr "کرج‌لاگ در"
 
-#: templates/base.html:115
+#: templates/base.html:116
 msgid "Sponsors"
 msgstr "حامیان"
 
-#: templates/base.html:121
+#: templates/base.html:124
 msgid "Copyright 2010-2013 Karajlug Community"
 msgstr "کپی‌رایت ۲۰۱۰-۲۰۱۳ اجتماع کرج‌لاگ"
 
@@ -511,27 +516,27 @@ msgstr ""
 "کرج‌لاگ یا گروه کاربران لینوکس کرج اجتماعی است که در زمینهٔ گنو/لینوکس و "
 "نرم‌افزارهای آزاد فعال است. "
 
-#: templates/index.html:75
+#: templates/index.html:76
 msgid "Full Name"
 msgstr "نام کامل"
 
-#: templates/index.html:81
+#: templates/index.html:82
 msgid "Email"
 msgstr "رایانامه"
 
-#: templates/index.html:89
+#: templates/index.html:90
 msgid "Password"
 msgstr "گذرواژه"
 
-#: templates/index.html:97
+#: templates/index.html:98
 msgid "Confirm password"
 msgstr "تأیید گذرواژه"
 
-#: templates/index.html:102
+#: templates/index.html:103
 msgid "Join"
 msgstr "پیوستن"
 
-#: templates/index.html:137
+#: templates/index.html:140
 msgid ""
 "6th unit, 3th floor, Parvaz Complex (Above the Ghoghnous market), Motahari "
 "st, Azadegan bridge, Karaj."
@@ -539,35 +544,35 @@ msgstr ""
 "کرج، پل آزادگان، خیابان مطهری، مجتمع پرواز (بالای فروشگاه ققنوس)، طبقهٔ سوم، "
 "واحد ۶ "
 
-#: templates/index.html:141
+#: templates/index.html:144
 msgid "More Information"
 msgstr "اطلاعات بیشتر"
 
-#: templates/index.html:144
+#: templates/index.html:147
 msgid "Sameer Rahmani"
 msgstr "سمیر رحمانی"
 
-#: templates/index.html:144
+#: templates/index.html:147
 msgid "+98-935-8180918"
 msgstr "۰۹۳۵۸۱۸۰۹۱۸"
 
-#: templates/index.html:145
+#: templates/index.html:148
 msgid "Behnam Khan Beigi"
 msgstr "بهنام خان‌بیگی"
 
-#: templates/index.html:145
+#: templates/index.html:148
 msgid "+98-936-6452290"
 msgstr "۰۹۳۶۶۴۵۲۲۹۰"
 
-#: templates/index.html:150 templates/index.html.py:156
+#: templates/index.html:153 templates/index.html.py:159
 msgid "View"
 msgstr "دیدن"
 
-#: templates/index.html:150 templates/index.html.py:158
+#: templates/index.html:153 templates/index.html.py:161
 msgid "Parvaz Complex"
 msgstr "متجمع پرواز"
 
-#: templates/index.html:150 templates/index.html.py:160
+#: templates/index.html:153 templates/index.html.py:163
 msgid "in a larger map"
 msgstr "در یک نقشهٔ بزرگ"
 
