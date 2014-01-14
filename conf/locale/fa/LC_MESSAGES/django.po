@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-14 13:37+0330\n"
+"POT-Creation-Date: 2014-01-14 15:22+0330\n"
 "PO-Revision-Date: 2013-12-09 23:05+0430\n"
 "Last-Translator: Behnam Ahmad Khan Beigi <b3hnam@gnu.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -483,11 +483,11 @@ msgstr "مجله لینوکس‌مگ"
 msgid "Karajlug in"
 msgstr "کرج‌لاگ در"
 
-#: templates/base.html:128
+#: templates/base.html:129
 msgid "Sponsors"
 msgstr "حامیان"
 
-#: templates/base.html:136
+#: templates/base.html:137
 msgid "Copyright 2010-2013 Karajlug Community"
 msgstr "کپی‌رایت ۲۰۱۰-۲۰۱۳ اجتماع کرج‌لاگ"
 
@@ -557,10 +557,10 @@ msgstr "پیوستن"
 
 #: templates/index.html:140
 msgid ""
-"6th unit, 3th floor, Parvaz Complex (Above the Ghoghnous market), Motahari "
-"st, Azadegan bridge, Karaj."
+"6th unit, 3th floor, Parvaz Complex (Above the MaadIran shop), Motahari st, "
+"Azadegan bridge, Karaj."
 msgstr ""
-"کرج، پل آزادگان، خیابان مطهری، مجتمع پرواز (بالای فروشگاه ققنوس)، طبقهٔ سوم، "
+"کرج، پل آزادگان، خیابان مطهری، مجتمع پرواز (طبقه فوقانی مادایران)، طبقهٔ سوم، "
 "واحد ۶ "
 
 #: templates/index.html:144
