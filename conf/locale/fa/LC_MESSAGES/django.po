@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-14 12:50+0330\n"
+"POT-Creation-Date: 2014-01-14 13:37+0330\n"
 "PO-Revision-Date: 2013-12-09 23:05+0430\n"
 "Last-Translator: Behnam Ahmad Khan Beigi <b3hnam@gnu.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -404,7 +404,6 @@ msgid "WebChat"
 msgstr "چت آنلاین"
 
 #: templates/base.html:51
-#, fuzzy
 msgid "Mailing list"
 msgstr "لیست پستی"
 
@@ -436,39 +435,59 @@ msgstr "گیلان‌لاگ"
 msgid "Khuzestan Lug"
 msgstr "خوزستان‌لاگ"
 
-#: templates/base.html:97
+#: templates/base.html:92
+msgid "Tabriz Lug"
+msgstr "تبریز‌لاگ "
+
+#: templates/base.html:93
+msgid "Kerman Lug"
+msgstr "کرمان‌لاگ"
+
+#: templates/base.html:94
+msgid "Yazd Lug"
+msgstr "یزد‌لاگ"
+
+#: templates/base.html:95
+msgid "Bushehr Lug"
+msgstr "بوشهر‌لاگ"
+
+#: templates/base.html:103
 msgid "Useful links"
 msgstr "پیوندهای مفید"
 
-#: templates/base.html:99
+#: templates/base.html:105
 msgid "KarajLug on Wikipedia"
 msgstr "کرج‌لاگ در ویکیپدیا"
 
-#: templates/base.html:100
+#: templates/base.html:107 templates/base.html.py:109
 msgid "What is LUG?"
 msgstr "لاگ چیست؟"
 
-#: templates/base.html:101
+#: templates/base.html:112
 msgid "Free Software Foundation"
 msgstr "بنیاد نرم‌افزار‌های آزاد"
 
-#: templates/base.html:102
+#: templates/base.html:113
 msgid "GNU Project"
 msgstr "پروژه گنو"
 
-#: templates/base.html:103
+#: templates/base.html:114
+msgid "Linux Foundation"
+msgstr "بنیاد لینوکس"
+
+#: templates/base.html:115
 msgid "LinuxMag"
 msgstr "مجله لینوکس‌مگ"
 
-#: templates/base.html:110
+#: templates/base.html:122
 msgid "Karajlug in"
 msgstr "کرج‌لاگ در"
 
-#: templates/base.html:116
+#: templates/base.html:128
 msgid "Sponsors"
 msgstr "حامیان"
 
-#: templates/base.html:124
+#: templates/base.html:136
 msgid "Copyright 2010-2013 Karajlug Community"
 msgstr "کپی‌رایت ۲۰۱۰-۲۰۱۳ اجتماع کرج‌لاگ"
 
