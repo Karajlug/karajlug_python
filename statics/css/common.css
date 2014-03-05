@@ -143,6 +143,14 @@ footer ul a:hover {
     height: 500px;
 }
 
+ol.carousel-indicators {
+    margin: 0 25px 0 0;
+}
+
+div.carousel-inner>div.active {
+    height: 440px;
+}
+
 section p {
     text-align: justify;
     padding-top: 10px;
