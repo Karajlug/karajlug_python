@@ -34,16 +34,16 @@
     {% endblock %}
   </head>
   <body dir="{% if lang.bidi %}rtl{% else %}ltr{% endif %}">
-  {% block body %}
+    {% block body %}
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container" id="topmenu">
           <div class="row">
-	        <div class="span12">
+	    <div class="span12">
               <a class="brand" href="/"><b>{% trans "Karajlug" %}</b></a>
               <ul class="nav">
                 <!--<li><a href="/members/">{% trans "Members" %}</a></li>
-                <li><a href="/books/">{% trans "Books" %}</a></li>-->
+                    <li><a href="/books/">{% trans "Books" %}</a></li>-->
                 <li><a href="https://github.com/Karajlug">{% trans "Projects" %}</a></li>
                 <li><a href="/contact/">{% trans "Contact" %}</a></li>
                 <li><a href="/faq/">{% trans "FAQ" %}</a></li>
@@ -73,81 +73,91 @@
     {% endblock header %}
 
     <div class="container maincontainer">
-    {% block content %}
+      {% block content %}
 
-    {% endblock content %}
+      {% endblock content %}
     </div>
+    <div class="thirdbanner">
+      <div class="container">
+	<div class="row">
 
+	  <div class="span12" id="sitetitle">
+	    
+
+	    <a href="http://oreilly.com/ug/">
+	      <img src="/statics/images/ug_ad_250_eagle.gif">
+	    </a>
+	    <h3>{% trans 'Member of the OReilly User Group Program' %}</h3>
+	    
+	  </div>
+	</div>
+      </div>
+    </div>
     <footer>
       <div class="container">
         <div class="row">
           <div class="span4 vspan4">
-        <div class="center span3">
-        <h3 class="ftitle">{% trans 'Other Lugs' %}:</h3>
-          <ul>
-            <li><a href="http://tehlug.org/">{% trans 'Tehran Lug' %}</a></li>
-            <li><a href="http://www.isfahanlug.org/">{% trans 'Isfahan Lug' %}</a></li>
-            <li><a href="http://www.zanjanlug.org/">{% trans 'Zanjan Lug' %}</a></li>
-            <li><a href="http://www.mashhadlug.org/">{% trans 'Mashhad Lug' %}</a></li>
-            <li><a href="http://www.gullug.org/">{% trans 'Guilan Lug' %}</a></li>
-            <li><a href="http://khuzestanlug.ir/">{% trans 'Khuzestan Lug' %}</a></li>
-            <li><a href="http://tabrix.org">{% trans 'Tabriz Lug' %}</a></li>
-            <li><a href="http://klug.ir">{% trans 'Kerman Lug' %}</a></li>
-            <li><a href="http://www.yazdlug.com/">{% trans 'Yazd Lug' %}</a></li>
-            <li><a href="http://bulug.ir/">{% trans 'Bushehr Lug' %}</a></li>
+            <div class="center span3">
+              <h3 class="ftitle">{% trans 'Other Lugs' %}:</h3>
+              <ul>
+		<li><a href="http://tehlug.org/">{% trans 'Tehran Lug' %}</a></li>
+		<li><a href="http://www.isfahanlug.org/">{% trans 'Isfahan Lug' %}</a></li>
+		<li><a href="http://www.zanjanlug.org/">{% trans 'Zanjan Lug' %}</a></li>
+		<li><a href="http://www.mashhadlug.org/">{% trans 'Mashhad Lug' %}</a></li>
+		<li><a href="http://www.gullug.org/">{% trans 'Guilan Lug' %}</a></li>
+		<li><a href="http://khuzestanlug.ir/">{% trans 'Khuzestan Lug' %}</a></li>
+		<li><a href="http://tabrix.org">{% trans 'Tabriz Lug' %}</a></li>
+		<li><a href="http://klug.ir">{% trans 'Kerman Lug' %}</a></li>
+		<li><a href="http://www.yazdlug.com/">{% trans 'Yazd Lug' %}</a></li>
+		<li><a href="http://bulug.ir/">{% trans 'Bushehr Lug' %}</a></li>
 
 
-          </ul>
-        </div>
+              </ul>
+            </div>
           </div>
           <div class="span4 vspan4">
-        <div class="center span3">
-        <h3 class="ftitle">{% trans 'Useful links' %}:</h3>
-        <ul>
-          <!-- <li><a href="http://fa.wikipedia.org/wiki/%DA%AF%D8%B1%D9%88%D9%87_%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%D8%A7%D9%86_%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3_%DA%A9%D8%B1%D8%AC">{% trans "KarajLug on Wikipedia" %}</a></li> -->
-          {% if lang.bidi %}
-          <li><a href="https://fa.wikipedia.org/wiki/%DA%AF%D8%B1%D9%88%D9%87_%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%D8%A7%D9%86_%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3">{% trans "What is LUG?" %}</a></li>
-          {% else %}
-          <li><a href="http://en.wikipedia.org/wiki/Linux_user_group">{% trans "What is LUG?" %}</a></li>
-          {% endif %}
+            <div class="center span3">
+              <h3 class="ftitle">{% trans 'Useful links' %}:</h3>
+              <ul>
+		<!-- <li><a href="http://fa.wikipedia.org/wiki/%DA%AF%D8%B1%D9%88%D9%87_%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%D8%A7%D9%86_%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3_%DA%A9%D8%B1%D8%AC">{% trans "KarajLug on Wikipedia" %}</a></li> -->
+		{% if lang.bidi %}
+		<li><a href="https://fa.wikipedia.org/wiki/%DA%AF%D8%B1%D9%88%D9%87_%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%D8%A7%D9%86_%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3">{% trans "What is LUG?" %}</a></li>
+		{% else %}
+		<li><a href="http://en.wikipedia.org/wiki/Linux_user_group">{% trans "What is LUG?" %}</a></li>
+		{% endif %}
 
-          <li><a href="http://www.fsf.org/">{% trans 'Free Software Foundation' %}</a></li>
-          <li><a href="http://www.gnu.org/">{% trans 'GNU Project' %}</a></li>
-          <li><a href="http://www.linuxfoundation.org">{% trans 'Linux Foundation' %}</a></li>
-          <li><a href="http://www.linuxmag.ir/">{% trans 'LinuxMag' %}</a></li>
+		<li><a href="http://www.fsf.org/">{% trans 'Free Software Foundation' %}</a></li>
+		<li><a href="http://www.gnu.org/">{% trans 'GNU Project' %}</a></li>
+		<li><a href="http://www.linuxfoundation.org">{% trans 'Linux Foundation' %}</a></li>
+		<li><a href="http://www.linuxmag.ir/">{% trans 'LinuxMag' %}</a></li>
 
-        </ul>
+              </ul>
+            </div>
           </div>
-        </div>
           <div class="span4 vspan4">
-        <div class="center span4" id="follow">
+            <div class="center span4" id="follow">
 
-          <h3 class="ftitle">{% trans 'Karajlug in' %}:</h3>
-          <a href="https://github.com/Karajlug" ><i class="icon-github icon-3x"></i></a>
-          <a href="https://www.twitter.com/karajlug" ><i class="icon-twitter icon-3x"></i></a>
-          <a href="https://plus.google.com/+KarajlugOrgpage" rel="publisher" ><i class="icon-google-plus icon-3x"></i></a>
-          <a href="http://www.facebook.com/pages/KarajLug/113288182057531" ><i class="icon-facebook-sign icon-3x"></i></a>
-          <a href="/news/feed/" ><i class="icon-rss icon-3x"></i></a>
-          <br/><br/>
-	  <h3 class="ftitle">{% trans 'Member of the OReilly User Group Program' %}:</h3>
-	  <a href="http://oreilly.com/ug/">
-	  <img src="statics/images/ug_ad_250_eagle.gif">
-	  </a>
-	  <br/><br/>
-          <h3>{% trans 'Sponsors' %} :</h3>
-          <a href="http://www.jalborz.ir" class="center"><img src="/statics/images/jalborz.png"></a>
-          <a href="http://www.yellowen.com" class="center"><img src="/statics/images/yellowen.png"></a>
-          <a href="http://www.karanic.com" class="center"><img src="/statics/images/karanic.png"></a>
-	  <br/>
-          <a href="http://oreilly.com" class="center"><img src="/statics/images/ORM_logo_box5_hex.jpg"></a>
+              <h3 class="ftitle">{% trans 'Karajlug in' %}:</h3>
+              <a href="https://github.com/Karajlug" ><i class="icon-github icon-3x"></i></a>
+              <a href="https://www.twitter.com/karajlug" ><i class="icon-twitter icon-3x"></i></a>
+              <a href="https://plus.google.com/+KarajlugOrgpage" rel="publisher" ><i class="icon-google-plus icon-3x"></i></a>
+              <a href="http://www.facebook.com/pages/KarajLug/113288182057531" ><i class="icon-facebook-sign icon-3x"></i></a>
+              <a href="/news/feed/" ><i class="icon-rss icon-3x"></i></a>
+              <br/><br/><br/>
+              <h3>{% trans 'Sponsors' %} :</h3>
+              <a href="http://www.jalborz.ir" class="center"><img src="/statics/images/jalborz.png"></a>
+              <a href="http://www.yellowen.com" class="center"><img src="/statics/images/yellowen.png"></a>
+              <a href="http://www.karanic.com" class="center"><img src="/statics/images/karanic.png"></a>
+	      <br/>
+              <a href="http://oreilly.com" class="center"><img src="/statics/images/ORM_logo_box5_hex.jpg"></a>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="span12">
-        <p align="center"  class="small">©{% trans "Copyright 2010-2013 Karajlug Community" %}.</p>
+          <div class="row">
+            <div class="span12">
+              <p align="center"  class="small">©{% trans "Copyright 2010-2013 Karajlug Community" %}.</p>
+            </div>
           </div>
-        </div>
-      </div>
+	</div>
     </footer>
     {% endblock %}
     <script src="/statics/js/jquery-1.9.1.min.js"></script>
@@ -161,9 +171,9 @@
     {% endif %}
 
     <script type="javascript">
-    $(function(){
+      $(function(){
       $('.carousel').carousel();
-    });
+      });
     </script>
     {% endblock tail %}
     {% block analytic %}

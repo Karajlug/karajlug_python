@@ -38,6 +38,19 @@
     border-bottom: 1px solid #adadad;
 }
 
+.thirdbanner {
+   padding-top:20px;
+    Background: #f1f1f1;
+    background-image: radial-gradient(circle farthest-corner at center center , #f1f1f1 0%, #bdbdbd 100%);
+    background-image: -moz-radial-gradient(circle farthest-corner at center center , #f1f1f1 0%, #bdbdbd 100%);
+    background-image: -webkit-radial-gradient(circle, #f1f1f1 0%, #bdbdbd 100%);
+    background-image: -o-radial-gradient(circle, #f1f1f1 0%, #bdbdbd 100%);
+
+    border-bottom: 1px solid #adadad;
+   text-align:center;
+}
+
+
 footer {
     border-top: 3px solid #e1e1e1;
     z-index: 50;
