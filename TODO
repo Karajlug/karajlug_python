@@ -1,2 +1,7 @@
 * Sitemap
-* uncomment members, projects, books application from settings.py, urls.py, base.html
+* Uncomment members, projects, books application from settings.py, urls.py, base.html
+* Remove some sponsor logos
+* Change language of English link !
+* Modifiy linux link
+
+
