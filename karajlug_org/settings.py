@@ -36,7 +36,7 @@ if os.path.exists(os.path.join(ROOT, "../deployment")):
 
 ADMINS = (
     ('Behnam Ahmad Khan Beigi',
-     'b3hnam@b3hnam.com'),
+     'yottanami@gnu.org'),
     ('lxsameer', 'lxsameer@lxsameer.com'),
 )
 
@@ -172,6 +172,7 @@ INSTALLED_APPS = (
     "page",
     "news",
     "faq",
+    "donate",
     "members",
     #"books",
     #"projects",
