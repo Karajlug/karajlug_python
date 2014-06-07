@@ -29,6 +29,7 @@ urlpatterns = patterns(
     '',
     (r'^faq/$', "faq.views.index"),
     (r'^news/', include('news.urls')),
+    (r'^donate/', include('donate.index')),
     (r'^page/', include('page.urls')),
     (r'^members/', include('members.urls')),
     (r'^books/', include('books.urls')),
