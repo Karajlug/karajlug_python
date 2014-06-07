@@ -252,3 +252,13 @@ section p {
 .sociallinks i:hover {
     text-decoration: initial;
 }
+
+.donation {
+   font-size: 1.2em;
+   padding: 40px;
+
+}
+
+.donation table tr{
+   height: 30px;
+}
