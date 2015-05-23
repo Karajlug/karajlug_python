@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-07 13:21+0430\n"
+"POT-Creation-Date: 2015-05-23 11:23+0430\n"
 "PO-Revision-Date: 2013-12-09 23:05+0430\n"
 "Last-Translator: Behnam Ahmad Khan Beigi <b3hnam@gnu.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,6 +57,7 @@ msgid "License"
 msgstr "مجوز"
 
 #: books/models.py:64
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1249
 msgid "URL"
 msgstr "نشانی اینترنتی"
 
@@ -68,7 +69,10 @@ msgstr "کتاب آنلاین"
 msgid "Complete"
 msgstr "کامل"
 
-#: books/models.py:74 projects/models.py:80 projects/models.py:134
+#: books/models.py:74
+#: env/lib/python2.7/site-packages/django/forms/formsets.py:317
+#: env/lib/python2.7/site-packages/django/forms/formsets.py:319
+#: projects/models.py:80 projects/models.py:134
 msgid "Order"
 msgstr "درخواست"
 
@@ -128,6 +132,1904 @@ msgstr "هنوز هیچی"
 msgid "Home page"
 msgstr "صفحهٔ خانگی"
 
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:48
+msgid "Arabic"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:49
+msgid "Azerbaijani"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:50
+msgid "Bulgarian"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:51
+msgid "Bengali"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:52
+msgid "Bosnian"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:53
+msgid "Catalan"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:54
+msgid "Czech"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:55
+msgid "Welsh"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:56
+msgid "Danish"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:57
+msgid "German"
+msgstr "آلمانی"
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:58
+msgid "Greek"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:59
+#: karajlug_org/settings.py:84 templates/base.html:61
+msgid "English"
+msgstr "English"
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:60
+msgid "British English"
+msgstr "انگلیسی"
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:61
+msgid "Esperanto"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:62
+msgid "Spanish"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:63
+msgid "Argentinian Spanish"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:64
+msgid "Mexican Spanish"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:65
+msgid "Nicaraguan Spanish"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:66
+msgid "Estonian"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:67
+msgid "Basque"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:68
+#: karajlug_org/settings.py:83
+msgid "Persian"
+msgstr "فارسی"
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:69
+msgid "Finnish"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:70
+msgid "French"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:71
+msgid "Frisian"
+msgstr "فارسی"
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:72
+msgid "Irish"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:73
+msgid "Galician"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:74
+msgid "Hebrew"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:75
+msgid "Hindi"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:76
+msgid "Croatian"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:77
+msgid "Hungarian"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:78
+msgid "Indonesian"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:79
+msgid "Icelandic"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:80
+msgid "Italian"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:81
+msgid "Japanese"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:82
+msgid "Georgian"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:83
+msgid "Kazakh"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:84
+msgid "Khmer"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:85
+msgid "Kannada"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:86
+msgid "Korean"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:87
+msgid "Lithuanian"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:88
+msgid "Latvian"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:89
+msgid "Macedonian"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:90
+msgid "Malayalam"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:91
+msgid "Mongolian"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:92
+msgid "Norwegian Bokmal"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:93
+msgid "Nepali"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:94
+msgid "Dutch"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:95
+msgid "Norwegian Nynorsk"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:96
+msgid "Punjabi"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:97
+msgid "Polish"
+msgstr "انتشار"
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:98
+msgid "Portuguese"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:99
+msgid "Brazilian Portuguese"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:100
+#, fuzzy
+msgid "Romanian"
+msgstr "تومان"
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:101
+msgid "Russian"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:102
+msgid "Slovak"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:103
+msgid "Slovenian"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:104
+msgid "Albanian"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:105
+msgid "Serbian"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:106
+msgid "Serbian Latin"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:107
+msgid "Swedish"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:108
+msgid "Swahili"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:109
+msgid "Tamil"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:110
+msgid "Telugu"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:111
+msgid "Thai"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:112
+msgid "Turkish"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:113
+msgid "Tatar"
+msgstr "شمایه"
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:114
+msgid "Ukrainian"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:115
+msgid "Urdu"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:116
+msgid "Vietnamese"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:117
+msgid "Simplified Chinese"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/conf/global_settings.py:118
+msgid "Traditional Chinese"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/core/validators.py:24
+#: env/lib/python2.7/site-packages/django/forms/fields.py:51
+msgid "Enter a valid value."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/core/validators.py:99
+#: env/lib/python2.7/site-packages/django/forms/fields.py:591
+msgid "This URL appears to be a broken link."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/core/validators.py:131
+#: env/lib/python2.7/site-packages/django/forms/fields.py:590
+msgid "Enter a valid URL."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/core/validators.py:165
+#: env/lib/python2.7/site-packages/django/forms/fields.py:474
+msgid "Enter a valid e-mail address."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/core/validators.py:168
+#: env/lib/python2.7/site-packages/django/forms/fields.py:1013
+msgid ""
+"Enter a valid 'slug' consisting of letters, numbers, underscores or hyphens."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/core/validators.py:171
+#: env/lib/python2.7/site-packages/django/core/validators.py:188
+#: env/lib/python2.7/site-packages/django/forms/fields.py:987
+#, fuzzy
+msgid "Enter a valid IPv4 address."
+msgstr "نشانی"
+
+#: env/lib/python2.7/site-packages/django/core/validators.py:175
+#: env/lib/python2.7/site-packages/django/core/validators.py:189
+msgid "Enter a valid IPv6 address."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/core/validators.py:184
+#: env/lib/python2.7/site-packages/django/core/validators.py:187
+msgid "Enter a valid IPv4 or IPv6 address."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/core/validators.py:209
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:638
+msgid "Enter only digits separated by commas."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/core/validators.py:215
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/core/validators.py:233
+#: env/lib/python2.7/site-packages/django/forms/fields.py:209
+#: env/lib/python2.7/site-packages/django/forms/fields.py:262
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/core/validators.py:238
+#: env/lib/python2.7/site-packages/django/forms/fields.py:210
+#: env/lib/python2.7/site-packages/django/forms/fields.py:263
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/core/validators.py:244
+#, python-format
+msgid ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/core/validators.py:250
+#, python-format
+msgid ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/base.py:764
+#, python-format
+msgid "%(field_name)s must be unique for %(date_field)s %(lookup)s."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/base.py:787
+#: env/lib/python2.7/site-packages/django/forms/models.py:577
+msgid "and"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/base.py:788
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:65
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:62
+#, python-format
+msgid "Value %r is not a valid choice."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:63
+msgid "This field cannot be null."
+msgstr "این فیلد خالی نمی‌تواند باشد"
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:64
+msgid "This field cannot be blank."
+msgstr "این فیلد خالی نمی‌تواند باشد"
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:71
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:506
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:961
+msgid "Integer"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:510
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:959
+#, python-format
+msgid "'%s' value must be an integer."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:552
+#, python-format
+msgid "'%s' value must be either True or False."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:554
+msgid "Boolean (Either True or False)"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:605
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:633
+msgid "Comma-separated integers"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:647
+#, python-format
+msgid "'%s' value has an invalid date format. It must be in YYYY-MM-DD format."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:649
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:734
+#, python-format
+msgid ""
+"'%s' value has the correct format (YYYY-MM-DD) but it is an invalid date."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:652
+#, fuzzy
+msgid "Date (without time)"
+msgstr "تاریخ و زمان"
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:732
+#, python-format
+msgid ""
+"'%s' value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
+"uuuuuu]][TZ] format."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:736
+#, python-format
+msgid ""
+"'%s' value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ]) but "
+"it is an invalid date/time."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:740
+msgid "Date (with time)"
+msgstr "تاریخ و زمان"
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:831
+#, python-format
+msgid "'%s' value must be a decimal number."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:833
+#, fuzzy
+msgid "Decimal number"
+msgstr "دسامبر"
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:890
+#, fuzzy
+msgid "E-mail address"
+msgstr "نشانی"
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:906
+msgid "File path"
+msgstr "مسیر پرونده"
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:930
+#, python-format
+msgid "'%s' value must be a float."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:932
+msgid "Floating point number"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:993
+msgid "Big (8 byte) integer"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1007
+msgid "IPv4 address"
+msgstr "نشانی"
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1023
+msgid "IP address"
+msgstr "نشانی"
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1065
+#, python-format
+msgid "'%s' value must be either None, True or False."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1067
+msgid "Boolean (Either True, False or None)"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1116
+msgid "Positive integer"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1127
+msgid "Positive small integer"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1138
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1156
+msgid "Small integer"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1162
+msgid "Text"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1180
+#, python-format
+msgid ""
+"'%s' value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] format."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1182
+#, python-format
+msgid ""
+"'%s' value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an invalid "
+"time."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1185
+msgid "Time"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/files.py:214
+#: mediacenter/models.py:30
+msgid "File"
+msgstr "پرونده"
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/files.py:321
+msgid "Image"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/related.py:903
+#, python-format
+msgid "Model %(model)s with pk %(pk)r does not exist."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/related.py:905
+msgid "Foreign Key (type determined by related field)"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/related.py:1033
+msgid "One-to-one relationship"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/related.py:1096
+msgid "Many-to-many relationship"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/db/models/fields/related.py:1120
+msgid ""
+"Hold down \"Control\", or \"Command\" on a Mac, to select more than one."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/fields.py:50
+msgid "This field is required."
+msgstr "این فیلد احمیتی ندارد"
+
+#: env/lib/python2.7/site-packages/django/forms/fields.py:208
+msgid "Enter a whole number."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/fields.py:240
+#: env/lib/python2.7/site-packages/django/forms/fields.py:261
+msgid "Enter a number."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/fields.py:264
+#, python-format
+msgid "Ensure that there are no more than %s digits in total."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/fields.py:265
+#, python-format
+msgid "Ensure that there are no more than %s decimal places."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/fields.py:266
+#, python-format
+msgid "Ensure that there are no more than %s digits before the decimal point."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/fields.py:365
+#: env/lib/python2.7/site-packages/django/forms/fields.py:953
+msgid "Enter a valid date."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/fields.py:388
+#: env/lib/python2.7/site-packages/django/forms/fields.py:954
+msgid "Enter a valid time."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/fields.py:409
+msgid "Enter a valid date/time."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/fields.py:485
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/fields.py:486
+msgid "No file was submitted."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/fields.py:487
+msgid "The submitted file is empty."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/fields.py:488
+#, python-format
+msgid ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/fields.py:489
+msgid "Please either submit a file or check the clear checkbox, not both."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/fields.py:544
+msgid ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/fields.py:679
+#: env/lib/python2.7/site-packages/django/forms/fields.py:759
+#, python-format
+msgid "Select a valid choice. %(value)s is not one of the available choices."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/fields.py:760
+#: env/lib/python2.7/site-packages/django/forms/fields.py:848
+#: env/lib/python2.7/site-packages/django/forms/models.py:999
+msgid "Enter a list of values."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/formsets.py:321
+msgid "Delete"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/models.py:571
+#, python-format
+msgid "Please correct the duplicate data for %(field)s."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/models.py:575
+#, python-format
+msgid "Please correct the duplicate data for %(field)s, which must be unique."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/models.py:581
+#, python-format
+msgid ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/models.py:589
+msgid "Please correct the duplicate values below."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/models.py:849
+msgid "The inline foreign key did not match the parent instance primary key."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/models.py:910
+msgid "Select a valid choice. That choice is not one of the available choices."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/models.py:1000
+#, python-format
+msgid "Select a valid choice. %s is not one of the available choices."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/models.py:1002
+#, python-format
+msgid "\"%s\" is not a valid value for a primary key."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/util.py:70
+#, python-format
+msgid ""
+"%(datetime)s couldn't be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/widgets.py:325
+msgid "Currently"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/widgets.py:326
+msgid "Change"
+msgstr "کانال"
+
+#: env/lib/python2.7/site-packages/django/forms/widgets.py:327
+msgid "Clear"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/widgets.py:585
+msgid "Unknown"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/widgets.py:586
+msgid "Yes"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/forms/widgets.py:587
+msgid "No"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/template/defaultfilters.py:797
+msgid "yes,no,maybe"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/template/defaultfilters.py:825
+#: env/lib/python2.7/site-packages/django/template/defaultfilters.py:830
+#, python-format
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] ""
+
+#: env/lib/python2.7/site-packages/django/template/defaultfilters.py:832
+#, python-format
+msgid "%s KB"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/template/defaultfilters.py:834
+#, python-format
+msgid "%s MB"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/template/defaultfilters.py:836
+#, python-format
+msgid "%s GB"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/template/defaultfilters.py:838
+#, python-format
+msgid "%s TB"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/template/defaultfilters.py:839
+#, python-format
+msgid "%s PB"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dateformat.py:45
+msgid "p.m."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dateformat.py:46
+msgid "a.m."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dateformat.py:51
+msgid "PM"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dateformat.py:52
+msgid "AM"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dateformat.py:101
+msgid "midnight"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dateformat.py:103
+msgid "noon"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:6
+msgid "Monday"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:6
+msgid "Tuesday"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:6
+msgid "Wednesday"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:6
+msgid "Thursday"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:6
+msgid "Friday"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:7
+msgid "Saturday"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:7
+msgid "Sunday"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:10
+msgid "Mon"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:10
+msgid "Tue"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:10
+msgid "Wed"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:10
+msgid "Thu"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:10
+#, fuzzy
+msgid "Fri"
+msgstr "فارسی"
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:11
+msgid "Sat"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:11
+msgid "Sun"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:18
+msgid "January"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:18
+msgid "February"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:18
+msgid "March"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:18
+msgid "April"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:18
+msgid "May"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:18
+msgid "June"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:19
+msgid "July"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:19
+msgid "August"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:19
+msgid "September"
+msgstr "سپتامبر"
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:19
+msgid "October"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:19
+msgid "November"
+msgstr "نوامبر"
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:20
+msgid "December"
+msgstr "دسامبر"
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:23
+msgid "jan"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:23
+msgid "feb"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:23
+msgid "mar"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:23
+msgid "apr"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:23
+msgid "may"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:23
+msgid "jun"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:24
+msgid "jul"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:24
+msgid "aug"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:24
+msgid "sep"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:24
+msgid "oct"
+msgstr "اکتوبر"
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:24
+msgid "nov"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:24
+msgid "dec"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:31
+msgctxt "abbrev. month"
+msgid "Jan."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:32
+msgctxt "abbrev. month"
+msgid "Feb."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:33
+msgctxt "abbrev. month"
+msgid "March"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:34
+msgctxt "abbrev. month"
+msgid "April"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:35
+msgctxt "abbrev. month"
+msgid "May"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:36
+msgctxt "abbrev. month"
+msgid "June"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:37
+msgctxt "abbrev. month"
+msgid "July"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:38
+msgctxt "abbrev. month"
+msgid "Aug."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:39
+msgctxt "abbrev. month"
+msgid "Sept."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:40
+msgctxt "abbrev. month"
+msgid "Oct."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:41
+msgctxt "abbrev. month"
+msgid "Nov."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:42
+msgctxt "abbrev. month"
+msgid "Dec."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:45
+msgctxt "alt. month"
+msgid "January"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:46
+msgctxt "alt. month"
+msgid "February"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:47
+msgctxt "alt. month"
+msgid "March"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:48
+msgctxt "alt. month"
+msgid "April"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:49
+msgctxt "alt. month"
+msgid "May"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:50
+msgctxt "alt. month"
+msgid "June"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:51
+msgctxt "alt. month"
+msgid "July"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:52
+msgctxt "alt. month"
+msgid "August"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:53
+msgctxt "alt. month"
+msgid "September"
+msgstr "سپتامبر"
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:54
+msgctxt "alt. month"
+msgid "October"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:55
+msgctxt "alt. month"
+msgid "November"
+msgstr "عضو"
+
+#: env/lib/python2.7/site-packages/django/utils/dates.py:56
+msgctxt "alt. month"
+msgid "December"
+msgstr "عضو"
+
+#: env/lib/python2.7/site-packages/django/utils/text.py:65
+#, python-format
+msgctxt "String to return when truncating text"
+msgid "%(truncated_text)s..."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/text.py:234
+msgid "or"
+msgstr ""
+
+#. Translators: This string is used as a separator between list elements
+#: env/lib/python2.7/site-packages/django/utils/text.py:251
+msgid ", "
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/timesince.py:20
+msgid "year"
+msgid_plural "years"
+msgstr[0] ""
+
+#: env/lib/python2.7/site-packages/django/utils/timesince.py:21
+msgid "month"
+msgid_plural "months"
+msgstr[0] ""
+
+#: env/lib/python2.7/site-packages/django/utils/timesince.py:22
+msgid "week"
+msgid_plural "weeks"
+msgstr[0] ""
+
+#: env/lib/python2.7/site-packages/django/utils/timesince.py:23
+msgid "day"
+msgid_plural "days"
+msgstr[0] ""
+
+#: env/lib/python2.7/site-packages/django/utils/timesince.py:24
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] ""
+
+#: env/lib/python2.7/site-packages/django/utils/timesince.py:25
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] ""
+
+#: env/lib/python2.7/site-packages/django/utils/timesince.py:41
+msgid "minutes"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/timesince.py:46
+#, python-format
+msgid "%(number)d %(type)s"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/utils/timesince.py:52
+#, python-format
+msgid ", %(number)d %(type)s"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/static.py:52
+msgid "Directory indexes are not allowed here."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/static.py:54
+#, python-format
+msgid "\"%(path)s\" does not exist"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/static.py:95
+#, python-format
+msgid "Index of %(directory)s"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/generic/create_update.py:121
+#, python-format
+msgid "The %(verbose_name)s was created successfully."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/generic/create_update.py:164
+#, python-format
+msgid "The %(verbose_name)s was updated successfully."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/generic/create_update.py:207
+#, python-format
+msgid "The %(verbose_name)s was deleted."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/generic/dates.py:33
+msgid "No year specified"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/generic/dates.py:58
+msgid "No month specified"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/generic/dates.py:99
+msgid "No day specified"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/generic/dates.py:138
+msgid "No week specified"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/generic/dates.py:198
+#: env/lib/python2.7/site-packages/django/views/generic/dates.py:215
+#, python-format
+msgid "No %(verbose_name_plural)s available"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/generic/dates.py:467
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because %(class_name)s."
+"allow_future is False."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/generic/dates.py:501
+#, python-format
+msgid "Invalid date string '%(datestr)s' given format '%(format)s'"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/generic/detail.py:51
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/generic/list.py:45
+msgid "Page is not 'last', nor can it be converted to an int."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/generic/list.py:50
+#, python-format
+msgid "Invalid page (%(page_number)s)"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/django/views/generic/list.py:117
+#, python-format
+msgid "Empty list and '%(class_name)s.allow_empty' is False."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:11
+msgid "Null character in input stream, replaced with U+FFFD."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:13
+msgid "Invalid codepoint in stream."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:15
+msgid "Solidus (/) incorrectly placed in tag."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:17
+msgid "Incorrect CR newline entity, replaced with LF."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:19
+msgid "Entity used with illegal number (windows-1252 reference)."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:21
+#, python-format
+msgid ""
+"Numeric entity couldn't be converted to character (codepoint U+"
+"%(charAsInt)08x)."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:24
+#, python-format
+msgid "Numeric entity represents an illegal codepoint: U+%(charAsInt)08x."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:27
+msgid "Numeric entity didn't end with ';'."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:29
+msgid "Numeric entity expected. Got end of file instead."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:31
+msgid "Numeric entity expected but none found."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:33
+msgid "Named entity didn't end with ';'."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:35
+msgid "Named entity expected. Got none."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:37
+msgid "End tag contains unexpected attributes."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:39
+msgid "End tag contains unexpected self-closing flag."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:41
+msgid "Expected tag name. Got '>' instead."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:43
+msgid ""
+"Expected tag name. Got '?' instead. (HTML doesn't support processing "
+"instructions.)"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:46
+msgid "Expected tag name. Got something else instead"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:48
+msgid "Expected closing tag. Got '>' instead. Ignoring '</>'."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:50
+msgid "Expected closing tag. Unexpected end of file."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:52
+#, python-format
+msgid "Expected closing tag. Unexpected character '%(data)s' found."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:54
+msgid "Unexpected end of file in the tag name."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:56
+msgid "Unexpected end of file. Expected attribute name instead."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:58
+msgid "Unexpected end of file in attribute name."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:60
+msgid "Invalid character in attribute name"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:62
+msgid "Dropped duplicate attribute on tag."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:64
+msgid "Unexpected end of file. Expected = or end of tag."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:66
+msgid "Unexpected end of file. Expected attribute value."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:68
+msgid "Expected attribute value. Got '>' instead."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:70
+msgid "Unexpected = in unquoted attribute"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:72
+msgid "Unexpected character in unquoted attribute"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:74
+msgid "Unexpected character after attribute name."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:76
+msgid "Unexpected character after attribute value."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:78
+msgid "Unexpected end of file in attribute value (\")."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:80
+msgid "Unexpected end of file in attribute value (')."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:82
+msgid "Unexpected end of file in attribute value."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:84
+msgid "Unexpected end of file in tag. Expected >"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:86
+msgid "Unexpected character after / in tag. Expected >"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:88
+msgid "Expected '--' or 'DOCTYPE'. Not found."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:90
+msgid "Unexpected ! after -- in comment"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:92
+msgid "Unexpected space after -- in comment"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:94
+msgid "Incorrect comment."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:96
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:104
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:106
+msgid "Unexpected end of file in comment."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:98
+msgid "Unexpected end of file in comment (-)"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:100
+msgid "Unexpected '-' after '--' found in comment."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:102
+msgid "Unexpected end of file in comment (--)."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:108
+msgid "Unexpected character in comment found."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:110
+msgid "No space after literal string 'DOCTYPE'."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:112
+msgid "Unexpected > character. Expected DOCTYPE name."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:114
+msgid "Unexpected end of file. Expected DOCTYPE name."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:116
+msgid "Unexpected end of file in DOCTYPE name."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:118
+msgid "Unexpected end of file in DOCTYPE."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:120
+#, python-format
+msgid "Expected space or '>'. Got '%(data)s'"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:122
+msgid "Unexpected end of DOCTYPE."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:124
+msgid "Unexpected character in DOCTYPE."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:126
+msgid "XXX innerHTML EOF"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:128
+msgid "Unexpected DOCTYPE. Ignored."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:130
+msgid "html needs to be the first start tag."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:132
+msgid "Unexpected End of file. Expected DOCTYPE."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:134
+msgid "Erroneous DOCTYPE."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:136
+msgid "Unexpected non-space characters. Expected DOCTYPE."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:138
+#, python-format
+msgid "Unexpected start tag (%(name)s). Expected DOCTYPE."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:140
+#, python-format
+msgid "Unexpected end tag (%(name)s). Expected DOCTYPE."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:142
+#, python-format
+msgid "Unexpected end tag (%(name)s) after the (implied) root element."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:144
+#, python-format
+msgid "Unexpected end of file. Expected end tag (%(name)s)."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:146
+msgid "Unexpected start tag head in existing head. Ignored."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:148
+#, python-format
+msgid "Unexpected end tag (%(name)s). Ignored."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:150
+#, python-format
+msgid "Unexpected start tag (%(name)s) that can be in head. Moved."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:152
+#, python-format
+msgid "Unexpected start tag (%(name)s)."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:154
+#, python-format
+msgid "Missing end tag (%(name)s)."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:156
+#, python-format
+msgid "Missing end tags (%(name)s)."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:158
+#, python-format
+msgid "Unexpected start tag (%(startName)s) implies end tag (%(endName)s)."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:161
+#, python-format
+msgid "Unexpected start tag (%(originalName)s). Treated as %(newName)s."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:163
+#, python-format
+msgid "Unexpected start tag %(name)s. Don't use it!"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:165
+#, python-format
+msgid "Unexpected start tag %(name)s. Ignored."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:167
+#, python-format
+msgid "Unexpected end tag (%(gotName)s). Missing end tag (%(expectedName)s)."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:170
+#, python-format
+msgid "End tag (%(name)s) seen too early. Expected other end tag."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:172
+#, python-format
+msgid "Unexpected end tag (%(gotName)s). Expected end tag (%(expectedName)s)."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:174
+#, python-format
+msgid "End tag (%(name)s) seen too early. Ignored."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:176
+#, python-format
+msgid ""
+"End tag (%(name)s) violates step 1, paragraph 1 of the adoption agency "
+"algorithm."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:179
+#, python-format
+msgid ""
+"End tag (%(name)s) violates step 1, paragraph 2 of the adoption agency "
+"algorithm."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:182
+#, python-format
+msgid ""
+"End tag (%(name)s) violates step 1, paragraph 3 of the adoption agency "
+"algorithm."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:185
+#, python-format
+msgid ""
+"End tag (%(name)s) violates step 4, paragraph 4 of the adoption agency "
+"algorithm."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:188
+#, python-format
+msgid "Unexpected end tag (%(originalName)s). Treated as %(newName)s."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:190
+#, python-format
+msgid "This element (%(name)s) has no end tag."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:192
+#, python-format
+msgid "Unexpected implied end tag (%(name)s) in the table phase."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:194
+#, python-format
+msgid "Unexpected implied end tag (%(name)s) in the table body phase."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:196
+msgid "Unexpected non-space characters in table context caused voodoo mode."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:199
+msgid "Unexpected input with type hidden in table context."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:201
+msgid "Unexpected form in table context."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:203
+#, python-format
+msgid "Unexpected start tag (%(name)s) in table context caused voodoo mode."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:206
+#, python-format
+msgid "Unexpected end tag (%(name)s) in table context caused voodoo mode."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:209
+#, python-format
+msgid "Unexpected table cell start tag (%(name)s) in the table body phase."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:212
+#, python-format
+msgid "Got table cell end tag (%(name)s) while required end tags are missing."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:215
+#, python-format
+msgid "Unexpected end tag (%(name)s) in the table body phase. Ignored."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:217
+#, python-format
+msgid "Unexpected implied end tag (%(name)s) in the table row phase."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:219
+#, python-format
+msgid "Unexpected end tag (%(name)s) in the table row phase. Ignored."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:221
+msgid ""
+"Unexpected select start tag in the select phase treated as select end tag."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:224
+msgid "Unexpected input start tag in the select phase."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:226
+#, python-format
+msgid "Unexpected start tag token (%(name)s in the select phase. Ignored."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:229
+#, python-format
+msgid "Unexpected end tag (%(name)s) in the select phase. Ignored."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:231
+#, python-format
+msgid ""
+"Unexpected table element start tag (%(name)s) in the select in table phase."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:233
+#, python-format
+msgid ""
+"Unexpected table element end tag (%(name)s) in the select in table phase."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:235
+msgid "Unexpected non-space characters in the after body phase."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:237
+#, python-format
+msgid "Unexpected start tag token (%(name)s) in the after body phase."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:240
+#, python-format
+msgid "Unexpected end tag token (%(name)s) in the after body phase."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:243
+msgid "Unexpected characters in the frameset phase. Characters ignored."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:245
+#, python-format
+msgid "Unexpected start tag token (%(name)s) in the frameset phase. Ignored."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:248
+msgid "Unexpected end tag token (frameset) in the frameset phase (innerHTML)."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:251
+#, python-format
+msgid "Unexpected end tag token (%(name)s) in the frameset phase. Ignored."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:254
+msgid "Unexpected non-space characters in the after frameset phase. Ignored."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:257
+#, python-format
+msgid "Unexpected start tag (%(name)s) in the after frameset phase. Ignored."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:260
+#, python-format
+msgid "Unexpected end tag (%(name)s) in the after frameset phase. Ignored."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:263
+msgid "Unexpected end tag after body(innerHtml)"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:265
+msgid "Unexpected non-space characters. Expected end of file."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:267
+#, python-format
+msgid "Unexpected start tag (%(name)s). Expected end of file."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:270
+#, python-format
+msgid "Unexpected end tag (%(name)s). Expected end of file."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:273
+msgid "Unexpected end of file. Expected table content."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:275
+msgid "Unexpected end of file. Expected select content."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:277
+msgid "Unexpected end of file. Expected frameset content."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:279
+msgid "Unexpected end of file. Expected script content."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:281
+msgid "Unexpected end of file. Expected foreign content"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:283
+#, python-format
+msgid "Trailing solidus not allowed on element %(name)s"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:285
+#, python-format
+msgid "Element %(name)s not allowed in a non-html context"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:287
+#, python-format
+msgid "Unexpected end tag (%(name)s) before html."
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py:289
+msgid "Undefined error (this sucks and should be fixed)"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/lint.py:26
+#, python-format
+msgid "StartTag not in PCDATA content model flag: %s"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/lint.py:28
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/lint.py:54
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/lint.py:84
+#, python-format
+msgid "Tag name is not a string: %r"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/lint.py:30
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/lint.py:56
+msgid "Empty tag name"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/lint.py:32
+#, python-format
+msgid "Void element reported as StartTag token: %s"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/lint.py:34
+#, python-format
+msgid "Non-void element reported as EmptyTag token: %s"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/lint.py:39
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/lint.py:71
+#, python-format
+msgid "Attribute name is not a string: %r"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/lint.py:41
+msgid "Empty attribute name"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/lint.py:43
+#, python-format
+msgid "Attribute value is not a string: %r"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/lint.py:58
+#, python-format
+msgid "Void element reported as EndTag token: %s"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/lint.py:61
+#, python-format
+msgid "EndTag (%s) does not match StartTag (%s)"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/lint.py:66
+msgid "Comment not in PCDATA content model flag"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/lint.py:73
+#, python-format
+msgid "%s token with empty data"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/lint.py:77
+msgid "Non-space character(s) found in SpaceCharacters token: "
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/lint.py:82
+#, python-format
+msgid "Doctype not in PCDATA content model flag: %s"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/lint.py:91
+#, python-format
+msgid "Unknown token type: %s"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/serializer/htmlserializer.py:200
+msgid "System identifer contains both single and double quote characters"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/serializer/htmlserializer.py:212
+msgid "Unexpected </ in CDATA"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/serializer/htmlserializer.py:223
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/serializer/htmlserializer.py:271
+msgid "Unexpected child element of a CDATA element"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/serializer/htmlserializer.py:277
+msgid "Comment contains --"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/serializer/htmlserializer.py:284
+#, python-format
+msgid "Entity %s not recognized"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/_base.py:33
+msgid "Void element has children"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/_base.py:95
+msgid "Unknown node type: "
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/lxmletree.py:137
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/lxmletree.py:187
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/lxmletree.py:203
+#, python-format
+msgid "Text nodes are text or tail, found %s"
+msgstr ""
+
+#: env/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/lxmletree.py:176
+msgid "Text nodes have no children"
+msgstr ""
+
 #: faq/models.py:31 mediacenter/models.py:32 members/models.py:30
 #: news/models.py:33 page/models.py:33 page/models.py:83
 msgid "User"
@@ -150,18 +2052,6 @@ msgstr "تاریخ و زمان"
 #: templates/faq.html:6
 msgid "FAQ"
 msgstr "سؤال‌های متداول"
-
-#: karajlug_org/settings.py:83
-msgid "Persian"
-msgstr "فارسی"
-
-#: karajlug_org/settings.py:84 templates/base.html:61
-msgid "English"
-msgstr "English"
-
-#: mediacenter/models.py:30
-msgid "File"
-msgstr "پرونده"
 
 #: mediacenter/models.py:40
 msgid "upload file"
@@ -423,88 +2313,89 @@ msgstr ""
 msgid "Member of the OReilly User Group Program"
 msgstr "عضو گروه‌کاربران اوریلی"
 
-#: templates/base.html:102
+#: templates/base.html:107
 msgid "Other Lugs"
 msgstr "لاگ‌های دیگر"
 
-#: templates/base.html:104
+#: templates/base.html:109
 msgid "Tehran Lug"
 msgstr "تهران‌لاگ"
 
-#: templates/base.html:105
+#: templates/base.html:110
 msgid "Isfahan Lug"
 msgstr "اصفهان‌لاگ"
 
-#: templates/base.html:106
+#: templates/base.html:111
 msgid "Zanjan Lug"
 msgstr "زنجان‌لاگ"
 
-#: templates/base.html:107
+#: templates/base.html:112
 msgid "Mashhad Lug"
 msgstr "مشهدلاگ"
 
-#: templates/base.html:108
+#: templates/base.html:113
 msgid "Guilan Lug"
 msgstr "گیلان‌لاگ"
 
-#: templates/base.html:109
+#: templates/base.html:114
 msgid "Khuzestan Lug"
 msgstr "خوزستان‌لاگ"
 
-#: templates/base.html:110
+#: templates/base.html:115
 msgid "Tabriz Lug"
 msgstr "تبریز‌لاگ "
 
-#: templates/base.html:111
+#: templates/base.html:116
 msgid "Kerman Lug"
 msgstr "کرمان‌لاگ"
 
-#: templates/base.html:112
+#: templates/base.html:117
 msgid "Yazd Lug"
 msgstr "یزد‌لاگ"
 
-#: templates/base.html:113
+#: templates/base.html:118
 msgid "Bushehr Lug"
 msgstr "بوشهر‌لاگ"
 
-#: templates/base.html:121
+#: templates/base.html:126
 msgid "Useful links"
 msgstr "پیوندهای مفید"
 
-#: templates/base.html:123
+#: templates/base.html:128
 msgid "KarajLug on Wikipedia"
 msgstr "کرج‌لاگ در ویکیپدیا"
 
-#: templates/base.html:125 templates/base.html.py:127
+#: templates/base.html:130 templates/base.html.py:132
 msgid "What is LUG?"
 msgstr "لاگ چیست؟"
 
-#: templates/base.html:130
+#: templates/base.html:135
 msgid "Free Software Foundation"
 msgstr "بنیاد نرم‌افزار‌های آزاد"
 
-#: templates/base.html:131
+#: templates/base.html:136
 msgid "GNU Project"
 msgstr "پروژه گنو"
 
-#: templates/base.html:132
+#: templates/base.html:137
 msgid "Linux Foundation"
 msgstr "بنیاد لینوکس"
 
-#: templates/base.html:133
-msgid "LinuxMag"
-msgstr "مجله لینوکس‌مگ"
+#: templates/base.html:138
+msgid "SalamDonya"
+msgstr "مجله سلام‌دنیا"
 
-#: templates/base.html:141
+#: templates/base.html:146
 msgid "Karajlug in"
 msgstr "کرج‌لاگ در"
 
-#: templates/base.html:148
+#: templates/base.html:153
 msgid "Sponsors"
 msgstr "حامیان"
 
-#: templates/base.html:158
-msgid "Copyright 2010-2013 Karajlug Community"
+#: templates/base.html:162
+#, fuzzy
+msgid "Copyright 2010-2015 Karajlug Community"
 msgstr "کپی‌رایت ۲۰۱۰-۲۰۱۳ اجتماع کرج‌لاگ"
 
 #: templates/contact.html:10
@@ -639,68 +2530,8 @@ msgstr "در یک نقشهٔ بزرگ"
 msgid "Share it"
 msgstr "به اشتراک بگذارید"
 
-#~ msgid "German"
-#~ msgstr "آلمانی"
-
-#~ msgid "British English"
-#~ msgstr "انگلیسی"
-
-#~ msgid "Frisian"
-#~ msgstr "فارسی"
-
-#~ msgid "Polish"
-#~ msgstr "انتشار"
-
-#~ msgid "Tatar"
-#~ msgstr "شمایه"
-
-#~ msgid "This field cannot be null."
-#~ msgstr "این فیلد خالی نمی‌تواند باشد"
-
-#~ msgid "This field cannot be blank."
-#~ msgstr "این فیلد خالی نمی‌تواند باشد"
-
-#~ msgid "Date (with time)"
-#~ msgstr "تاریخ و زمان"
-
-#~ msgid "File path"
-#~ msgstr "مسیر پرونده"
-
-#~ msgid "IPv4 address"
-#~ msgstr "نشانی"
-
-#~ msgid "IP address"
-#~ msgstr "نشانی"
-
-#~ msgid "This field is required."
-#~ msgstr "این فیلد احمیتی ندارد"
-
-#~ msgid "Change"
-#~ msgstr "کانال"
-
-#~ msgid "September"
-#~ msgstr "سپتامبر"
-
-#~ msgid "November"
-#~ msgstr "نوامبر"
-
-#~ msgid "December"
-#~ msgstr "دسامبر"
-
-#~ msgid "oct"
-#~ msgstr "اکتوبر"
-
-#~ msgctxt "alt. month"
-#~ msgid "September"
-#~ msgstr "سپتامبر"
-
-#~ msgctxt "alt. month"
-#~ msgid "November"
-#~ msgstr "عضو"
-
-#~ msgctxt "alt. month"
-#~ msgid "December"
-#~ msgstr "عضو"
+#~ msgid "LinuxMag"
+#~ msgstr "مجله لینوکس‌مگ"
 
 #~ msgid "Follow"
 #~ msgstr "دنبال‌کردن"
